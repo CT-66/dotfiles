@@ -16,7 +16,6 @@ window:
 font:
     normal:
         family: CaskaydiaCove Nerd Font
-        # family: FiraCode NF
         #style: Regular
     size: 12.0
     offset:
@@ -24,7 +23,7 @@ font:
       y: 1
 
 scrolling:
-  history: 5000
+  history: 10000
   auto_scroll: false
   tabspaces: 4
 
@@ -116,7 +115,6 @@ schemes:
         white: '#aeb3bb'
 
 
-
 # colors: *doom-one
 colors: *nord
 
@@ -139,3 +137,9 @@ key_bindings:
   - { key: Minus,          mods: Control,                         action: DecreaseFontSize }
   - { key: NumpadSubtract, mods: Control,                         action: DecreaseFontSize }
   - { key: F11,            mods: None,                            action: ToggleFullScreen }
+
+
+# bell:
+#   command:
+#     program: dunst
+#   args: []

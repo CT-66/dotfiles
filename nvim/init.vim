@@ -57,7 +57,7 @@ set cursorline
 
 function! RunPythonFile()
     :w
-    :exec '!python.exe' shellescape(@%, 1)
+    :exec '!python' shellescape(@%, 1)
 endfunction
 
 function! MarkdownLevel()
