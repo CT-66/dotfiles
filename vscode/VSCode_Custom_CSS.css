@@ -1,0 +1,37 @@
+#workbench\.parts\.titlebar > div.window-controls-container {
+    display: none !important;
+}
+
+#workbench\.parts\.titlebar > a {
+    display: none !important;
+}
+
+.actions-container[aria-label="Editor actions"] {
+    display: none !important;
+}
+
+.editor-actions {
+    display: none !important;
+}
+
+.menu-item-action-item-icon-1,
+.menu-item-action-item-icon-2 {
+    display: none !important;
+}
+
+.title-actions {
+    display: none !important;
+}
+
+.title:hover .title-actions {
+    display: flex;
+}
+
+.part.sidebar > .title {
+    height: 0;
+    display: none;
+}
+
+.actions {
+    display: none !important;
+}

@@ -1,0 +1,58 @@
+neovim
+zsh
+exa
+lsd
+cmus
+node
+vim plug
+fish
+neofetch
+nnn
+lf
+ranger
+tmux
+cmatrix
+ninvaders
+git
+speed-test (npm)
+scripts dir
+ytdl
+clang
+tree
+emacs
+man-db
+make
+cmake
+openssh
+bat
+ffmpeg
+figlet
+fortune
+cowsay
+fzf
+golang
+python3
+ncurses
+sc-im (aur)
+snake (aur)
+pacman4console (aur)
+moon-buggy (aur)
+shellcheck
+unzip
+zip
+firefox
+ungoogled chromium
+vscode
+alacritty
+kitty
+sxiv
+vieb
+lolcat
+htop
+virtualbox
+polybar (aur)
+i3
+nitrogen
+flameshot
+plank dock
+tty-clock (aur)
