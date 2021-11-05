@@ -159,6 +159,12 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 # create empty workspace
 bindsym $mod+c exec --no-startup-id ~/.config/i3/scripts/empty-workspace.sh
 
+# reize windows without entering resize mode
+bindsym $mod+Ctrl+Right resize shrink width 1 px or 1 ppt
+bindsym $mod+Ctrl+Up resize grow height 1 px or 1 ppt
+bindsym $mod+Ctrl+Down resize shrink height 1 px or 1 ppt
+bindsym $mod+Ctrl+Left resize grow width 1 px or 1 ppt
+
 
 focus_follows_mouse no
 
@@ -226,6 +232,7 @@ bindsym $mod+m gaps inner minus 5
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh &
 exec_always --no-startup-id xrandr --output Virtual1 --mode 1920x1080
 exec_always --no-startup-id feh --bg-scale ~/Wallpapers/049.jpg &
+# exec_always --no-startup-id feh --bg-scale ~/Wallpapers/011.jpg &
 exec_always --no-startup-id dunst &
 exec_always --no-startup-id dotfiles &
 exec_always --no-startup-id picom -f

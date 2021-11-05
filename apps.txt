@@ -63,3 +63,4 @@ dunst
 sxhkd
 rofi
 libnotify
+picom-ibhagwan-git
