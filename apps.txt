@@ -57,3 +57,9 @@ feh
 flameshot
 plank dock
 tty-clock (aur)
+fet.sh-git (aur)
+xrandr
+dunst
+sxhkd
+rofi
+libnotify
