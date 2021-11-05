@@ -1,0 +1,214 @@
+[
+    /*
+    {
+        "key": "f5",
+        "command": "workbench.action.debug.run"
+    },
+    {
+        "key": "ctrl+f5",
+        "command": "-workbench.action.debug.run"
+    },
+    {
+        "key": "ctrl+shift+alt+f5",
+        "command": "workbench.action.debug.continue",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "f5",
+        "command": "-workbench.action.debug.continue",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "ctrl+shift+alt+f5 f5",
+        "command": "workbench.action.debug.start",
+        "when": "!inDebugMode"
+    },
+    {
+        "key": "f5",
+        "command": "-workbench.action.debug.start",
+        "when": "!inDebugMode"
+    },
+    */
+    {
+        "key": "ctrl+b",
+        "command": "extension.CompileRun"
+    },
+    /*
+    {
+        "key": "f6",
+        "command": "-extension.CompileRun"
+    },
+    */
+    {
+        "key": "ctrl+alt+b",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    // {
+    //     "key": "alt+1",
+    //     "command": "workbench.action.terminal.new",
+    //     "when": "terminalProcessSupported"
+    // },
+    /*
+    {
+        "key": "ctrl+shift+`",
+        "command": "-workbench.action.terminal.new",
+        "when": "terminalProcessSupported"
+    },
+    */
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+win+right",
+        "command": "workbench.action.positionPanelRight",
+        "when": "panelFocus"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "python.execInTerminal",
+        "when": "resourceExtname == .py"
+    },
+    {
+        "key": "escape",
+        "command": "workbench.action.closePanel",
+        "when": "panelFocus"
+    },
+    // {
+    //     "key": "alt+2",
+    //     "command": "-workbench.action.openEditorAtIndex2"
+    // },
+    {
+        "key": "alt+2",
+        "command": "workbench.actions.view.problems",
+        "when": "workbench.panel.markers.view.active"
+    },
+    {
+        "key": "ctrl+shift+m",
+        "command": "-workbench.actions.view.problems",
+        "when": "workbench.panel.markers.view.active"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "markdown.showPreviewToSide",
+        "when": "!notebookEditorFocused && editorLangId == 'markdown'"
+    },
+    /*
+    {
+        "key": "ctrl+k v",
+        "command": "-markdown.showPreviewToSide",
+        "when": "!notebookEditorFocused && editorLangId == 'markdown'"
+    },
+    */
+    {
+        "key": "alt+win+down",
+        "command": "workbench.action.positionPanelBottom",
+        "when": "panelFocus"
+    },
+    {
+        "key": "alt+win+left",
+        "command": "workbench.action.positionPanelLeft",
+        "when": "panelFocus"
+    },
+    /*
+    {
+        "key": "ctrl+shift+alt+m ctrl+shift+alt+m",
+        "command": "editor.action.toggleTabFocusMode"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "-editor.action.toggleTabFocusMode"
+    },
+    */
+    {
+        "key": "ctrl+b",
+        "command": "java.debug.runJavaFile",
+        "when": "resourceExtname == .java"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "cd '${fileDirname}'\u000Ddel ${fileBasenameNoExtension}.exe\u000Dcsc '${file}'\u000Dcls\u000D.\\${fileBasenameNoExtension}.exe\u000D",
+        },
+        "when": "resourceExtname == .cs"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "cd '${fileDirname}'\u000Dnode ${fileBasename}\u000D", /*cd '${fileDirname}'\u000Ddel ${fileBasenameNoExtension}.exe\u000Dcsc '${file}'\u000Dcls\u000D.\\${fileBasenameNoExtension}.exe\u000D*/
+        },
+        "when": "resourceExtname == .js"
+    },
+    /*
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.terminal.focus",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    */
+    {
+        "key": "ctrl+shift+c",
+        "command": "copyFilePath"
+    },
+    {
+        "key": "ctrl+f2",
+        "command": "fileutils.renameFile",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+alt+v",
+        "command": "toggleVim"
+    },
+    {
+        "key": "ctrl+1",
+        "command": "workbench.action.openEditorAtIndex1"
+    },
+    {
+        "key": "ctrl+2",
+        "command": "workbench.action.openEditorAtIndex2"
+    },
+    {
+        "key": "ctrl+3",
+        "command": "workbench.action.openEditorAtIndex3"
+    },
+    {
+        "key": "ctrl+4",
+        "command": "workbench.action.openEditorAtIndex4"
+    },
+    {
+        "key": "ctrl+5",
+        "command": "workbench.action.openEditorAtIndex5"
+    },
+    {
+        "key": "ctrl+6",
+        "command": "workbench.action.openEditorAtIndex6"
+    },
+    {
+        "key": "ctrl+7",
+        "command": "workbench.action.openEditorAtIndex7"
+    },
+    {
+        "key": "ctrl+8",
+        "command": "workbench.action.openEditorAtIndex8"
+    },
+    {
+        "key": "ctrl+9",
+        "command": "workbench.action.lastEditorInGroup"
+    },
+]

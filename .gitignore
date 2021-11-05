@@ -1,0 +1,16 @@
+.zcompdump-*
+.zcompdump
+.bash_history
+.bash_logout
+.history
+
+coc/
+pulse/
+wslu/
+bash/
+vim/
+node_modules/
+fish/
+NVCHAD/
+configstore/
+git/config
