@@ -57,5 +57,3 @@ feh
 flameshot
 plank dock
 tty-clock (aur)
-kitty
-fet.sh-git (aur)
