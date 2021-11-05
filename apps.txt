@@ -52,7 +52,7 @@ htop
 virtualbox
 polybar (aur)
 i3
-nitrogen
+feh
 flameshot
 plank dock
 tty-clock (aur)

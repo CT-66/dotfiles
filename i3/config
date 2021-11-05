@@ -249,7 +249,6 @@ bindsym $mod+m gaps inner minus 5
 # ====================
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh &
-# exec_always --no-startup-id nitrogen --restore &
-exec_always --no-startup-id nitrogen --restore
+exec_always --no-startup-id feh --bg-scale ~/Wallpapers/049.jpg
 exec_always --no-startup-id dunst &
 exec_always --no-startup-id dotfiles &
