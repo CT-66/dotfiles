@@ -1,12 +1,12 @@
 # cat ~/reminders.md
 # neofetch | lolcat
 
-. ~/.config/zsh/prompt
-. ~/.config/zsh/aliases
-. ~/.config/zsh/variables
-. ~/.config/zsh/plugins
-. ~/.config/zsh/functions
-. ~/.config/zsh/exports
+. ~/.config/zsh/prompt.zsh
+. ~/.config/zsh/aliases.zsh
+. ~/.config/zsh/variables.zsh
+. ~/.config/zsh/plugins.zsh
+. ~/.config/zsh/functions.zsh
+. ~/.config/zsh/exports.zsh
 
 # test -r "~/.config/zsh/nord-dircolors" && eval $(dircolors ~/.config/zsh/nord-dircolors)
 
