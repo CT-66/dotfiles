@@ -52,6 +52,7 @@ htop
 virtualbox
 polybar (aur)
 i3
+i3lock
 feh
 flameshot
 plank dock

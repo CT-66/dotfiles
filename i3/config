@@ -51,7 +51,7 @@ bindsym $mod+$up focus up
 bindsym $mod+$right focus right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
+# bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
@@ -201,8 +201,12 @@ bindsym $mod+r mode "resize"
 bindsym Mod1+r exec "flameshot gui -c -p ~/Pictures/Screenshots"
 bindsym Mod1+Shift+r "exec flameshot full -c -p ~/Pictures/Screenshots && notify-send 'Screenshot saved to ~/Pictures/Screenshots'"
 
+# ===============================================
+
+bindsym $mod+l exec i3lock
 
 # ===============================================
+
 # >>> Plasma Integration <<<
 
 # Try to kill the wallpaper set by Plasma (it takes up the entire workspace
