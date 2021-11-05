@@ -203,7 +203,7 @@ bindsym Mod1+Shift+r "exec flameshot full -c -p ~/Pictures/Screenshots && notify
 
 # ===============================================
 
-bindsym $mod+l exec i3lock
+bindsym $mod+Shift+l exec i3lock
 
 # ===============================================
 
