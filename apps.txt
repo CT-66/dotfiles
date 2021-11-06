@@ -65,3 +65,4 @@ rofi
 libnotify
 picom-ibhagwan-git
 flashfocus-git (aur)
+arc-gtk-theme
