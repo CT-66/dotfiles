@@ -122,6 +122,7 @@ cursor:
     style:
         shape: Beam
         blinking: On
+        thickness: 1
 
 live_config_reload: true
 shell:

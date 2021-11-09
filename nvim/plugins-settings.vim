@@ -103,7 +103,8 @@ let g:Hexokinase_optInPatterns = [
 \     'colour_names'
 \ ]
 
-let g:Hexokinase_ftEnabled = ['css', 'html', 'javascript', 'json']
+" let g:Hexokinase_ftEnabled = ['css', 'html', 'javascript', 'json']
+let g:Hexokinase_ftEnabled = ['.*']
 
 " -----
 

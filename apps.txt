@@ -67,3 +67,5 @@ picom-ibhagwan-git
 flashfocus-git (aur)
 arc-gtk-theme
 w3m
+rtv
+newsboat
