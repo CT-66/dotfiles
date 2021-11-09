@@ -16,6 +16,7 @@ alias p='sudo pacman'
 alias yay=paru
 alias sv='sudoedit'
 alias h=htop
+alias tty-clock='tty-clock -cbt -C 4'
 
 alias cd..='cd ../'
 alias ..='cd ../'
