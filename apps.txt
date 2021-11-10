@@ -69,3 +69,4 @@ arc-gtk-theme
 w3m
 rtv
 newsboat
+dolphin
