@@ -1,3 +1,3 @@
-xmodmap ~/.Xmodmap
-
 numlockx &
+
+xmodmap ~/.Xmodmap
