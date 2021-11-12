@@ -157,7 +157,7 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # create empty workspace
-bindsym $mod+c exec --no-startup-id ~/.config/i3/scripts/empty-workspace.sh
+bindsym $mod+c exec --no-startup-id ~/Dotfiles/i3/scripts/empty-workspace.sh
 
 # resize windows without entering resize mode
 # Resizing by 1
@@ -237,11 +237,11 @@ bindsym $mod+m gaps inner minus 5
 
 # ====================
 
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh &
+exec_always --no-startup-id $HOME/Dotfiles/polybar/launch.sh &
 exec_always --no-startup-id xrandr --output Virtual1 --mode 1920x1080
 # exec_always --no-startup-id feh --bg-scale ~/Wallpapers/049.jpg &
 exec_always --no-startup-id feh --bg-scale ~/Wallpapers/011.jpg &
 exec_always --no-startup-id dunst &
-exec_always --no-startup-id dotfiles &
+# exec_always --no-startup-id dotfiles &
 exec_always --no-startup-id picom -b &
 # exec_always --no-startup-id flashfocus
