@@ -2,7 +2,7 @@
 
 # temp file
 
-ln -S ~/Dotfiles/zsh/.zshenv ~/.zshenv
+ln -s ~/Dotfiles/zsh/.zshenv ~/.zshenv
 
 plugins=(
     "https://github.com/zsh-users/zsh-autosuggestions"
