@@ -1,4 +1,4 @@
-LS_COLORS='ow=01;36;40'
+# LS_COLORS='ow=01;36;40'
 export LS_COLORS
 export KEYTIMEOUT=1
 EDITOR=nvim
@@ -23,3 +23,5 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
 # bindkey '^I' $fzf_default_completion
 
 export NNN_OPTS="H"
+
+ export EXA_ICON_SPACING=2

@@ -8,7 +8,7 @@
 . ~/.config/zsh/functions.zsh
 . ~/.config/zsh/exports.zsh
 
-# test -r "~/.config/zsh/nord-dircolors" && eval $(dircolors ~/.config/zsh/nord-dircolors)
+test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
 
 autoload -U compinit
 compinit -d ~/.cache/zsh/zsh_compinit_dumpfiles
