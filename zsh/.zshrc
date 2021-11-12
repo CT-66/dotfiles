@@ -17,7 +17,7 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}' # case insensitive tab co
 zstyle ':completion:*' menu select 'm:{a-z}={A-Za-z}' # case insensitive tab completion
 unsetopt BEEP
 setopt NO_CASE_GLOB # Set case insensitive globbing
-setopt AUTO_CD # Automatically cd into a directory without typing `cd`
+# setopt AUTO_CD # Automatically cd into a directory without typing `cd`
 setopt CORRECT # Enable correction
 setopt CORRECT_ALL # Enable correction
 
