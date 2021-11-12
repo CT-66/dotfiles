@@ -55,3 +55,6 @@ fi
 # cd $HOME
 # git clone tpm (tmux) and install plugins
 # try installing tmux plugins from cli
+# ln -s xinitrc ~/.xinitrc
+# ln -s Xmodmap ~/.Xmodmap
+# ln -s dircolors ~/.dircolors
