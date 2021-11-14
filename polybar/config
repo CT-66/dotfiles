@@ -187,7 +187,7 @@ interface = enp0s3
 interval = 3.0
 
 format-connected = <label-connected>
-format-connected-underline = #9f78e1
+; format-connected-underline = #9f78e1
 label-connected = "直"
 label-connected-foreground = ${colors.primary}
 
