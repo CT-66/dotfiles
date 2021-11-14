@@ -50,8 +50,8 @@ font-0 = CaskaydiaCove Nerd Font:style=Regular:pixelsize=11:antialias=true;2.5
 ; modules-left = wlan
 modules-left = i3
 modules-center =  xwindow
-; modules-right = dunst wlan audio battery date time
-modules-right = dunst wireless-network audio battery date time
+modules-right = dunst wlan audio battery date time
+; modules-right = dunst wireless-network audio battery date time
 
 tray-position = right
 tray-padding = 2
