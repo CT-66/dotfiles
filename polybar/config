@@ -50,7 +50,8 @@ font-0 = CaskaydiaCove Nerd Font:style=Regular:pixelsize=11:antialias=true;2.5
 ; modules-left = wlan
 modules-left = i3
 modules-center =  xwindow
-modules-right = dunst wlan audio battery date time
+; modules-right = dunst wlan audio battery date time
+modules-right = dunst wireless-network audio battery date time
 
 tray-position = right
 tray-padding = 2
@@ -187,12 +188,10 @@ interface = enp0s3
 interval = 3.0
 
 format-connected = <label-connected>
-; format-connected-underline = #9f78e1
 label-connected = "直"
 label-connected-foreground = ${colors.primary}
 
 format-disconnected = <label-disconnected>
-format-disconnected-underline = ${self.format-connected-underline}
 label-disconnected = 睊
 label-disconnected-foreground = ${colors.alert}
 
@@ -207,7 +206,8 @@ ramp-signal-4 = e
 
 [module/wireless-network]
 type = internal/network
-interface = wlp4s0
+; interface = wlp4s0
+interface = enp0s3
 
 format-connected = <label-connected>
 format-disconnected = <label-disconnected>
