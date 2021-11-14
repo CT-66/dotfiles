@@ -182,7 +182,8 @@ label-muted-foreground = #384F6B
 
 [module/wlan]
 type = internal/network
-interface = wlp7s0
+; interface = wlp7s0
+interface = enp0s3
 interval = 3.0
 
 format-connected = <label-connected>
