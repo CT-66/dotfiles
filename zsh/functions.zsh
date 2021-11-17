@@ -11,7 +11,7 @@ startup-time() {
 }
 
 
-files_to_be_removed=(.sudo_as_admin_successful .viminfo .bash_history .node_repl_history .lesshst)
+files_to_be_removed=(.sudo_as_admin_successful .viminfo .bash_history .node_repl_history .lesshst .wget-hsts)
 
 for file in "${files_to_be_removed[@]}"; do
     if [ -f "$HOME/$file" ]; then
