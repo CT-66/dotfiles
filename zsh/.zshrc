@@ -1,5 +1,4 @@
 # cat ~/reminders.md
-# neofetch | lolcat
 
 . ~/.config/zsh/prompt.zsh
 . ~/.config/zsh/aliases.zsh
@@ -7,8 +6,6 @@
 . ~/.config/zsh/plugins.zsh
 . ~/.config/zsh/functions.zsh
 . ~/.config/zsh/exports.zsh
-
-# test -r "~/.dir_colors" && eval $(dircolors ~/.dir_colors)
 
 autoload -U compinit
 compinit -d ~/.cache/zsh/zsh_compinit_dumpfiles
