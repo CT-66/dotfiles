@@ -5,8 +5,7 @@ LS_COLORS='no=00:rs=0:fi=00:di=01;34:ln=36:mh=04;36:pi=04;01;36:so=04;33:do=04;0
 export LS_COLORS
 
 export KEYTIMEOUT=1
-EDITOR=nvim
-export EDITOR
+export EDITOR='nvim'
 # PAGER=nvim
 # export PAGER
 # PAGER=batcat
