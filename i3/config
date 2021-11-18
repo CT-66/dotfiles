@@ -43,7 +43,7 @@ bindsym $mod+Shift+q kill
 # bindsym $mod+d exec "rofi -modi drun,run -show drun"
 bindsym $mod+d exec --no-startup-id rofi -show drun
 
-bindsym $mod+tab exec --no-startup-id rofi -show window
+bindsym $mod+Tab exec --no-startup-id rofi -show window
 
 # ==============================
 
