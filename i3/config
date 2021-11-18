@@ -40,8 +40,7 @@ bindsym $mod+Shift+q kill
 # ==============================
 
 # rofi
-# bindsym $mod+d exec "rofi -modi drun,run -show drun"
-bindsym $mod+space exec --no-startup-id rofi -show drun
+bindsym $mod+d exec "rofi -modi drun,run -show drun"
 
 bindsym $mod+Tab exec --no-startup-id rofi -show window
 
