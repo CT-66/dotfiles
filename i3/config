@@ -45,6 +45,8 @@ bindsym $mod+d exec --no-startup-id rofi -show drun
 
 bindsym $mod+Tab exec --no-startup-id rofi -show window
 
+bindsym $mod+> exec --no-startup-id rofi -show run
+
 # ==============================
 
 # change focus
