@@ -249,3 +249,4 @@ exec_always --no-startup-id home &
 exec_always --no-startup-id picom -b &
 # exec_always --no-startup-id flashfocus
 exec_always --no-startup-id numlockx &
+exec_always --no-startup-id export $(dbus-launch) &
