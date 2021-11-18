@@ -100,7 +100,7 @@ precmd() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 # Yank to the system clipboard
 function vi-yank-custom {
     zle vi-yank
-   echo "$CUTBUFFER" | win32yank.exe -i
+   echo "$CUTBUFFER" | xclip -sel clip
 }
 
 zle -N vi-yank-custom
