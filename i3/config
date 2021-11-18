@@ -243,8 +243,8 @@ exec_always --no-startup-id xrandr --output Virtual1 --mode 1920x1080
 # exec_always --no-startup-id feh --bg-scale ~/Wallpapers/011.jpg &
 # exec_always --no-startup-id feh --bg-scale ~/Wallpapers/061.jpg &
 exec_always --no-startup-id feh --bg-scale ~/Wallpapers/067.jpg &
-exec_always --no-startup-id export $(dbus-launch) &
-exec_always --no-startup-id dunst &
+exec_always --no-startup-id export $(dbus-launch)
+exec_always --no-startup-id dunst
 exec_always --no-startup-id dotfiles &
 exec_always --no-startup-id home &
 exec_always --no-startup-id picom -b &
