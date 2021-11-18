@@ -1,3 +1,5 @@
+//  https://github.com/amayer5125/nord-rofi
+
 configuration {
     font: "CaskaydiaCove Nerd Font 12";
     show-icons: true;
