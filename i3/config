@@ -32,7 +32,7 @@ set $right semicolon
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec --no-startup-id alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -209,7 +209,7 @@ bindsym $mod+r mode "resize"
 # ============================================
 # Screenshots
 bindsym Mod1+r exec "flameshot gui -c -p ~/Pictures/Screenshots"
-bindsym Mod1+Shift+r "exec flameshot full -c -p ~/Pictures/Screenshots && notify-send 'Screenshot saved to ~/Pictures/Screenshots'"
+bindsym Mod1+Shift+r exec "flameshot full -c -p ~/Pictures/Screenshots && notify-send 'Screenshot saved to ~/Pictures/Screenshots'"
 
 # ===============================================
 
