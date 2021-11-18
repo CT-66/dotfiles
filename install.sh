@@ -39,17 +39,8 @@ fi
 # sudo pacman -S --needed base-devel
 # git clone https://aur.archlinux.org/paru.git
 # cd paru
-# makepkg -si
-# programs=(list
-#      of
-#      programs
-#      in
-#      a
-#      array
-#  )
-# for program in "${programs[@]}"; do
-#         sudo pacman -S "$program"
-#                 done
+# cd $HOME/Dotfiles
+# sudo pacman -S - < apps.txt
 # cd $HOME/.local/share/nvim/plugged/vim-hexokinase
 # make hexokinase
 # cd $HOME
