@@ -240,7 +240,7 @@ bindsym $mod+m gaps inner minus 5
 # ====================
 
 exec_always --no-startup-id $HOME/Dotfiles/polybar/launch.sh &
-exec_always --no-startup-id xrandr --output Virtual1 --mode 1920x1080
+# exec_always --no-startup-id xrandr --output Virtual1 --mode 1920x1080
 # exec_always --no-startup-id feh --bg-scale ~/Wallpapers/049.jpg &
 # exec_always --no-startup-id feh --bg-scale ~/Wallpapers/011.jpg &
 # exec_always --no-startup-id feh --bg-scale ~/Wallpapers/061.jpg &
