@@ -6,6 +6,7 @@ export LS_COLORS
 
 export KEYTIMEOUT=1
 export EDITOR='nvim'
+export TERMINAL='alacritty'
 # PAGER=nvim
 # export PAGER
 # PAGER=batcat

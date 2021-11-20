@@ -129,6 +129,7 @@ type = internal/date
 interval = 1
 time = %I:%M %p
 label = %{F#61AFEF} %time%
+click-left = $TERMINAL -e .date &
 
 ; =======================================
 
