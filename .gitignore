@@ -3,6 +3,7 @@
 .bash_history
 .bash_logout
 .history
+syncLocalSettings.json
 
 coc/
 pulse/
@@ -14,3 +15,5 @@ fish/
 NVCHAD/
 configstore/
 git/config
+globalStorage/
+workspaceStorage/
