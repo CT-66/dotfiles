@@ -113,4 +113,6 @@ bindkey -s "^[s" "sudo !!"
 
 bindkey -s "^o" "lfcd\n"
 
+eval "$(bw completion --shell zsh); compdef _bw bw;"
+
 [[ ! -f ~/.config/zsh//.p10k.zsh ]] || source ~/.config/zsh//.p10k.zsh
