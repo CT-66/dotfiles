@@ -129,8 +129,6 @@ type = internal/date
 interval = 1
 time = %I:%M %p
 label = %{F#61AFEF} %time%
-initial = 0
-hook-1 = $TERMINAL -e .date &
 
 ; =======================================
 
