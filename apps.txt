@@ -70,3 +70,5 @@ w3m
 rtv
 newsboat
 dolphin
+brave-bin (aur)
+brave-beta-bin (aur)
