@@ -7,6 +7,7 @@ export LS_COLORS
 export KEYTIMEOUT=1
 export EDITOR='nvim'
 export TERMINAL='alacritty'
+export QT_QPA_PLATFORMTHEME=qt5ct
 # PAGER=nvim
 # export PAGER
 # PAGER=batcat
