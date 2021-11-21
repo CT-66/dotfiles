@@ -176,7 +176,6 @@
     // "terminal.integrated.fontFamily": "MesloLGS NF",
     // "editor.cursorWidth": 5,
     "workbench.activityBar.visible": false,
-    // "window.menuBarVisibility": "compact",
     "sync.quietSync": true,
     "sync.autoUpload": true,
     "breadcrumbs.enabled": false,
@@ -209,7 +208,9 @@
     "terminal.integrated.cursorWidth": 2,
     "telemetry.telemetryLevel": "off",
     "security.workspace.trust.banner": "never",
-    "security.workspace.trust.enabled": false
+    "security.workspace.trust.enabled": false,
+    "terminal.integrated.ignoreProcessNames": [],
+    "terminal.integrated.tabs.enableAnimation": false
 }
 /*
     "[javascript]": {
