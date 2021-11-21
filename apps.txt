@@ -73,3 +73,5 @@ dolphin
 brave-bin (aur)
 brave-beta-bin (aur)
 python-pip
+vlc
+mpv
