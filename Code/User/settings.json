@@ -1,6 +1,5 @@
 {
-    // "python.pythonPath": "C:\\Users\\iamsh\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
-    "python.pythonPath": "python,
+    "python.pythonPath": "python",
     "workbench.sideBar.location": "left",
     "editor.wordWrap": "on",
     "python.defaultInterpreterPath": "py",
@@ -62,18 +61,12 @@
     "workbench.editor.highlightModifiedTabs": true,
     "editor.fontWeight": "normal",
     "editor.dragAndDrop": false,
-    "bracketPairColorizer.showBracketsInGutter": true,
-    "bracketPairColorizer.showHorizontalScopeLine": false,
-    "bracketPairColorizer.forceIterationColorCycle": true,
-    "bracketPairColorizer.showVerticalScopeLine": false,
-    "sync.gist": "cf3edfeaf6faceb609dc67bea32b0caf",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.productIconTheme": "material-product-icons",
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
     "csharp.format.enable": true,
     "workbench.startupEditor": "newUntitledFile",
-    "window.customMenuBarAltFocus": false,
     "window.restoreWindows": "all",
     "prettier.tabWidth": 4,
     "editor.tabSize": 4,
@@ -96,9 +89,6 @@
     "explorer.incrementalNaming": "smart",
     "workbench.panel.defaultLocation": "right",
     "terminal.integrated.cursorBlinking": true,
-    // "terminal.integrated.cwd": "C:\\Users\\iamsh\\desktop",
-    // "terminal.integrated.cwd": "${fileDirname}",
-    // "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
     "workbench.editor.untitled.hint": "hidden",
     "python.showStartPage": false,
     "highlight-matching-tag.enabled": true,
@@ -168,28 +158,16 @@
     "oneDarkPro.italic": false,
     "oneDarkPro.bold": true,
     "oneDarkPro.editorTheme": "oneDarkPro",
-    "terminal.integrated.profiles.windows": {
-        "PowerShell": {
-            "source": "PowerShell",
-            "args": [
-                "-NoLogo"
-            ],
-            "icon": "terminal-powershell"
-        }
-    },
-    // "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
-    // "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
-    // "terminal.integrated.cwd": "C:\\Users\\iamsh\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\username\\",
     // Vim
     "vim.highlightedyank.enable": true,
     "vim.leader": " ",
     "vim.mouseSelectionGoesIntoVisualMode": false,
-    "vim.searchHighlightTextColor": "#FFFF00\t",
+    // "vim.searchHighlightTextColor": "#FFFF00\t",
     "vim.showmodename": false,
     "vim.useSystemClipboard": true,
     // "vim.useCtrlKeys": true
     "vim.vimrc.enable": true,
-    "vim.vimrc.path": "C:\\Users\\iamsh\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\username\\.config\\nvim\\init.vim",
+    "vim.vimrc.path": "~/Dotfiles/nvim/init.vim",
     "files.associations": {
         "*.json": "jsonc"
     },
@@ -204,26 +182,34 @@
     "breadcrumbs.enabled": false,
     "workbench.colorTheme": "One Dark Pro",
     "vscode_custom_css.imports": [
-        "file:///G:\\Shyam\\VSCode_Custom_CSS.css"
+        "file:///~/Dotfiles/Code/User/custom-css.css"
     ],
-    "workbench.editor.tabCloseButton": "off",
     "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
-    "security.workspace.trust.enabled": false,
     "terminal.integrated.tabs.enabled": false,
     "material-icon-theme.hidesExplorerArrows": true,
     "update.mode": "default",
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
-    },
     // "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName}",
-    // Neovim
-    "vscode-neovim.useWSL": true,
-    "vscode-neovim.neovimExecutablePaths.linux": "/bin/nvim",
     "editor.scrollBeyondLastLine": false,
     "editor.lineNumbers": "relative",
     "editor.bracketPairColorization.enabled": true,
     "editor.accessibilitySupport": "off",
-    "editor.autoClosingDelete": "always"
+    "editor.autoClosingDelete": "always",
+    "editor.occurrencesHighlight": false,
+    "python.linting.flake8Enabled": false,
+    "python.formatting.provider": "autopep8",
+    "files.insertFinalNewline": true,
+    "workbench.settings.editor": "json",
+    "workbench.settings.useSplitJSON": true,
+    "window.customMenuBarAltFocus": false,
+    "window.enableMenuBarMnemonics": false,
+    "window.menuBarVisibility": "hidden",
+    "window.titleBarStyle": "custom",
+    "extensions.webWorker": false,
+    "terminal.external.linuxExec": "alacritty",
+    "terminal.integrated.cursorWidth": 2,
+    "telemetry.telemetryLevel": "off",
+    "security.workspace.trust.banner": "never",
+    "security.workspace.trust.enabled": false
 }
 /*
     "[javascript]": {
