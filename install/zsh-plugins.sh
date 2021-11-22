@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# temp file
-
 ln -s ~/Dotfiles/zsh/.zshenv ~/.zshenv
 
 plugins=(
