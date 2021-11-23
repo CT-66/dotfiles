@@ -1,9 +1,8 @@
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
 Plug 'arcticicestudio/nord-vim'
-" Plug 'joshdick/onedark.vim'
+Plug 'joshdick/onedark.vim'
 Plug 'kaicataldo/material.vim'
-Plug 'navarasu/onedark.nvim'
 
 " Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 " Plug 'jiangmiao/auto-pairs'
