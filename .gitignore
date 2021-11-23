@@ -1,19 +1,10 @@
 .zcompdump-*
 .zcompdump
-.bash_history
-.bash_logout
 .history
 syncLocalSettings.json
 
-coc/
-pulse/
-wslu/
-bash/
-vim/
-node_modules/
-fish/
-NVCHAD/
-configstore/
 git/config
 globalStorage/
 workspaceStorage/
+.env
+polybar/scripts/.env

@@ -1,8 +1,7 @@
 [colors]
-background = #192330
-background-alt = #444
+; background = #192330
+background = #80000000
 foreground = #A1B5CE
-foreground-alt = #555
 black       = #2A3C52
 red         = #A65169
 green       = #4A9387
@@ -17,45 +16,34 @@ white       = #A1B5CE
 [bar/main]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-; height = 27
-height = 36
-; height = 30
-;offset-x = 1%
-;offset-y = 1%
-;radius = 5.0
-; radius = 20.0
-radius = 10.0
-fixed-center = true
+height = 25
+;fixed-center = true
 
 background = ${colors.background}
-foreground = ${colors.foreground}
+;foreground = ${colors.foreground}
 
-line-size = 3
-line-color = #f00
-
-border-size = 4
+border-size = 0
 border-color = #00000000
 
-padding-left = 0
-padding-right = 2
+padding-left = 1
+padding-right = 1
 
 module-margin-left = 1
-module-margin-right = 2
+module-margin-right = 1
 
 font-0 = CaskaydiaCove Nerd Font:style=Regular:pixelsize=11:antialias=true;2.5
-; font-0 = FiraSans:style=Regular:pixelsize:11:antialias=true;2.5
-; font-0 = FiraSans:style=Medium:pixelsize:11:antialias=true;2.5
 
-;modules-left = bspwm i3
-; modules-left = wlan
-modules-left = i3
-modules-center =  xwindow
-modules-right = dunst wlan audio battery date time
+; modules-left = i3
+; modules-center =  xwindow
+; modules-right = dunst wlan audio battery date time
+; ; modules-right = dunst wireless-network audio battery date time
+
+
+modules-left = i3 xwindow
+modules-center =  time seperator date
+modules-right = cmus reddit wlan audio battery
 ; modules-right = dunst wireless-network audio battery date time
 
-tray-position = right
-tray-padding = 2
-;tray-background = #0063ff
 
 wm-restack = i3
 
@@ -76,7 +64,7 @@ cursor-scroll = ns-resize
 
 [module/xwindow]
 type = internal/xwindow
-label = %{F#eceff4}%title:0:36:...%
+label = %title:0:36:...%
 
 ; =======================================
 
@@ -98,13 +86,13 @@ label-mode-background = ${colors.background}
 ; focused = Active workspace on focused monitor
 
 label-focused = ""
-label-focused-foreground = 61AFEF
+; label-focused-foreground = 61AFEF
 label-focused-padding = 1
 label-focused-font = 3
 
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = ""
-label-unfocused-foreground = 61AFEF
+; label-unfocused-foreground = 61AFEF
 label-unfocused-padding = 1
 label-unfocused-font = 3
 
@@ -120,7 +108,9 @@ label-urgent-padding = 1
 type = internal/date
 interval = 1
 date = "%a %d %b"
-label = %{F#eceff4}  %date%
+; label = %{F#eceff4}  %date%
+; label =   %date%
+label = %date%
 
 ; =======================================
 
@@ -128,17 +118,40 @@ label = %{F#eceff4}  %date%
 type = internal/date
 interval = 1
 time = %I:%M %p
-label = %{F#61AFEF} %time%
+; label = %{F#61AFEF} %time%
+; label =  %time% |
+label = %time%
+
+; =====================================
+
+[module/cmus]
+type = custom/script
+
+exec = ~/Dotfiles/polybar/scripts/cmus.sh
+exec-if = pgrep -x cmus
+interval = 1
+
+click-left = cmus-remote --pause
+scroll-down = cmus-remote --next
+scroll-up = cmus-remote --prev
+
+label-maxlen = 100
+
+; ==========================================
+
+[module/reddit]
+type = custom/script
+exec = ~/Dotfiles/polybar/scripts/reddit.sh
+interval = 60
 
 ; =======================================
 
-[module/dunst]
-type = custom/ipc
-initial = 1
-format-foreground = ${colors.yellow}
+; [module/dunst]
+; type = custom/ipc
+; initial = 1
 
-hook-0 = echo "%{A1:notify-send "dunstctl set-paused true" && polybar-msg hook dunst 2:}%{A}" &
-hook-1 = echo "%{A1:notify-send "dunstctl set-paused false" && polybar-msg hook dunst 1:}%{A}" &
+; hook-0 = echo "%{A1:notify-send "dunstctl set-paused true" && polybar-msg hook dunst 2:}%{A}" &
+; hook-1 = echo "%{A1:notify-send "dunstctl set-paused false" && polybar-msg hook dunst 1:}%{A}" &
 
 ; =======================================
 
@@ -174,10 +187,10 @@ type = internal/pulseaudio
 
 format = <label>
 
-label-volume = "%{F#63CDCF}墳 %percentage%% "
+label-volume = "墳 %percentage%% "
 
-label-muted = "   "
-label-muted-foreground = #384F6B
+label-muted = " "
+; label-muted-foreground = #384F6B
 
 ; =======================================
 
@@ -189,11 +202,11 @@ interval = 3.0
 
 format-connected = <label-connected>
 label-connected = "直"
-label-connected-foreground = ${colors.primary}
+; label-connected-foreground = ${colors.primary}
 
 format-disconnected = <label-disconnected>
 label-disconnected = 睊
-label-disconnected-foreground = ${colors.alert}
+; label-disconnected-foreground = ${colors.alert}
 
 ; a = worst
 ramp-signal-0 = a
@@ -254,11 +267,15 @@ format-charging = <label-charging>
 format-discharging = <label-discharging>
 format-full = <label-full>
 
-label-charging = "%{F#5CB8A7} %percentage%%"
-label-discharging = "%{F#DBC074} %percentage%%"
-label-full = "%{F#DBC074} %percentage%%"
+label-charging = " %percentage%%"
+label-discharging = " %percentage%%"
+label-full = " %percentage%%"
 
 ; =======================================
+
+[module/seperator]
+type = custom/script
+exec = echo "|"
 
 [settings]
 screenchange-reload = true
@@ -273,7 +290,5 @@ pseudo-transparency = true
 [global/wm]
 margin-top = 5
 margin-bottom = 5
-
-; vim:ft=dosini
 
 ; =======================================
