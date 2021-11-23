@@ -69,11 +69,10 @@ alias tmux-settings='nvim ~/.config/tmux/tmux.conf'
 alias py=python
 # alias pip=pip3
 
-alias ytdl="/usr/bin/python3 /usr/local/bin/youtube-dl"
-alias yt-dl="/usr/bin/python3 /usr/local/bin/youtube-dl"
-alias youtube-dl="/usr/bin/python3 /usr/local/bin/youtube-dl"
-alias yt-dl-mp3="/usr/bin/python3 /usr/local/bin/youtube-dl --extract-audio --audio-format mp3 --audio-quality 0"
-alias yt-dl-playlist="/usr/bin/python3 /usr/local/bin/youtube-dl -o \"%(playlist_index)s-%(title)s.%(ext)s\""
+alias ytdl="youtube-dl"
+alias yt-dl="youtube-dl"
+alias yt-dl-mp3="youtube-dl --extract-audio --audio-format mp3 --audio-quality 0"
+alias yt-dl-playlist="youtube-dl -o \"%(playlist_index)s-%(title)s.%(ext)s\""
 
 # tmux
 alias tmux='tmux -f ~/.config/tmux/tmux.conf'
