@@ -1,7 +1,9 @@
 [colors]
 ; background = #192330
-background = #80000000
-foreground = #A1B5CE
+; background = #80000000
+background = #2E3440
+; foreground = #A1B5CE
+foreground = #ECEFF4
 black       = #2A3C52
 red         = #A65169
 green       = #4A9387
@@ -20,7 +22,7 @@ height = 25
 ;fixed-center = true
 
 background = ${colors.background}
-;foreground = ${colors.foreground}
+foreground = ${colors.foreground}
 
 border-size = 0
 border-color = #00000000
