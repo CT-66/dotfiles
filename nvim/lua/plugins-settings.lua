@@ -3,48 +3,21 @@ require('lualine').setup {
   options = {
     icons_enabled = true,
     theme = 'onedark',
-    component_separators = '|',
-    section_separators = { left = '', right = '' },
-    -- 
+    -- component_separators = '|',
+    component_separators = {},
+    -- section_separators = { left = '', right = '' },
+    section_separators = {},
   },
   sections = {
-    lualine_a = {
-      { 'mode', separator = { left = '' }, right_padding = 2 },
-    },
+    lualine_a = {'mode'},
     lualine_b = {'branch'},
-    -- lualine_c = {'filename'},
-    lualine_c = {
-       { 'filename', separator = { right = '' }, left_padding = 2 },
-    },
-    lualine_x =  {
-      { 'filetype', separator = { left = '', right = '' }},
-    },
+    lualine_c = {'filename'},
+    lualine_x = {'filetype'},
     lualine_y = {'diagnostics'},
     lualine_z = {}
   },
   extensions = {}
 }
-
---[[
-require('lualine').setup {
-  options = {
-    theme = bubbles_theme,
-    component_separators = '|',
-    section_separators = { left = '', right = '' },
-  },
-  sections = {
-    lualine_a = {
-      { 'mode', separator = { left = '' }, right_padding = 2 },
-    },
-    lualine_b = { 'filename', 'branch' },
-    lualine_c = { 'fileformat' },
-    lualine_x = {},
-    lualine_y = { 'filetype', 'progress' },
-    lualine_z = {
-      { 'location', separator = { right = '' }, left_padding = 2 },
-    },
-  },
---]]
 
 -- neoscroll --
 
@@ -81,7 +54,7 @@ vim.g.bufferline = {
 }
 
 -- nvim-tree.lua
-require'nvim-tree'.setup()
+-- require'nvim-tree'.setup()
 
 -- toggleterm.nvim
 require("toggleterm").setup{
