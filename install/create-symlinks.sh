@@ -33,3 +33,4 @@ echo "Done"
 
 ln -s ~/Dotfiles/xinitrc ~/.xinitrc
 ln -s ~/Dotfiles/Xmodmap ~/.Xmodmap
+ln -s ~/Dotfiles/Xresources ~/.Xresources
