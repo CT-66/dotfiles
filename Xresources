@@ -46,4 +46,5 @@ URxvt.boldFont: xft:CaskaydiaCove Nerd Font:bold:size=11:pixelsize=14
 ! Disable scrollbar
 URxvt.scrollBar: false
 
+! Transparency
 URxvt*transparency: false

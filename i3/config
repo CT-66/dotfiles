@@ -35,6 +35,9 @@ floating_modifier $mod
 bindsym $mod+Return exec --no-startup-id alacritty
 bindsym Ctrl+Mod1+T exec --no-startup-id urxvt
 
+bindsym $mod+n floating enable exec --no-startup-id urxvt -hold -e nvim
+
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
