@@ -18,9 +18,9 @@
 
 *.foreground:   nord4
 *.background:   nord0
-*.cursorColor:  nord4
-*fading: 35
-*fadeColor: nord3
+*.cursorColor:  #528bff
+! *fading: 35
+! *fadeColor: nord3
 
 *.color0: nord1
 *.color1: nord11
@@ -40,5 +40,10 @@
 *.color15: nord6
 
 ! Font
-URxvt.font:     xft:CaskaydiaCove Nerd Font:size=11:pixelsize=12
-URxvt.boldFont: xft:CaskaydiaCove Nerd Font:bold:size=11:pixelsize=12
+URxvt.font:     xft:CaskaydiaCove Nerd Font:size=11:pixelsize=14
+URxvt.boldFont: xft:CaskaydiaCove Nerd Font:bold:size=11:pixelsize=14
+
+! Disable scrollbar
+URxvt.scrollBar: false
+
+URxvt*transparency: false
