@@ -33,7 +33,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec --no-startup-id alacritty
-bindsym Ctrl+Mod1+T exec --no-startup-id urxvt
+bindsym Ctrl+Mod1+T exec --no-startup-id st
 
 
 # kill focused window
