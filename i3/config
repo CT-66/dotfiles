@@ -236,10 +236,10 @@ gaps outer 5
 # smart_gaps inverse_outer
 
 # change inner gaps
-bindsym $mod+n gaps inner plus 5
+# bindsym $mod+n gaps inner plus 5
 
 # decrease inner gap size
-bindsym $mod+m gaps inner minus 5
+# bindsym $mod+m gaps inner minus 5
 
 # ====================
 
