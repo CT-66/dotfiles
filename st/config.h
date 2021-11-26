@@ -1,5 +1,5 @@
 static char *font = "CaskaydiaCove Nerd Font:pixelsize=14:antialias=true:autohint=true";
-static char *font2[] = { "JoyPixels:pixelsize=10:antialias=true:autohint=true" };
+static char *font2[] = { "CaskaydiaCove Nerd Font:pixelsize=14:antialias=true:autohint=true" };
 static int borderpx = 2;
 
 /*
