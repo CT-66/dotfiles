@@ -3,7 +3,8 @@
 configuration {
     font: "CaskaydiaCove Nerd Font 12";
     show-icons: true;
-    terminal: "alacritty";
+    // terminal: "alacritty";
+    terminal: "st";
     case-sensitive: false;
 }
 * {
