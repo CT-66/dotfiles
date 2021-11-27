@@ -144,6 +144,7 @@ label-maxlen = 100
 [module/reddit]
 type = custom/script
 exec = ~/Dotfiles/polybar/scripts/reddit.sh
+click-left = brave-beta https://www.reddit.com/message/messages &
 interval = 60
 
 ; =======================================
