@@ -19,6 +19,8 @@ dirs=(
     rofi
     tmux
     zsh
+    ranger
+    bat
 )
 
 if [ -d ~/.config ]; then

@@ -10,7 +10,6 @@ pacman_apps=(
     neovim
     zsh
     exa
-    lsd
     cmus
     nodejs
     fish
@@ -70,6 +69,7 @@ pacman_apps=(
     zathura
     zathura-pdf-mupdf
     youtube-dl
+    bat
 )
 
 aur_apps=(
