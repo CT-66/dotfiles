@@ -196,9 +196,9 @@ type = internal/pulseaudio
 
 format = <label>
 
-label-volume = "墳%percentage%%"
+label-volume = "墳 %percentage%%"
 
-label-muted = " "
+label-muted = "%{F#ff4500} "
 label-muted-foreground = #384F6B
 
 ; =======================================
