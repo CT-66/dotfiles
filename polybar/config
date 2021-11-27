@@ -113,6 +113,7 @@ date = "%a %d %b"
 ; label = %{F#eceff4}  %date%
 ; label =   %date%
 label = %date%
+; click-left = alacritty --command cal
 
 ; =======================================
 
