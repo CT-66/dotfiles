@@ -18,5 +18,5 @@ updates=$((updates_arch + updates_aur))
 if [ "$updates" -gt 0 ]; then
     echo "%{F#98C379} $updates"
 else
-    echo ""
+    echo ""
 fi
