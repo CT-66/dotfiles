@@ -43,7 +43,7 @@ font-0 = CaskaydiaCove Nerd Font:style=Regular:pixelsize=11:antialias=true;2.5
 
 modules-left = i3 xwindow
 modules-center =  time seperator date
-modules-right = cmus reddit wlan audio battery
+modules-right = cmus reddit updates wlan audio battery
 ; modules-right = dunst wireless-network audio battery date time
 
 
@@ -147,6 +147,13 @@ exec = ~/Dotfiles/polybar/scripts/reddit.sh
 interval = 60
 
 ; =======================================
+
+[module/updates]
+type = custom/script
+exec = ~/Dotfiles/polybar/scripts/updates.sh
+interval = 600
+
+; ========================================
 
 ; [module/dunst]
 ; type = custom/ipc
