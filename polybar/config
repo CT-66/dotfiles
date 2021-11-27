@@ -199,7 +199,7 @@ format = <label>
 label-volume = "墳 %percentage%%"
 
 label-muted = " "
-; label-muted-foreground = #384F6B
+label-muted-foreground = #384F6B
 
 ; =======================================
 
