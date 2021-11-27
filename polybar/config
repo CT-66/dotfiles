@@ -210,7 +210,6 @@ type = internal/network
 ; interface = wlp7s0
 interface = enp0s3
 interval = 3.0
-click-left = nm-connection-editor &
 
 format-connected = <label-connected>
 label-connected = "直"
@@ -219,6 +218,8 @@ label-connected = "直"
 format-disconnected = <label-disconnected>
 label-disconnected = 睊
 ; label-disconnected-foreground = ${colors.alert}
+
+click-left = nm-connection-editor &
 
 ; a = worst
 ramp-signal-0 = a
