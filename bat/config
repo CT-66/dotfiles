@@ -3,3 +3,7 @@
 --italic-text=never
 
 --paging=never
+
+--color=always
+
+--style=header,numbers,changes
