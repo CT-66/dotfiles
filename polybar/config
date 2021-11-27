@@ -198,7 +198,8 @@ format = <label>
 
 label-volume = "墳 %percentage%%"
 
-label-muted = "%{F#ff4500} "
+# label-muted = "%{F#ff4500} "
+label-muted = "%{F#E06C75} "
 label-muted-foreground = #384F6B
 
 ; =======================================
@@ -277,7 +278,8 @@ format-discharging = <label-discharging>
 format-full = <label-full>
 
 label-charging = " %percentage%%"
-label-discharging = "%{F#ff4500} %percentage%%"
+# label-discharging = "%{F#ff4500} %percentage%%"
+label-discharging = "%{F#E06C75} %percentage%%"
 label-full = " %percentage%%"
 
 ; =======================================
