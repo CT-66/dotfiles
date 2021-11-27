@@ -70,6 +70,7 @@ pacman_apps=(
     zathura-pdf-mupdf
     youtube-dl
     bat
+    pacman-contrib
 )
 
 aur_apps=(
