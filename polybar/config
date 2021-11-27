@@ -42,7 +42,7 @@ font-0 = CaskaydiaCove Nerd Font:style=Regular:pixelsize=11:antialias=true;2.5
 
 modules-left = i3 xwindow
 modules-center =  time seperator date
-modules-right = cmus wireless-network audio battery reddit updates
+modules-right = cmus wlan audio battery reddit updates
 ; modules-right = dunst wireless-network audio battery date time
 
 
