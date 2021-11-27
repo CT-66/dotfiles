@@ -278,8 +278,8 @@ format-discharging = <label-discharging>
 format-full = <label-full>
 
 label-charging = " %percentage%%"
-# label-discharging = "%{F#ff4500} %percentage%%"
-label-discharging = "%{F#E06C75} %percentage%%"
+label-discharging = "%{F#ff4500} %percentage%%"
+# label-discharging = "%{F#E06C75} %percentage%%"
 label-full = " %percentage%%"
 
 ; =======================================
