@@ -3,6 +3,7 @@
 dirs=(
     alacritty
     bpytop
+    btop
     dunst
     flameshot
     flashfocus
