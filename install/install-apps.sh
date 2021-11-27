@@ -84,6 +84,8 @@ aur_apps=(
     brave-bin
     brave-beta-bin
     insect
+    bibata-cursor-theme
+
 )
 
 for pacman_app in "${pacman_apps[@]}"; do
@@ -91,7 +93,7 @@ for pacman_app in "${pacman_apps[@]}"; do
 done
 
 for aur_app in "${aur_apps[@]}"; do
-    yes | paru -S aur_app
+    yes | paru -S $aur_app
 done
 
 npm install --global speed-test
