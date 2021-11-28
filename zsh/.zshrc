@@ -113,6 +113,13 @@ bindkey -s "^[s" "sudo !!"
 
 bindkey -s "^o" "lfcd\n"
 
+function expand-alias() {
+    zle _expand_alias
+    zle self-insert
+}
+zle -N expand-alias
+bindkey -M main ' ' expand-alias
+
 # eval "$(bw completion --shell zsh); compdef _bw bw;"
 
 [[ ! -f ~/.config/zsh//.p10k.zsh ]] || source ~/.config/zsh//.p10k.zsh
