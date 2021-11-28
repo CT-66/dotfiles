@@ -62,9 +62,6 @@ alias vim-plugins-settings='nvim ~/.config/nvim/plugins-settings.vim'
 alias vim-plugins-settings-lua='nvim ~/.config/nvim/lua/plugins-settings.lua'
 alias vim-keymaps='nvim ~/.config/nvim/keymaps.vim'
 
-alias bash='bash --rcfile ~/.config/bash/.bashrc'
-# alias vim='vim -u <location>'
-
 alias tmux-settings='nvim ~/.config/tmux/tmux.conf'
 
 alias py=python
