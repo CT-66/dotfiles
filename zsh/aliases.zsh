@@ -21,7 +21,7 @@ alias gp='git add . && git commit -m "$(date +"%d %b, %Y | %I:%M %p")" && git pu
 alias bw-list='bw list items --pretty --search'
 alias cat=bat
 alias vf='nvim $(fzf)'
-alias fv='nvim $(fzf)'
+alias mf='mpv "$(fzf)"'
 
 alias cd..='cd ../'
 alias ..='cd ../'
