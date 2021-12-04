@@ -6,7 +6,7 @@ git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
 
-pacman_apps=(
+apps=(
     neovim
     zsh
     exa
@@ -71,9 +71,6 @@ pacman_apps=(
     youtube-dl
     bat
     pacman-contrib
-)
-
-aur_apps=(
     sc-im
     snake
     pacman4console
@@ -86,15 +83,12 @@ aur_apps=(
     brave-beta-bin
     insect
     bibata-cursor-theme
+    youtube-dl-gui-git
 
 )
 
-for pacman_app in "${pacman_apps[@]}"; do
-    yes | pacman -S $pacman_app
-done
-
-for aur_app in "${aur_apps[@]}"; do
-    yes | paru -S $aur_app
+for app in "${apps[@]}"; do
+    yes | paru -S $app
 done
 
 npm install --global speed-test
