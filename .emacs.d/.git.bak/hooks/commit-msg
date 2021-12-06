@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+/home/user/.emacs.d/bin/doom --nocolor ci hook-commit-msg "$@"
