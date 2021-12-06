@@ -86,6 +86,7 @@ apps=(
     youtube-dl-gui-git
     xonsh
     espeak-ng
+    emacs
 
 )
 
