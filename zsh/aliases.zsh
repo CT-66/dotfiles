@@ -23,6 +23,7 @@ alias cat=bat
 alias vf='nvim $(fzf)'
 alias mf='mpv "$(fzf)"'
 alias espeak=espeak-ng
+alias e=emacs
 
 alias cd..='cd ../'
 alias ..='cd ../'
