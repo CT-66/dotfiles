@@ -84,7 +84,6 @@ apps=(
     insect
     bibata-cursor-theme
     youtube-dl-gui-git
-    xonsh
     espeak-ng
     emacs
 
