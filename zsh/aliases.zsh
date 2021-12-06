@@ -22,6 +22,7 @@ alias bw-list='bw list items --pretty --search'
 alias cat=bat
 alias vf='nvim $(fzf)'
 alias mf='mpv "$(fzf)"'
+alias espeak=espeak-ng
 
 alias cd..='cd ../'
 alias ..='cd ../'
@@ -71,7 +72,7 @@ alias py=python
 
 alias ytdl="youtube-dl"
 alias yt-dl="youtube-dl"
-alias yt-dl-mp3="youtube-dl --extract-audio --audio-format mp3 --audio-quality 0"
+alias yt-dl-mp3="youtube-dl --extract-audio --audio-format mp3 --audio-quality=0"
 alias yt-dl-playlist="youtube-dl -o \"%(playlist_index)s-%(title)s.%(ext)s\""
 
 # tmux
