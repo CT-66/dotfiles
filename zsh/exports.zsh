@@ -30,3 +30,5 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
 export NNN_OPTS="H"
 
  export EXA_ICON_SPACING=2
+
+ export PATH="$HOME/Scripts:$PATH"
