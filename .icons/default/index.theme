@@ -1,3 +1,4 @@
 [Icon Theme]
 Name=Arc
-Inherits=Breeze
+; Inherits=Breeze
+Inherits=Qogir
