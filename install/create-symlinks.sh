@@ -23,6 +23,8 @@ dirs=(
     bat
     doom
     Code/User
+    Kvantum
+    qt5ct
 )
 
  if [ -d ~/.config ]; then
