@@ -13,9 +13,6 @@ dbaeumer.vscode-eslint
 esbenp.prettier-vscode
 formulahendry.auto-rename-tag
 ionutvmi.path-autocomplete
-ms-python.python
-ms-python.python
-ms-python.python
 ms-python.vscode-pylance
 ms-toolsai.jupyter
 ms-toolsai.jupyter-keymap

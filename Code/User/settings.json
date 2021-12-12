@@ -182,7 +182,7 @@
     "breadcrumbs.enabled": false,
     "workbench.colorTheme": "One Dark Pro",
     "vscode_custom_css.imports": [
-        "file:///home/user/Dotfiles/Code/User/custom-css.css"
+        "file:///home/arch/Dotfiles/Code/User/custom-css.css"
     ],
     "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
     "terminal.integrated.tabs.enabled": false,
