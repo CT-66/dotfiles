@@ -86,7 +86,7 @@ apps=(
     youtube-dl-gui-git
     espeak-ng
     emacs
-
+    kvantum-qt5
 )
 
 for app in "${apps[@]}"; do
