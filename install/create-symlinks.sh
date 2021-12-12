@@ -22,12 +22,13 @@ dirs=(
     ranger
     bat
     doom
+    Code/User
 )
 
-if [ -d ~/.config ]; then
-do
-    mv ~/.config ~/config.bak
-done
+ if [ -d ~/.config ]; then
+ do
+     mv ~/.config ~/config.bak
+ done
 
 
 for dir in "${dirs[@]}"; do
@@ -39,6 +40,6 @@ echo "Done"
 ln -s ~/Dotfiles/xinitrc ~/.xinitrc
 ln -s ~/Dotfiles/Xmodmap ~/.Xmodmap
 ln -s ~/Dotfiles/Xresources ~/.Xresources
-ln -s ~/Dotfiles/.doom.d ~/.doom.d
+ln -s ~/Dotfiles/.emacs.d ~/.emacs.d
 sudo mv /usr/share/icons/default/index.theme /usr/share/icons/default/index.theme.bak
 sudo ln -s ~/Dotfiles/.icons/default/index.theme /usr/share/icons/default/index.theme
