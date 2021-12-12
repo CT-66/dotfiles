@@ -87,6 +87,7 @@ apps=(
     espeak-ng
     emacs
     kvantum-qt5
+    arc-icon-theme
 )
 
 for app in "${apps[@]}"; do
