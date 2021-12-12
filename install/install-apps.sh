@@ -88,6 +88,7 @@ apps=(
     emacs
     kvantum-qt5
     arc-icon-theme
+    nordic-kde-git
 )
 
 for app in "${apps[@]}"; do
