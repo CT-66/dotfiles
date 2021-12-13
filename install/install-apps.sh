@@ -68,7 +68,7 @@ apps=(
     mpv
     zathura
     zathura-pdf-mupdf
-    youtube-dl
+    yt-dlp
     bat
     pacman-contrib
     sc-im
