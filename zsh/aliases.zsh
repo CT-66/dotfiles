@@ -72,10 +72,10 @@ alias tmux-settings='nvim ~/.config/tmux/tmux.conf'
 alias py=python
 # alias pip=pip3
 
-alias ytdl="youtube-dl"
-alias yt-dl="youtube-dl"
-alias yt-dl-mp3="youtube-dl --extract-audio --audio-format mp3 --audio-quality=0"
-alias yt-dl-playlist="youtube-dl -o \"%(playlist_index)s-%(title)s.%(ext)s\""
+alias ytdl="yt-dlp"
+alias yt-dl="yt-dlp"
+alias yt-dl-mp3="yt-dlp --extract-audio --audio-format mp3"
+alias yt-dl-playlist="yt-dlp -o \"%(playlist_index)s-%(title)s.%(ext)s\""
 
 # tmux
 alias tmux='tmux -f ~/.config/tmux/tmux.conf'
