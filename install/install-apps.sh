@@ -90,6 +90,7 @@ apps=(
     arc-icon-theme
     nordic-kde-git
     ncdu
+    ueberzug
 )
 
 for app in "${apps[@]}"; do
