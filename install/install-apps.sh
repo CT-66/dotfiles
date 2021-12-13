@@ -89,6 +89,7 @@ apps=(
     kvantum-qt5
     arc-icon-theme
     nordic-kde-git
+    ncdu
 )
 
 for app in "${apps[@]}"; do
