@@ -25,6 +25,8 @@ dirs=(
     Code/User
     Kvantum
     qt5ct
+    mpd
+    ncmpcpp
 )
 
  if [ -d ~/.config ]; then

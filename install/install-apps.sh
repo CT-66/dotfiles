@@ -91,6 +91,8 @@ apps=(
     nordic-kde-git
     ncdu
     ueberzug
+    mpd
+    ncmpcpp
 )
 
 for app in "${apps[@]}"; do
