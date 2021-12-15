@@ -319,7 +319,7 @@ mpd_music_dir = ~/Music
 ## Note: Custom command that will be executed each time song changes. Useful for
 ## notifications etc.
 ##
-#execute_on_song_change = ""
+# execute_on_song_change = notify-send "Now Playing" "$(mpc --format='%title%\n%artist%' current)"
 #
 ##
 ## Note: Custom command that will be executed each time player state

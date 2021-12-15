@@ -93,6 +93,7 @@ apps=(
     ueberzug
     mpd
     ncmpcpp
+    mpc
 )
 
 for app in "${apps[@]}"; do
