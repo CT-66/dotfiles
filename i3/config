@@ -32,8 +32,8 @@ set $right semicolon
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id alacritty
-bindsym Ctrl+Mod1+T exec --no-startup-id kitty
+bindsym $mod+Return exec --no-startup-id st
+bindsym Ctrl+Mod1+T exec --no-startup-id alacritty
 
 
 # kill focused window
