@@ -94,6 +94,7 @@ apps=(
     mpd
     ncmpcpp
     mpc
+    copyq
 )
 
 for app in "${apps[@]}"; do
