@@ -14,7 +14,13 @@ lua require('plugins-settings')
 " nnoremap <C-n> :NvimTreeToggle<CR>
 
 " nnn.vim
-nnoremap <C-n> :NnnPicker %:p:h<CR>
+" nnoremap <C-n> :NnnPicker %:p:h<CR>
+
+" rnvimr
+nnoremap <C-n> :RnvimrToggle<CR>
+let g:rnvimr_draw_border = 1
+let g:rnvimr_border_attr = {'fg': 14, 'bg': -1}
+let g:rnvimr_urc_path = '$XDG_CONFIG_HOME/ranger'
 
 " telescope.nvim
 nnoremap <C-p> <cmd>Telescope find_files<cr>
