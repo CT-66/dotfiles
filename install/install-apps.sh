@@ -57,7 +57,7 @@ apps=(
     sxhkd
     rofi
     libnotify
-    picom-ibhagwan-git
+    picom-jonaburg-git
     arc-gtk-theme
     w3m
     rtv

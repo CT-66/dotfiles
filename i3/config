@@ -252,6 +252,7 @@ exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/068.jpg &
 exec_always --no-startup-id export $(dbus-launch) && dunst &
 exec_always --no-startup-id ~/Scripts/dotfiles &
 # exec_always --no-startup-id home &
-exec_always --no-startup-id picom -b &
+# exec_always --no-startup-id picom -b &
+exec_always --no-startup-id picom -f --experimental-backend -b &
 # exec_always --no-startup-id flashfocus
 exec_always --no-startup-id numlockx &
