@@ -18,34 +18,7 @@ options:
 .c.o:
 	$(CC) $(STCFLAGS) -c $<
 
-<<<<<<<
-=======
-st.o: config.h st.h win.h normalMode.h normalMode.c utils.h
-x.o: arg.h config.h st.h win.h
-
-$(OBJ): config.h config.mk
->>>>>>>
-<<<<<<<
-<<<<<<<
-<<<<<<<
-<<<<<<<
 st.o: config.h st.h win.h
-=======
-=======
->>>>>>>
-st.o: config.h st.h win.h normalMode.h normalMode.c utils.h
-x.o: arg.h config.h st.h win.h
-
-$(OBJ): config.h config.mk
->>>>>>>
-=======
-=======
->>>>>>>
-st.o: config.h st.h win.h normalMode.h normalMode.c utils.h
-x.o: arg.h config.h st.h win.h
-
-$(OBJ): config.h config.mk
->>>>>>>
 x.o: arg.h config.h st.h win.h hb.h
 hb.o: st.h
 boxdraw.o: config.h st.h boxdraw_data.h
