@@ -466,16 +466,6 @@ void historyModeToggle(int start) {
 		histOp = 0;
 		histOff = insertOff;
 >>>>>>>
-<<<<<<<
-=======
-	if (!(histMode = (histOp = !!start))) {
-		selnormalize();
-		tfulldirt();
-	} else {
-		tcursor(CURSOR_SAVE);
-		histOp = 0;
-		histOff = insertOff;
->>>>>>>
 	if (!(histMode = (histOp = !!start))) {
 		selnormalize();
 		tfulldirt();
@@ -2537,22 +2527,6 @@ eschandle(uchar ascii)
 		if (pe != e && ((pe < e) != nln)) sel.oe.y = last;
 		if (sel.oe.y == last && sel.ob.y == last) selclear();
 	}
-<<<<<<<
->>>>>>>
-=======
-	term.line = &buf[*ptr = (buffSize+*ptr+n) % buffSize];
-	// Cut part of selection removed from buffer, and update sel.ne/b.
-	int const prevOffBuf = sel.alt ? 0 : insertOff + term.row;
-	if (sel.ob.x != -1 && !histOp && n) {
-		int const offBuf = sel.alt ? 0 : insertOff + term.row,
-		          pb = rangeY(sel.ob.y - prevOffBuf),
-		          pe = rangeY(sel.oe.y - prevOffBuf);
-		int const b = rangeY(sel.ob.y - offBuf), nln = n < 0,
-		          e = rangeY(sel.oe.y - offBuf), last = offBuf - nln;
-		if (pb != b && ((pb < b) != nln)) sel.ob.y = last;
-		if (pe != e && ((pe < e) != nln)) sel.oe.y = last;
-		if (sel.oe.y == last && sel.ob.y == last) selclear();
-	}
 >>>>>>>
 	selnormalize();
   // Clear the new region exposed by the shift.
@@ -2610,76 +2584,6 @@ selstart(int col, int row, int snap)
 {
 >>>>>>>
 <<<<<<<
-<<<<<<<
-=======
-		sel.ne.y = sel.nb.y = -1;
-	} else {
-		int const offsetBuffer = sel.alt ? 0 : insertOff + term.row;
-		int const off = sel.alt ? 0 : (histMode ? histOff : insertOff);
-		int const nby = rangeY(sel.ob.y - off),
-		          ney = rangeY(sel.oe.y - off);
-		sel.swap = rangeY(sel.ob.y - offsetBuffer)
-		         > rangeY(sel.oe.y - offsetBuffer);
-		sel.nb.y = sel.swap ? ney : nby;
-		sel.ne.y = !sel.swap ? ney : nby;
-		int const cnb = sel.nb.y < term.row, cne = sel.ne.y < term.row;
-		if (sel.type == SEL_REGULAR && sel.ob.y != sel.oe.y) {
-			if (cnb) sel.nb.x = (!sel.swap) ? sel.ob.x : sel.oe.x;
-			if (cne) sel.ne.x = (!sel.swap) ? sel.oe.x : sel.ob.x;
-		} else {
-			if (cnb) sel.nb.x = MIN(sel.ob.x, sel.oe.x);
-			if (cne) sel.ne.x = MAX(sel.ob.x, sel.oe.x);
-		}
-	}
-	int const nBet=sel.nb.y<=sel.ne.y, oBet=oldb<=olde;
-	for (int i = 0; i < term.row; ++i) {
-		int const n = nBet ? BETWEEN(i, sel.nb.y, sel.ne.y)
-		                   : OUT(i, sel.nb.y, sel.ne.y);
-		term.dirty[i] |= (sel.type == SEL_RECTANGULAR && n) ||
-		        (n != (oBet ? BETWEEN(i,oldb,olde) : OUT(i,oldb,olde)));
-=======
-	sel.alt = IS_SET(MODE_ALTSCREEN);
-	sel.snap = snap;
-	sel.oe.x = sel.ob.x = col;
-	sel.oe.y = sel.ob.y = row + !sel.alt * (histMode ? histOff : insertOff);
-	if (sel.snap != 0) sel.mode = SEL_READY;
-	selnormalize();
-}
-
-void
-selextend(int col, int row, int type, int done)
-{
-	if (sel.mode == SEL_IDLE)
-		return;
-	if (done && sel.mode == SEL_EMPTY) {
->>>>>>>
-<<<<<<<
-
-	}
-	if (BETWEEN(oldb, 0, term.row - 1)) term.dirty[oldb] = 1;
-	if (BETWEEN(olde, 0, term.row - 1)) term.dirty[olde] = 1;
-	if (BETWEEN(sel.nb.y, 0, term.row - 1)) term.dirty[sel.nb.y] = 1;
-	if (BETWEEN(sel.ne.y, 0, term.row - 1)) term.dirty[sel.ne.y] = 1;
-
-	historyOpToggle(-1, 1);
-=======
-		return;
-	}
-
-	sel.oe.x = col;
-	sel.oe.y = row + (sel.alt ? 0 : (histMode ? histOff : insertOff));
-	selnormalize();
-	sel.type = type;
-	sel.mode = done ? SEL_IDLE : SEL_READY;
->>>>>>>
-}
-
-<<<<<<<
-void
-selstart(int col, int row, int snap)
-{
->>>>>>>
-<<<<<<<
 		sel.ne.y = sel.nb.y = -1;
 	} else {
 		int const offsetBuffer = sel.alt ? 0 : insertOff + term.row;
@@ -2718,10 +2622,6 @@ selstart(int col, int row, int snap)
 
 void
 selextend(int col, int row, int type, int done)
-=======
-int
-selected(int x, int y)
->>>>>>>
 {
 	if (sel.mode == SEL_IDLE)
 		return;
@@ -2733,7 +2633,6 @@ selected(int x, int y)
 	if (BETWEEN(sel.nb.y, 0, term.row - 1)) term.dirty[sel.nb.y] = 1;
 	if (BETWEEN(sel.ne.y, 0, term.row - 1)) term.dirty[sel.ne.y] = 1;
 
-<<<<<<<
 	historyOpToggle(-1, 1);
 =======
 		return;
@@ -2773,12 +2672,6 @@ tputc(Rune u)
 	sel.oe.y = sel.ob.y = row + !sel.alt * (histMode ? histOff : insertOff);
 	if (sel.snap != 0) sel.mode = SEL_READY;
 	selnormalize();
-=======
-	return ((sel.nb.y > sel.ne.y) ? OUT(y, sel.nb.y, sel.ne.y)
-	                              : BETWEEN(y, sel.nb.y, sel.ne.y)) &&
-	       (y != sel.nb.y || x >= sel.nb.x) &&
-	       (y != sel.ne.y || x <= sel.ne.x);
->>>>>>>
 }
 
 void
@@ -2788,36 +2681,16 @@ int
 selected(int x, int y)
 >>>>>>>
 {
-<<<<<<<
 	if (sel.mode == SEL_IDLE)
 		return;
 	if (done && sel.mode == SEL_EMPTY) {
 >>>>>>>
 <<<<<<<
-=======
-	char *str, *ptr;
-	int y, yy, bufsize, lastx;
-	Glyph *gp, *last;
 
-	if (sel.ob.x == -1)
-		return NULL;
->>>>>>>
-
-<<<<<<<
 <<<<<<<
 	if (IS_SET(MODE_PRINT))
 		tprinter(c, len);
-=======
-	int const start = sel.swap ? sel.oe.y : sel.ob.y, h = rows();
-	int endy = (sel.swap ? sel.ob.y : sel.oe.y);
-	for (; endy < start; endy += h);
-	Line * const cbuf = IS_SET(MODE_ALTSCREEN) ? term.line : buf;
-	bufsize = (term.col+1) * (endy-start+1 ) * UTF_SIZ;
-	assert(bufsize > 0);
-	ptr = str = xmalloc(bufsize);
->>>>>>>
 
-<<<<<<<
 	/*
 	 * STR sequence must be checked before anything else
 	 * because it uses all following characters until it
@@ -2831,13 +2704,7 @@ selected(int x, int y)
 			term.esc |= ESC_STR_END;
 			goto check_control_code;
 		}
-=======
-	/* append every set & selected glyph to the selection */
-	for (y = start; y <= endy; y++) {
-		yy = y % h;
->>>>>>>
 
-<<<<<<<
 		if (strescseq.len+len >= strescseq.siz) {
 			/*
 			 * Here is a bug in terminals. If the user never sends
@@ -2856,23 +2723,8 @@ selected(int x, int y)
 				return;
 			strescseq.siz *= 2;
 			strescseq.buf = xrealloc(strescseq.buf, strescseq.siz);
-=======
-		if (sel.type == SEL_RECTANGULAR) {
-			gp = &cbuf[yy][sel.nb.x];
-			lastx = sel.ne.x;
-		} else {
-			gp = &cbuf[yy][start == y ? sel.nb.x : 0];
-			lastx = (endy == y) ? sel.ne.x : term.col-1;
->>>>>>>
 		}
-<<<<<<<
-=======
-		last = &cbuf[yy][lastx];
-		if (!(cbuf[yy][term.col - 1].mode & ATTR_WRAP))
-			while (last > gp && last->u == ' ') --last;
->>>>>>>
 
-<<<<<<<
 		memmove(&strescseq.buf[strescseq.len], c, len);
 		strescseq.len += len;
 		return;
@@ -2891,12 +2743,6 @@ check_control_code:
 	sel.type = type;
 	sel.mode = done ? SEL_IDLE : SEL_READY;
 }
-=======
-		for ( ; gp <= last; ++gp) {
-			if (gp->mode & ATTR_WDUMMY) continue;
-			ptr += utf8encode(gp->u, ptr);
-		}
->>>>>>>
 
 int
 selected(int x, int y)
@@ -2911,22 +2757,11 @@ selected(int x, int y)
 		/*
 		 * control codes are not shown ever
 		 */
-<<<<<<<
 		if (!term.esc)
 			term.lastc = 0;
 		return;
 	} else if (term.esc & ESC_START) {
 		if (term.esc & ESC_CSI) {
-=======
-		if ((y < endy || lastx == term.col - 1) && !(last->mode & ATTR_WRAP))
-			*ptr++ = '\n';
-	}
-	*ptr = 0;
-	return str;
-}
-
->>>>>>>
-<<<<<<<
 			csiescseq.buf[csiescseq.len++] = u;
 			if (BETWEEN(u, 0x40, 0x7E)
 					|| csiescseq.len >= \
@@ -2942,15 +2777,6 @@ selected(int x, int y)
 			tdeftran(u);
 		} else if (term.esc & ESC_TEST) {
 			tdectest(u);
-=======
-		return;
-	sel.mode = SEL_IDLE;
-	sel.ob.x = -1;
-	selnormalize();
-}
-
-void
->>>>>>>
 		} else {
 			if (!eschandle(u))
 				return;
@@ -3257,10 +3083,7 @@ tresize(int col, int row)
 	for (i = 0; i < row; ++i) buf[buffSize + i] = buf[i];
 	term.line = &buf[*(histOp?&histOff:&insertOff) +=MAX(term.c.y-row+1,0)];
 <<<<<<<
-<<<<<<<
 =======
-=======
->>>>>>>
 	memset(mark, 0, col * row * sizeof(*mark));
 	/* update terminal size */
 	term.col = col;
