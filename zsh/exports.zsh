@@ -26,8 +26,6 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
 # bindkey '^T' fzf-completion
 # bindkey '^I' $fzf_default_completion
 
-export NNN_OPTS="H"
-
 export EXA_ICON_SPACING=2
 
 export PATH="$HOME/Scripts:$PATH"

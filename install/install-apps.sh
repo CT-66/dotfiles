@@ -19,7 +19,8 @@ apps=(
     nodejs
     fish
     neofetch
-    nnn
+    pfetch
+    fet.sh-git
     lf
     ranger
     tmux
@@ -54,7 +55,6 @@ apps=(
     htop
     virtualbox
     i3
-    i3lock
     feh
     flameshot
     xrandr
@@ -82,12 +82,10 @@ apps=(
     moon-buggy
     polybar
     tty-clock
-    fet.sh-git
     flashfocus-git
     brave-bin
     brave-beta-bin
     insect
-    bibata-cursor-theme
     espeak-ng
     emacs
     kvantum-qt5
@@ -101,6 +99,26 @@ apps=(
     copyq
     speedtest-cli
     bitwarden-cli
+    btop
+    bpytop
+    xorg-xinit
+    ueberzug
+    python-pynvim
+    jq
+    neovide-git
+    timeshift
+    qt5ct-kde
+    qt5ct
+    betterlockscreen
+    lightdm-webkit2-greeter
+    lightdm
+    networkmanager
+    network-manager-applet
+    nm-connection-editor
+    numlockx
+    rtv
+    calcurse
+    github-cli
 )
 
 for app in "${apps[@]}"; do

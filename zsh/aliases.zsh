@@ -22,6 +22,7 @@ alias gp='git add . && git commit -m "$(date +"%d %b, %Y | %I:%M %p")" && git pu
 alias gc='git clone'
 alias bw-list='bw list items --pretty --search'
 alias cat=bat
+alias f=fzf
 alias vf='nvim $(fzf)'
 alias mf='mpv "$(fzf)"'
 alias espeak=espeak-ng
@@ -41,9 +42,6 @@ alias .....='cd ../../../../../'
 alias .5='cd ../../../../../'
 
 alias mkdir='mkdir -p'
-
-# alias ls='nnn -de'
-alias f=fzf
 
 alias exa='exa -1Fb --color=always --icons --group-directories-first --no-permissions --no-user'
 alias ls='exa -1Fb --color=always --icons --group-directories-first --no-permissions --no-user'
