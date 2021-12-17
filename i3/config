@@ -44,6 +44,8 @@ bindsym $mod+Shift+q kill
 # rofi
 bindsym $mod+d exec "rofi -modi drun,run -show drun"
 
+bindsym $mod+shift+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -dmenu'
+
 # list all open apps
 bindsym $mod+Tab exec --no-startup-id rofi -show window
 
