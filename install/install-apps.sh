@@ -83,7 +83,6 @@ apps=(
     brave-beta-bin
     insect
     bibata-cursor-theme
-    youtube-dl-gui-git
     espeak-ng
     emacs
     kvantum-qt5
