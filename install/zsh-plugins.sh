@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Installing zsh plugins..."
+
 ln -s ~/Dotfiles/zsh/.zshenv ~/.zshenv
 
 plugins=(
@@ -16,3 +18,5 @@ for plugin in "${plugins[@]}"; do
     # git clone $plugin ~/.config/zsh/plugins
     git clone $plugin
 done
+
+echo "Done"

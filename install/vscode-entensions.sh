@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Installing vscode extensions..."
+
 extensions=(
 ahmadawais.shades-of-purple
 akamud.vscode-theme-onedark
@@ -43,3 +45,5 @@ zhuangtongfa.material-theme
 for extension in "${extensions[@]}"; do
     code --install-extension $extension
 done
+
+echo "Done"

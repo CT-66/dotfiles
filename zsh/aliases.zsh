@@ -27,6 +27,8 @@ alias mf='mpv "$(fzf)"'
 alias espeak=espeak-ng
 alias e=emacs
 alias ncdu='ncdu --color dark'
+alias speedtest='speedtest-cli --simple'
+
 
 alias cd..='cd ../'
 alias ..='cd ../'

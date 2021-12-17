@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Creating symlinks..."
+
 dirs=(
     alacritty
     bpytop
@@ -40,11 +42,11 @@ for dir in "${dirs[@]}"; do
 	ln -s ~/Dotfiles/$dir ~/.config/$dir
 done
 
-echo "Done"
-
 ln -s ~/Dotfiles/xinitrc ~/.xinitrc
 ln -s ~/Dotfiles/Xmodmap ~/.Xmodmap
 ln -s ~/Dotfiles/Xresources ~/.Xresources
 ln -s ~/Dotfiles/.emacs.d ~/.emacs.d
 sudo mv /usr/share/icons/default/index.theme /usr/share/icons/default/index.theme.bak
 sudo ln -s ~/Dotfiles/.icons/default/index.theme /usr/share/icons/default/index.theme
+
+echo "Done"

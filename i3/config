@@ -252,7 +252,8 @@ exec_always --no-startup-id $HOME/Dotfiles/polybar/launch.sh &
 # exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/011.jpg &
 # exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/061.jpg &
 # exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/067.jpg &
-exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/068.jpg &
+# exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/068.jpg &
+exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/066.jpg &
 exec_always --no-startup-id export $(dbus-launch) && dunst &
 exec_always --no-startup-id ~/Scripts/dotfiles &
 # exec_always --no-startup-id home &

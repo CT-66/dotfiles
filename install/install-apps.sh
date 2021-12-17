@@ -1,11 +1,15 @@
 #!/bin/bash
 
+echo "Installing yay..."
 cd $HOME
 sudo pacman -S --needed git base-devel
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si
 rm -rf $HOME/yay-bin
+echo "Done"
+
+echo "Installing apps..."
 
 apps=(
     neovim
@@ -95,14 +99,29 @@ apps=(
     ncmpcpp
     mpc
     copyq
+    speedtest-cli
+    bitwarden-cli
 )
 
 for app in "${apps[@]}"; do
     yes | yay $app
 done
 
-npm install --global speed-test
+echo "Done"
 
+# =============
 
+echo "Installing Emacs..."
 git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
 ~/.emacs.d/bin/doom install
+echo "Done"
+
+
+echo "Installing cursors..."
+cd $HOME
+git clone https://github.com/archcraft-os/archcraft-cursors/
+cd $HOME/archcraft-cursors/archcraft-cursor-qogirr
+makepkg -si
+cd $HOME
+rm -rf $HOME/archcraft-cursors
+echo "Done"
