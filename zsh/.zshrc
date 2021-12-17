@@ -1,5 +1,7 @@
 # cat ~/reminders.md
-pfetch
+# pfetch
+neofetch
+# fet.sh
 
 . ~/.config/zsh/prompt.zsh
 . ~/.config/zsh/aliases.zsh
