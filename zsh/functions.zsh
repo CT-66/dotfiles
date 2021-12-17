@@ -25,7 +25,7 @@ lfcd () {
 bindkey -s '^o' 'lfcd\n'
 
 extract () {
-    if [ -f $1 ] ; then
+    if [ -f $1 ]; then
         case $1 in
             *.tar.bz2)  tar xjf $1      ;;
             *.tar.gz)   tar xzf $1      ;;
@@ -50,5 +50,9 @@ trash () {
 }
 
 wallp () {
-    feh --bg-fill ~/Pictures/Wallpapers/$1.*
+    if [ -f $1.png ]; then
+        feh --bg-fill ~/Pictures/Wallpapers/$1.png &
+    else
+        feh --bg-fill ~/Pictures/Wallpapers/$1.jpg &
+    fi
 }
