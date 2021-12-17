@@ -1,10 +1,11 @@
 #!/bin/bash
 
 cd $HOME
-sudo pacman -S --needed base-devel
-git clone https://aur.archlinux.org/paru.git
-cd paru
+sudo pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/yay-bin.git
+cd yay-bin
 makepkg -si
+rm -rf $HOME/yay-bin
 
 apps=(
     neovim
@@ -97,7 +98,7 @@ apps=(
 )
 
 for app in "${apps[@]}"; do
-    yes | paru -S $app
+    yes | yay $app
 done
 
 npm install --global speed-test

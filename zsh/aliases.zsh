@@ -13,7 +13,6 @@ alias find='find -iname'
 alias .history='nvim ~/.cache/zsh/history'
 alias g=git
 alias p='sudo pacman'
-alias yay=paru
 alias sv='sudoedit'
 alias h=htop
 alias b=btop
