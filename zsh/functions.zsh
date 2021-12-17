@@ -50,9 +50,5 @@ trash () {
 }
 
 wallp () {
-    if [ -f $1.png ]; then
-        feh --bg-fill ~/Pictures/Wallpapers/$1.png &
-    else
-        feh --bg-fill ~/Pictures/Wallpapers/$1.jpg &
-    fi
+    feh --bg-fill ~/Pictures/Wallpapers/$1.*
 }
