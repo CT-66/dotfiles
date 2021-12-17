@@ -119,6 +119,7 @@ apps=(
     rtv
     calcurse
     github-cli
+    github-desktop-bin
 )
 
 for app in "${apps[@]}"; do
