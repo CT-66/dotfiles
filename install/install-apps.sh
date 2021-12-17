@@ -95,6 +95,7 @@ apps=(
     ncmpcpp
     mpc
     copyq
+    conky
 )
 
 for app in "${apps[@]}"; do
