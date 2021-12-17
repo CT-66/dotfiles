@@ -28,7 +28,6 @@ dirs=(
     mpd
     ncmpcpp
     copyq/copyq.conf
-    conky
 )
 
  if [ -d ~/.config ]; then
