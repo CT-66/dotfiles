@@ -1,4 +1,5 @@
 # cat ~/reminders.md
+pfetch
 
 . ~/.config/zsh/prompt.zsh
 . ~/.config/zsh/aliases.zsh

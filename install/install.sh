@@ -17,3 +17,4 @@ source $DOTFILES_DIR/install/zsh-plugins.sh
 
 # =============
 chsh -s /usr/bin/zsh
+echo "QT_QPA_PLATFORMTHEME=qt5ct" >> /etc/environment
