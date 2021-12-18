@@ -2,6 +2,10 @@
 
 echo "Installing zsh plugins..."
 
+if [ -f ~/.zshenv ]; then
+    mv ~/.zshenv ~/.zshenv.bak
+fi
+
 ln -s ~/Dotfiles/zsh/.zshenv ~/.zshenv
 
 plugins=(
