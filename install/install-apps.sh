@@ -15,7 +15,6 @@ apps=(
     neovim
     zsh
     exa
-    cmus
     nodejs
     fish
     neofetch
