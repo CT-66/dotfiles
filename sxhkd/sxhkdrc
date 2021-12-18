@@ -39,3 +39,10 @@ super + shift + v
 # system monitor
 ctrl + shift + Escape
     st btop
+
+# text editor
+super + n
+    st nvim
+
+super + shift + n
+    st vim
