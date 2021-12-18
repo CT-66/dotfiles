@@ -45,4 +45,4 @@ super + n
     st nvim
 
 super + shift + n
-    st vim
+    st nvim -u NONE
