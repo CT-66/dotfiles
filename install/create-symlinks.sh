@@ -30,6 +30,9 @@ dirs=(
     mpd
     ncmpcpp
     copyq/copyq.conf
+    calcurse
+    sxhkd
+    mpv
 )
 
  if [ -d ~/.config ]; then
