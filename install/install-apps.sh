@@ -120,6 +120,8 @@ apps=(
     github-cli
     github-desktop-bin
     xdotool
+    breeze
+    breeze-icons
 )
 
 for app in "${apps[@]}"; do
