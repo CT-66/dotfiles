@@ -20,9 +20,7 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'vim-scripts/matchit.zip'
 " Plug 'vim-syntastic/syntastic'
 " Plug 'airblade/vim-gitgutter'
-if has("unix")
-    Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
-endif
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'tpope/vim-surround'
 " Plug 'karb94/neoscroll.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
