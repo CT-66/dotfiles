@@ -1,0 +1,37 @@
+# terminals
+super + Return
+    st
+
+ctrl + alt + t
+    alacritty
+
+super + alt + t
+    st bash
+
+# rofi
+super + d
+    rofi -modi drun,run -show drun
+
+super + shift + d
+    i3-dmenu-desktop --dmenu='rofi -dmenu'
+
+super + Tab
+    rofi -show window
+
+# screenshots
+alt + r
+    flameshot gui
+
+alt + shift + r
+    flameshot full -c -p ~/Pictures/Screenshots && notify-send 'Screenshot saved to ~/Pictures/Screenshots'
+
+# alt + r
+#     flameshot gui -c -p ~/Pictures/Screenshots"
+
+# lock screen
+super + Escape
+    i3lock
+
+# clipboard
+super + shift + v
+    copyq toggle

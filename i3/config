@@ -2,7 +2,6 @@ set $mod Mod4
 
 font pango:Caskaydia Cove Nerd Font 10
 
-
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
@@ -31,23 +30,8 @@ set $right semicolon
 # use Mouse+Mod1 to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
-bindsym $mod+Return exec --no-startup-id st
-bindsym Ctrl+Mod1+T exec --no-startup-id alacritty
-
-
 # kill focused window
 bindsym $mod+Shift+q kill
-
-# ==============================
-
-# rofi
-bindsym $mod+d exec "rofi -modi drun,run -show drun"
-
-bindsym $mod+shift+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -dmenu'
-
-# list all open apps
-bindsym $mod+Tab exec --no-startup-id rofi -show window
 
 # ==============================
 
@@ -62,7 +46,6 @@ bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
-
 
 # move focused window
 bindsym $mod+Shift+$left move left
@@ -216,16 +199,6 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# ============================================
-# Screenshots
-# bindsym Mod1+r exec "flameshot gui -c -p ~/Pictures/Screenshots"
-bindsym Mod1+r exec "flameshot gui"
-bindsym Mod1+Shift+r exec "flameshot full -c -p ~/Pictures/Screenshots && notify-send 'Screenshot saved to ~/Pictures/Screenshots'"
-
-# ===============================================
-
-bindsym $mod+Escape exec i3lock
-bindsym $mod+shift+v exec copyq toggle
 
  # ==================
 
@@ -247,6 +220,7 @@ bindsym $mod+shift+p gaps inner current minus 5;gaps outer current minus 5
 # ====================
 
 exec_always --no-startup-id $HOME/Dotfiles/polybar/launch.sh &
+exec_always --no-startup-id sxhkd &
 # exec_always --no-startup-id xrandr --output Virtual1 --mode 1920x1080
 # exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/049.jpg &
 # exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/011.jpg &
