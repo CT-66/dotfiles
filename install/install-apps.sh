@@ -95,7 +95,7 @@ apps=(
     mpd
     ncmpcpp
     mpc
-    copyq
+    rofi-greenclip
     speedtest-cli
     bitwarden-cli
     btop

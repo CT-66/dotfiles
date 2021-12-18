@@ -34,7 +34,7 @@ super + Escape
 
 # clipboard
 super + shift + v
-    copyq toggle
+    rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 
 # system monitor
 ctrl + shift + Escape

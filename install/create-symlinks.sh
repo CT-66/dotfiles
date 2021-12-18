@@ -29,7 +29,6 @@ dirs=(
     qt5ct
     mpd
     ncmpcpp
-    copyq/copyq.conf
     calcurse
     sxhkd
     mpv
