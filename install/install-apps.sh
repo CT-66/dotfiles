@@ -119,6 +119,7 @@ apps=(
     calcurse
     github-cli
     github-desktop-bin
+    xdotool
 )
 
 for app in "${apps[@]}"; do
