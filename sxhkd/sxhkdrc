@@ -46,3 +46,10 @@ super + n
 
 super + shift + n
     st nvim -u NONE
+
+# file managers (tui and gui)
+super + m
+    st ranger
+
+super + shift + m
+    dolphin
