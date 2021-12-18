@@ -124,9 +124,16 @@ apps=(
     breeze-icons
 )
 
+# for app in "${apps[@]}"; do
+#     yes | yay $app
+# done
+
+str=""
 for app in "${apps[@]}"; do
-    yes | yay $app
+    str+=$app
 done
+
+yay $str
 
 echo "Done"
 
