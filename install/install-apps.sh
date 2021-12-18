@@ -122,6 +122,11 @@ apps=(
     xdotool
     breeze
     breeze-icons
+    vim-plug
+    zsh-syntax-highlighting
+    zsh-autosuggestions
+    zsh-autopair-git
+    zsh-theme-powerlevel10k-bin-git
 )
 
 # for app in "${apps[@]}"; do
@@ -133,7 +138,7 @@ for app in "${apps[@]}"; do
     str+=$app
 done
 
-yay $str
+yay -S $str
 
 echo "Done"
 

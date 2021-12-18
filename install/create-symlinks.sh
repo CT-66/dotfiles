@@ -51,4 +51,10 @@ ln -s ~/Dotfiles/emacs.d ~/.emacs.d
 sudo mv /usr/share/icons/default/index.theme /usr/share/icons/default/index.theme.bak
 sudo ln -s ~/Dotfiles/icons/default/index.theme /usr/share/icons/default/index.theme
 
+if [ -f ~/.zshenv ]; then
+    mv ~/.zshenv ~/.zshenv.bak
+fi
+
+ln -s ~/Dotfiles/zsh/.zshenv ~/.zshenv
+
 echo "Done"
