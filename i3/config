@@ -206,8 +206,8 @@ bindsym $mod+r mode "resize"
 # for_window [class=".*"] border pixel 0
 for_window [class=".*"] border pixel 2
 # for_window [class=".*"] border pixel 1
-gaps inner 5
-gaps outer 5
+gaps inner 15
+gaps outer 15
 
  # ==================
 
@@ -251,7 +251,8 @@ exec_always --no-startup-id sxhkd &
 # exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/067.jpg &
 # exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/068.jpg &
 # exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/066.jpg &
-exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/072.jpg &
+# exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/072.jpg &
+exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/065.jpg &
 exec_always --no-startup-id export $(dbus-launch) && dunst &
 exec_always --no-startup-id ~/Scripts/dotfiles &
 # exec_always --no-startup-id home &
