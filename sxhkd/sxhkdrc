@@ -2,11 +2,12 @@
 super + Return
     st
 
+super + shift + Return
+    st bash
+
 ctrl + alt + t
     alacritty
 
-super + alt + t
-    st bash
 
 # rofi
 super + d
