@@ -245,13 +245,6 @@ bindsym $mod+shift+p gaps inner current minus 5; gaps outer current minus 5
 exec_always --no-startup-id $HOME/Dotfiles/polybar/launch.sh &
 exec_always --no-startup-id sxhkd &
 # exec_always --no-startup-id xrandr --output Virtual1 --mode 1920x1080
-# exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/049.jpg &
-# exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/011.jpg &
-# exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/061.jpg &
-# exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/067.jpg &
-# exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/068.jpg &
-# exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/066.jpg &
-# exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/072.jpg &
 exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/065.jpg &
 exec_always --no-startup-id export $(dbus-launch) && dunst &
 exec_always --no-startup-id ~/Scripts/dotfiles &
