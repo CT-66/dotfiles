@@ -60,6 +60,7 @@ apps=(
     dunst
     sxhkd
     rofi
+    rofi-calc
     libnotify
     picom-jonaburg-git
     arc-gtk-theme
