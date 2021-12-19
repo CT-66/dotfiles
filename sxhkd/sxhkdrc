@@ -54,3 +54,7 @@ super + m
 
 super + shift + m
     dolphin
+
+# calculator
+super + shift + c
+    st insect
