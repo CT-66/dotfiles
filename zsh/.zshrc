@@ -1,11 +1,11 @@
 # cat ~/reminders.md
-# pfetch
+pfetch
 # neofetch
 # fet.sh
 
 # https://forum.endeavouros.com/t/15116
-cat ~/.cache/.nf 2> /dev/null
-setsid neofetch >| ~/.cache/.nf
+# cat ~/.cache/.nf 2> /dev/null
+# setsid neofetch >| ~/.cache/.nf
 
 . ~/.config/zsh/prompt.zsh
 . ~/.config/zsh/aliases.zsh
