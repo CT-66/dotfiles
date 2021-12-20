@@ -45,18 +45,11 @@ modules-center =  time seperator date
 modules-right = cpu memory wlan audio battery reddit updates
 ; modules-right = dunst wireless-network audio battery date time
 
+tray-position = right;
 
 wm-restack = i3
-
 enable-ipc = true
-
-;override-redirect = true
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
+override-redirect = true
 
 cursor-click = pointer
 cursor-scroll = ns-resize

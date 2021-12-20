@@ -30,7 +30,7 @@ alt + shift + r
 #     flameshot gui -c -p ~/Pictures/Screenshots"
 
 # lock screen
-super + Escape
+super + shift + Escape
     i3lock
 
 # clipboard
@@ -38,7 +38,7 @@ super + shift + v
     rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 
 # system monitor
-super + shift + Escape
+super + Escape
     st -e btop
 
 # text editor
