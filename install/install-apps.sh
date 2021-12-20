@@ -127,6 +127,7 @@ apps=(
     zsh-autosuggestions
     zsh-autopair-git
     zsh-theme-powerlevel10k-bin-git
+    brightnessctl
 )
 
 # for app in "${apps[@]}"; do
