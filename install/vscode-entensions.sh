@@ -24,7 +24,6 @@ pkief.material-icon-theme
 pkief.material-product-icons
 redhat.java
 ritwickdey.liveserver
-shan.code-settings-sync
 sleistner.vscode-fileutils
 slevesque.vscode-autohotkey
 vincaslt.highlight-matching-tag

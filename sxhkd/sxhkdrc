@@ -38,7 +38,7 @@ super + shift + v
     rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 
 # system monitor
-ctrl + shift + Escape
+super + shift + Escape
     st btop
 
 # text editor

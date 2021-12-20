@@ -1,26 +1,14 @@
 lua require('plugins-settings')
 
-" nerdtree
-" nmap \ :NERDTreeToggle<CR>
-" let NERDTreeShowHidden=1
+" nvim-tree.lua
+let g:nvim_tree_side = 'left'
+let g:nvim_tree_ignore = [ '.git', 'node_modules', '.cache', '__pycache__'  ]
+let g:nvim_tree_hide_dotfiles = 0
+let g:nvim_tree_highlight_opened_files = 1
+let g:nvim_tree_add_trailing = 1
+let g:nvim_tree_symlink_arrow = ' -> '
+nnoremap <C-n> :NvimTreeToggle<CR>
 
-" " nvim-tree.lua
-" let g:nvim_tree_side = 'left'
-" let g:nvim_tree_ignore = [ '.git', 'node_modules', '.cache', '__pycache__'  ]
-" let g:nvim_tree_hide_dotfiles = 0
-" let g:nvim_tree_highlight_opened_files = 1
-" let g:nvim_tree_add_trailing = 1
-" let g:nvim_tree_symlink_arrow = ' -> '
-" nnoremap <C-n> :NvimTreeToggle<CR>
-
-" nnn.vim
-" nnoremap <C-n> :NnnPicker %:p:h<CR>
-
-" rnvimr
-nnoremap <C-n> :RnvimrToggle<CR>
-let g:rnvimr_draw_border = 1
-let g:rnvimr_border_attr = {'fg': 14, 'bg': -1}
-let g:rnvimr_urc_path = '$XDG_CONFIG_HOME/ranger'
 
 " telescope.nvim
 nnoremap <C-p> <cmd>Telescope find_files<cr>
@@ -33,12 +21,10 @@ let g:highlightedyank_highlight_duration = 100
 
 " -----
 
-let g:indent_guides_enable_on_vim_startup = 1
 " let g:jedi#use_tabs_not_buffers = 1
 let g:rainbow_active = 1
 " let g:jedi#completions_command = "<C-Space>"
 " let g:jedi#environment_path = "python.exe"
-let g:airline_theme='onedark'
 " let g:airline_theme='one'
 let g:onedark_termcolors=256
 
@@ -56,11 +42,6 @@ let g:better_whitespace_filetypes_blacklist=[]
 
 " coc.nvim
 let g:coc_global_extensions = ['coc-pyright', 'coc-pairs', 'coc-json', 'coc-sh', 'coc-tsserver', 'coc-html']
-
-
-if has("win32")
-    let g:coc_node_path = 'G:\\Shyam\\Program Files\\Node\\node-v16.10.0-win-x64\\node.exe'
-endif
 
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
@@ -108,12 +89,6 @@ let g:Hexokinase_optInPatterns = [
 \     'hsla',
 \     'colour_names'
 \ ]
-
-" -----
-
-" indentline
-let g:indentLine_concealcursor = ""
-let g:indentLine_setConceal = 0
 
 " -----
 
