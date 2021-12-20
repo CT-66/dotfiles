@@ -92,7 +92,6 @@ bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
 
 # go to first/last workspace
-
 bindsym $mod+Home workspace $ws1
 bindsym $mod+End workspace $ws10
 bindsym $mod+Shift+Home move container to workspace $ws1
