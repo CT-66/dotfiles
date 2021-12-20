@@ -64,7 +64,7 @@ bindsym $mod+Shift+apostrophe move scratchpad
 bindsym $mod+apostrophe scratchpad show
 
 # show all windows in scratchpad
-for_window [class=.*] bindsym $mod+Ctrl+apostrophe scratchpad show
+# for_window [class=.*] bindsym $mod+Ctrl+apostrophe scratchpad show
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
