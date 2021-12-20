@@ -3,7 +3,7 @@ super + Return
     st
 
 super + shift + Return
-    st bash
+    st -e bash
 
 ctrl + alt + t
     alacritty
@@ -39,22 +39,22 @@ super + shift + v
 
 # system monitor
 super + shift + Escape
-    st btop
+    st -e btop
 
 # text editor
 super + n
-    st nvim
+    st -e nvim
 
 super + shift + n
-    st nvim -u NONE
+    st -e nvim -u NONE
 
 # file managers (tui and gui)
 super + m
-    st ranger
+    st -e ranger
 
 super + shift + m
     dolphin
 
 # calculator
 super + shift + i
-    st insect
+    st -e insect

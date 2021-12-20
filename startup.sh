@@ -11,3 +11,4 @@ picom -f --experimental-backend -b &
 # flashfocus
 numlockx &
 greenclip daemon &
+nm-applet &
