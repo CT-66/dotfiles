@@ -34,7 +34,7 @@ alt + shift + r
 
 # lock screen
 super + shift + Escape
-    betterlockscreen -l
+    betterlockscreen --lock blur
 
 # clipboard
 super + shift + v
