@@ -32,6 +32,7 @@ dirs=(
     calcurse
     sxhkd
     mpv
+    betterlockscreenrc
 )
 
  if [ -d ~/.config ]; then
