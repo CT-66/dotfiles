@@ -42,7 +42,7 @@ super + shift + v
 
 # system monitor
 super + Escape
-    i3-msg workspace 10 && st -e btop
+    $HOME/Dotfiles/i3/scripts/empty-workspace.sh && st -e btop
 
 # text editor
 super + n
