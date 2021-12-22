@@ -82,7 +82,8 @@ message_delay_time = 5
 ## Note: colors can be nested.
 ##
 #
-song_list_format 		 = "%f $R%a %l"
+# song_list_format 		 = "%f | %t $R%a %l"
+song_list_format 		 = "%t $R%a %l"
 song_status_format		 = "$7%t"
 song_library_format 	 = {{%a - %t} (%b)}|{%f}
 alternative_header_first_line_format  = $b$5$/b  $b$8{%t}|{%f}$/b $/b
@@ -166,7 +167,7 @@ playlist_display_mode = columns
 #discard_colors_if_item_is_selected = yes
 #show_duplicate_tags = yes
 #incremental_seeking = yes
-#seek_time = 1
+seek_time = 5
 #volume_change_step = 2
 autocenter_mode = yes
 centered_cursor = yes
