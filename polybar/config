@@ -299,6 +299,7 @@ host = 127.0.0.1
 port = 6600
 interval = 2
 
-format-playing =  %title% - %artist%
-format-paused = ""
+label-song = "%artist% - %title%"
+format-playing = " <label-song>"
+format-paused = " <label-song>"
 format-stopped = ""
