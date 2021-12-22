@@ -66,3 +66,5 @@ super + shift + i
     st -e python
 
 # music control
+super + backslash; {p, r, less, greater}
+    {mpc pause, mpc play, mpc prev, mpc next}
