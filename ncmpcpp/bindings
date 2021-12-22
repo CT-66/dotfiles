@@ -581,3 +581,7 @@ def_key "K"
     move_sort_order_up
 def_key "space"
   pause
+def_key ">"
+  next
+def_key "<"
+  previous
