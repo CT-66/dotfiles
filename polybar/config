@@ -34,7 +34,7 @@ module-margin-right = 1
 
 font-0 = CaskaydiaCove Nerd Font:style=Regular:pixelsize=11:antialias=true;2.5
 
-modules-left = i3 seperator mpd
+modules-left = i3 mpd
 modules-center =  time seperator date
 modules-right = cpu memory wlan audio battery reddit updates
 ; modules-right = dunst wireless-network audio battery date time
