@@ -82,7 +82,6 @@ message_delay_time = 5
 ## Note: colors can be nested.
 ##
 #
-# song_list_format 		 = "%f | %t $R%a %l"
 song_list_format 		 = "%t $R%a %l"
 song_status_format		 = "$7%t"
 song_library_format 	 = {{%a - %t} (%b)}|{%f}

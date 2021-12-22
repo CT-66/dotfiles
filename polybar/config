@@ -292,3 +292,9 @@ margin-top = 5
 margin-bottom = 5
 
 ; =======================================
+
+[module/mpd]
+type = internal/mpd
+host = 127.0.0.1
+port = 6600
+interval = 2
