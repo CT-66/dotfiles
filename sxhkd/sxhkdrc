@@ -59,5 +59,10 @@ super + shift + m
     dolphin
 
 # calculator
-super + shift + i
+super + i
     st -e insect
+
+super + shift + i
+    st -e python
+
+# music control
