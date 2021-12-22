@@ -298,3 +298,7 @@ type = internal/mpd
 host = 127.0.0.1
 port = 6600
 interval = 2
+
+format-playing = " %title% - %artist%"
+format-paused = ""
+format-stopped = ""
