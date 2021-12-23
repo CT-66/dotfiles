@@ -14,7 +14,7 @@ pfetch
 . ~/.config/zsh/functions.zsh
 . ~/.config/zsh/exports.zsh
 
-autoload -U compinit
+autoload -Uz compinit
 compinit -d ~/.cache/zsh/zsh_compinit_dumpfiles
 _comp_options+=(globdots)		# Autocomplete dotfiles
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}' # case insensitive tab completion
@@ -24,6 +24,13 @@ setopt NO_CASE_GLOB # Set case insensitive globbing
 # setopt AUTO_CD # Automatically cd into a directory without typing `cd`
 setopt CORRECT # Enable correction
 setopt CORRECT_ALL # Enable correction
+
+autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+[[ -n "${key[Up]}"   ]] && bindkey -- "${key[Up]}"   up-line-or-beginning-search
+[[ -n "${key[Down]}" ]] && bindkey -- "${key[Down]}" down-line-or-beginning-search
+
 
 # history stuff
 HISTSIZE=1000
