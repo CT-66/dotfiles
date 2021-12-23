@@ -7,7 +7,6 @@ pkill sxhkd; sxhkd &
 feh --bg-scale ~/Pictures/Wallpapers/066.jpg &
 export $(dbus-launch) && dunst &
 $HOME/Scripts/dotfiles &
-# flashfocus
 numlockx &
 greenclip daemon &
 nm-applet &
@@ -17,3 +16,4 @@ picom -b &
 
 # picom-jonaburg
 # picom -f --experimental-backend -b &
+flashfocus
