@@ -128,6 +128,7 @@ apps=(
     zsh-autopair-git
     zsh-theme-powerlevel10k-bin-git
     brightnessctl
+    alternating-layouts-git
 )
 
 # for app in "${apps[@]}"; do
