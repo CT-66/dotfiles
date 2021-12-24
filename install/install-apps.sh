@@ -129,6 +129,7 @@ apps=(
     zsh-theme-powerlevel10k-bin-git
     brightnessctl
     alternating-layouts-git
+    pamixer
 )
 
 # for app in "${apps[@]}"; do
