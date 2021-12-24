@@ -16,4 +16,5 @@ picom -b &
 
 # picom-jonaburg
 # picom -f --experimental-backend -b &
-flashfocus
+flashfocus &
+alternating_layouts.py &
