@@ -34,10 +34,10 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+bracketleft split horizontal
+bindsym $mod+shift+bracketleft split horizontal
 
 # split in vertical orientation
-bindsym $mod+bracketright split vertical
+bindsym $mod+shift+bracketright split vertical
 
 # toggle split orientation
 bindsym $mod+q split toggle

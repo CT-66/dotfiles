@@ -68,3 +68,12 @@ super + shift + i
 # music control
 super + {less, greater, slash}
     {mpc prev, mpc next, mpc toggle}
+
+# volume control
+# decrease volume by 5
+super + bracketleft
+    pamixer -d 5
+
+# increase volume by 5
+super + bracketright
+    pamixer -i 5
