@@ -77,3 +77,7 @@ super + bracketleft
 # increase volume by 5
 super + bracketright
     pamixer -i 5
+
+# mute/unmutw
+super + backslash
+    pamixer -t
