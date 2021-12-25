@@ -1,3 +1,4 @@
+# vim: filetype=config
 set $mod Mod4
 
 font pango:Caskaydia Cove Nerd Font 10

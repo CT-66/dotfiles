@@ -1,3 +1,4 @@
+# vim: filetype=config
 ##### directories ######
 ncmpcpp_directory = ~/.config/ncmpcpp
 lyrics_directory = ~/.ncmpcpp/lyrics
