@@ -23,10 +23,10 @@ super + Tab
     rofi -show window
 
 # screenshots
-alt + r
+super + r
     flameshot gui
 
-alt + shift + r
+super + shift + r
     flameshot full -c -p ~/Pictures/Screenshots && notify-send 'Screenshot saved to ~/Pictures/Screenshots'
 
 # alt + r
@@ -44,27 +44,6 @@ super + shift + v
 super + Escape
     $HOME/Dotfiles/i3/scripts/empty-workspace.sh && st -e btop
 
-# text editor
-super + n
-    st -e nvim
-
-super + shift + n
-    st -e nvim -u NONE
-
-# file managers (tui and gui)
-super + m
-    st -e ranger
-
-super + shift + m
-    dolphin
-
-# calculator
-super + i
-    st -e insect
-
-super + shift + i
-    st -e python
-
 # music control
 super + {less, greater, slash}
     {mpc prev, mpc next, mpc toggle}
@@ -81,3 +60,29 @@ super + bracketright
 # mute/unmute
 super + backslash
     pamixer -t
+
+# launch apps
+# text editor
+# super + n
+#     st -e nvim
+
+# super + shift + n
+#     st -e nvim -u NONE
+
+# # file managers (tui and gui)
+# super + m
+#     st -e ranger
+
+# super + shift + m
+#     dolphin
+
+# # calculator
+# super + i
+#     st -e insect
+
+# super + shift + i
+#     st -e python
+
+super + o; {n, n}
+    {st -e nvim,
+    st -e nvim -u NONE}
