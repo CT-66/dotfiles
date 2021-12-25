@@ -10,13 +10,13 @@ feh --bg-scale ~/Pictures/Wallpapers/004.jpg &
 export $(dbus-launch) && dunst &
 $HOME/Scripts/dotfiles &
 numlockx &
-greenclip daemon &
+pkill greenclip; greenclip daemon &
 nm-applet &
 
 # picom-ibhagwan
-picom -b &
+pkill picom; picom -b &
 
 # picom-jonaburg
-# picom -f --experimental-backend -b &
-flashfocus &
-alternating_layouts.py &
+# pkill picom; picom -f --experimental-backend -b &
+pkill flashfocus; flashfocus &
+pkill alternating_layouts.py; alternating_layouts.py &
