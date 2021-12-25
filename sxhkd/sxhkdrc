@@ -78,6 +78,6 @@ super + bracketleft
 super + bracketright
     pamixer -i 5
 
-# mute/unmutw
+# mute/unmute
 super + backslash
     pamixer -t
