@@ -72,4 +72,4 @@ super + backslash
 #     st -e python
 
 super + o; {n, shift+n, f, shift+f, m, shift+m}
-    {st -e nvim, st -e nvim -u NONE, st -e ranger, dolphin, st -e mpc clear; mpc ls | mpc add && ncmpcpp, st -e mpc clear; mpc ls | mpc add && ncmpcpp --screen "visualizer"}
+    {st -e nvim, st -e nvim -u NONE, st -e ranger, dolphin, st -e ncmpcpp, st -e ncmpcpp --screen "visualizer"}
