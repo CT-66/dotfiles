@@ -23,6 +23,10 @@ configuration {
     kb-clear-line: "Control+w";
     kb-move-front: "Control+a";
     kb-move-end: "Control+e";
+    kb-row-first: "Home,Ctrl+g";
+    kb-row-last: "End,Ctrl+Shift+g";
+    kb-cancel: "Escape";
+
 }
 * {
     nord0: #2e3440;
