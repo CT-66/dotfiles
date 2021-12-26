@@ -253,10 +253,7 @@ allow_for_physical_item_deletion = no
 ##
 #screen_switcher_mode = playlist, browser
 #
-##
-## Note: You can define startup screen by choosing screen from the list above.
-##
-#startup_screen = playlist
+startup_screen = "browser"
 #
 ##
 ## Note: You can define startup slave screen by choosing screen from the list
@@ -348,6 +345,7 @@ color1 = "white"
 color2 = "red"
 progressbar_color = black
 progressbar_elapsed_color = white
+progressbar_color
 #statusbar_color = default
 #statusbar_time_color = default:b
 #player_state_color = default:b
