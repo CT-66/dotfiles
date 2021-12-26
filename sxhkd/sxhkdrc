@@ -62,14 +62,5 @@ super + backslash
     pamixer -t
 
 # launch apps
-
-
-# # calculator
-# super + i
-#     st -e insect
-
-# super + shift + i
-#     st -e python
-
-super + o; {n, shift+n, f, shift+f, m, shift+m}
-    {st -e nvim, st -e nvim -u NONE, st -e ranger, dolphin, st -e ncmpcpp, st -e ncmpcpp --screen "visualizer"}
+super + o; {n, shift+n, f, shift+f, m, shift+m, c, shift+c}
+    {st -e nvim, st -e nvim -u NONE, st -e ranger, dolphin, st -e ncmpcpp, st -e ncmpcpp --screen "visualizer", st -e insect, st -e python}
