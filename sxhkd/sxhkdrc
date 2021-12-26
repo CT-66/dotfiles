@@ -62,19 +62,7 @@ super + backslash
     pamixer -t
 
 # launch apps
-# text editor
-# super + n
-#     st -e nvim
 
-# super + shift + n
-#     st -e nvim -u NONE
-
-# # file managers (tui and gui)
-# super + m
-#     st -e ranger
-
-# super + shift + m
-#     dolphin
 
 # # calculator
 # super + i
@@ -83,5 +71,5 @@ super + backslash
 # super + shift + i
 #     st -e python
 
-super + o; {n,shift+n,f,shift+f,m,shift+m}
-    {st -e nvim,st -e nvim -u NONE,st -e ranger,dolphin,st -e mpc clear; mpc ls | mpc add ncmpcpp,}
+super + o; {n, shift+n, f, shift+f, m, shift+m}
+    {st -e nvim, st -e nvim -u NONE, st -e ranger, dolphin, st -e mpc clear; mpc ls | mpc add && ncmpcpp, st -e mpc clear; mpc ls | mpc add && ncmpcpp --screen "visualizer"}
