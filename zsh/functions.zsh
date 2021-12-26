@@ -52,3 +52,7 @@ trash () {
 wallp () {
     feh --bg-fill ~/Pictures/Wallpapers/$1.*
 }
+
+hgrep () {
+    cat ~/.cache/zsh/history | \grep -in --color=auto "$1"
+}
