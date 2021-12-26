@@ -23,11 +23,12 @@ alias gc='git clone'
 alias bw-list='bw list items --pretty --search'
 alias cat=bat
 alias f=fzf
+alias vf='nvim $(fzf)'
+alias mf='mpv "$(fzf)"'
 alias espeak=espeak-ng
 alias e=emacs
 alias ncdu='ncdu --color dark'
 alias speedtest='speedtest-cli --simple'
-
 
 alias cd..='cd ../'
 alias ..='cd ../'
