@@ -354,10 +354,3 @@ progressbar_elapsed_color = white
 alternative_ui_separator_color = black
 #window_border_color = green
 #active_window_border = red
-
-# visualizer
-visualizer_data_source = "/tmp/mpd.fifo"
-visualizer_output_name = "pulse audio"
-visualizer_in_stereo = "yes"
-visualizer_type = "spectrum"
-visualizer_look = "+|"
