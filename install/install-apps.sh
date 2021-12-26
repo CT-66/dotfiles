@@ -141,7 +141,7 @@ for app in "${apps[@]}"; do
     str+=$app
 done
 
-yay -S $str
+yay -S $str --noconfirm
 
 echo "Done"
 

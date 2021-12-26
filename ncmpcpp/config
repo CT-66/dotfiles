@@ -333,11 +333,8 @@ allow_for_physical_item_deletion = no
 #
 #search_engine_default_search_mode = 1
 #
-#external_editor = nano
-#
-## Note: set to yes if external editor is a console application.
-##
-#use_console_editor = yes
+external_editor = nvim
+use_console_editor = yes
 #
 ##### colors definitions #####
 colors_enabled = yes
@@ -357,3 +354,10 @@ progressbar_elapsed_color = white
 alternative_ui_separator_color = black
 #window_border_color = green
 #active_window_border = red
+
+# visualizer
+visualizer_data_source = "/tmp/mpd.fifo"
+visualizer_output_name = "pulse audio"
+visualizer_in_stereo = "yes"
+visualizer_type = "spectrum"
+visualizer_look = "+|"
