@@ -10,14 +10,7 @@ export LS_COLORS
 export KEYTIMEOUT=1
 export EDITOR=nvim
 export TERMINAL=st
-# PAGER=nvim
-# export PAGER
-# PAGER=batcat
-# export PAGER
-# PAGER=most
-# export PAGER
-# TERM=xterm-256color
-# export TERM
+export PAGER='bat --paging always'
 
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
 --color=dark
