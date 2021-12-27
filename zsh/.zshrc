@@ -12,7 +12,6 @@ pfetch
 . ~/.config/zsh/variables.zsh
 . ~/.config/zsh/plugins.zsh
 . ~/.config/zsh/functions.zsh
-. ~/.config/zsh/exports.zsh
 
 autoload -Uz compinit
 compinit -d ~/.cache/zsh/zsh_compinit_dumpfiles
