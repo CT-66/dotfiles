@@ -130,7 +130,6 @@ apps=(
     brightnessctl
     alternating-layouts-git
     pamixer
-    ptpython
 )
 
 # for app in "${apps[@]}"; do
