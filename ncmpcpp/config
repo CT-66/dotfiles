@@ -363,5 +363,3 @@ visualizer_type = "spectrum"
 # visualizer_type = "wave_filled"
 visualizer_look = "||"
 visualizer_color = 7,5,8,3
-visualizer_fifo_path = "/tmp/mpd.fifo"
-visualizer_sync_interval = "60"
