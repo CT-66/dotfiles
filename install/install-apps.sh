@@ -130,6 +130,7 @@ apps=(
     brightnessctl
     alternating-layouts-git
     pamixer
+    cli-visualizer
 )
 
 # for app in "${apps[@]}"; do
