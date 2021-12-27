@@ -122,6 +122,7 @@ apps=(
     xdotool
     breeze
     breeze-icons
+    breeze-gtk
     vim-plug
     zsh-syntax-highlighting
     zsh-autosuggestions
@@ -131,6 +132,7 @@ apps=(
     alternating-layouts-git
     pamixer
     cli-visualizer
+    dos2unix
 )
 
 # for app in "${apps[@]}"; do
