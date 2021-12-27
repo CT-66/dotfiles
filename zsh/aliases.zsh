@@ -70,7 +70,8 @@ alias vim-keymaps='nvim ~/.config/nvim/keymaps.vim'
 
 alias tmux-settings='nvim ~/.config/tmux/tmux.conf'
 
-alias py=python
+alias py=python3
+alias python=python3
 # alias pip=pip3
 
 alias ytdl="yt-dlp"
