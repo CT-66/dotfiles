@@ -1,10 +1,8 @@
-## Configuration file for CAVA. Default values are commented out. Use either ';' or '#' for commenting.
-
-
+# vim: filetype=config
 [general]
 
 # Smoothing mode. Can be 'normal', 'scientific' or 'waves'. DEPRECATED as of 0.6.0
-; mode = normal
+; mode = waves
 
 # Accepts only non-negative values.
 ; framerate = 60
