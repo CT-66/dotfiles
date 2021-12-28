@@ -34,7 +34,7 @@ super + shift + r
 
 # lock screen
 super + shift + Escape
-    betterlockscreen -l
+    mpc pause && betterlockscreen -l
 
 # clipboard
 super + shift + v
