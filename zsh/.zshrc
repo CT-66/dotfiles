@@ -131,7 +131,7 @@ function expand-alias() {
     zle self-insert
 }
 zle -N expand-alias
-bindkey -M main ' ' expand-alias
+bindkey -M main '=' expand-alias
 
 # eval "$(bw completion --shell zsh); compdef _bw bw;"
 

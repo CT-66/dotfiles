@@ -121,7 +121,7 @@
   <link rel="assets" href="https://github.githubassets.com/">
   
 
-  <meta name="request-id" content="D78E:7686:3950D8:42B00E:61CADD1D" data-pjax-transient="true"/><meta name="html-safe-nonce" content="3646525feb6eaf6ff3b254ca479b6f393cf4eafa3d30475ab00c6071f5c7d560" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiJENzhFOjc2ODY6Mzk1MEQ4OjQyQjAwRTo2MUNBREQxRCIsInZpc2l0b3JfaWQiOiI1OTM3NDE3NjU5ODM4MjkxMjI5IiwicmVnaW9uX2VkZ2UiOiJhcC1zb3V0aC0xIiwicmVnaW9uX3JlbmRlciI6ImFwLXNvdXRoLTEifQ==" data-pjax-transient="true"/><meta name="visitor-hmac" content="042b57aac33c6e256c0c95493c079bd422d677ee15f4ba0a3bb36552f50b6323" data-pjax-transient="true"/>
+  <meta name="request-id" content="C688:76F7:2B96BB:35CFEE:61CAF53B" data-pjax-transient="true"/><meta name="html-safe-nonce" content="8f9ee144216c6e41d83369d8d58267e92d21482425ab795757f8c9812deb0d4b" data-pjax-transient="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiJDNjg4Ojc2Rjc6MkI5NkJCOjM1Q0ZFRTo2MUNBRjUzQiIsInZpc2l0b3JfaWQiOiIzNTExNjE2NDA3MzIwODUxNzcxIiwicmVnaW9uX2VkZ2UiOiJhcC1zb3V0aC0xIiwicmVnaW9uX3JlbmRlciI6ImFwLXNvdXRoLTEifQ==" data-pjax-transient="true"/><meta name="visitor-hmac" content="a0a86334140803a26d61914505352fe2a8aafb83820ebcfafd2df791d4681400" data-pjax-transient="true"/>
 
     <meta name="hovercard-subject-tag" content="repository:27574418" data-pjax-transient>
 
@@ -470,7 +470,7 @@
           spellcheck="false"
           autocomplete="off"
         >
-        <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="tMN9LEgo0LzfhVjSJY+xNJGQZXqIbevSnvVujU8dWG6d2JEC4ZiNhdAYzk1u6uRMGAy/XHDIXTa7F/thqnpizQ==" />
+        <input type="hidden" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" value="YJkM/b7rVsRnetgPXONBlHgPVBoAuB6uMnj6u5QUq0hjmxdgdMEuW46m9anZgn4i2BXngTZK+JRbx39WJiNL1Q==" />
         <input type="hidden" class="js-site-search-type-field" name="type" >
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" aria-hidden="true" class="mr-1 header-search-key-slash"><path fill="none" stroke="#979A9C" opacity=".4" d="M3.5.5h12c1.7 0 3 1.3 3 3v13c0 1.7-1.3 3-3 3h-12c-1.7 0-3-1.3-3-3v-13c0-1.7 1.3-3 3-3z"></path><path fill="#979A9C" d="M11.8 6L8 15.1h-.9L10.8 6h1z"></path></svg>
 
@@ -773,7 +773,7 @@
     <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path>
 </svg><span data-view-component="true" class="d-inline">
           Star
-</span>          <span id="repo-stars-counter-star" aria-label="31989 users starred this repository" data-singular-suffix="user starred this repository" data-plural-suffix="users starred this repository" data-pjax-replace="true" title="31,989" data-view-component="true" class="Counter js-social-count">32k</span>
+</span>          <span id="repo-stars-counter-star" aria-label="31992 users starred this repository" data-singular-suffix="user starred this repository" data-plural-suffix="users starred this repository" data-pjax-replace="true" title="31,992" data-view-component="true" class="Counter js-social-count">32k</span>
 </a>      <button disabled="disabled" aria-label="You must be signed in to add this repository to a list" type="button" data-view-component="true" class="btn-sm btn BtnGroup-item px-2">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-triangle-down">
     <path d="M4.427 7.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 7H4.604a.25.25 0 00-.177.427z"></path>
 </svg>
@@ -1232,7 +1232,7 @@
 </svg>
           </a>
 
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/ryanoasis/nerd-fonts/delete/master/patched-fonts/JetBrainsMono/Ligatures/Regular/complete/JetBrains%20Mono%20Regular%20Nerd%20Font%20Complete.ttf" accept-charset="UTF-8" method="post"><input type="hidden" data-csrf="true" name="authenticity_token" value="27MFXhefZtFNpvZIfdB+eEq1u14zrtz1wl3wD9//10C4gJDpCxg8jCwB6BCQGkZrIjQgX5d0sHJqosagPyZ01w==" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/ryanoasis/nerd-fonts/delete/master/patched-fonts/JetBrainsMono/Ligatures/Regular/complete/JetBrains%20Mono%20Regular%20Nerd%20Font%20Complete.ttf" accept-charset="UTF-8" method="post"><input type="hidden" data-csrf="true" name="authenticity_token" value="hTFlNsU1VhLFKDwLh9+D/2Na50GXGLNNx7ky1J1G0Bf7WllATHbhmOSoaANnGKbGTqiZLYGWwZUcPKcCCe05ng==" />
             <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
               aria-label="You must be signed in to make or propose changes" data-disable-with>
               <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-trash">
