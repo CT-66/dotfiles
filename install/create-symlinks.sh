@@ -33,7 +33,7 @@ dirs=(
     sxhkd
     mpv
     betterlockscreenrc
-    vis
+    cava
 )
 
  if [ -d ~/.config ]; then

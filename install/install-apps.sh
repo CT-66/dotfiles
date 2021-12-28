@@ -131,8 +131,8 @@ apps=(
     brightnessctl
     alternating-layouts-git
     pamixer
-    cli-visualizer
     dos2unix
+    cava
 )
 
 # for app in "${apps[@]}"; do
