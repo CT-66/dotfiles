@@ -1,3 +1,20 @@
 set drawbox true
 set icons true
 set ignorecase true
+
+# cd to commonly used directories
+map gh cd ~
+map gc cd ~/Code
+map gd cd ~/Desktop
+map gD cd ~/Dotfiles
+map gm cd ~/Music
+map gp cd ~/Pictures
+map gw cd ~/Pictures/Wallpapers
+map gs cd ~/Pictures/Screenshots
+map gS cd ~/Scripts
+map gt cd ~/todo
+map ~ cd ~
+
+# nnoremap ; :
+
+map . set hidden!
