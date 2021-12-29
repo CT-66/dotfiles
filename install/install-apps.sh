@@ -20,7 +20,7 @@ apps=(
     neofetch
     pfetch
     fet.sh-git
-    lf
+    lf-bin
     ranger
     tmux
     cmatrix
