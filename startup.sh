@@ -6,7 +6,8 @@ pkill sxhkd; sxhkd &
 # feh --bg-scale ~/Pictures/Wallpapers/066.jpg &
 # feh --bg-scale ~/Pictures/Wallpapers/067.jpg &
 # feh --bg-scale ~/Pictures/Wallpapers/004.jpg &
-feh --bg-scale ~/Pictures/Wallpapers/011.jpg &
+# feh --bg-scale ~/Pictures/Wallpapers/011.jpg &
+feh --bg-scale ~/Pictures/Wallpapers/068.jpg &
 # feh --bg-scale ~/Pictures/Wallpapers/049.jpg &
 export $(dbus-launch) && dunst &
 $HOME/Scripts/dotfiles &
