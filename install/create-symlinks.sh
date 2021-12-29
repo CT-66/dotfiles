@@ -34,6 +34,7 @@ dirs=(
     mpv
     betterlockscreenrc
     cava
+    lf
 )
 
  if [ -d ~/.config ]; then
