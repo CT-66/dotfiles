@@ -15,7 +15,7 @@ framerate = 60
 
 # Manual sensitivity in %. If autosens is enabled, this will only be the initial value.
 # 200 means double height. Accepts only non-negative values.
-sensitivity = 100
+sensitivity = 50
 
 # The number of bars (0-200). 0 sets it to auto (fill up console).
 # Bars' width and space between bars in number of characters.
@@ -36,7 +36,7 @@ method = pulse
 source = auto
 
 [output]
-method = ncurses
+;method = ncurses
 
 # Visual channels. Can be 'stereo' or 'mono'.
 # 'stereo' mirrors both channels with low frequencies in center.
@@ -65,7 +65,7 @@ method = ncurses
 
 
 [color]
-foreground = '#5e81ac'
+foreground = blue
 background = default
 
 ; gradient = 1
