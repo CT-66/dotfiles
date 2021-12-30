@@ -35,6 +35,7 @@ dirs=(
     betterlockscreenrc
     cava
     lf
+    newsboat
 )
 
  if [ -d ~/.config ]; then
