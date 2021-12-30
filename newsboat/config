@@ -1,12 +1,19 @@
 # vim: filetype=config
-auto-reload yes
-
 unbind-key h
 unbind-key j
 unbind-key k
 unbind-key l
+unbind-key g
+unbind-key G
+unbind-key f
 
 bind-key j down
 bind-key k up
 bind-key l open
-#bind-key h quit
+bind-key h quit
+bind-key g home
+bind-key G end
+bind-key f goto-url
+
+auto-reload yes
+# browser "/usr/local/bin/w3m %u"

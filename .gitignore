@@ -10,3 +10,9 @@ workspaceStorage/
 polybar/scripts/.env
 *.log
 emacs.d/.local/
+
+cache.db
+cache.db.local
+history.cmdline
+history.search
+bookmarks.txt
