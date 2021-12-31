@@ -93,7 +93,7 @@ handle_image() {
              convert "${FILE_PATH}" "${IMAGE_CACHE_PATH}" && exit 6
              exit 1;;
 
-        # Image
+        # # Image
         image/*)
             local orientation
             orientation="$( identify -format '%[EXIF:Orientation]\n' -- "${FILE_PATH}" )"
@@ -107,6 +107,11 @@ handle_image() {
             # `w3mimgdisplay` will be called for all images (unless overriden as above),
             # but might fail for unsupported types.
             exit 7;;
+
+        # image/*)
+        #     # feh "${FILE_PATH}" && exit 7
+        #     feh "${FILE_PATH}"
+        #     exit 7;;
 
         # Video
         video/*)
