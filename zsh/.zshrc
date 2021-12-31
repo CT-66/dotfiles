@@ -12,6 +12,7 @@ pfetch
 . ~/.config/zsh/variables.zsh
 . ~/.config/zsh/plugins.zsh
 . ~/.config/zsh/functions.zsh
+source $HOME/Scripts/sudo.lib
 
 autoload -Uz compinit
 compinit -d ~/.cache/zsh/zsh_compinit_dumpfiles

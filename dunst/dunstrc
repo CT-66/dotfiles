@@ -430,9 +430,9 @@
 #    msg_urgency = critical
 #    fullscreen = show
 
-#[espeak]
-#    summary = "*"
-#    script = dunst_espeak.sh
+[espeak]
+    summary = "*"
+    script = ~/Dotfiles/dunst/notif-sound.sh
 
 #[script-test]
 #    summary = "*script*"
