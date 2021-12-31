@@ -2,15 +2,11 @@
 
 set -e
 
-if [[ $EUID -ne 0 ]]; then
-   echo "This script must be run as root"
-   exit 1
-fi
-
-# =====
-
 # clean unneded dependencies
 yay -Yc
+
+# clean yay's cache
+yay -Sc
 
 # remove orphan packages
 sudo pacman -Rns $(pacman -Qtdq)
