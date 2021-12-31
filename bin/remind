@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]; then
+    nvim ~/Desktop/reminders.md
+else
+    item=$*
+    item="- [REMINDER] $item"
+    echo "$item" >> ~/Desktop/reminders.md
+    echo "Reminder Added!"
+fi

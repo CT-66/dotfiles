@@ -1,0 +1,16 @@
+#!/bin/bash
+# item_without_bullet=$*
+# item="- $item_without_bullet"
+
+# echo "$item" >> ~/todo.md
+
+# echo "\"$item_without_bullet\" has been added to your todo list. Don't forget to complete it!"
+
+if [ $# -eq 0 ]; then
+    nvim ~/Desktop/todo.md
+else
+    item_without_bullet=$*
+    item="- $item_without_bullet"
+    echo "$item" >> ~/Desktop/todo.md
+    echo "\"$item_without_bullet\" has been added to your todo list. Don't forget to complete it!"
+fi

@@ -1,0 +1,8 @@
+#!/bin/bash
+cd ~/Dotfiles
+git add . && git commit -m "$(date +"%d %b, %Y | %I:%M %p")" && git push -u origin master
+
+printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
+GREEN='\033[0;32m'
+printf "${GREEN} Successfully Committed Dotfiles \n"
+notify-send "Successfully Committed Dotfiles"
