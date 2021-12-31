@@ -135,6 +135,7 @@ apps=(
     dos2unix
     cava
     xorg-server-xephyr
+    tmpmail-git
 )
 
 # for app in "${apps[@]}"; do

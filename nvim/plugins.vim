@@ -30,5 +30,6 @@ Plug 'dstein64/nvim-scrollview'
 Plug 'alvan/vim-closetag'
 Plug 'psf/black', { 'branch': 'stable' }
 Plug 'akinsho/toggleterm.nvim'
+Plug 'tversteeg/registers.nvim', { 'branch': 'main' }
 
 call plug#end()
