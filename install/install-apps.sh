@@ -134,6 +134,7 @@ apps=(
     pamixer
     dos2unix
     cava
+    xorg-server-xephyr
 )
 
 # for app in "${apps[@]}"; do
