@@ -270,6 +270,7 @@ type = internal/mpd
 host = 127.0.0.1
 port = 6600
 interval = 2
+click-left = "mpc toggle"
 
 label-song = "%artist% - %title%"
 format-playing = " <label-song>"
