@@ -98,6 +98,7 @@ apps=(
     rofi-greenclip
     speedtest-cli
     bitwarden-cli
+    bitwarden
     btop
     bpytop
     xorg-xinit
