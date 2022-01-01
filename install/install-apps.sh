@@ -136,6 +136,8 @@ apps=(
     cava
     xorg-server-xephyr
     tmpmail-git
+    bar-protonmail
+    prettier
 )
 
 # for app in "${apps[@]}"; do

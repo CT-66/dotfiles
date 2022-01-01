@@ -36,7 +36,7 @@ font-0 = CaskaydiaCove Nerd Font:style=Regular:pixelsize=11:antialias=true;2.5
 
 modules-left = i3 mpd
 modules-center =  time seperator date
-modules-right = cpu memory wlan audio battery reddit updates
+modules-right = cpu memory wlan audio battery reddit updates github protonmail
 ; modules-right = dunst wireless-network audio battery date time
 
 tray-position = right;
@@ -278,3 +278,23 @@ format-paused = " <label-song>"
 format-stopped = ""
 
 ; ========================================
+
+[module/github]
+type = internal/github
+token = ${env:GITHUB_ACCESS_TOKEN}
+user = "CT-66"
+empty-notifications = false
+interval = 300
+api-url = https://api.github.com/
+
+label = %notifications%
+format =  <label>
+format-offline = ""
+
+; =========================================
+
+[module/protonmail]
+type = custom/script
+exec = bar-protonmail -f polybar
+interval = 10
+# click-left = xdg-open https://mail.protonmail.com/u/0/inbox

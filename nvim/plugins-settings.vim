@@ -113,3 +113,18 @@ let g:registers_window_border = "rounded"
 " let g:registers_visual_mode = 0 "1 by default, open the window in visual mode
 " let g:registers_insert_mode = 0 "1 by default, open the window in insert mode
 " let g:registers_show = "*+\"" "'*+\"-/_=#%.0123456789abcdefghijklmnopqrstuvwxyz' by default, which registers to show and in what order
+
+" -----
+
+" prettier
+let g:prettier#config#tab_width = '4'
+let g:prettier#config#use_tabs = 'false'
+let g:prettier#config#parser = ''
+let g:prettier#config#config_precedence = 'file-override'
+let g:prettier#config#prose_wrap = 'preserve'
+let g:prettier#config#html_whitespace_sensitivity = 'css'
+let g:prettier#config#require_pragma = 'false'
+let g:prettier#config#end_of_line = get(g:, 'prettier#config#end_of_line', 'lf')
+let g:prettier#autoformat = 1
+let g:prettier#autoformat_require_pragma = 0
+let g:prettier#exec_cmd_async = 1
