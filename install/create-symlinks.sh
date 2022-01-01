@@ -43,6 +43,8 @@ dirs=(
      mv ~/.config ~/config.bak
  done
 
+ mkdir ~/.config
+
 
 for dir in "${dirs[@]}"; do
 	ln -s ~/Dotfiles/$dir ~/.config/$dir

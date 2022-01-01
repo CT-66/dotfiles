@@ -34,5 +34,6 @@ Plug 'prettier/vim-prettier'
 Plug 'mattn/emmet-vim'
 Plug 'rbgrouleff/bclose.vim'
 Plug 'francoiscabrol/ranger.vim'
+Plug 'luochen1990/rainbow'
 
 call plug#end()
