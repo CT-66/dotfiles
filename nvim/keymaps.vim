@@ -14,11 +14,7 @@ nmap <leader>b :call RunPythonFile()<cr>
 nmap <C-b> :call RunPythonFile()<cr>
 
 
-if has("unix")
-    nmap <leader>v :source ~/.config/nvim/init.vim<cr>
-elseif has("win32")
-    nmap <leader>v :source ~\AppData\Local\nvim\init.vim<cr>
-endif
+nmap <leader>v :source ~/.config/nvim/init.vim<cr>
 
 nnoremap <C-s> :w<cr>
 nmap <C-a> ggVG
