@@ -128,3 +128,11 @@ let g:prettier#config#end_of_line = get(g:, 'prettier#config#end_of_line', 'lf')
 let g:prettier#autoformat = 1
 let g:prettier#autoformat_require_pragma = 0
 let g:prettier#exec_cmd_async = 1
+
+" -----
+
+" emmet
+let g:user_emmet_mode='a'
+let g:user_emmet_install_global = 0
+let g:user_emmet_leader_key='<C-Z>'
+autocmd FileType html,css EmmetInstall

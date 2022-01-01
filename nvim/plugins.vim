@@ -32,4 +32,5 @@ Plug 'psf/black', { 'branch': 'stable' }
 Plug 'akinsho/toggleterm.nvim'
 Plug 'tversteeg/registers.nvim', { 'branch': 'main' }
 Plug 'prettier/vim-prettier'
+Plug 'mattn/emmet-vim'
 call plug#end()
