@@ -4,7 +4,6 @@ echo "Creating symlinks..."
 
 dirs=(
     alacritty
-    bpytop
     btop
     dunst
     flameshot

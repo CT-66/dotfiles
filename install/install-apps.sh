@@ -100,7 +100,6 @@ apps=(
     bitwarden-cli
     bitwarden
     btop
-    bpytop
     xorg-xinit
     ueberzug
     python-pynvim
@@ -138,6 +137,10 @@ apps=(
     tmpmail-git
     bar-protonmail
     prettier
+    ffmpegthumbnailer
+    gzip
+    xclip
+    xorg-xev
 )
 
 # for app in "${apps[@]}"; do
