@@ -53,8 +53,6 @@ vim.g.bufferline = {
 
 }
 
--- nvim-tree.lua
-require'nvim-tree'.setup()
 
 -- toggleterm.nvim
 require("toggleterm").setup {

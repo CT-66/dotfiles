@@ -9,7 +9,6 @@ Plug 'tpope/vim-commentary'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'davidhalter/jedi-vim'
 Plug 'hoob3rt/lualine.nvim'
-Plug 'kyazdani42/nvim-tree.lua'
 Plug 'machakann/vim-highlightedyank'
 Plug 'sheerun/vim-polyglot'
 Plug 'lukas-reineke/indent-blankline.nvim'
@@ -33,4 +32,7 @@ Plug 'akinsho/toggleterm.nvim'
 Plug 'tversteeg/registers.nvim', { 'branch': 'main' }
 Plug 'prettier/vim-prettier'
 Plug 'mattn/emmet-vim'
+Plug 'rbgrouleff/bclose.vim'
+Plug 'francoiscabrol/ranger.vim'
+
 call plug#end()

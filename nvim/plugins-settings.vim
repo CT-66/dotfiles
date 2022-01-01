@@ -1,15 +1,5 @@
 lua require('plugins-settings')
 
-" nvim-tree.lua
-let g:nvim_tree_side = 'left'
-let g:nvim_tree_ignore = [ '.git', 'node_modules', '.cache', '__pycache__'  ]
-let g:nvim_tree_hide_dotfiles = 0
-let g:nvim_tree_highlight_opened_files = 1
-let g:nvim_tree_add_trailing = 1
-let g:nvim_tree_symlink_arrow = ' -> '
-nnoremap <C-n> :NvimTreeToggle<CR>
-
-
 " telescope.nvim
 nnoremap <C-p> <cmd>Telescope find_files<cr>
 
@@ -136,3 +126,10 @@ let g:user_emmet_mode='a'
 let g:user_emmet_install_global = 0
 let g:user_emmet_leader_key='<C-Z>'
 autocmd FileType html,css EmmetInstall
+
+" -----
+
+" ranger.vim
+let g:ranger_map_keys = 0
+nnoremap <C-n> :RangerCurrentDirectoryNewTab<CR>
+let g:ranger_replace_netrw = 1
