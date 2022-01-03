@@ -13,7 +13,7 @@ mpd_crossfade_time = 1
 ##### delays #####
 ## Time of inactivity (in seconds) after playlist highlighting will be disabled
 ## (0 = always on).
-playlist_disable_highlight_delay = 2
+playlist_disable_highlight_delay = 0
 message_delay_time = 5
 #
 ##### song format #####
