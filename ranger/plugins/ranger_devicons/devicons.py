@@ -203,6 +203,7 @@ dir_node_exact_matches = {
     ".mozilla": "",
     ".vscode": "",
     ".Trash": "󰆴",
+    "Trash": "󰆴",
     "arch": "󰣇",
     "Books": "",
     "Code": "",
