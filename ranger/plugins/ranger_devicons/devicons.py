@@ -209,7 +209,7 @@ dir_node_exact_matches = {
     "Documents": "",
     "Downloads": "",
     "Dotfiles": "",
-    "Music": "",
+    "Music": "",
     "Pictures": "",
     "Videos": "",
 }

@@ -103,8 +103,7 @@ type = internal/date
 interval = 1
 time = %I:%M %p
 ; label = %{F#61AFEF} %time%
-; label =  %time% |
-label = %time%
+label = 󰥔 %time%
 
 ; =====================================
 
@@ -147,18 +146,18 @@ ramp-volume-2 = 墳
 [module/cpu]
 type = internal/cpu
 
-interval = 1
+interval = 2
 format = <label>
 
-format-prefix = "CPU "
+format-prefix = "閭 "
 label = "%percentage%%"
 
 ; =======================================
 
 [module/memory]
 type = internal/memory
-interval = 1
-format-prefix = "RAM "
+interval = 2
+format-prefix = "  "
 format-prefix-foreground = ${colors.foreground-alt}
 label = %percentage_used%%
 
@@ -166,65 +165,25 @@ label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-; interface = wlp7s0
-interface = enp0s3
-interval = 3.0
-
-format-connected = <label-connected>
-label-connected = "直"
-; label-connected-foreground = ${colors.primary}
-
-format-disconnected = <label-disconnected>
-label-disconnected = 睊
-; label-disconnected-foreground = ${colors.alert}
-
-click-left = nm-connection-editor &
-
-; a = worst
-ramp-signal-0 = a
-ramp-signal-1 = b
-ramp-signal-2 = c
-ramp-signal-3 = d
-ramp-signal-4 = e
-
-; =======================================
-
-[module/wireless-network]
-type = internal/network
 ; interface = wlp4s0
 interface = enp0s3
+label-active-font = 2
+interval = 2
+click-left = exec "nm-connection-editor"
 
-format-connected = <label-connected>
+format-connected = <ramp-signal>
 format-disconnected = <label-disconnected>
-format-packetloss = <animation-packetloss> <label-connected>
 
-label-connected = "  %signal%%"
-label-connected-foreground = #B4796F
+# label-connected = "󰤨"
+# label-connected-foreground = #B4796F
 
-label-disconnected = "睊"
-label-disconnected-foreground = #384F6B
+label-disconnected = "󰤭"
+# label-disconnected-foreground = #384F6B
 
-animation-packetloss-0 = 
-animation-packetloss-0-foreground = #995172
-animation-packetloss-1 = 
-animation-packetloss-1-foreground = #88517E
-
-; bar-volume-width = 10
-; bar-volume-foreground-0 = #55aa55
-; bar-volume-foreground-1 = #55aa55
-; bar-volume-foreground-2 = #55aa55
-; bar-volume-foreground-3 = #55aa55
-; bar-volume-foreground-4 = #55aa55
-; bar-volume-foreground-5 = #f5a70a
-; bar-volume-foreground-6 = #ff5555
-; bar-volume-gradient = false
-; bar-volume-indicator = |
-; bar-volume-indicator-font = 2
-; bar-volume-fill = ─
-; bar-volume-fill-font = 2
-; bar-volume-empty = ─
-; bar-volume-empty-font = 2
-; bar-volume-empty-foreground = ${colors.foreground-alt}
+ramp-signal-0 = "󰤟"
+ramp-signal-1 = "󰤢"
+ramp-signal-2 = "󰤥"
+ramp-signal-3 = "󰤨"
 
 ; =======================================
 
@@ -235,14 +194,45 @@ adapter = ADP1
 full-at = 99
 poll-interval = 10
 
-format-charging = <label-charging>
-format-discharging = <label-discharging>
-format-full = <label-full>
+format-charging = <animation-charging> <label-charging>
+format-charging-padding = 1
+# format-charging-foreground = ${colors.color4}
 
-label-charging = " %percentage%%"
-label-discharging = "%{F#ff4500} %percentage%%"
+format-discharging = <ramp-capacity> <label-discharging>
+label-discharging = "%percentage%%"
+format-discharging-foreground = ${colors.foreground}
+
+label-charging = "%percentage%%"
 # label-discharging = "%{F#E06C75} %percentage%%"
-label-full = " %percentage%%"
+# label-full = " %percentage%%"
+
+# format-full = <label-full>
+format-full-prefix = "  "
+
+format-full-prefix-foreground = ${colors.color2}
+format-foreground = ${colors.color4}
+format-background = ${colors.background}
+
+label-discharging-foreground = ${colors.foreground}
+
+ramp-capacity-foreground =  ${colors.color2}
+label-charging-foreground = ${colors.foreground}
+
+ramp-capacity-0 = " "
+ramp-capacity-1 = " "
+ramp-capacity-2 = " "
+ramp-capacity-3 = " "
+ramp-capacity-4 = " "
+
+animation-charging-0 = " "
+animation-charging-1 = " "
+animation-charging-2 = " "
+animation-charging-3 = " "
+animation-charging-4 = " "
+
+animation-charging-foreground = ${colors.color13}
+animation-charging-framerate = 750
+format-discharging-padding = 1
 
 ; =======================================
 
@@ -271,7 +261,7 @@ type = internal/mpd
 host = 127.0.0.1
 port = 6600
 interval = 2
-click-left = "mpc toggle"
+click-left = exec "mpc toggle"
 
 label-song = "%artist% - %title%"
 format-playing = " <label-song>"
