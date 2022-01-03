@@ -143,6 +143,7 @@ apps=(
     xorg-xev
     diskus
     hyperfine
+    trash-cli
 )
 
 # for app in "${apps[@]}"; do
