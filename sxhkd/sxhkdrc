@@ -24,7 +24,7 @@ super + Tab
 
 # screenshots
 super + r
-    flameshot gui
+    flameshot -c gui
 
 super + shift + r
     flameshot full -c -p ~/Pictures/Screenshots && notify-send 'Screenshot saved to ~/Pictures/Screenshots'
