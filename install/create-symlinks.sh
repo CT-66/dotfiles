@@ -38,9 +38,8 @@ dirs=(
 )
 
  if [ -d ~/.config ]; then
- do
      mv ~/.config ~/config.bak
- done
+ fi
 
  mkdir ~/.config
 

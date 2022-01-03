@@ -141,6 +141,7 @@ apps=(
     gzip
     xclip
     xorg-xev
+    diskus
 )
 
 # for app in "${apps[@]}"; do
@@ -149,6 +150,7 @@ apps=(
 
 str=""
 for app in "${apps[@]}"; do
+    str+=" "
     str+=$app
 done
 

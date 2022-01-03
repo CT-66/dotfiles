@@ -6,6 +6,10 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
+echo "Enter your username"
+read user_name
+HOME=/home/$user_name
+
 CONFIG_DIR=$HOME/.config
 DOTFILES_DIR=$HOME/Dotfiles
 
@@ -16,3 +20,6 @@ source $DOTFILES_DIR/install/vscode-extensions.sh
 
 # =============
 chsh -s /usr/bin/zsh
+
+cd $HOME/Dotfiles/st
+sudo make clean install
