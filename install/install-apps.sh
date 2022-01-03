@@ -142,6 +142,7 @@ apps=(
     xclip
     xorg-xev
     diskus
+    hyperfine
 )
 
 # for app in "${apps[@]}"; do
