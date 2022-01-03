@@ -45,10 +45,6 @@ extract () {
     fi
 }
 
-trash () {
-    mv "$1" "$HOME/.Trash"
-}
-
 wallp () {
     feh --bg-fill ~/Pictures/Wallpapers/$1.*
 }
