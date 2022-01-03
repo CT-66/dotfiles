@@ -202,7 +202,8 @@ dir_node_exact_matches = {
     ".git": "",
     ".mozilla": "",
     ".vscode": "",
-    ".Trash": "",
+    ".Trash": "󰆴",
+    "arch": "󰣇",
     "Books": "",
     "Code": "",
     "Desktop": "",
@@ -210,7 +211,7 @@ dir_node_exact_matches = {
     "Downloads": "",
     "Dotfiles": "",
     "Music": "",
-    "Pictures": "",
+    "Pictures": "󰋩",
     "Videos": "",
 }
 
