@@ -17,6 +17,7 @@ alias sv='sudoedit'
 alias h=htop
 alias b=btop
 alias r=ranger
+alias ranger=ranger
 alias tty-clock='tty-clock -cbt -C 4'
 alias gp='git add . && git commit -m "$(date +"%d %b, %Y | %I:%M %p")" && git push -u origin master'
 alias gc='git clone'

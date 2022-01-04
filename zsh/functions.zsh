@@ -12,7 +12,7 @@ for file in "${files_to_be_removed[@]}"; do
     fi
 done
 
-# Use lf (or ranger) to switch directories and bind it to ctrl-o
+# Use lf to switch directories and bind it to ctrl-o
 lfcd () {
     tmp="$(mktemp)"
     lf -last-dir-path="$tmp" "$@"
@@ -23,6 +23,15 @@ lfcd () {
     fi
 }
 bindkey -s '^o' 'lfcd\n'
+
+# ranger_cd() {
+#     temp_file="$(mktemp -t "ranger_cd.XXXXXXXXXX")"
+#     ranger --choosedir="$temp_file" -- "${@:-$PWD}"
+#     if chosen_dir="$(cat -- "$temp_file")" && [ -n "$chosen_dir" ] && [ "$chosen_dir" != "$PWD" ]; then
+#         cd -- "$chosen_dir"
+#     fi
+#     rm -f -- "$temp_file"
+# }
 
 extract () {
     if [ -f $1 ]; then
