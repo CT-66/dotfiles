@@ -83,22 +83,26 @@ message_delay_time = 5
 ## Note: colors can be nested.
 ##
 #
-song_list_format 		 = "%t $R%a %l"
-song_status_format		 = "$7%t"
-song_library_format 	 = {{%a - %t} (%b)}|{%f}
-alternative_header_first_line_format  = $b$5$/b  $b$8{%t}|{%f}$/b $/b
-alternative_header_second_line_format = {$b{$2  %a$9}{ - $7  %b$9}{ ($2%y$9)}}|{%D}
+# song_list_format 		 = "%t $R%a %l"
+# # song_status_format		 = "$7%t"
+# song_status_format = "{{{$5%a$9}} $8-$9 {$2%t$9}|{$0%f$9}{ $8-$9 $3b$9}}}"
+# # song_library_format 	 = {{%a - %t} (%b)}|{%f}
+# song_library_format = "{%n $8-$9 }{%t}|{%f}"
+# alternative_header_first_line_format  = $b$5$/b  $b$8{%t}|{%f}$/b $/b
+# alternative_header_second_line_format = {$b{$2  %a$9}{ - $7  %b$9}{ ($2%y$9)}}|{%D}
 #
-current_item_prefix = "$(blue)$r"
-current_item_suffix = $/r$(end)
-current_item_inactive_column_prefix = red
-current_item_inactive_column_suffix = red
+#current_item_prefix = "$(blue)$r"
+#current_item_suffix = $/r$(end)
+#current_item_inactive_column_prefix = red
+#current_item_inactive_column_suffix = red
 #
 #now_playing_prefix = $b
+# now_playing_prefix = "$8$b ♫"
 #
 #now_playing_suffix = $/b
 #
 #browser_playlist_prefix = "$2playlist$9 "
+# browser_playlist_prefix = "playlist"
 #
 #selected_item_prefix = $6
 #
@@ -109,7 +113,8 @@ current_item_inactive_column_suffix = red
 ##
 ## Note: attributes are not supported for the following variables.
 ##
-song_window_title_format = {%a - }{%t}|{%f}
+# song_window_title_format = {%a - }{%t}|{%f}
+# song_window_title_format = "{%t}|{%f} - {%a}"
 ##
 ## Note: Below variables are used for sorting songs in browser.  The sort mode
 ## determines how songs are sorted, and can be used in combination with a sort
@@ -157,20 +162,21 @@ song_window_title_format = {%a - }{%t}|{%f}
 ##
 #
 # song_columns_list_format = "(53)[white]{tr} (45)[blue]{a}"
+# song_columns_list_format = "(3f)[white]{} (5f)[250]{n} (3f)[239]{} (35)[246]{t|f} (18)[blue]{a} (30)[green]{b} (7f)[246]{l}"
 #
 ##### various settings #####
 ## Note: Possible display modes: classic, columns.
-playlist_display_mode = columns
-#browser_display_mode = classic
-#search_engine_display_mode = classic
-#playlist_editor_display_mode = classic
-#discard_colors_if_item_is_selected = yes
-#show_duplicate_tags = yes
-#incremental_seeking = yes
-seek_time = 5
-#volume_change_step = 2
-autocenter_mode = yes
-centered_cursor = yes
+# playlist_display_mode = columns
+# browser_display_mode = columns
+# search_engine_display_mode = columns
+# #playlist_editor_display_mode = classic
+# discard_colors_if_item_is_selected = no
+# #show_duplicate_tags = yes
+# incremental_seeking = yes
+# seek_time = 5
+# #volume_change_step = 2
+# autocenter_mode = yes
+# centered_cursor = yes
 #
 ##
 ## Note: You can specify third character which will be used to build 'empty'
@@ -185,7 +191,7 @@ progressbar_look = "▂▂▂"
 ## Available values: classic, alternative.
 ##
 #user_interface = classic
-user_interface = alternative
+#user_interface = alternative
 #
 #data_fetching_delay = yes
 #
@@ -203,18 +209,18 @@ user_interface = alternative
 #
 #default_tag_editor_pattern = %n - %t
 #
-header_visibility = no
+# header_visibility = no
 #
-statusbar_visibility = no
+# statusbar_visibility = yes
 #
 ## Show the "Connected to ..." message on startup
 connected_message_on_startup = no
 #
-titles_visibility = yes
+# titles_visibility = yes
 #
-#header_text_scrolling = yes
+# header_text_scrolling = yes
 #
-#cyclic_scrolling = no
+# cyclic_scrolling = no
 #
 #lyrics_fetchers = azlyrics, genius, musixmatch, sing365, metrolyrics, justsomelyrics, jahlyrics, plyrics, tekstowo, zeneszoveg, internet
 #
@@ -238,8 +244,6 @@ allow_for_physical_item_deletion = no
 #lastfm_preferred_language = en
 #
 #space_add_mode = add_remove
-#
-#show_hidden_files_in_local_browser = no
 #
 ##
 ## How shall screen switcher work?
@@ -277,15 +281,15 @@ startup_screen = "browser"
 #
 #clock_display_seconds = no
 #
-#display_volume_level = yes
+# display_volume_level = yes
 #
-#display_bitrate = no
+# display_bitrate = no
 #
-#display_remaining_time = no
+# display_remaining_time = no
 #
 ## Available values: none, basic, extended, perl.
 ##
-#regular_expressions = perl
+# regular_expressions = extended
 #
 ##
 #
@@ -298,11 +302,11 @@ startup_screen = "browser"
 #
 #block_search_constraints_change_if_items_found = yes
 #
-#mouse_support = yes
-#
-#mouse_list_scroll_whole_page = no
-#
-#lines_scrolled = 5
+# mouse_support = yes
+# #
+# mouse_list_scroll_whole_page = no
+# #
+# lines_scrolled = 2
 #
 #empty_tag_marker = <empty>
 #
@@ -334,25 +338,25 @@ external_editor = nvim
 use_console_editor = yes
 #
 ##### colors definitions #####
-colors_enabled = yes
-#empty_tag_color = cyan
-#header_window_color = default
-volume_color = white
-#state_line_color = default
-#state_flags_color = default:b
-main_window_color = blue
-color1 = "white"
-color2 = "red"
-progressbar_color = black
-progressbar_elapsed_color = white
-progressbar_color
-#statusbar_color = default
-#statusbar_time_color = default:b
-#player_state_color = default:b
-alternative_ui_separator_color = black
-#window_border_color = green
-#active_window_border = red
-
+# colors_enabled = yes
+# empty_tag_color = white
+# header_window_color = black
+# volume_color = cyan
+# state_line_color = black
+# state_flags_color = black
+# main_window_color = 243
+# color1 = "white"
+# color2 = "red"
+# progressbar_color = black
+# progressbar_elapsed_color = white
+# progressbar_color
+# statusbar_color = black
+# #statusbar_time_color = default:b
+# #player_state_color = default:b
+# alternative_ui_separator_color = black
+# #window_border_color = green
+# active_window_border = blue
+# 
 # visualizer
 visualizer_data_source = "/tmp/mpd.fifo"
 visualizer_output_name = "visualizer"
@@ -363,3 +367,52 @@ visualizer_type = "spectrum"
 # visualizer_type = "wave_filled"
 visualizer_look = "||"
 visualizer_color = 7,5,8,3
+
+song_columns_list_format = "(3f)[white]{} (5f)[250]{n} (3f)[239]{} (35)[246]{t|f} (18)[blue]{a} (30)[green]{b} (7f)[246]{l}"
+song_status_format = "{{{$5%a$9}} $8-$9 {$2%t$9}|{$0%f$9}{ $8-$9 $3%b$9}}}"
+song_library_format = "{%n $8-$9 }{%t}|{%f}"
+
+now_playing_prefix = "$8$b ♫"
+browser_playlist_prefix = "playlist"
+song_window_title_format = "{%t}|{%f} - {%a}"
+
+playlist_show_remaining_time = "no"
+playlist_shorten_total_times = "yes"
+playlist_separate_albums = "no"
+playlist_display_mode = "columns" #classic
+browser_display_mode = "columns" #classic
+search_engine_display_mode = "columns" #classic
+discard_colors_if_item_is_selected = "no"
+incremental_seeking = "yes"
+seek_time = "5"
+
+user_interface = "classic"
+header_visibility = "yes"
+statusbar_visibility = "yes"
+titles_visibility = "no"
+header_text_scrolling = "yes"
+cyclic_scrolling = "no"
+lines_scrolled = "2"
+show_hidden_files_in_local_browser = "yes"
+jump_to_now_playing_song_at_start = "yes"
+display_volume_level = "yes"
+display_bitrate = "no"
+display_remaining_time = "no"
+regular_expressions = "extended"
+ignore_leading_the = "no"
+block_search_constraints_change_if_items_found = "yes"
+mouse_support = "yes"
+mouse_list_scroll_whole_page = "yes"
+colors_enabled = "yes"
+empty_tag_color = "white"
+header_window_color = "black"
+state_line_color = "black"
+state_flags_color = "black"
+main_window_color = "243"
+#main_window_highlight_color = "white"
+statusbar_color = "black"
+#active_column_color = "blue"
+active_window_border = "blue"
+volume_color = "cyan"
+progressbar_color = black
+progressbar_elapsed_color = white
