@@ -10,7 +10,7 @@ import subprocess
 
 mod = "mod4"
 terminal = guess_terminal()
-home - os.path.expanduser("~")
+home = os.path.expanduser("~")
 
 # Startup
 @hook.subscribe.startup_once
