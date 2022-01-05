@@ -1,0 +1,23 @@
+#!/bin/python3
+# vim: filetype=python
+from os import system
+
+def exit_i3():
+    system("i3-msg exit")
+
+def exit_qtile():
+    from libqtile.lazy import lazy
+    lazy.shutdown()
+
+def exit_openbox():
+    system("openbox --exit")
+
+
+wm = input("WM: ").lower().strip().rstrip()
+
+if wm == "i3":
+    exit_i3()
+elif wm == "qtile":
+    exit_qtile()
+elif wm == "openbox":
+    exit_openbox()
