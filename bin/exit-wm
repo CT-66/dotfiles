@@ -2,11 +2,18 @@
 # vim: filetype=python
 from os import system
 
+
 def exit_i3():
     system("i3-msg exit")
 
+
 def exit_qtile():
     system("pkill qtile")
+
+
+def exit_awesome():
+    system("pkill awesome")
+
 
 def exit_openbox():
     system("openbox --exit")
@@ -18,5 +25,7 @@ if wm == "i3":
     exit_i3()
 elif wm == "qtile":
     exit_qtile()
+elif wm == "awesome":
+    exit_awesome()
 elif wm == "openbox":
     exit_openbox()
