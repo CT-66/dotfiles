@@ -146,6 +146,7 @@ apps=(
     trash-cli
     qtile
     openbox
+    awesome
 )
 
 # for app in "${apps[@]}"; do

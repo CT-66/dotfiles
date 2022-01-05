@@ -37,6 +37,7 @@ dirs=(
     newsboat
     qtile
     openbox
+    awesome
 )
 
  if [ -d ~/.config ]; then
