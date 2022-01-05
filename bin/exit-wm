@@ -2,8 +2,8 @@
 # vim: filetype=python
 from os import system
 import libqtile
+import libqtile.lazy
 from libqtile.lazy import lazy
-import libqtile
 
 def exit_i3():
     system("i3-msg exit")
