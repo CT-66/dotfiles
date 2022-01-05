@@ -5,9 +5,6 @@ from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile import hook
 
-
-# from libqtile.utils import guess_terminal
-
 import os
 import subprocess
 
@@ -65,10 +62,12 @@ keys = [
         desc="Toggle between split and unsplit sides of stack",
     ),
     Key([MOD], "Return", lazy.spawn(terminal), desc="Launch terminal"),
+    Key([MOD], "f", lazy.window.toggle_fullscreen(), desc="Enter full screen")
     # Toggle between different layouts as defined below
     Key([MOD], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
     Key([MOD, "shift"], "q", lazy.window.kill(), desc="Kill focused window"),
-    Key([MOD, "shift", "mod1"], "r", lazy.reload_config(), desc="Reload the config"),
+    Key([MOD, "shift"], "c", lazy.reload_config(), desc="Reload the config"),
+    Key([MOD, "shift", "mod1"], "r", lazy.restart(), desc="Restart Qtile"),
     # Key([MOD, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
 ]
 
@@ -100,8 +99,17 @@ for i in groups:
     )
 
 layouts = [
-    layout.Columns(border_focus_stack=["#d75f5f", "#8f3d3d"], border_width=4),
+    layout.Columns(
+        border_focus_stack=["#d75f5f", "#8f3d3d"], border_width=2, margin=15
+    ),
     layout.Max(),
+    # gaps
+    # layout.MonadTall(
+    #     font="Caskaydia Code Nerd Font",
+    #     fontsize="10",
+    #     margin="8",
+    # ),
+    # layout.Stack(num_stacks=2)
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
     # layout.Bsp(),
@@ -116,7 +124,7 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font="sans",
+    font="Caskaydia Code Nerd Font",
     fontsize=12,
     padding=3,
 )
@@ -124,27 +132,27 @@ extension_defaults = widget_defaults.copy()
 
 screens = [
     Screen(
-        bottom=bar.Bar(
-            [
-                widget.CurrentLayout(),
-                # widget.TextBox("TEST MESSAGE"),
-                widget.GroupBox(),
-                # widget.Prompt(),
-                # widget.WindowName(),
-                # widget.Chord(
-                #     chords_colors={
-                #         "launch": ("#ff0000u, "#ffffff"),
-                #     },
-                #     name_transform=lambda name: name.upper(),
-                # ),
-                widget.Systray(),
-                widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
-                widget.Battery(),
-            ],
-            24,
-            # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
-            # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
-        ),
+        # bottom=bar.Bar(
+        #     [
+        #         widget.CurrentLayout(),
+        #         # widget.TextBox("TEST MESSAGE"),
+        #         widget.GroupBox(),
+        #         # widget.Prompt(),
+        #         # widget.WindowName(),
+        #         # widget.Chord(
+        #         #     chords_colors={
+        #         #         "launch": ("#ff0000u, "#ffffff"),
+        #         #     },
+        #         #     name_transform=lambda name: name.upper(),
+        #         # ),
+        #         widget.Systray(),
+        #         widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
+        #         widget.Battery(),
+        #     ],
+        #     24,
+        #     # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
+        #     # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
+        # ),
     ),
 ]
 
