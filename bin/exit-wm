@@ -1,12 +1,13 @@
 #!/bin/python3
 # vim: filetype=python
 from os import system
+import libqtile
+from libqtile.lazy import lazy
 
 def exit_i3():
     system("i3-msg exit")
 
 def exit_qtile():
-    from libqtile.lazy import lazy
     lazy.shutdown()
 
 def exit_openbox():
