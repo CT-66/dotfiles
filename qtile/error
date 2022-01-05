@@ -1,0 +1,21 @@
+2022-01-05 16:59:12,690 ERROR libqtile start.py:start():L91 Qtile crashed
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/site-packages/libqtile/scripts/start.py", line 89, in start
+    q.loop()
+  File "/usr/lib/python3.10/site-packages/libqtile/core/manager.py", line 195, in loop
+    asyncio.run(self.async_loop())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 641, in run_until_complete
+    return future.result()
+  File "/usr/lib/python3.10/site-packages/libqtile/core/manager.py", line 218, in async_loop
+    self.load_config(initial=True)
+  File "/usr/lib/python3.10/site-packages/libqtile/core/manager.py", line 138, in load_config
+    self._process_screens(reloading=not initial)
+  File "/usr/lib/python3.10/site-packages/libqtile/core/manager.py", line 341, in _process_screens
+    scr._configure(self, i, x, y, w, h, grp)
+  File "/usr/lib/python3.10/site-packages/libqtile/config.py", line 291, in _configure
+    i._configure(qtile, self)
+  File "/usr/lib/python3.10/site-packages/libqtile/bar.py", line 283, in _configure
+    if i.configured:
+AttributeError: 'NoneType' object has no attribute 'configured'
