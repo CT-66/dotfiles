@@ -16,3 +16,6 @@ cache.db.local
 history.cmdline
 history.search
 bookmarks.txt
+
+_pycache_
+.pyc
