@@ -62,7 +62,7 @@ keys = [
         desc="Toggle between split and unsplit sides of stack",
     ),
     Key([MOD], "Return", lazy.spawn(terminal), desc="Launch terminal"),
-    Key([MOD], "f", lazy.window.toggle_fullscreen(), desc="Enter full screen")
+    Key([MOD], "f", lazy.window.toggle_fullscreen(), desc="Enter full screen"),
     # Toggle between different layouts as defined below
     Key([MOD], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
     Key([MOD, "shift"], "q", lazy.window.kill(), desc="Kill focused window"),
