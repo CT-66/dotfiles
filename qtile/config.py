@@ -17,10 +17,6 @@ terminal = "st"
 home = os.path.expanduser("~")
 
 
-def launch_terminal(terminal):
-    subprocess.Popen(terminal)
-
-
 # Startup
 @hook.subscribe.startup_once
 def autostart():
@@ -68,14 +64,12 @@ keys = [
         lazy.layout.toggle_split(),
         desc="Toggle between split and unsplit sides of stack",
     ),
-    Key([mod], "Return", launch_terminal(terminal), desc="Launch terminal"),
+    Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
-    # Key([mod], "w", lazy.window.kill(), desc="Kill focused window"),
-    Key([mod, "shift"], "q", lazy.window_kill(), desc="Kill focused window"),
+    Key([mod, "shift"], "q", lazy.window.kill(), desc="Kill focused window"),
     Key([mod, "shift", "mod1"], "r", lazy.reload_config(), desc="Reload the config"),
     # Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
-    Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
 ]
 
 # Workspaces
@@ -133,19 +127,16 @@ screens = [
         bottom=bar.Bar(
             [
                 widget.CurrentLayout(),
-                # print("TEST MESSAGE"),
-                widget.TextBox("TEST MESSAGE"),
+                # widget.TextBox("TEST MESSAGE"),
                 widget.GroupBox(),
-                widget.Prompt(),
-                widget.WindowName(),
-                widget.Chord(
-                    chords_colors={
-                        "launch": ("#ff0000", "#ffffff"),
-                    },
-                    name_transform=lambda name: name.upper(),
-                ),
-                widget.TextBox("default config", name="default"),
-                widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
+                # widget.Prompt(),
+                # widget.WindowName(),
+                # widget.Chord(
+                #     chords_colors={
+                #         "launch": ("#ff0000u, "#ffffff"),
+                #     },
+                #     name_transform=lambda name: name.upper(),
+                # ),
                 widget.Systray(),
                 widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
                 widget.Battery(),
