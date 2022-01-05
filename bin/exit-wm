@@ -1,8 +1,8 @@
 #!/bin/python3
 # vim: filetype=python
 from os import system
-import libqtile
-import libqtile.lazy
+# import libqtile
+# import libqtile.lazy
 from libqtile.lazy import lazy
 
 def exit_i3():
