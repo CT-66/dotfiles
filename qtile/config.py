@@ -133,7 +133,8 @@ screens = [
         bottom=bar.Bar(
             [
                 widget.CurrentLayout(),
-                print("TEST MESSAGE"),
+                # print("TEST MESSAGE"),
+                widget.TextBox("TEST MESSAGE"),
                 widget.GroupBox(),
                 widget.Prompt(),
                 widget.WindowName(),
