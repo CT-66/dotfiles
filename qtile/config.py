@@ -70,7 +70,7 @@ keys = [
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
     # Key([mod], "w", lazy.window.kill(), desc="Kill focused window"),
     Key([mod, "shift"], "q", lazy.window_kill(), desc="Kill focused window"),
-    Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
+    Key([mod, "shift", "mod1"], "r", lazy.reload_config(), desc="Reload the config"),
     # Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
 ]
@@ -130,6 +130,7 @@ screens = [
         bottom=bar.Bar(
             [
                 widget.CurrentLayout(),
+                print("TEST MESSAGE"),
                 widget.GroupBox(),
                 widget.Prompt(),
                 widget.WindowName(),
@@ -143,7 +144,6 @@ screens = [
                 widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
                 widget.Systray(),
                 widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
-                widget.QuickExit(),
                 widget.Battery(),
             ],
             24,
