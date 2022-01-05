@@ -35,6 +35,7 @@ dirs=(
     cava
     lf
     newsboat
+    qtile
 )
 
  if [ -d ~/.config ]; then

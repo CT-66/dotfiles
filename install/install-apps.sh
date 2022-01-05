@@ -144,6 +144,7 @@ apps=(
     diskus
     hyperfine
     trash-cli
+    qtile
 )
 
 # for app in "${apps[@]}"; do
