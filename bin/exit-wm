@@ -3,6 +3,7 @@
 from os import system
 import libqtile
 from libqtile.lazy import lazy
+import libqtile
 
 def exit_i3():
     system("i3-msg exit")
