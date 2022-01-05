@@ -9,7 +9,8 @@ import os
 import subprocess
 
 mod = "mod4"
-terminal = guess_terminal()
+# terminal = guess_terminal()
+terminal = "st"
 home = os.path.expanduser("~")
 
 # Startup
