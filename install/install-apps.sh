@@ -145,6 +145,7 @@ apps=(
     hyperfine
     trash-cli
     qtile
+    openbox
 )
 
 # for app in "${apps[@]}"; do

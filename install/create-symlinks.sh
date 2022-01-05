@@ -36,6 +36,7 @@ dirs=(
     lf
     newsboat
     qtile
+    openbox
 )
 
  if [ -d ~/.config ]; then
