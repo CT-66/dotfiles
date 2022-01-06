@@ -27,17 +27,13 @@ def exit_openbox():
 
 def main(wm):
     if wm == "i3":
-        print("ok")
-        # exit_i3()
+        exit_i3()
     elif wm == "qtile":
-        print("ok")
-        # exit_qtile()
+        exit_qtile()
     elif wm == "awesome":
-        print("ok")
-        # exit_awesome()
+        exit_awesome()
     elif wm == "openbox":
-        print("ok")
-        # exit_openbox()
+        exit_openbox()
 
 prompt = input(f"Are you sure you want to exit {wm}? (yes/no) ").lower().strip().rstrip()
 
