@@ -67,6 +67,7 @@ apps=(
     rtv
     newsboat
     dolphin
+    pcmanfm-qt
     python-pip
     vlc
     mpv
@@ -148,6 +149,7 @@ apps=(
     openbox
     awesome
     plank
+    plank-theme-bigsur
 )
 
 # for app in "${apps[@]}"; do
