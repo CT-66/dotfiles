@@ -227,22 +227,22 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="W-F1">
+    <keybind key="W-1">
       <action name="GoToDesktop">
         <to>1</to>
       </action>
     </keybind>
-    <keybind key="W-F2">
+    <keybind key="W-2">
       <action name="GoToDesktop">
         <to>2</to>
       </action>
     </keybind>
-    <keybind key="W-F3">
+    <keybind key="W-3">
       <action name="GoToDesktop">
         <to>3</to>
       </action>
     </keybind>
-    <keybind key="W-F4">
+    <keybind key="W-4">
       <action name="GoToDesktop">
         <to>4</to>
       </action>
@@ -255,15 +255,24 @@
     <keybind key="W-S-q">
       <action name="Close"/>
     </keybind>
+    <keybind key="W-f">
+        <action name="ToggleFullscreen"/>
+    </keybind>
+    <keybind key="W-z">
+        <action name="GoToDesktop"/>
+        <to>previous</to>
+    </keybind>
+    <keybind key="W-x">
+        <action name="GoToDesktop"/>
+        <to>next</to>
+    </keybind>
+    <keybind key="W-up">
+        <action name="ToggleMaximize"/>
+    </keybind>
     <keybind key="A-Escape">
       <action name="Lower"/>
       <action name="FocusToBottom"/>
       <action name="Unfocus"/>
-    </keybind>
-    <keybind key="A-space">
-      <action name="ShowMenu">
-        <menu>client-menu</menu>
-      </action>
     </keybind>
     <!-- Keybindings for window switching -->
     <keybind key="A-Tab">
