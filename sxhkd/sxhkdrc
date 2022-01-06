@@ -44,6 +44,9 @@ super + shift + v
 super + Escape
     $HOME/Dotfiles/i3/scripts/empty-workspace.sh && st -e btop
 
+super + ctrl + Escape
+    st -e btop
+
 # music control
 super + {less, greater, slash}
     {mpc prev, mpc next, mpc toggle}
