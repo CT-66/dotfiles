@@ -38,6 +38,7 @@ dirs=(
     qtile
     openbox
     awesome
+    plank
 )
 
  if [ -d ~/.config ]; then

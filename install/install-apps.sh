@@ -147,6 +147,7 @@ apps=(
     qtile
     openbox
     awesome
+    plank
 )
 
 # for app in "${apps[@]}"; do
