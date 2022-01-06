@@ -43,6 +43,9 @@ prompt = input(f"Are you sure you want to exit {wm}? (yes/no) ").lower().strip()
 
 if prompt == "yes":
     main(wm)
+elif prompt == "no":
+    print("Quitting")
+    exit()
 else:
     print(f"{prompt} is not a valid response. Quitting.")
     exit()
