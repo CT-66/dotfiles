@@ -24,33 +24,28 @@ keys = [
     # A list of available commands that can be bound to keys can be found
     # at https://docs.qtile.org/en/latest/manual/config/lazy.html
     # Switch between windows
-    Key([MOD], "h", lazy.layout.left(), desc="Move focus to left"),
-    Key([MOD], "l", lazy.layout.right(), desc="Move focus to right"),
-    Key([MOD], "j", lazy.layout.down(), desc="Move focus down"),
-    Key([MOD], "k", lazy.layout.up(), desc="Move focus up"),
-    Key([MOD], "space", lazy.layout.next(), desc="Move window focus to other window"),
+    Key([MOD], "h", lazy.layout.left()),
+    Key([MOD], "l", lazy.layout.right()),
+    Key([MOD], "j", lazy.layout.down()),
+    Key([MOD], "k", lazy.layout.up()),
+    Key([MOD], "space", lazy.layout.next()),
     # Move windows between left/right columns or move up/down in current stack.
     # Moving out of range in Columns layout will create new column.
-    Key(
-        [MOD, "shift"], "h", lazy.layout.shuffle_left(), desc="Move window to the left"
-    ),
+    Key([MOD, "shift"], "h", lazy.layout.shuffle_left()),
     Key(
         [MOD, "shift"],
         "l",
         lazy.layout.shuffle_right(),
-        desc="Move window to the right",
     ),
-    Key([MOD, "shift"], "j", lazy.layout.shuffle_down(), desc="Move window down"),
-    Key([MOD, "shift"], "k", lazy.layout.shuffle_up(), desc="Move window up"),
+    Key([MOD, "shift"], "j", lazy.layout.shuffle_down()),
+    Key([MOD, "shift"], "k", lazy.layout.shuffle_up()),
     # Grow windows. If current window is on the edge of screen and direction
     # will be to screen edge - window would shrink.
-    Key([MOD, "control"], "h", lazy.layout.grow_left(), desc="Grow window to the left"),
-    Key(
-        [MOD, "control"], "l", lazy.layout.grow_right(), desc="Grow window to the right"
-    ),
-    Key([MOD, "control"], "j", lazy.layout.grow_down(), desc="Grow window down"),
-    Key([MOD, "control"], "k", lazy.layout.grow_up(), desc="Grow window up"),
-    Key([MOD], "n", lazy.layout.normalize(), desc="Reset all window sizes"),
+    Key([MOD, "control"], "h", lazy.layout.grow_left()),
+    Key([MOD, "control"], "l", lazy.layout.grow_right()),
+    Key([MOD, "control"], "j", lazy.layout.grow_down()),
+    Key([MOD, "control"], "k", lazy.layout.grow_up()),
+    Key([MOD], "n", lazy.layout.normalize()),
     # Toggle between split and unsplit sides of stack.
     # Split = all windows displayed
     # Unsplit = 1 window displayed, like Max layout, but still with
@@ -59,15 +54,14 @@ keys = [
         [MOD, "shift"],
         "Return",
         lazy.layout.toggle_split(),
-        desc="Toggle between split and unsplit sides of stack",
     ),
-    Key([MOD], "Return", lazy.spawn(terminal), desc="Launch terminal"),
-    Key([MOD], "f", lazy.window.toggle_fullscreen(), desc="Enter full screen"),
+    Key([MOD], "Return", lazy.spawn(terminal)),
+    Key([MOD], "f", lazy.window.toggle_fullscreen()),
     # Toggle between different layouts as defined below
-    Key([MOD], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
-    Key([MOD, "shift"], "q", lazy.window.kill(), desc="Kill focused window"),
-    Key([MOD, "shift"], "c", lazy.reload_config(), desc="Reload the config"),
-    Key([MOD, "shift", "mod1"], "r", lazy.restart(), desc="Restart Qtile"),
+    Key([MOD], "Tab", lazy.next_layout()),
+    Key([MOD, "shift"], "q", lazy.window.kill()),
+    Key([MOD, "shift"], "c", lazy.reload_config()),
+    Key([MOD, "shift", "mod1"], "r", lazy.restart()),
     # Key([MOD, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
 ]
 
@@ -100,7 +94,7 @@ for i in groups:
 
 layouts = [
     layout.Columns(
-        border_focus_stack=["#d75f5f", "#8f3d3d"], border_width=2, margin=15
+        border_focus_stack=["#ffffff", "#ffffff"], border_width=2, margin=15
     ),
     layout.Max(),
     # gaps
@@ -172,7 +166,7 @@ mouse = [
 
 dgroups_key_binder = None
 dgroups_app_rules = []  # type: List
-follow_mouse_focus = True
+follow_mouse_focus = False
 bring_front_click = False
 cursor_warp = False
 floating_layout = layout.Floating(
@@ -187,7 +181,7 @@ floating_layout = layout.Floating(
         Match(title="pinentry"),  # GPG key password entry
     ]
 )
-auto_fullscreen = True
+auto_fullscreen = False
 focus_on_window_activation = "smart"
 reconfigure_screens = True
 
