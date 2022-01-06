@@ -39,7 +39,7 @@ def main(wm):
         print("ok")
         # exit_openbox()
 
-prompt = input(f"Are you sure you want to exit {wm}? [yes/no]").lower().strip().rstrip()
+prompt = input(f"Are you sure you want to exit {wm}? (yes/no) ").lower().strip().rstrip()
 
 if prompt == "yes":
     main(wm)
