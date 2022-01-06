@@ -13,7 +13,7 @@ export $(dbus-launch) && dunst &
 $HOME/Scripts/dotfiles &
 numlockx &
 pkill greenclip; greenclip daemon &
-nm-applet &
+pkill nm-applet; nm-applet &
 
 # picom-ibhagwan
 pkill picom; picom -b &
@@ -21,4 +21,3 @@ pkill picom; picom -b &
 # picom-jonaburg
 # pkill picom; picom -f --experimental-backend -b &
 pkill flashfocus; flashfocus &
-pkill alternating_layouts.py; alternating_layouts.py &

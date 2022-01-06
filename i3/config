@@ -52,10 +52,10 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling/floating
-bindsym $mod+Shift+apostrophe floating toggle
+bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling/floating windows
-bindsym $mod+apostrophe focus mode_toggle
+bindsym $mod+space focus mode_toggle
 
 # move the currently focused window to the scratchpad
 bindsym $mod+Shift+grave move scratchpad
@@ -189,5 +189,4 @@ popup_during_fullscreen leave_fullscreen
 # =======================
 
 exec_always $HOME/Dotfiles/startup.sh &
-
-bindsym $mod+space exec flash_window
+pkill alternating_layouts.py; alternating_layouts.py &
