@@ -2,6 +2,10 @@
 # vim: filetype=python
 from os import system
 from sys import argv
+from sys import exit
+
+def exit():
+    sys.exit()
 
 if len(argv) < 2:
     print("Error: No window manager specified. Quitting script.\nUsage: exit-wm [window manager]")
