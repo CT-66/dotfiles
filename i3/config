@@ -189,4 +189,4 @@ popup_during_fullscreen leave_fullscreen
 # =======================
 
 exec_always $HOME/Dotfiles/startup.sh &
-exec_always "pkill alternating_layouts.py; alternating_layouts.py" &
+exec_always "pkill alternating_layouts.py; alternating_layouts.py &"
