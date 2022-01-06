@@ -1,7 +1,13 @@
 #!/bin/python3
 # vim: filetype=python
 from os import system
+from sys import argv
 
+if len(argv) < 2:
+    print("Error: No window manager specified.\nUsage: exit-wm [window manager]")
+    exit()
+
+wm = argv[1]
 
 def exit_i3():
     system("i3-msg exit")
@@ -19,13 +25,24 @@ def exit_openbox():
     system("openbox --exit")
 
 
-wm = input("WM: ").lower().strip().rstrip()
+def main(wm):
+    if wm == "i3":
+        print("ok")
+        # exit_i3()
+    elif wm == "qtile":
+        print("ok")
+        # exit_qtile()
+    elif wm == "awesome":
+        print("ok")
+        # exit_awesome()
+    elif wm == "openbox":
+        print("ok")
+        # exit_openbox()
 
-if wm == "i3":
-    exit_i3()
-elif wm == "qtile":
-    exit_qtile()
-elif wm == "awesome":
-    exit_awesome()
-elif wm == "openbox":
-    exit_openbox()
+prompt = input(f"Are you sure you want to exit {wm}? [yes/no]").lower().strip().rstrip()
+
+if prompt == "yes":
+    main(wm)
+else:
+    print(f"{prompt} is not a valid response")
+    exit()
