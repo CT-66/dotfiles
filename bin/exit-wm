@@ -47,5 +47,5 @@ elif prompt == "no":
     print("Quitting script")
     exit()
 else:
-    print(f"{prompt} is not a valid response. Quitting script.")
+    print(f"'{prompt}' is not a valid response. Quitting script.")
     exit()
