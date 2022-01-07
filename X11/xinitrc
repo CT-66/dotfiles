@@ -1,24 +1,27 @@
 #!/bin/sh
 
-userresources=$HOME/Dotfiles/X11/Xresources
-usermodmap=$HOME/Dotfiles/X11/Xmodmap
-sysresources=/etc/X11/xinit/.Xresources
-sysmodmap=/etc/X11/xinit/.Xmodmap
+xrdb -merge "~/Dotfiles/X11/Xresources"
+xmodmap "~/Dotfiles/X11/Xmodmap"
+#exec $HOME/Dotfiles/startup.sh &
 
-if [ -f $sysresources ]; then
-    xrdb -merge $sysresources
-fi
+$HOME/Dotfiles/polybar/launch.sh &
+pkill sxhkd; sxhkd &
+#  xrandr --output Virtual1 --mode 1920x1080
+# feh --bg-scale ~/Pictures/Wallpapers/066.jpg &
+# feh --bg-scale ~/Pictures/Wallpapers/067.jpg &
+# feh --bg-scale ~/Pictures/Wallpapers/004.jpg &
+# feh --bg-scale ~/Pictures/Wallpapers/011.jpg &
+feh --bg-scale ~/Pictures/Wallpapers/011.jpg &
+# feh --bg-scale ~/Pictures/Wallpapers/049.jpg &
+export $(dbus-launch) && dunst &
+$HOME/Scripts/dotfiles &
+numlockx &
+pkill greenclip; greenclip daemon &
+pkill nm-applet; nm-applet &
 
-if [ -f $sysmodmap ]; then
-    xmodmap $sysmodmap
-fi
+# picom-ibhagwan
+pkill picom; picom -b &
 
-if [ -f "$userresources" ]; then
-    xrdb -merge "$userresources"
-fi
-
-if [ -f "$usermodmap" ]; then
-    xmodmap "$usermodmap"
-fi
-
-exec $HOME/Dotfiles/startup.sh &
+# picom-jonaburg
+# pkill picom; picom -f --experimental-backend -b &
+pkill flashfocus; flashfocus &
