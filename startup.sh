@@ -1,6 +1,6 @@
 #!/bin/bash
 
-xmodmap ~/.Xmodmap
+xmodmap ~/Dotfiles/X11/Xmodmap
 
 $HOME/Dotfiles/polybar/launch.sh &
 pkill sxhkd; sxhkd &

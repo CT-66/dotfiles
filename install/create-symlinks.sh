@@ -3,6 +3,7 @@
 echo "Creating symlinks..."
 
 dirs=(
+    X11
     alacritty
     btop
     dunst
@@ -53,8 +54,6 @@ for dir in "${dirs[@]}"; do
 	ln -s ~/Dotfiles/$dir ~/.config/$dir
 done
 
-ln -s ~/Dotfiles/Xmodmap ~/.Xmodmap
-ln -s ~/Dotfiles/Xresources ~/.Xresources
 ln -s ~/Dotfiles/fonts ~/.local/share/fonts
 ln -s ~/Dotfiles/applications ~/.local/share/applications
 ln -s ~/Dotfiles/emacs.d ~/.emacs.d
