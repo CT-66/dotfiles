@@ -53,7 +53,6 @@ for dir in "${dirs[@]}"; do
 	ln -s ~/Dotfiles/$dir ~/.config/$dir
 done
 
-ln -s ~/Dotfiles/xinitrc ~/.xinitrc
 ln -s ~/Dotfiles/Xmodmap ~/.Xmodmap
 ln -s ~/Dotfiles/Xresources ~/.Xresources
 ln -s ~/Dotfiles/fonts ~/.local/share/fonts
