@@ -21,3 +21,6 @@ pkill picom; picom -b &
 # picom-jonaburg
 # pkill picom; picom -f --experimental-backend -b &
 pkill flashfocus; flashfocus &
+
+xrdb -merge "~/Dotfiles/X11/Xresources" &
+xmodmap "~/Dotfiles/X11/Xmodmap" &

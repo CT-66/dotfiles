@@ -1,5 +1,3 @@
 #!/bin/sh
 exec openbox
-xrdb -merge "~/Dotfiles/X11/Xresources" &
-xmodmap "~/Dotfiles/X11/Xmodmap" &
 exec ~/Dotfiles/startup.sh &
