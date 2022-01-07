@@ -15,6 +15,9 @@ def exit():
 def exit_i3():
     system("i3-msg exit")
 
+def exit_bspwm():
+    system("bspc quit")
+
 
 def exit_qtile():
     system("pkill qtile")
@@ -31,6 +34,8 @@ def exit_openbox():
 def main(wm):
     if wm == "i3":
         exit_i3()
+    elif wm=="bspwm":
+        exit_bspwm()
     elif wm == "qtile":
         exit_qtile()
     elif wm == "awesome":
