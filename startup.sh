@@ -1,7 +1,5 @@
 #!/bin/bash
 
-xmodmap ~/Dotfiles/X11/Xmodmap
-
 $HOME/Dotfiles/polybar/launch.sh &
 pkill sxhkd; sxhkd &
 #  xrandr --output Virtual1 --mode 1920x1080
