@@ -152,6 +152,7 @@ apps=(
     trash-cli
     plank
     plank-theme-bigsur
+    sddm
 )
 
 # for app in "${apps[@]}"; do

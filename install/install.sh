@@ -23,3 +23,5 @@ chsh -s /usr/bin/zsh
 
 cd $HOME/Dotfiles/st
 sudo make clean install
+
+cp ~/Dotfiles/sddm/sddm.conf /etc/sddm.conf
