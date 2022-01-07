@@ -1,3 +1,5 @@
 #!/bin/sh
-exec /usr/bin/i3 &
+exec i3
+xrdb -merge "~/Dotfiles/X11/Xresources" &
+xmodmap "~/Dotfiles/X11/Xmodmap" &
 exec ~/Dotfiles/startup.sh &
