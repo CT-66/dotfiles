@@ -1,5 +1,8 @@
 #!/bin/bash
 
+xrdb -merge "~/Dotfiles/X11/Xresources" &
+xmodmap "~/Dotfiles/X11/Xmodmap" &
+
 $HOME/Dotfiles/polybar/launch.sh &
 pkill sxhkd; sxhkd &
 #  xrandr --output Virtual1 --mode 1920x1080
@@ -21,6 +24,3 @@ pkill picom; picom -b &
 # picom-jonaburg
 # pkill picom; picom -f --experimental-backend -b &
 pkill flashfocus; flashfocus &
-
-xrdb -merge "~/Dotfiles/X11/Xresources" &
-xmodmap "~/Dotfiles/X11/Xmodmap" &
