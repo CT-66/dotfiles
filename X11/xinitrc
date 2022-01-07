@@ -3,3 +3,22 @@ xrdb -merge $HOME/Dotfiles/X11/Xresources && sleep 0.0001
 xmodmap $HOME/Dotfiles/X11/Xmodmap && sleep 0.0001
 exec $HOME/Dotfiles/startup.sh &
 exec openbox-session && sleep 5
+
+case $1 in
+
+  i3)
+    exec i3
+    ;;
+  bspwm)
+    exec bspwm
+    ;;
+  qtile)
+    exec qtile
+    ;;
+  awesome)
+    exec awesome
+    ;;
+  openbox)
+    exec openbox-session
+    ;;
+esac
