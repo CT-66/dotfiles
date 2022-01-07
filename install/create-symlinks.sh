@@ -61,6 +61,11 @@ sudo mv /usr/share/icons/default/index.theme /usr/share/icons/default/index.them
 sudo ln -s ~/Dotfiles/icons/default/index.theme /usr/share/icons/default/index.theme
 ln -s ~/Dotfiles/Scripts ~/Scripts
 
+if [ -f ~/.xinitrc ]; then
+    mv ~/.xinitrc ~/.xinitrc.bak
+fi
+ln -s ~/Dotfiles/X11/xinitrc ~/.xinitrc
+
 if [ -f ~/.zshenv ]; then
     mv ~/.zshenv ~/.zshenv.bak
 fi

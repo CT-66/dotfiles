@@ -1,5 +1,5 @@
 #!/bin/sh
-xrdb -merge ~/.Xresources && sleep 0.0001
-xmodmap ~/.Xmodmap && sleep 0.0001
+xrdb -merge $HOME/Dotfiles/X11/Xresources && sleep 0.0001
+xmodmap $HOME/Dotfiles/X11/Xmodmap && sleep 0.0001
 exec openbox-session && sleep 5
-exec $HOME/Dotfiles/startup.sh
+#exec $HOME/Dotfiles/startup.sh
