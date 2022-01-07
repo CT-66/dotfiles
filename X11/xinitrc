@@ -1,7 +1,9 @@
 #!/bin/sh
 
-xrdb -merge "~/Dotfiles/X11/Xresources"
-xmodmap "~/Dotfiles/X11/Xmodmap"
+exec /usr/bin/i3 &
+
+xrdb -merge "~/Dotfiles/X11/Xresources" &
+xmodmap "~/Dotfiles/X11/Xmodmap" &
 #exec $HOME/Dotfiles/startup.sh &
 
 $HOME/Dotfiles/polybar/launch.sh &
