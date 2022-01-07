@@ -60,6 +60,7 @@ ln -s ~/Dotfiles/emacs.d ~/.emacs.d
 sudo mv /usr/share/icons/default/index.theme /usr/share/icons/default/index.theme.bak
 sudo ln -s ~/Dotfiles/icons/default/index.theme /usr/share/icons/default/index.theme
 ln -s ~/Dotfiles/Scripts ~/Scripts
+ln -s ~/Dotfiles/Scripts/autokey ~/.config/autokey/data
 
 if [ -f ~/.xinitrc ]; then
     mv ~/.xinitrc ~/.xinitrc.bak
