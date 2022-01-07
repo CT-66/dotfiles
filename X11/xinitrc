@@ -2,7 +2,7 @@
 xrdb -merge $HOME/Dotfiles/X11/Xresources && sleep 0.0001
 xmodmap $HOME/Dotfiles/X11/Xmodmap && sleep 0.0001
 exec $HOME/Dotfiles/startup.sh &
-exec openbox-session && sleep 5
+exec openbox-session
 
 case $1 in
 
