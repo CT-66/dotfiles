@@ -115,6 +115,7 @@ apps=(
     qt5ct
     betterlockscreen
     lightdm-webkit2-greeter
+    lightdm-gtk-greeter
     lightdm
     networkmanager
     network-manager-applet
