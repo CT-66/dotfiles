@@ -57,6 +57,7 @@ ln -s ~/Dotfiles/xinitrc ~/.xinitrc
 ln -s ~/Dotfiles/Xmodmap ~/.Xmodmap
 ln -s ~/Dotfiles/Xresources ~/.Xresources
 ln -s ~/Dotfiles/fonts ~/.local/share/fonts
+ln -s ~/Dotfiles/applications ~/.local/share/applications
 ln -s ~/Dotfiles/emacs.d ~/.emacs.d
 sudo mv /usr/share/icons/default/index.theme /usr/share/icons/default/index.theme.bak
 sudo ln -s ~/Dotfiles/icons/default/index.theme /usr/share/icons/default/index.theme

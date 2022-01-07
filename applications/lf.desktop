@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=lf
+Comment=lf file manager
+Icon=utilities-terminal
+Terminal=false
+Exec=st -e lf
+Categories=ConsoleOnly;System;FileTools;FileManager
+MimeType=inode/directory;
+Keywords=File;Manager;Browser;Explorer;Launcher;Vi;Vim;Python

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=btop
+GenericName=Process Viewer
+Comment=open btop
+Icon=htop
+Exec=st -e btop
+Terminal=false
+Categories=System;Monitor;ConsoleOnly;
+Keywords=system;process;task
