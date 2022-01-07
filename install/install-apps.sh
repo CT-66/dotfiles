@@ -114,9 +114,6 @@ apps=(
     qt5ct-kde
     qt5ct
     betterlockscreen
-    lightdm-webkit2-greeter
-    lightdm-gtk-greeter
-    lightdm
     networkmanager
     network-manager-applet
     nm-connection-editor
@@ -152,8 +149,6 @@ apps=(
     trash-cli
     plank
     plank-theme-bigsur
-    sddm
-    sddm-sugar-dark
 )
 
 # for app in "${apps[@]}"; do

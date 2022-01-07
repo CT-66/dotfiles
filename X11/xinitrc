@@ -21,4 +21,4 @@ if [ -f "$usermodmap" ]; then
     xmodmap "$usermodmap"
 fi
 
-~/Dotfiles/startup.sh &
+exec $HOME/Dotfiles/startup.sh &

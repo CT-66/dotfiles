@@ -59,22 +59,13 @@ ln -s ~/Dotfiles/applications ~/.local/share/applications
 ln -s ~/Dotfiles/emacs.d ~/.emacs.d
 sudo mv /usr/share/icons/default/index.theme /usr/share/icons/default/index.theme.bak
 sudo ln -s ~/Dotfiles/icons/default/index.theme /usr/share/icons/default/index.theme
-ln -s ~/Dotfiles/bin ~/Scripts
-# sudo ln -s ~/Dotfiles/lightdm/lightdm.conf /etc/lightdm/lightdm.conf.old
-# sudo ln -s ~/Dotfiles/lightdm/lightdm-webkit2-greeter.conf /etc/lightdm/lightdm-webkit2-greeter.conf
-# sudo ln -s ~/Dotfiles/lightdm/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
+ln -s ~/Dotfiles/Scripts ~/Scripts
 
 if [ -f ~/.zshenv ]; then
     mv ~/.zshenv ~/.zshenv.bak
 fi
 
 ln -s ~/Dotfiles/zsh/.zshenv ~/.zshenv
-
-
-cp ~/Dotfiles/sddm/theme.conf /etc/sddm.conf.d/theme.conf
-rm /usr/share/sddm/themes/sugar-dark/theme.conf
-cp ~/Dotfiles/sddm/sugar-dark-theme.conf /usr/share/sddm/themes/sugar-dark/theme.conf
-
 
 
 echo "Done"
