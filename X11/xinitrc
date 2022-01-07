@@ -1,4 +1,12 @@
 #!/bin/sh
-xrdb -merge "~/Dotfiles/X11/Xresources" &
-xmodmap "~/Dotfiles/X11/Xmodmap" &
-#exec ~/Dotfiles/startup.sh &
+xmodmap $HOME/Dotfiles/X11/Xmodmap
+xrdb -merge "$HOME/Dotfiles/X11/Xresources"
+
+if [ -d /etc/X11/xinit/xinitrc.d ] ; then
+ for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
+  [ -x "$f" ] && . "$f"
+ done
+ unset f
+fi
+
+exec $HOME/Dotfiles/startup.sh &
