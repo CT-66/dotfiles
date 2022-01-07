@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>KvSimplicityDark</name>
+    <name>Arc-Dark</name>
     <titleLayout>LIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -256,18 +256,18 @@
       <action name="Close"/>
     </keybind>
     <keybind key="W-f">
-        <action name="ToggleFullscreen"/>
+      <action name="ToggleFullscreen"/>
     </keybind>
     <keybind key="W-z">
-        <action name="GoToDesktop"/>
-        <to>previous</to>
+      <action name="GoToDesktop"/>
+      <to>previous</to>
     </keybind>
     <keybind key="W-x">
-        <action name="GoToDesktop"/>
-        <to>next</to>
+      <action name="GoToDesktop"/>
+      <to>next</to>
     </keybind>
     <keybind key="W-up">
-        <action name="ToggleMaximize"/>
+      <action name="ToggleMaximize"/>
     </keybind>
     <keybind key="A-Escape">
       <action name="Lower"/>

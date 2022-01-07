@@ -183,3 +183,12 @@ makepkg -si
 cd $HOME
 rm -rf $HOME/archcraft-cursors
 echo "Done"
+
+echo "Installing openbox themes.."
+cd $HOME
+git clone https://github.com/archcraft-os/archcraft-themes
+cd $HOME/archcraft-themes/archcraft-gtk-theme-arc
+makepkg -si
+cd $HOME
+rm -rf $HOME/archcraft-themes
+echo "Done"
