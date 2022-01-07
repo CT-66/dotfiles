@@ -71,4 +71,11 @@ fi
 
 ln -s ~/Dotfiles/zsh/.zshenv ~/.zshenv
 
+
+cp ~/Dotfiles/sddm/theme.conf /etc/sddm.conf.d/theme.conf
+rm /usr/share/sddm/themes/sugar-dark/theme.conf
+cp ~/Dotfiles/sddm/sugar-dark-theme.conf /usr/share/sddm/themes/sugar-dark/theme.conf
+
+
+
 echo "Done"

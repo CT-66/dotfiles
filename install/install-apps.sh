@@ -153,6 +153,7 @@ apps=(
     plank
     plank-theme-bigsur
     sddm
+    sddm-sugar-dark
 )
 
 # for app in "${apps[@]}"; do

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=
+Exec=feh %f
+Categories=Other;
+NoDisplay=true
+MimeType=image/jpeg
+Terminal=true
+X-KeepTerminal=true
