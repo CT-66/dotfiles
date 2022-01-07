@@ -11,6 +11,10 @@ dirs=(
     gtk-3.0
     htop
     i3
+    bspwm
+    qtile
+    awesome
+    openbox
     kitty
     lsd
     neofetch
@@ -35,9 +39,6 @@ dirs=(
     cava
     lf
     newsboat
-    qtile
-    openbox
-    awesome
     plank
 )
 

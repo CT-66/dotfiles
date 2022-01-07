@@ -54,6 +54,10 @@ apps=(
     htop
     virtualbox
     i3
+    bspwm
+    qtile
+    awesome
+    openbox
     feh
     flameshot
     xrandr
@@ -145,9 +149,6 @@ apps=(
     diskus
     hyperfine
     trash-cli
-    qtile
-    openbox
-    awesome
     plank
     plank-theme-bigsur
 )
