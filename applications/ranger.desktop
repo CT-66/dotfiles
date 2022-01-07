@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=ranger
-Comment=Launches the ranger file manager
+Comment=Terminal File Manager
 Icon=utilities-terminal
 Terminal=false
 Exec=st -e ranger

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Newsboat
+Comment=RSS Feed Reader
+Icon=akregator
+Terminal=false
+Exec=st -e newsboat
+#Categories=ConsoleOnly;System;FileTools;FileManager
+MimeType=inode/directory;
+#Keywords=File;Manager;Browser;Explorer;Launcher;Vi;Vim;Python

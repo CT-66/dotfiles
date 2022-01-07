@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=calcurse
+Comment=Command Line calendar
+Icon=calindori
+Terminal=false
+Exec=st -e calcurse
+#Categories=ConsoleOnly;System;FileTools;FileManager
+MimeType=inode/directory;
+#Keywords=File;Manager;Browser;Explorer;Launcher;Vi;Vim;Python
