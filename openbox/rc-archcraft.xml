@@ -1,37 +1,4 @@
-<?xml version="1.0"?>
-<!-- Copyright (C) 2020-2021 Aditya Shakya <adi1090x@gmail.com> -->
-<!-- Everyone is permitted to copy and distribute copies of this file under GNU-GPL3 -->
-<!-- ################################ General Settings ################################ -->
-<openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <resistance>
-    <strength>10</strength>
-    <screen_edge_strength>20</screen_edge_strength>
-  </resistance>
-  <focus>
-    <focusNew>yes</focusNew>
-    <followMouse>no</followMouse>
-    <focusLast>yes</focusLast>
-    <underMouse>no</underMouse>
-    <focusDelay>200</focusDelay>
-    <raiseOnFocus>no</raiseOnFocus>
-  </focus>
-  <placement>
-    <policy>Smart</policy>
-    <center>yes</center>
-    <monitor>Mouse</monitor>
-    <primaryMonitor>Mouse</primaryMonitor>
-  </placement>
-  <theme>
-    <name>Arc-Dark</name>
-    <titleLayout>DLIMC</titleLayout>
-    <keepBorder>no</keepBorder>
-    <animateIconify>yes</animateIconify>
-    <font place="ActiveWindow">
       <name>JetBrains Mono</name>
-      <size>9</size>
-      <weight>Bold</weight>
-      <slant>Normal</slant>
-    </font>
     <font place="InactiveWindow">
       <name>JetBrains Mono</name>
       <size>9</size>
