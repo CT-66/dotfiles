@@ -16,6 +16,10 @@ ranger_cd () {
     ranger "$(pwd)"
 }
 
+ranger_exit_shell () {
+    exit
+}
+
 lf_cd () {
     tmp="$(mktemp)"
     lf -last-dir-path="$tmp" "$@"
@@ -26,7 +30,8 @@ lf_cd () {
     fi
 }
 
-bindkey -s '^f' 'ranger_cd\n' # ctrl+f
+bindkey -s '^F' 'ranger_cd\n' # ctrl+f
+bindkey -s '^Z' 'ranger_exit_shell\n' # exit the shell inside ranger
 bindkey -s '^[^F' 'lf_cd\n' # ctrl+alt+f
 
 # ranger_cd() {
