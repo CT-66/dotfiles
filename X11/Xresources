@@ -19,8 +19,8 @@
 *.foreground:   nord4
 *.background:   nord0
 *.cursorColor:  #528bff
-! *fading: 35
-! *fadeColor: nord3
+*fading: 35
+*fadeColor: nord3
 
 *.color0: nord1
 *.color1: nord11
@@ -40,3 +40,8 @@
 *.color15: nord6
 
 Xft.antialias: 1
+Xft.hinting: 1
+Xft.autohint: 0
+Xft.hintstyle: hintslight
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault

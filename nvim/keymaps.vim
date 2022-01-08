@@ -28,6 +28,9 @@ nnoremap D "_D
 nnoremap x "_x
 nnoremap X "_X
 nnoremap c "_c
+nnoremap C "_C
+nnoremap s "_s
+nnoremap S "_S
 
 nnoremap Y y$
 

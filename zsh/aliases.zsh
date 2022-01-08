@@ -1,4 +1,4 @@
-alias ZZ='exit'
+alias ZkZ='exit'
 alias ZQ='exit'
 alias pls='sudo $(fc -ln -1)'
 alias please='sudo $(fc -ln -1)'
@@ -33,6 +33,7 @@ alias e=emacs
 alias ncdu='ncdu --color dark'
 alias speedtest='speedtest-cli --simple'
 alias rss=newsboat
+alias wall="feh --bg-scale"
 
 alias cd..='cd ../'
 alias ..='cd ../'
