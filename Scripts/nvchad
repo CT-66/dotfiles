@@ -1,6 +1,9 @@
 #!/bin/bash
 
-export LUNARVIM_CONFIG_DIR="${LUNARVIM_CONFIG_DIR:-/home/arch/.config/lvim}"
-export LUNARVIM_RUNTIME_DIR="${LUNARVIM_RUNTIME_DIR:-/home/arch/.local/share/lunarvim}"
+export NVCHAD_CONFIG_DIR="${NVCHAD_CONFIG_DIR:-/home/arch/.config/nvchad}"
+export NVCHAD_RUNTIME_DIR="${NVCHAD_RUNTIME_DIR:-/home/arch/.local/share/nvchad}"
 
-exec nvim -u "$LUNARVIM_RUNTIME_DIR/lvim/init.lua" "$@"
+exec nvim -u "$NVCHAD_RUNTIME_DIR/init.lua" "$@"
+
+
+# exec nvim -u "$LUNARVIM_RUNTIME_DIR/lvim/init.lua" "$@"

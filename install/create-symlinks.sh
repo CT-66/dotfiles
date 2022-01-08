@@ -41,6 +41,8 @@ dirs=(
     lf
     newsboat
     plank
+    lvim
+    nvchad
 )
 
  if [ -d ~/.config ]; then
