@@ -1,75 +1,3 @@
-      <name>JetBrains Mono</name>
-    <font place="InactiveWindow">
-      <name>JetBrains Mono</name>
-      <size>9</size>
-      <weight>Normal</weight>
-      <slant>Normal</slant>
-    </font>
-    <font place="MenuHeader">
-      <name>JetBrains Mono</name>
-      <size>9</size>
-      <weight>Bold</weight>
-      <slant>Normal</slant>
-    </font>
-    <font place="MenuItem">
-      <name>JetBrains Mono</name>
-      <size>9</size>
-      <weight>Normal</weight>
-      <slant>Normal</slant>
-    </font>
-    <font place="ActiveOnScreenDisplay">
-      <name>JetBrains Mono</name>
-      <size>9</size>
-      <weight>Bold</weight>
-      <slant>Normal</slant>
-    </font>
-    <font place="InactiveOnScreenDisplay">
-      <name>JetBrains Mono</name>
-      <size>9</size>
-      <weight>Normal</weight>
-      <slant>Normal</slant>
-    </font>
-  </theme>
-  <desktops>
-    <number>5</number>
-    <firstdesk>0</firstdesk>
-    <names>
-      <name>1</name>
-      <name>2</name>
-      <name>3</name>
-      <name>4</name>
-      <name>5</name>
-    </names>
-    <popupTime>0</popupTime>
-  </desktops>
-  <resize>
-    <drawContents>yes</drawContents>
-    <popupShow>Always</popupShow>
-    <popupPosition>Center</popupPosition>
-    <popupFixedPosition>
-      <x>10</x>
-      <y>10</y>
-    </popupFixedPosition>
-  </resize>
-  <margins>
-    <top>0</top>
-    <bottom>10</bottom>
-    <left>10</left>
-    <right>10</right>
-  </margins>
-  <dock>
-    <position>Bottom</position>
-    <floatingX>0</floatingX>
-    <floatingY>0</floatingY>
-    <noStrut>no</noStrut>
-    <stacking>Above</stacking>
-    <direction>Vertical</direction>
-    <autoHide>no</autoHide>
-    <hideDelay>300</hideDelay>
-    <showDelay>300</showDelay>
-    <moveButton>Middle</moveButton>
-  </dock>
-  <!-- ################################ Keybindings ################################ -->
   <keyboard>
     <chainQuitKey/>
     <!-- Change Workspace/Desktop -->
@@ -919,7 +847,7 @@
   # order that they appear in this list
 
 
-    # each rule element can be left out or set to 'default' to specify to not 
+    # each rule element can be left out or set to 'default' to specify to not
     # change that attribute of the window
 
     <decor>yes</decor>
@@ -987,5 +915,3 @@
 -->
   </applications>
 </openbox_config>
-<!-- vim:sw=2
--->
