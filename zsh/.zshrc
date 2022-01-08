@@ -22,8 +22,8 @@ zstyle ':completion:*' menu select 'm:{a-z}={A-Za-z}' # case insensitive tab com
 unsetopt BEEP
 setopt NO_CASE_GLOB # Set case insensitive globbing
 # setopt AUTO_CD # Automatically cd into a directory without typing `cd`
-setopt CORRECT # Enable correction
-setopt CORRECT_ALL # Enable correction
+unsetopt correct_all
+setopt correct # Enable correction
 
 autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
 zle -N up-line-or-beginning-search
