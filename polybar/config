@@ -1,111 +1,137 @@
-; vim: filetype=config
+# vim: filetype=config
 [colors]
-; background = #80000000
-background = #2E3440
-; foreground = #A1B5CE
-foreground = #ECEFF4
-black       = #2A3C52
-red         = #A65169
-green       = #4A9387
-yellow      = #BBA183
-blue        = #447CA7
-magenta     = #B4796F
-cyan        = #59B7BB
-white       = #A1B5CE
+background =  #1e222a
+foreground =  #c8ccd4
 
-; =======================================
+color0 = #282c34
+color1 = #e06c75
+color2 = #98c379
+color3 = #e5c07b
+color4 = #61afef
+color5 = #c678dd
+color6 = #56b6c2
+color7 = #abb2bf
+color8 = #545862
+color9 = #e06c75
+color10 = #98c379
+color11 = #e5c07b
+color12 = #61afef
+color13 = #c678dd
+color14 = #56b6c2
+color15 = #c8ccd4
+dark-light = #272A2B
+active-light = #313435
+
+# =======================================
 
 [bar/main]
 width = 100%
-height = 25
-;fixed-center = true
+height = 18
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-border-size = 0
-border-color = #00000000
-
 padding-left = 1
-padding-right = 1
+padding-right = 0
 
-module-margin-left = 1
-module-margin-right = 1
+line-size = 1
 
-font-0 = CaskaydiaCove Nerd Font:style=Regular:pixelsize=11:antialias=true;2.5
-font-1 = Material Design Icons:style=Regular:pixelsize=11:antialias=true;2.5
+border-top-size = 5
+border-bottom-size = 5
+border-top-color = ${colors.background}
+border-bottom-color = ${colors.background}
 
-modules-left = i3 mpd
-modules-center =  time seperator date
-modules-right = cpu memory wlan audio battery reddit updates github
-; modules-right = dunst wireless-network audio battery date time
+# font-0 = CaskaydiaCove Nerd Font:style=Regular:pixelsize=11:antialias=true;2.5
+# font-1 = Material Design Icons:style=Regular:pixelsize=11:antialias=true;2.5
+font-0 = JetBrainsMono Nerd Font:style=Bold:pixelsize=11;3
+font-1 = JetBrainsMono Nerd Font:size=14;4
+font-2 = Material Design Icons:style=Regular:size=11;3
 
-tray-position = right;
+modules-left = round-left i3 round-right empty-space mpd
+modules-right = round-left audio round-right empty-space battery empty-space round-left cpu round-right empty-space wlan memory empty-space round-left time round-right empty-space reddit empty-space updates empty-space github
 
-wm-restack = qtile
-enable-ipc = true
-; override-redirect = false
+# tray-position = right
+
+wm-restack = i3
+# enable-ipc = true
+# override-redirect = false
 
 cursor-click = pointer
 cursor-scroll = ns-resize
 
-; =======================================
+# =======================================
 
 [module/i3]
-
 type = internal/i3
 format = <label-state> <label-mode>
 wrapping-scroll = true
 enable-click = true
 enable-scroll = false
+format-background = #2a2e36
 
-; Only show workspaces on the same output as the bar
-;pin-workspaces = true
+# Only show workspaces on the same output as the bar
+#pin-workspaces = true
 
 label-mode-padding = 2
 label-mode-foreground = ${colors.foreground}
 label-mode-background = ${colors.background}
 
-; focused = Active workspace on focused monitor
+# focused = Active workspace on focused monitor
 
 label-focused = ""
-; label-focused-foreground = 61AFEF
+# label-focused-foreground = 61AFEF
 label-focused-padding = 1
-label-focused-font = 3
+# label-focused-font = 3
 
-; unfocused = Inactive workspace on any monitor
+# unfocused = Inactive workspace on any monitor
 label-unfocused = ""
-; label-unfocused-foreground = 61AFEF
+# label-unfocused-foreground = 61AFEF
 label-unfocused-padding = 1
-label-unfocused-font = 3
+# label-unfocused-font = 3
 
-; urgent = Workspace with urgency hint set
+# urgent = Workspace with urgency hint set
 label-urgent = ""
-label-urgent-foreground = ${colors.red}
-label-urgent-font = 3
+label-urgent-foreground = ${colors.color1}
+# label-urgent-font = 3
 label-urgent-padding = 1
 
-; =======================================
+# ======================================
 
-[module/date]
-type = internal/date
-interval = 1
-date = "%a %d %b"
-; label = %{F#eceff4}  %date%
-; label =   %date%
-label = %date%
-; click-left = alacritty --command cal
+[module/empty-space]
+type = custom/text
+content = "  "
 
-; =======================================
+# =======================================
+
+[module/round-left]
+type = custom/text
+# content = %{T3}%{T-}
+content =
+content-foreground = #2a2e36
+
+# =======================================
+
+[module/round-right]
+type = custom/text
+# content = %{T3}%{T-}
+content = 
+content-foreground = #2a2e36
+
+# =======================================
 
 [module/time]
 type = internal/date
-interval = 1
-time = %I:%M %p
-; label = %{F#61AFEF} %time%
-label = 󰥔 %time%
+interval = 60
 
-; =====================================
+format = <label>
+format-background = #2a2e36
+format-foreground = #82868e
+
+date = 󰥔 %I:%M%{F-}
+time-alt = 󰃭 %a, %b %d%{F-}
+label = %date%%time%
+
+# =====================================
 
 [module/reddit]
 type = custom/script
@@ -113,79 +139,71 @@ exec = ~/Dotfiles/polybar/scripts/reddit.sh
 click-left = brave-beta https://www.reddit.com/message/inbox/ &
 interval = 60
 
-; =======================================
+# =======================================
 
 [module/updates]
 type = custom/script
 exec = ~/Dotfiles/polybar/scripts/updates.sh
 interval = 600
 
-; ========================================
+# ========================================
 
-; [module/dunst]
-; type = custom/ipc
-; initial = 1
+# [module/dunst]
+# type = custom/ipc
+# initial = 1
 
-; hook-0 = echo "%{A1:notify-send "dunstctl set-paused true" && polybar-msg hook dunst 2:}%{A}" &
-; hook-1 = echo "%{A1:notify-send "dunstctl set-paused false" && polybar-msg hook dunst 1:}%{A}" &
+# hook-0 = echo "%{A1:notify-send "dunstctl set-paused true" && polybar-msg hook dunst 2:}%{A}" &
+# hook-1 = echo "%{A1:notify-send "dunstctl set-paused false" && polybar-msg hook dunst 1:}%{A}" &
 
-; =======================================
+# =======================================
 
 [module/audio]
 type = internal/pulseaudio
-
 format-volume = "<ramp-volume> <label-volume>"
-label-muted = "%{F#E06C75}婢 0%"
-label-muted-foreground = #384F6B
+label-muted = "婢 0%"
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 墳
+label-volume-foreground = #61afef
+format-volume-background = #2a2e36
+format-muted-foreground = ${colors.foreground}
+format-muted-padding = 1
 
-; =======================================
+# =======================================
 
 [module/cpu]
 type = internal/cpu
+interval = 2.5
 
-interval = 2
-format = <label>
+format-prefix =" "
+format =  <label>
 
-format-prefix = "閭 "
-label = "%percentage%%"
+label = CPU %percentage%%
+format-background = #2a2e36
+format-foreground = #989cff
 
-; =======================================
+# =======================================
 
 [module/memory]
-type = internal/memory
-interval = 2
-format-prefix = "  "
-format-prefix-foreground = ${colors.foreground-alt}
-label = %percentage_used%%
+type = custom/script
+exec = free -m | sed -n 's/^Mem:\s\+[0-9]\+\s\+\([0-9]\+\)\s.\+/\1/p'
+format = <label>
+format-prefix = "﬙ "
+label = %output% MB
+# label-padding = 1
+format-prefix-foreground = #d19a66
 
-; =======================================
+# =======================================
 
 [module/wlan]
 type = internal/network
-; interface = wlp4s0
 interface = enp0s3
-label-active-font = 2
-interval = 2
-click-left = exec "nm-connection-editor"
+interval = 3.0
+format-connected =  <label-connected>
+label-connected = "󰤪  "
+label-connected-foreground = #A3BE8C
 
-format-connected = <ramp-signal>
-format-disconnected = <label-disconnected>
-
-# label-connected = "󰤨"
-# label-connected-foreground = #B4796F
-
-label-disconnected = "󰤭"
-# label-disconnected-foreground = #384F6B
-
-ramp-signal-0 = "󰤟"
-ramp-signal-1 = "󰤢"
-ramp-signal-2 = "󰤥"
-ramp-signal-3 = "󰤨"
-
-; =======================================
+# =======================================
 
 [module/battery]
 type = internal/battery
@@ -195,28 +213,25 @@ full-at = 99
 poll-interval = 10
 
 format-charging = <animation-charging> <label-charging>
-format-charging-padding = 1
-# format-charging-foreground = ${colors.color4}
+label-charging = %percentage%%
+format-charging-foreground = ${colors.color4}
+format-charging-background = ${colors.background}
 
 format-discharging = <ramp-capacity> <label-discharging>
-label-discharging = "%percentage%%"
+label-discharging = %percentage%%
 format-discharging-foreground = ${colors.foreground}
+format-discharging-background = ${colors.background}
 
-label-charging = "%percentage%%"
-# label-discharging = "%{F#E06C75} %percentage%%"
-# label-full = " %percentage%%"
-
-# format-full = <label-full>
-format-full-prefix = "  "
-
-format-full-prefix-foreground = ${colors.color2}
+format-full-prefix = " "
+format-full-prefix-foreground = #A0E8A2
 format-foreground = ${colors.color4}
 format-background = ${colors.background}
 
 label-discharging-foreground = ${colors.foreground}
-
-ramp-capacity-foreground =  ${colors.color2}
+ramp-capacity-foreground =  #A0E8A2
 label-charging-foreground = ${colors.foreground}
+
+label-padding = 1
 
 ramp-capacity-0 = " "
 ramp-capacity-1 = " "
@@ -230,11 +245,13 @@ animation-charging-2 = " "
 animation-charging-3 = " "
 animation-charging-4 = " "
 
-animation-charging-foreground = ${colors.color13}
+animation-charging-foreground = #DF8890
 animation-charging-framerate = 750
+
+format-charging-padding = 1
 format-discharging-padding = 1
 
-; =======================================
+# =======================================
 
 [module/seperator]
 type = custom/script
@@ -242,19 +259,19 @@ exec = echo "|"
 
 [settings]
 screenchange-reload = true
-;compositing-background = xor
-;compositing-background = screen
-;compositing-foreground = source
-;compositing-border = over
+#compositing-background = xor
+#compositing-background = screen
+#compositing-foreground = source
+#compositing-border = over
 pseudo-transparency = true
 
-; =======================================
+# =======================================
 
 [global/wm]
 margin-top = 5
 margin-bottom = 5
 
-; =======================================
+# =======================================
 
 [module/mpd]
 type = internal/mpd
@@ -268,7 +285,7 @@ format-playing = " <label-song>"
 format-paused = " <label-song>"
 format-stopped = ""
 
-; ========================================
+# ========================================
 
 [module/github]
 type = internal/github
@@ -282,7 +299,7 @@ label = %notifications%
 format =  <label>
 format-offline = ""
 
-; =========================================
+# =========================================
 
 [module/protonmail]
 type = custom/script
