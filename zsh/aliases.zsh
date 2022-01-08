@@ -1,4 +1,4 @@
-alias ZkZ='exit'
+alias ZZ='exit'
 alias ZQ='exit'
 alias pls='sudo $(fc -ln -1)'
 alias please='sudo $(fc -ln -1)'
