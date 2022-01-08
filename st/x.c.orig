@@ -767,8 +767,6 @@ bmotion(XEvent *e)
 	mousesel(e, 0);
 }
 
-void normalMode() { historyModeToggle((win.mode ^=MODE_NORMAL) & MODE_NORMAL); }
-
 void
 cresize(int width, int height)
 {
