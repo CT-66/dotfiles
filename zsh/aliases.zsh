@@ -16,8 +16,8 @@ alias p='sudo pacman'
 alias sv='sudoedit'
 alias h=htop
 alias b=btop
+alias ranger='ranger --choosedir=$HOME/.cache/.rangerdir; LASTDIR=`\cat $HOME/.cache/.rangerdir`; cd $LASTDIR'
 alias r=ranger
-alias ranger=ranger
 alias tty-clock='tty-clock -cbt -C 4'
 alias gp='git add . && git commit -m "$(date +"%d %b, %Y | %I:%M %p")" && git push -u origin master'
 alias gc='git clone'

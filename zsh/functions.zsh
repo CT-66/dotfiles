@@ -13,7 +13,7 @@ for file in "${files_to_be_removed[@]}"; do
 done
 
 ranger_cd () {
-    ranger "$(pwd)"
+    "ranger --choosedir=$HOME/.cache/.rangerdir; LASTDIR=`\cat $HOME/.cache/.rangerdir`; cd $LASTDIR"
 }
 
 ranger_exit_shell () {
