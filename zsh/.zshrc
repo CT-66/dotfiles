@@ -125,8 +125,6 @@ autopair-init
 # bind alt+s -> sudo !!
 bindkey -s "^[s" "sudo !!"
 
-bindkey -s "^o" "lfcd\n"
-
 function expand-alias() {
     zle _expand_alias
     zle self-insert
