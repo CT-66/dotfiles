@@ -6,9 +6,10 @@ export $(cat ~/Dotfiles/polybar/scripts/.env | xargs)
 
 notifications=$(curl -sf --user-agent "$USERAGENT" "$URL" | jq '.["data"]["children"] | length')
 
-if [ -n "$notifications" ] && [ "$notifications" -gt 0 ]; then
-    # echo "%{F#ff4500} $notifications"
+if [ -n "$notifications" ] && [ "$notifications" -gt 1 ]; then
     echo "%{F#E06C75} $notifications notifications"
+elif [ -n "$notifications" ] && [ "$notifications" -eq 1 ]; then
+    echo "%{F#E06C75} $notifications notification"
 else
     echo ""
 fi
