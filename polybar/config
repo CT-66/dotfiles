@@ -48,7 +48,7 @@ font-1 = JetBrainsMono Nerd Font:size=14;4
 font-2 = Material Design Icons:style=Regular:size=11;3
 
 modules-left = round-left i3 round-right empty-space mpd
-modules-right = round-left audio round-right empty-space battery empty-space round-left cpu round-right empty-space wlan memory empty-space round-left time round-right empty-space reddit empty-space updates empty-space github
+modules-right = round-left audio round-right empty-space battery empty-space wlan round-left cpu round-right empty-space memory empty-space round-left time round-right empty-space reddit empty-space updates empty-space github
 
 # tray-position = right
 
@@ -284,6 +284,8 @@ label-song = "%artist% - %title%"
 format-playing = " <label-song>"
 format-paused = " <label-song>"
 format-stopped = ""
+format-playing-foreground = #989cff
+format-paused-foreground = ${colors.foreground}
 
 # ========================================
 
