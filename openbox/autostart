@@ -1,2 +1,2 @@
 #!/bin/bash
-plank &
+(sleep 3s && plank) &
