@@ -43,12 +43,12 @@ border-bottom-color = ${colors.background}
 
 # font-0 = CaskaydiaCove Nerd Font:style=Regular:pixelsize=11:antialias=true;2.5
 # font-1 = Material Design Icons:style=Regular:pixelsize=11:antialias=true;2.5
-font-0 = JetBrainsMono Nerd Font:style=Bold:pixelsize=11;3
+font-0 = JetBrainsMono Nerd Font:style=Bold:pixelsize=12;3
 font-1 = JetBrainsMono Nerd Font:size=14;4
-font-2 = Material Design Icons:style=Regular:size=11;3
+font-2 = Material Design Icons:style=Regular:size=12;3
 
 modules-left = round-left i3 round-right empty-space mpd
-modules-right = round-left audio round-right empty-space battery empty-space wlan round-left cpu round-right empty-space memory empty-space round-left time round-right empty-space reddit updates github
+modules-right = round-left audio round-right empty-space battery empty-space network round-left cpu round-right empty-space memory empty-space round-left time round-right empty-space reddit updates github
 
 # tray-position = right
 
@@ -197,13 +197,16 @@ format-prefix-foreground = #d19a66
 
 # =======================================
 
-[module/wlan]
+[module/network]
 type = internal/network
 interface = enp0s3
 interval = 3.0
 format-connected =  <label-connected>
 label-connected = "󰤪  "
 label-connected-foreground = #A3BE8C
+label-disconnected = "󰤠 "
+label-disconnected-background = ${colors.background}
+label-disconnected-foreground = ${colors.color1}
 
 # =======================================
 
