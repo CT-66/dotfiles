@@ -48,7 +48,7 @@ font-1 = JetBrainsMono Nerd Font:size=14;4
 font-2 = Material Design Icons:style=Regular:size=12;3
 
 modules-left = round-left i3 round-right empty-space mpd
-modules-right = round-left audio round-right empty-space battery empty-space network round-left cpu round-right empty-space memory empty-space round-left time round-right empty-space reddit updates github
+modules-right = rss round-left audio round-right empty-space battery empty-space network round-left cpu round-right empty-space memory empty-space round-left time round-right empty-space reddit updates github
 
 # tray
 tray-position = right
@@ -280,10 +280,6 @@ format-discharging-padding = 1
 
 # =======================================
 
-[module/seperator]
-type = custom/script
-exec = echo "|"
-
 [settings]
 screenchange-reload = true
 #compositing-background = xor
@@ -338,3 +334,13 @@ interval = 10
 
 # =========================================
 
+[module/rss]
+type = custom/script
+exec = newsboat -x reload; newsboat -x print-unread | awk '{ print $1 }'
+interval = 1800
+format = <label>
+label = "索 %output% unread"
+label-padding = 2
+label-foreground = #BF616A
+
+# =========================================
