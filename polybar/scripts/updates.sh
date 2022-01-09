@@ -12,7 +12,7 @@ fi
 updates=$((updates_arch + updates_aur))
 
 if [ "$updates" -gt 0 ]; then
-    echo "%{F#98C379} $updates"
+    echo "%{F#98C379} $updates updates"
 else
     echo ""
 fi

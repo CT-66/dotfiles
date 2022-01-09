@@ -26,7 +26,7 @@ active-light = #313435
 
 [bar/main]
 width = 100%
-height = 20
+height = 22
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -48,6 +48,7 @@ font-1 = JetBrainsMono Nerd Font:size=14;4
 font-2 = Material Design Icons:style=Regular:size=12;3
 
 modules-left = round-left i3 round-right empty-space mpd
+module-center = title
 modules-right = round-left audio round-right empty-space battery empty-space network round-left cpu round-right empty-space memory empty-space round-left time round-right empty-space reddit updates github
 
 # tray
@@ -335,3 +336,16 @@ type = custom/script
 exec = bar-protonmail -f polybar
 interval = 10
 # click-left = xdg-open https://mail.protonmail.com/u/0/inbox
+
+# =========================================
+
+[module/title]
+type = internal/xwindow
+label = %title%
+label-maxlen = 25
+label-empty = Empty
+label-empty-foreground = #82868e
+format = <label>
+format-background = ${colors.background}
+format-foreground = ${colors.foreground}
+
