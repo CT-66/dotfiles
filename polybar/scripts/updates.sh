@@ -12,9 +12,11 @@ fi
 updates=$((updates_arch + updates_aur))
 
 if [ "$updates" -gt 1 ]; then
-    echo "%{F#98C379} $updates updates"
+    echo "%{F#BF616A} $updates updates"
 elif [ "$updates" -eq 1 ]; then
-    echo "%{F#98C379} $updates update"
+    echo "%{F#BF616A} $updates update"
 else
     echo ""
 fi
+
+#BF616A
