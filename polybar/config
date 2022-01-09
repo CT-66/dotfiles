@@ -55,6 +55,9 @@ cursor-scroll = ns-resize
 # =======================================
 
 [bar/tray]
+font-0 = JetBrainsMono Nerd Font:style=Bold:pixelsize=12;3
+font-1 = JetBrainsMono Nerd Font:size=14;4
+font-2 = Material Design Icons:style=Regular:size=12;3
 monitor-strict = false
 width = 20%
 height = 25
@@ -351,7 +354,7 @@ interval = 10
 
 [module/rss]
 type = custom/script
-exec = newsboat -x reload; newsboat -x print-unread | awk '{ print $1 }'
+exec = killall newsboat; newsboat -x reload; newsboat -x print-unread | awk '{ print $1 }'
 interval = 900
 format = <label>
 label = "索 %output% unread"
