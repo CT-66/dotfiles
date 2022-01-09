@@ -8,7 +8,7 @@ notifications=$(curl -sf --user-agent "$USERAGENT" "$URL" | jq '.["data"]["child
 
 if [ -n "$notifications" ] && [ "$notifications" -gt 0 ]; then
     # echo "%{F#ff4500} $notifications"
-    echo "%{F#E06C75} $notifications"
+    echo "%{F#E06C75} $notifications notifications"
 else
     echo ""
 fi
