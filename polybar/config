@@ -332,7 +332,7 @@ format-paused-foreground = ${colors.foreground}
 
 [module/github]
 type = internal/github
-token = ${env:GITHUB_ACCESS_TOKEN}
+token = ${env:~/Dotfiles/polybar/scripts/.env:GITHUB_ACCESS_TOKEN}
 user = "CT-66"
 empty-notifications = false
 interval = 300
@@ -374,3 +374,5 @@ click-right = $HOME/Dotfiles/polybar/scripts/killbar.sh
 [module/separator]
 type = custom/script
 exec = "|"
+
+# =========================================

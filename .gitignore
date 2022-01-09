@@ -8,6 +8,8 @@ globalStorage/
 workspaceStorage/
 .env
 polybar/scripts/.env
+.gh-token.token
+polybar/scripts/.gh-token.token
 *.log
 emacs.d/.local/
 
