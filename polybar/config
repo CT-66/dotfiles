@@ -337,7 +337,7 @@ interval = 10
 [module/rss]
 type = custom/script
 exec = newsboat -x reload; newsboat -x print-unread | awk '{ print $1 }'
-interval = 1800
+interval = 900
 format = <label>
 label = "索 %output% unread"
 label-padding = 2
