@@ -26,7 +26,7 @@ active-light = #313435
 
 [bar/main]
 width = 100%
-height = 18
+height = 20
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -210,11 +210,25 @@ type = internal/network
 interface = enp0s3
 interval = 3.0
 format-connected =  <label-connected>
-label-connected = "󰤪  "
+label-connected = "󰤢  "
 label-connected-foreground = #A3BE8C
 label-disconnected = "󰤠 "
 label-disconnected-background = ${colors.background}
 label-disconnected-foreground = ${colors.color1}
+
+# format-connected = <ramp-signal>
+# format-disconnected = <label-disconnected>
+# 
+# # label-connected = "󰤨"
+# # label-connected-foreground = #B4796F
+# 
+# label-disconnected = "󰤭"
+# # label-disconnected-foreground = #384F6B
+# 
+# ramp-signal-0 = "󰤟"
+# ramp-signal-1 = "󰤢"
+# ramp-signal-2 = "󰤥"
+# ramp-signal-3 = "󰤨"
 
 # =======================================
 
