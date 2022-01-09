@@ -52,7 +52,7 @@ modules-right = round-left audio round-right empty-space battery empty-space net
 
 # tray-position = right
 
-wm-restack = i3
+# wm-restack = i3
 # enable-ipc = true
 # override-redirect = false
 
