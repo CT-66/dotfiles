@@ -332,7 +332,7 @@ format-paused-foreground = ${colors.foreground}
 
 [module/github]
 type = internal/github
-token = ${env:~/Dotfiles/polybar/scripts/.env:GITHUB_ACCESS_TOKEN}
+token = ${file:/home/arch/Dotfiles/polybar/scripts/.gh-token.token}
 user = "CT-66"
 empty-notifications = false
 interval = 300
