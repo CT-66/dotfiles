@@ -153,7 +153,7 @@ apps=(
     autokey-gtk
     thunar
     tumbler
-    whitesur-gtk-theme
+    gimp
 )
 
 # for app in "${apps[@]}"; do
