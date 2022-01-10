@@ -562,6 +562,18 @@ end)
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
---
+
 -- autostart
-awful.util.spawn("$HOME/Dotfiles/startup.sh")
+awesome.connect_signal(
+  'exit',
+  function(args)
+    awful.util.spawn('touch ~/.cache/.awesome-restart')
+  end
+)
+
+awesome.connect_signal(
+  'startup',
+  function(args)
+    awful.util.spawn('bash -c "rm ~/.cache/.awesome-restart || ~/Dotfiles/startup.sh"')
+  end
+)
