@@ -18,14 +18,14 @@ def exit_i3():
 def exit_bspwm():
     system("bspc quit")
 
-
 def exit_qtile():
     system("pkill qtile")
 
+def exit_xmonad():
+    system("pkill xmonad")
 
 def exit_awesome():
     system("pkill awesome")
-
 
 def exit_openbox():
     system("openbox --exit")
@@ -38,6 +38,8 @@ def main(wm):
         exit_bspwm()
     elif wm == "qtile":
         exit_qtile()
+    elif wm == "xmonad":
+        exit_xmonad()
     elif wm == "awesome":
         exit_awesome()
     elif wm == "openbox":

@@ -56,6 +56,7 @@ apps=(
     i3
     bspwm
     qtile
+    xmonad
     awesome
     openbox
     feh

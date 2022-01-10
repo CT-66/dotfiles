@@ -14,6 +14,7 @@ dirs=(
     i3
     bspwm
     qtile
+    xmonad
     awesome
     openbox
     kitty
