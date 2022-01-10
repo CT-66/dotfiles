@@ -21,6 +21,7 @@ alias r=ranger
 alias tty-clock='tty-clock -cbt -C 4'
 alias gp='git add . && git commit -m "$(date +"%d %b, %Y | %I:%M %p")" && git push -u origin master'
 alias gc='git clone'
+alias gcg='git clone https://github.com/'
 alias gd='git diff'
 alias gs='git status'
 alias bw-list='bw list items --pretty --search'

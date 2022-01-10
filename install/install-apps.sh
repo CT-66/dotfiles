@@ -151,6 +151,9 @@ apps=(
     plank
     plank-theme-bigsur
     autokey-gtk
+    thunar
+    tumbler
+    whitesur-gtk-theme
 )
 
 # for app in "${apps[@]}"; do
