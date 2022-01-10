@@ -9,23 +9,24 @@ exec i3
 # exec bspwm
 # exec qtile
 # exec awesome
+
 # exec openbox-session
 
 case $1 in
 
   i3)
-    exec i3
-    ;;
+  exec i3
+  ;;
   bspwm)
-    exec bspwm
-    ;;
+  exec bspwm
+  ;;
   qtile)
-    exec qtile
-    ;;
+  exec qtile
+  ;;
   awesome)
-    exec awesome
-    ;;
+  exec awesome
+  ;;
   openbox)
-    exec openbox-session
-    ;;
+  exec openbox-session
+  ;;
 esac
