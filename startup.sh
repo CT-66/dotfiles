@@ -21,5 +21,3 @@ pkill picom; picom -b &
 pkill flashfocus; flashfocus &
 $HOME/Dotfiles/polybar/launch.sh &
 $HOME/Scripts/dotfiles 
-
-
