@@ -5,10 +5,10 @@ xmodmap $HOME/Dotfiles/X11/Xmodmap && sleep 0.0001
 
 # exec i3
 # exec bspwm
-# exec qtile
+exec qtile start
 # exec awesome
 
-exec openbox-session
+# exec openbox-session
 
 case $1 in
 

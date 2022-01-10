@@ -15,9 +15,9 @@ HOME = os.path.expanduser("~")
 
 
 # Startup
-# @hook.subscribe.startup_once
-# def autostart():
-#     subprocess.Popen(HOME + "/Dotfiles/startup.sh")
+@hook.subscribe.startup_once
+def autostart():
+    subprocess.Popen(HOME + "/Dotfiles/startup.sh")
 
 
 keys = [
