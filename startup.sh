@@ -20,4 +20,4 @@ pkill picom; picom -b &
 # pkill picom; picom -f --experimental-backend -b &
 pkill flashfocus; flashfocus &
 $HOME/Dotfiles/polybar/launch.sh &
-$HOME/Scripts/dotfiles &
+$HOME/Scripts/dotfiles 
