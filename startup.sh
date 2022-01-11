@@ -27,5 +27,3 @@ pkill picom; picom -b &
 # pkill picom; picom -f --experimental-backend -b &
 pkill flashfocus; flashfocus &
 
-
-
