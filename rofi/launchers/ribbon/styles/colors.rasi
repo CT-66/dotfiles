@@ -1,10 +1,6 @@
-/*
- * Change the colorscheme for every menu simply by editing this file...
- *
- * Available Color Schemes
- *
- * bluish    berry    nordic    nightly    gotham    mask    faded    cocoa
- *
- */
-
-@import "nightly.rasi"
+// vim: filetype=scss
+@import "bluish.rasi"
+// @import "nordic.rasi"
+// @import "gotham.rasi"
+// @import "mask.rasi"
+// @import "faded.rasi"
