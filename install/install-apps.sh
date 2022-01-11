@@ -65,6 +65,8 @@ apps=(
     dunst
     sxhkd
     rofi
+    rofi-greenclip
+    rofi-emoji
     libnotify
     picom-jonaburg-git
     arc-gtk-theme
@@ -101,7 +103,6 @@ apps=(
     mpd
     ncmpcpp
     mpc
-    rofi-greenclip
     speedtest-cli
     bitwarden-cli
     bitwarden
