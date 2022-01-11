@@ -154,6 +154,7 @@ apps=(
     thunar
     tumbler
     gimp
+    konsave
 )
 
 # for app in "${apps[@]}"; do
