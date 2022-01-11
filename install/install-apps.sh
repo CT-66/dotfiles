@@ -154,6 +154,8 @@ apps=(
     thunar
     tumbler
     gimp
+    plasma-desktop
+    kde-applications
     konsave
 )
 
