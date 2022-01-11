@@ -26,6 +26,7 @@ export EXA_ICON_SPACING=2
 
 export PATH="$HOME/Scripts:$PATH"
 # export QT_QPA_PLATFORMTHEME=qt5ct
+export QT_QPA_PLATFORMTHEME=KDE
 
 export LF_ICONS="\
 tw=:\
