@@ -1,5 +1,9 @@
 #!/bin/bash
 
+export XDG_SESSION_TYPE=x11
+xrdb -merge $HOME/Dotfiles/X11/Xresources && sleep 0.0001
+xmodmap $HOME/Dotfiles/X11/Xmodmap && sleep 0.0001
+
 $HOME/Dotfiles/polybar/launch.sh &
 pkill sxhkd; sxhkd &
 #  xrandr --output Virtual1 --mode 1920x1080
