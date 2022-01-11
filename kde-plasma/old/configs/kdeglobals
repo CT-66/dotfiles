@@ -98,7 +98,7 @@ BrowserApplication=brave-browser.desktop
 ColorScheme=Nordic
 Name=Breeze Light
 TerminalApplication=st
-TerminalService=st.desktop
+# TerminalService=st.desktop
 shadeSortColumn=true
 widgetStyle=Breeze
 
