@@ -25,6 +25,7 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
 export EXA_ICON_SPACING=2
 
 export PATH="$HOME/Scripts:$PATH"
+# export QT_QPA_PLATFORMTHEME=qt5ct
 
 export LF_ICONS="\
 tw=:\
@@ -188,8 +189,3 @@ ex=:\
 *.pdf=:\
 *.nix=:\
 "
-
-if [ $XDG_CURRENT_DESKTOP != "KDE" ]; then
-    export QT_QPA_PLATFORMTHEME=qt5ct
-fi
-
