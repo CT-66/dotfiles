@@ -1,7 +1,7 @@
 // vim: filetype=scss
 
-// @import "themes/nord.rasi"
-@import "themes/theme.rasi"
+@import "themes/nord.rasi"
+// @import "themes/theme.rasi"
 
 configuration {
     // font: "CaskaydiaCove Nerd Font 12";
