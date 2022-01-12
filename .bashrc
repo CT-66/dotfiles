@@ -1,0 +1,1 @@
+source ~/.config/zsh/.zshrc 2>/dev/null
