@@ -14,8 +14,9 @@ pkill sxhkd; sxhkd &
 # feh --bg-scale ~/Pictures/Wallpapers/011.jpg &
 feh --bg-scale ~/Pictures/Wallpapers/067.jpg &
 # feh --bg-scale ~/Pictures/Wallpapers/049.jpg &
-export $(dbus-launch) && dunst &
-$HOME/Scripts/dotfiles 
+# export $(dbus-launch) && dunst &
+dunst &
+$HOME/Scripts/dotfiles
 numlockx &
 pkill greenclip; greenclip daemon &
 pkill nm-applet; nm-applet &
@@ -26,4 +27,3 @@ pkill picom; picom -b &
 # picom-jonaburg
 # pkill picom; picom -f --experimental-backend -b &
 pkill flashfocus; flashfocus &
-
