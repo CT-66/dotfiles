@@ -106,7 +106,7 @@ bindsym $mod+z workspace prev
 bindsym $mod+shift+x move container to workspace next
 bindsym $mod+shift+z move container to workspace prev
 
-# what does this do?
+# alt-tab functionality but with workspaces
 bindsym Mod1+Tab workspace back_and_forth
 
 # move focused container to workspace
