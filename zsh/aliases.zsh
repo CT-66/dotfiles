@@ -36,6 +36,7 @@ alias speedtest='speedtest-cli --simple'
 alias rss=newsboat
 alias wall="feh --bg-scale"
 alias xclip="xclip -sel clip"
+alias ncmp=ncmpcpp
 
 alias cd..='cd ../'
 alias ..='cd ../'
