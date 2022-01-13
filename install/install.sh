@@ -23,3 +23,6 @@ chsh -s /usr/bin/zsh
 
 cd $HOME/Dotfiles/st
 sudo make clean install
+
+mkdir ~/.cache/zsh
+touch ~/.cache/zsh/history
