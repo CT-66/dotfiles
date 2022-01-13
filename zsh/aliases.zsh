@@ -35,6 +35,7 @@ alias ncdu='ncdu --color dark'
 alias speedtest='speedtest-cli --simple'
 alias rss=newsboat
 alias wall="feh --bg-scale"
+alias xclip="xclip -sel clip"
 
 alias cd..='cd ../'
 alias ..='cd ../'

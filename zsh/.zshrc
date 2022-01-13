@@ -24,6 +24,7 @@ setopt NO_CASE_GLOB # Set case insensitive globbing
 # setopt AUTO_CD # Automatically cd into a directory without typing `cd`
 unsetopt correct_all
 setopt correct # Enable correction
+setopt interactivecomments
 
 autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
 zle -N up-line-or-beginning-search

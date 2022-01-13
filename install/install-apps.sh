@@ -98,6 +98,7 @@ apps=(
     kvantum-qt5
     arc-icon-theme
     nordic-kde-git
+    nordic-theme
     ncdu
     ueberzug
     mpd

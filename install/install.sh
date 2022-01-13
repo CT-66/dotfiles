@@ -26,3 +26,7 @@ sudo make clean install
 
 mkdir ~/.cache/zsh
 touch ~/.cache/zsh/history
+
+# ==============
+mkdir -p ~/Pictures/Wallpapers
+git clone https://github.com/CT-66/wallpapers ~/Pictures/Wallpapers
