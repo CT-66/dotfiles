@@ -159,6 +159,7 @@ apps=(
     plasma-desktop
     kde-applications
     konsave
+    dmenu2
 )
 
 # for app in "${apps[@]}"; do
