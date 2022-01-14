@@ -74,9 +74,7 @@ bindkey -M vicmd "^[[D" beginning-of-line
 bindkey -M vicmd "^[[C" end-of-line
 # bindkey -M viins "^[H" backward-char
 # bindkey -M viins "^[L" forward-char
-bindkey -M viins "^J" "down-line-or-history"
-bindkey -M viins "^K" "up-line-or-history"
-bindkey -M viins "^W" vi-backward-kill-word
+bindkey -M viins "^W" "vi-backward-kill-word"
 bindkey -M vicmd "." "insert-last-word"
 
 # Change cursor shape for different vi modes.
