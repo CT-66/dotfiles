@@ -1,0 +1,42 @@
+#!/bin/bash
+
+if [ "$1" == "+" ]; then
+    pamixer -i 5
+    # exit 0
+elif [ "$1" == "-" ]; then
+    pamixer -d 5
+    # exit 0
+elif [ "$1" == "m" ]; then
+    pamixer -t
+    # exit 0
+elif [ "$1" == "t" ]; then
+    pamixer -t
+    # exit 0
+elif [ "$1" == "" ]; then
+    echo "Error: No arguments"
+    exit 1
+else
+    pamixer --set-volume $1
+    exit 0
+fi
+
+
+VOLUME=$(pamixer --get-volume)
+MUTE=$(pamixer --get-mute)
+if [ "$VOLUME" -le 20 ]; then
+    ICON=audio-volume-low
+else if [ "$VOLUME" -le 60 ]; then
+         ICON=audio-volume-medium
+     else 
+         ICON=audio-volume-high
+     fi
+fi
+if [ "$MUTE" == "true" ]; then
+    ICON=audio-volume-muted
+fi 
+
+
+NOTI_ID=$(notify-send.py "Volume" "$VOLUME/100" \
+                         --hint string:image-path:$ICON boolean:transient:true \
+                                int:has-percentage:$VOLUME \
+                         --replaces-process "volume-popup")
