@@ -78,5 +78,7 @@ fi
 
 ln -s ~/Dotfiles/zsh/.zshenv ~/.zshenv
 
+sudo cp ~/Dotfiles/ly/config.ini /etc/ly/config.ini
+
 
 echo "Done"

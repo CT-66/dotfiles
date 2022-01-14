@@ -30,3 +30,7 @@ touch ~/.cache/zsh/history
 # ==============
 mkdir -p ~/Pictures/Wallpapers
 git clone https://github.com/CT-66/wallpapers ~/Pictures/Wallpapers
+
+# ===============
+sudo systemctl disable lightdm.service
+sudo systemctl enable ly.service
