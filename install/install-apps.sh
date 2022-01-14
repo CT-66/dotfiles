@@ -34,6 +34,7 @@ apps=(
     cmake
     openssh
     bat
+    fd
     ffmpeg
     figlet
     fortune
