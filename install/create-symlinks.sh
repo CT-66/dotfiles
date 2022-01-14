@@ -44,6 +44,7 @@ dirs=(
     plank
     lvim
     nvchad
+    deadd
 )
 
  if [ -d ~/.config ]; then

@@ -160,6 +160,7 @@ apps=(
     kde-applications
     konsave
     dmenu2
+    deadd-notification-center-bin
 )
 
 # for app in "${apps[@]}"; do
