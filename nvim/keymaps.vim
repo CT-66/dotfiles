@@ -153,3 +153,4 @@ inoremap <C-l> <right>
 
 nnoremap Q qw
 nnoremap K @w
+
