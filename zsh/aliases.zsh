@@ -37,7 +37,7 @@ alias rss=newsboat
 alias wall="feh --bg-scale"
 alias xclip="xclip -sel clip"
 alias ncmp=ncmpcpp
-alias df='df -h'
+alias df='duf'
 alias du='du -sh'
 
 alias cd..='cd ../'

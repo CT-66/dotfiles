@@ -162,6 +162,7 @@ apps=(
     dmenu2
     deadd-notification-center-bin
     notify-send-py
+    duf 
 )
 
 # for app in "${apps[@]}"; do
