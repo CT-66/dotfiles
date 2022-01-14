@@ -12,6 +12,8 @@ export VISUAL=nvim
 export TERMINAL=st
 export PAGER='bat --paging always'
 
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#d8dee9,bold"
+
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
 --color=dark
 --color=fg:-1,bg:-1,hl:#c678dd,fg+:#ffffff,bg+:#4b5263,hl+:#d858fe
