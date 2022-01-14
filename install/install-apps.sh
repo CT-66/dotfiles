@@ -161,6 +161,7 @@ apps=(
     konsave
     dmenu2
     deadd-notification-center-bin
+    notify-send-py
 )
 
 # for app in "${apps[@]}"; do
