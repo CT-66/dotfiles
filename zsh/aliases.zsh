@@ -38,7 +38,7 @@ alias wall="feh --bg-scale"
 alias xclip="xclip -sel clip"
 alias ncmp=ncmpcpp
 alias df='duf'
-alias du='du -sh'
+alias du='dust -br'
 
 alias cd..='cd ../'
 alias ..='cd ../'

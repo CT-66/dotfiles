@@ -163,6 +163,7 @@ apps=(
     deadd-notification-center-bin
     notify-send-py
     duf 
+    dust
 )
 
 # for app in "${apps[@]}"; do
