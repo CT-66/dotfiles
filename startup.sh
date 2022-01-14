@@ -16,7 +16,8 @@ pkill sxhkd; sxhkd &
 # feh --bg-scale ~/Pictures/Wallpapers/067.jpg &
 feh --bg-scale ~/Pictures/Wallpapers/079.jpg &
 # export $(dbus-launch) && dunst &
-dunst &
+# dunst &
+deadd-notification-center &
 $HOME/Scripts/dotfiles
 numlockx &
 pkill greenclip; greenclip daemon &
