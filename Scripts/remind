@@ -1,5 +1,8 @@
 #!/bin/bash
 
+## incomplete script
+## this does not work yet
+
 if [ $# -eq 0 ]; then
     nvim ~/Desktop/reminders.md
 else
