@@ -8,7 +8,11 @@
   bg: #2E3440;
   bg-alt: #3B4252;
   fg: #81A1C1;
-  fg-alt: #EBCB8B;
+  // fg: #4c566a;
+  // fg-alt: #EBCB8B;
+  // fg-alt: #5e81ac;
+  // fg-alt: #81a1c1;
+  fg-alt: #eceff4;
 
   background-color: @bg;
   text-color: @fg;
