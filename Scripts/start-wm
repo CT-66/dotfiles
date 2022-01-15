@@ -15,6 +15,7 @@ print("""WM/DE:
 - AwesomeWM (5)
 - Openbox (6)
 - KDE Plasma (7)
+- Dont't start xorg (0)
 """)
 
 wm = str(input("> ").strip().rstrip())
@@ -33,6 +34,8 @@ elif wm == "6":
     system("exec openbox-session")
 elif wm == "7":
     system("export DESKTOP_SESSION=plasma && exec startplasma-x11")
+elif wm == "0":
+    pass
 else:
     print("Invalid input")
     exit()
