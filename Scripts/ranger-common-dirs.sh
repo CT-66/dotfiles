@@ -1,5 +1,8 @@
 #!/bin/bash
 
+## incomplete script
+## this does not work yet
+
 USERNAME=$(whoami)
 
 dirs=("$HOME/.config"
