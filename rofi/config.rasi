@@ -1,10 +1,10 @@
 // vim: filetype=scss
 
-// @import "themes/nord.rasi"
-// @import "themes/theme.rasi"
-@import "themes/dracula.rasi"
-// @import "themes/onedark.rasi"
-// @import "themes/nord2.rasi"
+// @theme "themes/nord.rasi"
+// @theme "themes/theme.rasi"
+// @theme "themes/dracula.rasi"
+// @theme "themes/onedark.rasi"
+@theme "themes/nord2.rasi"
 
 configuration {
     // font: "CaskaydiaCove Nerd Font 12";
@@ -48,3 +48,4 @@ configuration {
     kb-cancel: "Escape";
 
 }
+
