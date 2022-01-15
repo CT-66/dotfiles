@@ -1,8 +1,8 @@
 // vim: filetype=scss
 
-@import "themes/nord.rasi"
+// @import "themes/nord.rasi"
 // @import "themes/theme.rasi"
-// @import "themes/dracula.rasi"
+@import "themes/dracula.rasi"
 // @import "themes/onedark.rasi"
 // @import "themes/nord2.rasi"
 
