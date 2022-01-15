@@ -21,19 +21,19 @@ print("""WM/DE:
 wm = str(input("> ").strip().rstrip())
 
 if wm == "1":
-    system("exec i3")
+    system("startx /usr/bin/i3")
 elif wm == "2":
-    system("exec bspwm")
+    system("startx /usr/bin/bspwm")
 elif wm == "3":
-    system("exec qtile start")
+    system("startx /usr/bin/qtile start")
 elif wm == "4":
-    system("exec xmonad")
+    system("startx /usr/bin/xmonad")
 elif wm == "5":
-    system("exec awesome")
+    system("startx /usr/bin/awesome")
 elif wm == "6":
-    system("exec openbox-session")
+    system("startx /usr/bin/openbox-session")
 elif wm == "7":
-    system("export DESKTOP_SESSION=plasma && exec startplasma-x11")
+    system("export DESKTOP_SESSION=plasma && startx /usr/bin/startplasma-x11")
 elif wm == "0":
     pass
 else:
