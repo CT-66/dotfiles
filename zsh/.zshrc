@@ -132,12 +132,16 @@ autopair-init
 # bind alt+s -> sudo !!
 bindkey -s "^[s" "sudo !!"
 
-function expand-alias() {
-    zle _expand_alias
-    zle self-insert
-}
-zle -N expand-alias
-bindkey -M main ' ' expand-alias
+# function expand-alias() {
+#     zle _expand_alias
+#     zle self-insert
+# }
+# zle -N expand-alias
+# bindkey -M main ' ' expand-alias
+
+bindkey "^Xa" _expand_alias
+zstyle ':completion:*' completer _expand_alias _complete _ignored 
+zstyle ':completion:*' regular true
 
 # eval "$(bw completion --shell zsh); compdef _bw bw;"
 
