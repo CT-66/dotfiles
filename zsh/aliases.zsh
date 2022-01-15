@@ -40,6 +40,7 @@ alias xclip="xclip -sel clip"
 alias ncmp=ncmpcpp
 alias df='duf'
 alias du='dust -br'
+alias sctl='sudo systemctl'
 
 alias cd..='cd ../'
 alias ..='cd ../'

@@ -1,0 +1,40 @@
+#!/bin/python3
+# vim: filetype=python
+
+from os import system
+import sys
+
+def exit():
+    sys.exit()
+
+print("""WM/DE:
+- i3 (1)
+- Bspwm (2)
+- Qtile (3)
+- Xmonad (4)
+- AwesomeWM (5)
+- Openbox (6)
+- KDE Plasma (7)
+""")
+
+wm = str(input("> ").strip().rstrip())
+
+if wm == "1":
+    system("exec i3")
+elif wm == "2":
+    system("exec bspwm")
+elif wm == "3":
+    system("exec qtile start")
+elif wm == "4":
+    system("exec xmonad")
+elif wm == "5":
+    system("exec awesome")
+elif wm == "6":
+    system("exec openbox-session")
+elif wm == "7":
+    system("export DESKTOP_SESSION=plasma && exec startplasma-x11")
+else:
+    print("Invalid input")
+    exit()
+
+

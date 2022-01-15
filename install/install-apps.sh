@@ -165,7 +165,6 @@ apps=(
     notify-send-py
     duf 
     dust
-    ly
 )
 
 # for app in "${apps[@]}"; do
