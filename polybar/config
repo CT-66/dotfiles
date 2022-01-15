@@ -63,8 +63,8 @@ width = 50%
 height = 25
 # offset-x = 90%
 offset-x = 50%
-offset-y = 35   
-override-redirect = true 
+offset-y = 35
+override-redirect = true
 fixed-center = true
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -237,13 +237,13 @@ label-disconnected-foreground = ${colors.color1}
 
 # format-connected = <ramp-signal>
 # format-disconnected = <label-disconnected>
-# 
+#
 # # label-connected = "󰤨"
 # # label-connected-foreground = #B4796F
-# 
+#
 # label-disconnected = "󰤭"
 # # label-disconnected-foreground = #384F6B
-# 
+#
 # ramp-signal-0 = "󰤟"
 # ramp-signal-1 = "󰤢"
 # ramp-signal-2 = "󰤥"
