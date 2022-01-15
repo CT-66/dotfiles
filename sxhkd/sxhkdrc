@@ -80,3 +80,5 @@ super + shift + n
 # test
 super + o; {ctrl+f}
     {ranger-common-dirs.sh}
+super + o; {ctrl+s}
+    {rofi-exec-scripts.sh}
