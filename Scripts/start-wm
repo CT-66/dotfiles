@@ -19,6 +19,7 @@ try:
 - AwesomeWM (5)
 - Openbox (6)
 - KDE Plasma (7)
+- Gnome (8)
 - Dont't start xorg (0)
 """)
 
@@ -45,6 +46,9 @@ try:
     elif wm == "7":
         print("Starting KDE Plasma")
         system("export DESKTOP_SESSION=plasma && startx /usr/bin/startplasma-x11 2>/dev/null")
+    elif wm == "8":
+        print("Starting Gnome")
+        system("export XDG_SESSION_TYPE=x11 && export GDK_BACKEND=x11 && startx /usr/bin/gnome-session 2>/dev/null")
     elif wm == "0":
         pass
     elif wm == "":
@@ -56,4 +60,3 @@ try:
 
 except KeyboardInterrupt:
     exit()
-
