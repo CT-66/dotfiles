@@ -1,10 +1,10 @@
 // vim: filetype=scss
 
-// @theme "themes/nord.rasi"
+@theme "themes/nord.rasi"
 // @theme "themes/dracula.rasi"
 // @theme "themes/onedark.rasi"
 // @theme "themes/tokyonight.rasi"
-@theme "themes/krunner.rasi"
+// @theme "themes/krunner.rasi"
 
 configuration {
     // font: "CaskaydiaCove Nerd Font 12";
