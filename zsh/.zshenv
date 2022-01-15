@@ -13,6 +13,8 @@ export TERMINAL=st
 export PAGER='bat --paging always'
 
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#abb2bf"
+export AUTO_NOTIFY_THRESHOLD=10
+export AUTO_NOTIFY_EXPIRE_TIME=10000000
 
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
 --color=dark

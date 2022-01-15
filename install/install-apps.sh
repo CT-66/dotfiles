@@ -163,7 +163,7 @@ apps=(
     dmenu2
     deadd-notification-center-bin
     notify-send-py
-    duf 
+    duf
     dust
 )
 
@@ -197,6 +197,11 @@ makepkg -si
 cd $HOME
 rm -rf $HOME/archcraft-cursors
 echo "Done"
+
+echo "Installing additional zsh plugins..."
+cd $HOME
+git clone https://github.com/MichaelAquilina/zsh-auto-notify
+sudo mv $HOME/zsh-auto-notify /usr/share/zsh/plugins
 
 echo "Installing openbox themes.."
 cd $HOME
