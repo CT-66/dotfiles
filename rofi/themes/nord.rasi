@@ -1,6 +1,4 @@
 // vim: filetype=scss
-//  https://github.com/amayer5125/nord-rofi
-
 * {
     nord0: #2e3440;
     nord1: #3b4252;
