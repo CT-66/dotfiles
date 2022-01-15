@@ -199,7 +199,7 @@ format-muted-padding = 1
 
 [module/cpu]
 type = internal/cpu
-interval = 2.5
+interval = 0.5
 click-label = st -e btop
 
 format-prefix =" "
@@ -214,6 +214,7 @@ format-foreground = #989cff
 [module/memory]
 type = custom/script
 exec = free -m | sed -n 's/^Mem:\s\+[0-9]\+\s\+\([0-9]\+\)\s.\+/\1/p'
+interval = 0.5
 click-label = st -e btop
 format = <label>
 format-prefix = "﬙ "
