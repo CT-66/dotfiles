@@ -4,14 +4,22 @@
 from os import system
 import sys
 
+
 def exit():
     sys.exit()
+
+
+def start(name, path):
+    print(f"Starting {name}")
+    system(f"startx /usr/bin/{path} 2>/dev/null")
+
 
 default_wm = "/usr/bin/i3"
 
 try:
 
-    print("""WM/DE:
+    print(
+        """WM/DE:
 - i3 (1)
 - Bspwm (2)
 - Qtile (3)
@@ -21,34 +29,29 @@ try:
 - KDE Plasma (7)
 - Gnome (8)
 - Dont't start xorg (0)
-""")
+"""
+    )
 
     wm = str(input("> ").strip().rstrip())
 
     if wm == "1":
-        print("Starting i3")
-        system("startx /usr/bin/i3 2>/dev/null")
+        start("i3", "i3")
     elif wm == "2":
-        print("Starting Bspwm")
-        system("startx /usr/bin/bspwm 2>/dev/null")
+        start("Bspwm", "bspwm")
     elif wm == "3":
-        print("Starting Qtile")
-        system("startx /usr/bin/qtile start 2>/dev/null")
+        start("Qtile", "qtile start")
     elif wm == "4":
-        print("Starting Xmonad")
-        system("startx /usr/bin/xmonad 2>/dev/null")
+        start("Xmonad", "xmonad")
     elif wm == "5":
-        print("Starting AwesomeWM")
-        system("startx /usr/bin/awesome 2>/dev/null")
+        start("AwesomeWM", "awesome")
     elif wm == "6":
-        print("Starting Openbox")
-        system("startx /usr/bin/openbox-session 2>/dev/null")
+        start("Openbox", "openbox-session")
     elif wm == "7":
-        print("Starting KDE Plasma")
-        system("export DESKTOP_SESSION=plasma && startx /usr/bin/startplasma-x11 2>/dev/null")
+        system("export DESKTOP_SESSION=plasma")
+        start("KDE Plasma", "startplasma-x11")
     elif wm == "8":
-        print("Starting Gnome")
-        system("export XDG_SESSION_TYPE=x11 && export GDK_BACKEND=x11 && startx /usr/bin/gnome-session 2>/dev/null")
+        system("export XDG_SESSION_TYPE=x11 && export GDK_BACKEND=x11")
+        start("Gnome", "gnome-session")
     elif wm == "0":
         pass
     elif wm == "":
