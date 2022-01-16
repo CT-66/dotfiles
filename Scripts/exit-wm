@@ -1,57 +1,33 @@
-#!/bin/python3
-# vim: filetype=python
-from os import system
-import sys
+#!/bin/bash
 
-if len(sys.argv) < 2:
-    print("Error: No window manager specified. Quitting script.\nUsage: exit-wm [window manager]")
-    exit()
+wm="$(echo "i3|Bspwm|Qtile|Xmonad|AwesomeWM|Openbox" | rofi -dmenu -p "Exit WM" -sep "|")"
+confirmation="$(echo "Yes|No" | rofi -dmenu -p "Are you sure?" -sep "|")"
 
-wm = sys.argv[1]
+exit_wm () {
+    case $1 in
+        i3)
+            exec i3-msg exit
+            ;;
+        Bspwm)
+            exec bspc quit
+            ;;
+        Qtile)
+            exec pkill qtile
+            ;;
+        Xmonad)
+            exec pkill xmonad
+            ;;
+        AwesomeWM)
+            exec pkill awesome
+            ;;
+        Openbox)
+            exec openbox --exit
+            ;;
+    esac
+}
 
-def exit():
-    sys.exit()
-
-def exit_i3():
-    system("i3-msg exit")
-
-def exit_bspwm():
-    system("bspc quit")
-
-def exit_qtile():
-    system("pkill qtile")
-
-def exit_xmonad():
-    system("pkill xmonad")
-
-def exit_awesome():
-    system("pkill awesome")
-
-def exit_openbox():
-    system("openbox --exit")
-
-
-def main(wm):
-    if wm == "i3":
-        exit_i3()
-    elif wm=="bspwm":
-        exit_bspwm()
-    elif wm == "qtile":
-        exit_qtile()
-    elif wm == "xmonad":
-        exit_xmonad()
-    elif wm == "awesome":
-        exit_awesome()
-    elif wm == "openbox":
-        exit_openbox()
-
-prompt = input(f"Are you sure you want to exit {wm}? (yes/no) ").lower().strip().rstrip()
-
-if prompt == "yes":
-    main(wm)
-elif prompt == "no":
-    print("Quitting script")
-    exit()
-else:
-    print(f"'{prompt}' is not a valid response. Quitting script.")
-    exit()
+if [ "$confirmation" == "Yes" ]; then
+    exit_wm "$wm"
+elif [ "$confirmation" == "No" ]; then
+    :
+fi
