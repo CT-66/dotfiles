@@ -1,4 +1,5 @@
 #!/bin/bash
 
-script="$(\ls $HOME/Scripts | rofi -dmenu -p "Scripts")"
-exec st -e "$script"
+script="$(ls $HOME/Scripts | rofi -dmenu -p "Scripts")"
+# exec st -e "$script"
+exec st -e sh -c "exec $script; zsh"
