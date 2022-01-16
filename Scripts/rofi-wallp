@@ -1,0 +1,4 @@
+#!/bin/bash
+
+wallpaper="$(\ls ~/Pictures/Wallpapers | rofi -dmenu -p "Wallpaper")"
+feh --bg-scale ~/Pictures/Wallpapers/"$wallpaper"
