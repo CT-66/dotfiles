@@ -1,0 +1,5 @@
+#!/bin/bash
+
+wm="$(echo "i3|Bspwm|Qtile|Xmonad|AwesomeWM|Openbox" | rofi -dmenu -p "Exit WM" -sep "|")"
+
+confirmation="$(echo "Yes|No" | rofi -dmenu -p "Are you sure?" -sep "|")"
