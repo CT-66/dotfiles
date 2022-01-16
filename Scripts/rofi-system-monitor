@@ -1,0 +1,5 @@
+#!/bin/bash
+
+process="$(ps cux | awk '{print $11}' | tail -n +2 | rofi -dmenu -p "Processes")"
+
+ps -p $(pidof "$process") -o %cpu,%mem | rofi -dmenu
