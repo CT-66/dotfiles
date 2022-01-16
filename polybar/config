@@ -46,8 +46,9 @@ font-0 = JetBrainsMono Nerd Font:style=Bold:pixelsize=12;3
 font-1 = JetBrainsMono Nerd Font:size=14;4
 font-2 = Material Design Icons:style=Regular:size=12;3
 
-modules-left = round-left i3 round-right empty-space mpd
-modules-right = reddit updates github empty-space round-left audio round-right empty-space network empty-space round-left cpu round-right empty-space memory empty-space battery empty-space round-left time round-right empty-space tray-icon empty-space
+modules-left = round-left i3 round-right empty-space cpu empty-space memory empty-space
+modules-center = mpd
+modules-right = reddit updates github empty-space round-left audio round-right empty-space network empty-space battery empty-space round-left time round-right empty-space tray-icon empty-space
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -206,7 +207,7 @@ format-prefix =" "
 format =  <label>
 
 label = CPU %percentage%%
-format-background = #2a2e36
+# format-background = #2a2e36
 format-foreground = #989cff
 
 # =======================================
@@ -375,7 +376,14 @@ click-right = $HOME/Dotfiles/polybar/scripts/killbar.sh
 # =========================================
 
 [module/separator]
-type = custom/script
-exec = "|"
+type = custom/text
+content = "|"
 
 # =========================================
+
+[module/dot]
+type = custom/text
+content = 
+content-background = ${colors.background}
+content-foreground = #3A404C
+content-padding = 1
