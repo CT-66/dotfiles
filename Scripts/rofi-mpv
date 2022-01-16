@@ -1,0 +1,7 @@
+#!/bin/bash
+
+dir="$(\ls ~/Music | rofi -dmenu -p "Music")"
+cd "$dir"
+
+song="$(\ls ~/Music/$dir | rofi -dmenu -p "Music")"
+mpv ~/Music/"$dir"/"$song" --no-video
