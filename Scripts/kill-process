@@ -1,0 +1,10 @@
+#!/bin/bash
+
+process="$(ps cux | awk '{print $11}' | tail -n +2 | rofi -dmenu -p "Kill Process")"
+confirmation="$(echo "Yes|No" | rofi -dmenu -p "Do you really want to kill $process?" -sep "|")"
+
+if [ "$confirmation" == "Yes" ]; then
+    pkill "$process"
+elif [ "$confirmation" == "No" ]; then
+    :
+fi

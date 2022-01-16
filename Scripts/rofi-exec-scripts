@@ -1,4 +1,4 @@
 #!/bin/bash
 
 script="$(\ls $HOME/Scripts | rofi -dmenu -p "Scripts")"
-exec $script
+exec st -e "$script"
