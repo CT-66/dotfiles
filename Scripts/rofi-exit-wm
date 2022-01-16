@@ -22,10 +22,12 @@ exit_wm () {
             ;;
         Openbox)
             exec openbox --exit
+            ;;
+    esac
 }
 
-if [ $confirmation == "Yes" ]; then
-    exit_wm $wm
-elif [ $confirmation == "No" ]; then
-    exit
+if [ "$confirmation" == "Yes" ]; then
+    exit_wm "$wm"
+elif [ "$confirmation" == "No" ]; then
+    :
 fi
