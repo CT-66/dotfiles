@@ -54,7 +54,7 @@ cursor-scroll = ns-resize
 
 # =======================================
 
-[bar/tray]
+[bar/tray-bar]
 font-0 = JetBrainsMono Nerd Font:style=Bold:pixelsize=12;3
 font-1 = JetBrainsMono Nerd Font:size=14;4
 font-2 = Material Design Icons:style=Regular:size=12;3
