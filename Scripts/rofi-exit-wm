@@ -1,5 +1,31 @@
 #!/bin/bash
 
 wm="$(echo "i3|Bspwm|Qtile|Xmonad|AwesomeWM|Openbox" | rofi -dmenu -p "Exit WM" -sep "|")"
-
 confirmation="$(echo "Yes|No" | rofi -dmenu -p "Are you sure?" -sep "|")"
+
+exit_wm () {
+    case $1 in
+        i3)
+            exec i3-msg exit
+            ;;
+        Bspwm)
+            exec bspc quit
+            ;;
+        Qtile)
+            exec pkill qtile
+            ;;
+        Xmonad)
+            exec pkill xmonad
+            ;;
+        AwesomeWM)
+            exec pkill awesome
+            ;;
+        Openbox)
+            exec openbox --exit
+}
+
+if [ $confirmation == "Yes" ]; then
+    exit_wm $wm
+elif [ $confirmation == "No" ]; then
+    exit
+fi
