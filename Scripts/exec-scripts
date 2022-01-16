@@ -1,0 +1,9 @@
+#!/bin/bash
+
+script="$(ls $HOME/Scripts | rofi -dmenu -p "Scripts")"
+# exec st -e "$script"
+if [ "$script" == "" ]; then
+    :
+else
+    exec st -e sh -c "exec $script; exec /bin/zsh"
+fi
