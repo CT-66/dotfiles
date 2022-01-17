@@ -148,8 +148,8 @@ bindsym $mod+Shift+Mod1+r restart
 
 # gaps
 # for_window [class=".*"] border pixel 0
-# for_window [class=".*"] border pixel 2
-for_window [class=".*"] border pixel 1
+for_window [class=".*"] border pixel 2
+# for_window [class=".*"] border pixel 1
 gaps inner 15
 gaps outer 15
 
