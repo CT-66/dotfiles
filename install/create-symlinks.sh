@@ -65,7 +65,10 @@ sudo mv /usr/share/icons/default/index.theme /usr/share/icons/default/index.them
 sudo ln -s ~/Dotfiles/icons/default/index.theme /usr/share/icons/default/index.theme
 ln -s ~/Dotfiles/Scripts ~/Scripts
 ln -s ~/Dotfiles/Scripts/autokey ~/.config/autokey/data
-ln -s ~/Dotfiles/.bashrc ~/.bashrc
+
+if [ -f ~/.bashrc ]; then
+    mv ~/.bashrc ~/.bashrc.bak
+ln -s ~/Dotfiles/bashrc ~/.bashrc
 
 if [ -f ~/.xinitrc ]; then
     mv ~/.xinitrc ~/.xinitrc.bak

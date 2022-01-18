@@ -5,5 +5,5 @@ script="$(ls $HOME/Scripts | rofi -dmenu -p "Scripts")"
 if [ "$script" == "" ]; then
     :
 else
-    exec st -e sh -c "exec $script; exec /bin/zsh"
+    exec st -e sh -c "exec $script; exec /bin/zsh; read"
 fi
