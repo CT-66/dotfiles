@@ -13,12 +13,12 @@ for file in "${files_to_be_removed[@]}"; do
 done
 
 # open ranger in current directory
-__cd () {
+_ () {
     ranger --choosedir=$HOME/.cache/.rangerdir; LASTDIR=`\cat $HOME/.cache/.rangerdir`; cd $LASTDIR
 }
 
 # exit the shell and return to ranger (to be used after pressing `S` in ranger)
-__exit () {
+__ () {
     exit
 }
 
@@ -32,8 +32,8 @@ lf_cd () {
     fi
 }
 
-bindkey -s '^F' '__cd\n' # ctrl+f
-bindkey -s '^Z' '__exit\n' # exit the shell inside ranger
+bindkey -s '^F' '_\n' # ctrl+f
+bindkey -s '^Z' '__\n' # exit the shell inside ranger
 bindkey -s '^[^F' 'lf_cd\n' # ctrl+alt+f
 
 # ranger_cd() {

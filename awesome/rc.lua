@@ -15,7 +15,7 @@ local naughty = require("naughty")
 -- local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
 
-dofile ("keybindings.lua")
+dofile("keybindings.lua")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
