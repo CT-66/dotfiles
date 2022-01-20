@@ -45,6 +45,7 @@ dirs=(
     lvim
     nvchad
     deadd
+    xplr
 )
 
  if [ -d ~/.config ]; then
