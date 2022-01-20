@@ -1,7 +1,14 @@
 #!/bin/bash
 
-dir="$(\ls ~/Music | rofi -dmenu -p "Music")"
-cd "$dir"
+# dir="$(\ls ~/Music | rofi -dmenu -p "Music")"
+# cd "$dir"
 
-song="$(\ls ~/Music/$dir | rofi -dmenu -p "Music")"
-mpv ~/Music/"$dir"/"$song" --no-video
+# song="$(\ls ~/Music/$dir | rofi -dmenu -p "Music")"
+# mpv ~/Music/"$dir"/"$song" --no-video
+
+song="$(find -e mp3 -e m4a . ~/Music | cut -d'/' -f5- | rofi -dmenu -p "Music")"
+if [ "song" == "" ]; then
+    :
+else
+    mpv $HOME/Music/"$song"
+fi
