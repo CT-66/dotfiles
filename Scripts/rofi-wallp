@@ -1,4 +1,9 @@
 #!/bin/bash
 
-wallpaper="$(\ls ~/Pictures/Wallpapers | rofi -dmenu -p "Wallpaper")"
-feh --bg-scale ~/Pictures/Wallpapers/"$wallpaper"
+# wallpaper="$(\ls ~/Pictures/Wallpapers | rofi -dmenu -p "Wallpaper")"
+wallpaper="$(fd -e png -e jpg . ~/Pictures/Wallpapers | cut -d'/' -f6- | rofi -dmenu -p "Wallpaper")"
+if [ "$wallpaper" == "" ]; then
+    :
+else
+    feh --bg-scale $HOME/Pictures/Wallpapers/"$wallpaper"
+fi
