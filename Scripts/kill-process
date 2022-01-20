@@ -1,6 +1,6 @@
 #!/bin/bash
 
-process="$(ps cux | awk '{print $11}' | tail -n +2 | rofi -dmenu -p "Kill Process")"
+process="$(ps cux | awk '{print $11}' | tail -n +2 | rofi -dmenu -i -p "Kill Process")"
 
 if [ "$process" == "" ]; then
     :

@@ -6,9 +6,9 @@
 # song="$(\ls ~/Music/$dir | rofi -dmenu -p "Music")"
 # mpv ~/Music/"$dir"/"$song" --no-video
 
-song="$(find -e mp3 -e m4a . ~/Music | cut -d'/' -f5- | rofi -dmenu -p "Music")"
+song="$(fd -e mp3 -e m4a . ~/Music | cut -d'/' -f5- | rofi -dmenu -i -p "Music")"
 if [ "song" == "" ]; then
     :
 else
-    mpv $HOME/Music/"$song"
+    mpv $HOME/Music/"$song" --no-video
 fi

@@ -1,7 +1,11 @@
 #!/bin/bash
 
 wm="$(echo "i3|Bspwm|Qtile|Xmonad|AwesomeWM|Openbox" | rofi -dmenu -p "Exit WM" -sep "|")"
-confirmation="$(echo "Yes|No" | rofi -dmenu -p "Are you sure?" -sep "|")"
+if [ "$wm" == "" ]; then
+    :
+else
+    confirmation="$(echo "Yes|No" | rofi -dmenu -i -p "Are you sure?" -sep "|")"
+fi
 
 exit_wm () {
     case $1 in
@@ -29,5 +33,7 @@ exit_wm () {
 if [ "$confirmation" == "Yes" ]; then
     exit_wm "$wm"
 elif [ "$confirmation" == "No" ]; then
+    :
+elif [ "$confirmation" == "" ]; then
     :
 fi
