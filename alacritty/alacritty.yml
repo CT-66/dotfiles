@@ -1,119 +1,118 @@
 env:
-  TERM: xterm-256color
+    TERM: xterm-256color
 
 window:
     startup_mode: Windowed
     padding:
-      x: 6
-      y: 6
+        x: 6
+        y: 6
     dynamic_padding: false
     title: Alacritty
     class:
-      instance: Alacritty
-      general: Alacritty
+        instance: Alacritty
+        general: Alacritty
     gtk_theme_variant: None
 
 font:
     normal:
-        family: CaskaydiaCove Nerd Font
-        #style: Regular
+        # family: CaskaydiaCove Nerd Font
+        family:
+            JetBrainsMono Nerd Font
+            #style: Regular
     size: 11.0
     offset:
-      x: 0
-      y: 1
+        x: 0
+        y: 1
 
 scrolling:
-  history: 10000
-  auto_scroll: false
-  tabspaces: 4
-
+    history: 10000
+    auto_scroll: false
+    tabspaces: 4
 
 draw_bold_text_with_bright_colors: true
 
-
 schemes:
-  ### Doom One ###
-  doom-one: &doom-one
-    primary:
-      background: '#282c34'
-      foreground: '#bbc2cf'
-    cursor:
-      text: CellBackground
-      cursor: '#528bff'
-    selection:
-      text: CellForeground
-      background: '#3e4451'
-    normal:
-      black:   '#1c1f24'
-      red:     '#ff6c6b'
-      green:   '#98be65'
-      yellow:  '#da8548'
-      blue:    '#51afef'
-      magenta: '#c678dd'
-      cyan:    '#5699af'
-      white:   '#202328'
-    bright:
-      black:   '#5b6268'
-      red:     '#da8548'
-      green:   '#4db5bd'
-      yellow:  '#ecbe7b'
-      blue:    '#3071db'
-      magenta: '#a9a1e1'
-      cyan:    '#46d9ff'
-      white:   '#dfdfdf'
+    ### Doom One ###
+    doom-one: &doom-one
+        primary:
+            background: "#282c34"
+            foreground: "#bbc2cf"
+        cursor:
+            text: CellBackground
+            cursor: "#528bff"
+        selection:
+            text: CellForeground
+            background: "#3e4451"
+        normal:
+            black: "#1c1f24"
+            red: "#ff6c6b"
+            green: "#98be65"
+            yellow: "#da8548"
+            blue: "#51afef"
+            magenta: "#c678dd"
+            cyan: "#5699af"
+            white: "#202328"
+        bright:
+            black: "#5b6268"
+            red: "#da8548"
+            green: "#4db5bd"
+            yellow: "#ecbe7b"
+            blue: "#3071db"
+            magenta: "#a9a1e1"
+            cyan: "#46d9ff"
+            white: "#dfdfdf"
 
-  ### Nord ###
-  nord: &nord
-      primary:
-        background: '#2e3440'
-        foreground: '#d8dee9'
-        dim_foreground: '#a5abb6'
-      cursor:
-        # text: '#2e3440'
-        # cursor: '#d8dee9'
-        text: '#2e3440'
-        cursor: '#528bff'
-      vi_mode_cursor:
-        text: '#2e3440'
-        cursor: '#528bff'
-      selection:
-        text: CellForeground
-        background: '#4c566a'
-      search:
-        matches:
-          foreground: CellBackground
-          background: '#88c0d0'
-        bar:
-          background: '#434c5e'
-          foreground: '#d8dee9'
-      normal:
-        black: '#3b4252'
-        red: '#bf616a'
-        green: '#a3be8c'
-        yellow: '#ebcb8b'
-        blue: '#81a1c1'
-        magenta: '#b48ead'
-        cyan: '#88c0d0'
-        white: '#e5e9f0'
-      bright:
-        black: '#4c566a'
-        red: '#bf616a'
-        green: '#a3be8c'
-        yellow: '#ebcb8b'
-        blue: '#81a1c1'
-        magenta: '#b48ead'
-        cyan: '#8fbcbb'
-        white: '#eceff4'
-      dim:
-        black: '#373e4d'
-        red: '#94545d'
-        green: '#809575'
-        yellow: '#b29e75'
-        blue: '#68809a'
-        magenta: '#8c738c'
-        cyan: '#6d96a5'
-        white: '#aeb3bb'
-
+    ### Nord ###
+    nord: &nord
+        primary:
+            background: "#2e3440"
+            foreground: "#d8dee9"
+            dim_foreground: "#a5abb6"
+        cursor:
+            # text: '#2e3440'
+            # cursor: '#d8dee9'
+            text: "#2e3440"
+            cursor: "#528bff"
+        vi_mode_cursor:
+            text: "#2e3440"
+            cursor: "#528bff"
+        selection:
+            text: CellForeground
+            background: "#4c566a"
+        search:
+            matches:
+                foreground: CellBackground
+                background: "#88c0d0"
+            bar:
+                background: "#434c5e"
+                foreground: "#d8dee9"
+        normal:
+            black: "#3b4252"
+            red: "#bf616a"
+            green: "#a3be8c"
+            yellow: "#ebcb8b"
+            blue: "#81a1c1"
+            magenta: "#b48ead"
+            cyan: "#88c0d0"
+            white: "#e5e9f0"
+        bright:
+            black: "#4c566a"
+            red: "#bf616a"
+            green: "#a3be8c"
+            yellow: "#ebcb8b"
+            blue: "#81a1c1"
+            magenta: "#b48ead"
+            cyan: "#8fbcbb"
+            white: "#eceff4"
+        dim:
+            black: "#373e4d"
+            red: "#94545d"
+            green: "#809575"
+            yellow: "#b29e75"
+            blue: "#68809a"
+            magenta: "#8c738c"
+            cyan: "#6d96a5"
+            white: "#aeb3bb"
 
 # colors: *doom-one
 colors: *nord
@@ -130,50 +129,49 @@ shell:
     program: zsh
 
 key_bindings:
-  - { key: V,              mods: Control|Shift,                   action: Paste            }
-  - { key: V,              mods: Control,                         action: Paste            }
-  - { key: C,              mods: Control|Shift,                   action: Copy             }
-  - { key: Insert,         mods: Shift,                           action: PasteSelection   }
-  - { key: Key0,           mods: Control,                         action: ResetFontSize    }
-  - { key: Plus,           mods: Control,                         action: IncreaseFontSize }
-  - { key: NumpadAdd,      mods: Control,                         action: IncreaseFontSize }
-  - { key: Minus,          mods: Control,                         action: DecreaseFontSize }
-  - { key: NumpadSubtract, mods: Control,                         action: DecreaseFontSize }
-  - { key: F11,            mods: None,                            action: ToggleFullScreen }
-  # Vi Mode
-  - { key: Escape,  mods: Control,                 action: ToggleViMode            }
-  - { key: G,                           mode: Vi, action: ScrollToTop             }
-  - { key: G,      mods: Shift,         mode: Vi, action: ScrollToBottom          }
-  - { key: B,      mods: Control,       mode: Vi, action: ScrollPageUp            }
-  - { key: F,      mods: Control,       mode: Vi, action: ScrollPageDown          }
-  - { key: U,      mods: Control,       mode: Vi, action: ScrollHalfPageUp        }
-  - { key: D,      mods: Control,       mode: Vi, action: ScrollHalfPageDown      }
-  - { key: Y,                           mode: Vi, action: Copy                    }
-  - { key: V,                           mode: Vi, action: ToggleNormalSelection   }
-  - { key: V,      mods: Shift,         mode: Vi, action: ToggleLineSelection     }
-  - { key: V,      mods: Control,       mode: Vi, action: ToggleBlockSelection    }
-  - { key: V,      mods: Alt,           mode: Vi, action: ToggleSemanticSelection }
-  - { key: Return,                      mode: Vi, action: Open                    }
-  - { key: K,                           mode: Vi, action: Up                      }
-  - { key: J,                           mode: Vi, action: Down                    }
-  - { key: H,                           mode: Vi, action: Left                    }
-  - { key: H,      mods: Shift,         mode: Vi, action: High                    }
-  - { key: M,      mods: Shift,         mode: Vi, action: Middle                  }
-  - { key: L,      mods: Shift,         mode: Vi, action: Low                     }
-  - { key: B,                           mode: Vi, action: SemanticLeft            }
-  - { key: W,                           mode: Vi, action: SemanticRight           }
-  - { key: E,                           mode: Vi, action: SemanticRightEnd        }
-  - { key: B,      mods: Shift,         mode: Vi, action: WordLeft                }
-  - { key: W,      mods: Shift,         mode: Vi, action: WordRight               }
-  - { key: E,      mods: Shift,         mode: Vi, action: WordRightEnd            }
-  - { key: Key5,   mods: Shift,         mode: Vi, action: Bracket                 }
-  - { key: Slash,                       mode: Vi, action: SearchForward           }
-  - { key: Slash,  mods: Shift,         mode: Vi, action: SearchBackward          }
-  - { key: N,                           mode: Vi, action: SearchNext              }
-  - { key: N,      mods: Shift,         mode: Vi, action: SearchPrevious          }
-
+    - { key: V, mods: Control|Shift, action: Paste }
+    - { key: V, mods: Control, action: Paste }
+    - { key: C, mods: Control|Shift, action: Copy }
+    - { key: Insert, mods: Shift, action: PasteSelection }
+    - { key: Key0, mods: Control, action: ResetFontSize }
+    - { key: Plus, mods: Control, action: IncreaseFontSize }
+    - { key: NumpadAdd, mods: Control, action: IncreaseFontSize }
+    - { key: Minus, mods: Control, action: DecreaseFontSize }
+    - { key: NumpadSubtract, mods: Control, action: DecreaseFontSize }
+    - { key: F11, mods: None, action: ToggleFullScreen }
+    # Vi Mode
+    - { key: Escape, mods: Control, action: ToggleViMode }
+    - { key: G, mode: Vi, action: ScrollToTop }
+    - { key: G, mods: Shift, mode: Vi, action: ScrollToBottom }
+    - { key: B, mods: Control, mode: Vi, action: ScrollPageUp }
+    - { key: F, mods: Control, mode: Vi, action: ScrollPageDown }
+    - { key: U, mods: Control, mode: Vi, action: ScrollHalfPageUp }
+    - { key: D, mods: Control, mode: Vi, action: ScrollHalfPageDown }
+    - { key: Y, mode: Vi, action: Copy }
+    - { key: V, mode: Vi, action: ToggleNormalSelection }
+    - { key: V, mods: Shift, mode: Vi, action: ToggleLineSelection }
+    - { key: V, mods: Control, mode: Vi, action: ToggleBlockSelection }
+    - { key: V, mods: Alt, mode: Vi, action: ToggleSemanticSelection }
+    - { key: Return, mode: Vi, action: Open }
+    - { key: K, mode: Vi, action: Up }
+    - { key: J, mode: Vi, action: Down }
+    - { key: H, mode: Vi, action: Left }
+    - { key: H, mods: Shift, mode: Vi, action: High }
+    - { key: M, mods: Shift, mode: Vi, action: Middle }
+    - { key: L, mods: Shift, mode: Vi, action: Low }
+    - { key: B, mode: Vi, action: SemanticLeft }
+    - { key: W, mode: Vi, action: SemanticRight }
+    - { key: E, mode: Vi, action: SemanticRightEnd }
+    - { key: B, mods: Shift, mode: Vi, action: WordLeft }
+    - { key: W, mods: Shift, mode: Vi, action: WordRight }
+    - { key: E, mods: Shift, mode: Vi, action: WordRightEnd }
+    - { key: Key5, mods: Shift, mode: Vi, action: Bracket }
+    - { key: Slash, mode: Vi, action: SearchForward }
+    - { key: Slash, mods: Shift, mode: Vi, action: SearchBackward }
+    - { key: N, mode: Vi, action: SearchNext }
+    - { key: N, mods: Shift, mode: Vi, action: SearchPrevious }
 
 bell:
-  command:
-    program: notify-send
-  args: []
+    command:
+        program: notify-send
+    args: []

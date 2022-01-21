@@ -160,13 +160,13 @@ apps=(
     plasma-desktop
     kde-applications
     konsave
-    dmenu2
     deadd-notification-center-bin
     notify-send-py
     duf
     dust
     xplr
     dragon-drag-and-drop
+    flatpak
 )
 
 # for app in "${apps[@]}"; do

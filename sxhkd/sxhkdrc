@@ -19,6 +19,10 @@ super + d
 super + shift + d
     rofi -show run
 
+# dmenu
+super + shift + ctrl + d
+    dmenu_run
+
 super + Tab
     rofi -show window
 
