@@ -44,7 +44,7 @@ super + shift + Escape
     mpc pause && betterlockscreen -l
 
 # clipboard
-super + shift + v
+super + v
     rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 
 # system monitor
