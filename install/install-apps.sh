@@ -166,6 +166,7 @@ apps=(
     duf
     dust
     xplr
+    dragon-drag-and-drop
 )
 
 # for app in "${apps[@]}"; do

@@ -13,6 +13,9 @@
   // fg-alt: #5e81ac;
   // fg-alt: #81a1c1;
   fg-alt: #eceff4;
+  active-background: #EBCB8B;
+  selected-normal-foreground: #EBCB8B;
+  selected-active-foreground: #EBCB8B;
 
   background-color: @bg;
   text-color: @fg;
