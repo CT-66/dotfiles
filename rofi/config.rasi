@@ -13,6 +13,7 @@ configuration {
     // terminal: "alacritty";
     terminal: "st";
     case-sensitive: false;
+    matching: "fuzzy";
     // display-drun: "Applications:";
     // display-window: "Windows:";
     drun {
