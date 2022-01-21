@@ -167,6 +167,7 @@ apps=(
     xplr
     dragon-drag-and-drop
     flatpak
+    links
 )
 
 # for app in "${apps[@]}"; do
