@@ -168,6 +168,7 @@ apps=(
     dragon-drag-and-drop
     flatpak
     links
+    xournalpp
 )
 
 # for app in "${apps[@]}"; do

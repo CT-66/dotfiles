@@ -46,8 +46,8 @@ font-0 = JetBrainsMono Nerd Font:style=Bold:pixelsize=12;3
 font-1 = JetBrainsMono Nerd Font:size=14;4
 font-2 = Material Design Icons:style=Regular:size=12;3
 
-modules-left = round-left i3 round-right empty-space cpu empty-space memory empty-space
-modules-center = mpd
+modules-left = round-left i3 round-right empty-space cpu empty-space memory empty-space mpd
+# modules-center = mpd
 modules-right = reddit empty-space updates github empty-space round-left audio round-right empty-space network empty-space battery empty-space round-left time round-right empty-space tray-icon empty-space
 
 cursor-click = pointer
