@@ -1,8 +1,8 @@
 #! /bin/sh
-# exec $HOME/Dotfiles/startup.sh 
-sxhkd -c ~/Dotfiles/bspwm/sxhkdrc &
-$HOME/Dotfiles/polybar/launch.sh &
-feh --bg-scale ~/Pictures/Wallpapers/011.jpg &
+$HOME/Dotfiles/startup.sh
+# sxhkd -c ~/Dotfiles/bspwm/sxhkdrc &
+# $HOME/Dotfiles/polybar/launch.sh &
+# feh --bg-scale ~/Pictures/Wallpapers/011.jpg &
 
 # pgrep -x sxhkd > /dev/null || sxhkd &
 
