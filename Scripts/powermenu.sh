@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-# dir="$HOME/.config/rofi/applets/android"
-# rofi_command="rofi -theme $dir/five.rasi"
 rofi_command="rofi -theme $HOME/Dotfiles/rofi/themes/powermenu.rasi"
 
 uptime=$(uptime -p | sed -e 's/up //g')
