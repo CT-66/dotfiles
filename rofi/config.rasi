@@ -14,8 +14,7 @@ configuration {
     terminal: "st";
     case-sensitive: false;
     matching: "fuzzy";
-    // display-drun: "Applications:";
-    // display-window: "Windows:";
+
     drun {
     display-name: "";
     }
