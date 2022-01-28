@@ -1,10 +1,4 @@
 #! /bin/sh
-# sxhkd -c ~/Dotfiles/bspwm/sxhkdrc &
-# $HOME/Dotfiles/polybar/launch.sh &
-# feh --bg-scale ~/Pictures/Wallpapers/011.jpg &
-
-# pgrep -x sxhkd > /dev/null || sxhkd &
-
 $HOME/Dotfiles/startup.sh &
 
 bspc config border_width         2

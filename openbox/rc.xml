@@ -4,12 +4,11 @@
     <strength>10</strength>
     <screen_edge_strength>20</screen_edge_strength>
   </resistance>
-  <focus>
-    <focusNew>yes</focusNew>
-       apply -->
+  <focus><focusNew>yes</focusNew>
+       apply --&gt;
     <followMouse>no</followMouse>
     <focusLast>yes</focusLast>
-       under the mouse pointer. when followMouse is enabled -->
+       under the mouse pointer. when followMouse is enabled --&gt;
     <underMouse>no</underMouse>
     <focusDelay>200</focusDelay>
     <raiseOnFocus>no</raiseOnFocus>
@@ -184,7 +183,7 @@
     </keybind>
     <keybind key="W-4">
       <action name="GoToDesktop">
-          <to>4</to>
+        <to>4</to>
       </action>
     </keybind>
     <keybind key="W-S-q">
