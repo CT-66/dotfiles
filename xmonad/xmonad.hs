@@ -6,3 +6,7 @@ main = xmonad def
     , borderWidth = 3
     }
 
+startupHook = startup
+startup :: X ()
+startup = do
+    spawm "bash ~/.fehbg"
