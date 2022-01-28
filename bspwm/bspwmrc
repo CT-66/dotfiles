@@ -1,5 +1,4 @@
 #! /bin/sh
-$HOME/Dotfiles/startup.sh
 # sxhkd -c ~/Dotfiles/bspwm/sxhkdrc &
 # $HOME/Dotfiles/polybar/launch.sh &
 # feh --bg-scale ~/Pictures/Wallpapers/011.jpg &
@@ -15,3 +14,5 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 # bspc config borderless_monocle   false
 bspc config gapless_monocle      true
+
+$HOME/Dotfiles/startup.sh
