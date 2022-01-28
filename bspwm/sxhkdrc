@@ -1,30 +1,6 @@
-#
-# wm independent hotkeys
-#
-
-# terminal emulator
-super + Return
-	st
-
-# program launcher
-super + @space
-	dmenu_run
-
-# make sxhkd reload its configuration files:
-super + Escape
-	pkill -USR1 -x sxhkd
-
-#
-# bspwm hotkeys
-#
-
-# quit/restart bspwm
-super + alt + {q,r}
-	bspc {quit,wm -r}
-
-# close and kill
-super + {_,shift + }w
-	bspc node -{c,k}
+# restart
+super + shift + alt + r
+    bspc wm -r
 
 # alternate between the tiled and monocle layout
 super + m
@@ -38,10 +14,7 @@ super + y
 super + g
 	bspc node -s biggest.window
 
-#
 # state/flags
-#
-
 # set the window state
 super + {t,shift + t,s,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
@@ -50,10 +23,7 @@ super + {t,shift + t,s,f}
 super + ctrl + {m,x,y,z}
 	bspc node -g {marked,locked,sticky,private}
 
-#
 # focus/swap
-#
-
 # focus the node in the given direction
 super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
