@@ -15,9 +15,6 @@ local naughty = require("naughty")
 -- local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
 
--- custom files
-require("keybindings")
-
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
 -- another config (This code will only ever execute for the fallback config)
@@ -434,20 +431,8 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 
--- autostart
--- awesome.connect_signal(
---   'exit',
---   function(args)
---     awful.util.spawn('touch ~/.cache/.awesome-restart')
---   end
--- )
-
--- awesome.connect_signal(
---   'startup',
---   function(args)
---     awful.util.spawn('bash -c "rm ~/.cache/.awesome-restart || ~/Dotfiles/startup.sh"')
---   end
--- )
 awful.spawn.with_shell("~/Dotfiles/startup.sh")
 
 beautiful.useless_gap = 15
+-- custom files
+require("keybindings")
