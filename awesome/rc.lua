@@ -15,8 +15,7 @@ local naughty = require("naughty")
 -- local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
 
--- dofile("keybindings.lua")
--- dofile(awful.util.getdir("config") .. "/" .. "keybindings.lua")
+-- custom files
 require("keybindings")
 
 -- {{{ Error handling
