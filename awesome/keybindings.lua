@@ -127,4 +127,5 @@ clientkeys = gears.table.join(
 
 -- Set keys
 root.keys(globalkeys)
+root.keys(clientkeys)
 -- }}}
