@@ -1,8 +1,8 @@
 # Make a directory and switch to it immediately
-# mcd() {
-#     mkdir $1
-#     cd $1
-# }
+mcd() {
+    mkdir $1
+    cd $1
+}
 
 files_to_be_removed=(.viminfo .bash_history .node_repl_history .lesshst .wget-hsts .xsession-errors .xsession-errors.old)
 
