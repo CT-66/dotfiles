@@ -25,9 +25,10 @@ try:
 - Qtile (3)
 - Xmonad (4)
 - AwesomeWM (5)
-- Openbox (6)
-- KDE Plasma (7)
-- Gnome (8)
+- LeftWM(6)
+- Openbox (7)
+- KDE Plasma (8)
+- Gnome (9)
 - Dont't start xorg (0)
 """
     )
@@ -45,11 +46,13 @@ try:
     elif wm == "5":
         start("AwesomeWM", "awesome")
     elif wm == "6":
-        start("Openbox", "openbox-session")
+        start("LeftWM", "exec dbus-launch leftwm")
     elif wm == "7":
+        start("Openbox", "openbox-session")
+    elif wm == "8":
         system("export DESKTOP_SESSION=plasma")
         start("KDE Plasma", "startplasma-x11")
-    elif wm == "8":
+    elif wm == "9":
         system("export XDG_SESSION_TYPE=x11 && export GDK_BACKEND=x11")
         start("Gnome", "gnome-session")
     elif wm == "0":

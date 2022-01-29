@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wm="$(echo "i3|Bspwm|Qtile|Xmonad|AwesomeWM|Openbox" | rofi -dmenu -p "Exit WM" -sep "|")"
+wm="$(echo "i3|Bspwm|Qtile|Xmonad|AwesomeWM|LeftWM|Openbox" | rofi -dmenu -p "Exit WM" -sep "|")"
 if [ "$wm" == "" ]; then
     :
 else
@@ -23,6 +23,9 @@ exit_wm () {
             ;;
         AwesomeWM)
             exec pkill awesome
+            ;;
+        LeftWM)
+            exec pkill leftwm
             ;;
         Openbox)
             exec openbox --exit

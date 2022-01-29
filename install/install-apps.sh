@@ -169,6 +169,7 @@ apps=(
     flatpak
     links
     xournalpp
+    leftwm
 )
 
 # for app in "${apps[@]}"; do
