@@ -12,6 +12,7 @@ alias cmatrix="cmatrix -bs -C blue"
 alias grep="grep -ina --color=auto"
 alias find='fd'
 alias .history='nvim ~/.cache/zsh/history'
+alias mkf='touch'
 alias g=git
 alias p='sudo pacman'
 alias sv='sudoedit'

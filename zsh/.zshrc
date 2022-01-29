@@ -1,17 +1,17 @@
-# cat ~/reminders.md
 pfetch
-# neofetch
-# fet.sh
 
-# https://forum.endeavouros.com/t/15116
-# cat ~/.cache/.nf 2> /dev/null
-# setsid neofetch >| ~/.cache/.nf
+files=(
+    prompt.zsh
+    aliases.zsh
+    variables.zsh
+    plugins.zsh
+    functions.zsh
+)
 
-. ~/.config/zsh/prompt.zsh
-. ~/.config/zsh/aliases.zsh
-. ~/.config/zsh/variables.zsh
-. ~/.config/zsh/plugins.zsh
-. ~/.config/zsh/functions.zsh
+for file in "$files[@]"; do
+    source ~/.config/zsh/$file
+done
+
 source $HOME/Scripts/sudo.lib
 
 autoload -Uz compinit
@@ -132,17 +132,8 @@ autopair-init
 # bind alt+s -> sudo !!
 bindkey -s "^[s" "sudo !!"
 
-# function expand-alias() {
-#     zle _expand_alias
-#     zle self-insert
-# }
-# zle -N expand-alias
-# bindkey -M main ' ' expand-alias
-
 bindkey "^Xa" _expand_alias
-zstyle ':completion:*' completer _expand_alias _complete _ignored 
+zstyle ':completion:*' completer _expand_alias _complete _ignored
 zstyle ':completion:*' regular true
-
-# eval "$(bw completion --shell zsh); compdef _bw bw;"
 
 [[ ! -f ~/.config/zsh//.p10k.zsh ]] || source ~/.config/zsh//.p10k.zsh
