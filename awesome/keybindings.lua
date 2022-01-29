@@ -1,3 +1,8 @@
+local gears = require("gears")
+local awful = require("awful")
+require("awful.autofocus")
+local hotkeys_popup = require("awful.hotkeys_popup")
+
 -- {{{ Key bindings
 globalkeys = gears.table.join(
     awful.key({ modkey,           }, "s",      hotkeys_popup.show_help,
