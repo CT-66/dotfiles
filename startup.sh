@@ -7,14 +7,6 @@ xmodmap $HOME/Dotfiles/X11/Xmodmap && sleep 0.0001
 $HOME/Dotfiles/polybar/launch.sh &
 pkill sxhkd; sxhkd &
 #  xrandr --output Virtual1 --mode 1920x1080
-# feh --bg-scale ~/Pictures/Wallpapers/066.jpg &
-# feh --bg-scale ~/Pictures/Wallpapers/067.jpg &
-# feh --bg-scale ~/Pictures/Wallpapers/004.jpg &
-# feh --bg-scale ~/Pictures/Wallpapers/011.jpg &
-# feh --bg-scale ~/Pictures/Wallpapers/011.jpg &
-# feh --bg-scale ~/Pictures/Wallpapers/049.jpg &
-# feh --bg-scale ~/Pictures/Wallpapers/067.jpg &
-feh --bg-scale ~/Pictures/Wallpapers/079.jpg &
 # export $(dbus-launch) && dunst &
 # dunst &
 deadd-notification-center &
@@ -29,3 +21,11 @@ pkill picom; picom -b &
 # picom-jonaburg
 # pkill picom; picom -f --experimental-backend -b &
 pkill flashfocus; flashfocus &
+
+
+# wallpaper="066.jpg"
+wallpaper="067.jpg"
+# wallpaper="004.jpg"
+# wallpaper="011.jpg"
+# wallpaper="049.jpg"
+feh --bg-scale ~/Pictures/Wallpapers/$wallpaper &
