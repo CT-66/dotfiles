@@ -432,7 +432,6 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- }}}
 
 awful.spawn.with_shell("~/Dotfiles/startup.sh")
-awful.spawn.with_shell("pkill polybar")
 
 beautiful.useless_gap = 15
 -- custom files
