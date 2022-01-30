@@ -436,7 +436,7 @@ awful.spawn.with_shell("~/Dotfiles/startup.sh")
 
 beautiful.useless_gap = 15
 beautiful.border_width = 2
-beautiful.border_normal = #ffffff
+beautiful.border_normal = "#ffffff"
 
 
 -- custom files
