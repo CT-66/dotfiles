@@ -1,4 +1,5 @@
 pfetch
+cd $HOME
 
 files=(
     prompt.zsh
