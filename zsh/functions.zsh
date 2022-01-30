@@ -14,7 +14,8 @@ done
 
 # open ranger in current directory
 _ () {
-    ranger --choosedir=$HOME/.cache/.rangerdir; LASTDIR=`\cat $HOME/.cache/.rangerdir`; cd $LASTDIR
+    #ranger --choosedir=$HOME/.cache/.rangerdir; LASTDIR=`\cat $HOME/.cache/.rangerdir`; cd $LASTDIR
+    ranger
 }
 
 # exit the shell and return to ranger (to be used after pressing `S` in ranger)
@@ -35,15 +36,6 @@ lf_cd () {
 bindkey -s '^F' '_\n' # ctrl+f
 bindkey -s '^Z' '__\n' # exit the shell inside ranger
 bindkey -s '^[^F' 'lf_cd\n' # ctrl+alt+f
-
-# ranger_cd() {
-#     temp_file="$(mktemp -t "ranger_cd.XXXXXXXXXX")"
-#     ranger --choosedir="$temp_file" -- "${@:-$PWD}"
-#     if chosen_dir="$(cat -- "$temp_file")" && [ -n "$chosen_dir" ] && [ "$chosen_dir" != "$PWD" ]; then
-#         cd -- "$chosen_dir"
-#     fi
-#     rm -f -- "$temp_file"
-# }
 
 extract () {
     if [ -f $1 ]; then
@@ -72,4 +64,8 @@ wallp () {
 
 hgrep () {
     cat ~/.cache/zsh/history | \grep -ina --color=auto "$1"
+}
+
+lgrep () {
+    \ls -a | \grep -ina --color=auto "$1"
 }
