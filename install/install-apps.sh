@@ -157,6 +157,8 @@ apps=(
     thunar
     tumbler
     gimp
+    inkscape
+    krita
     plasma-desktop
     kde-applications
     konsave
