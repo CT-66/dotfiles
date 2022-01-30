@@ -25,7 +25,7 @@ class Scheme(Default):
 			fg = blue
 			
 		if context.in_taskview:
-			fg = blue
+			fg = green
 
 		if context.in_statusbar:
 			if context.permissions:
