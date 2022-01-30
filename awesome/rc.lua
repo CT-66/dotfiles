@@ -436,4 +436,4 @@ awful.util.spawn("pkill polybar")
 
 beautiful.useless_gap = 15
 -- custom files
--- require("keybindings")
+require("keybindings")
