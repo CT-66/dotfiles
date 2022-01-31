@@ -12,7 +12,6 @@ local wibox = require("wibox")
 local beautiful = require("beautiful")
 -- Notification library
 local naughty = require("naughty")
--- local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
 
 -- {{{ Error handling
@@ -75,28 +74,6 @@ awful.layout.layouts = {
     -- awful.layout.suit.corner.sw,
     -- awful.layout.suit.corner.se,
 }
--- }}}
-
--- {{{ Menu
--- Create a launcher widget and a main menu
--- myawesomemenu = {
---    { "hotkeys", function() hotkeys_popup.show_help(nil, awful.screen.focused()) end },
---    { "manual", terminal .. " -e man awesome" },
---    { "edit config", editor_cmd .. " " .. awesome.conffile },
---    { "restart", awesome.restart },
---    { "quit", function() awesome.quit() end },
--- }
-
--- mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
---                                     { "open terminal", terminal }
---                                   }
---                         })
-
--- mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon,
---                                      menu = mymainmenu })
-
--- Menubar configuration
--- menubar.utils.terminal = terminal -- Set the terminal for applications that require it
 -- }}}
 
 -- Keyboard map indicator and switcher
@@ -216,34 +193,6 @@ awful.screen.connect_for_each_screen(function(s)
 end)
 -- }}}
 
--- {{{ Mouse bindings
--- root.buttons(gears.table.join(
---     awful.button({ }, 3, function () mymainmenu:toggle() end),
---     awful.button({ }, 4, awful.tag.viewnext),
---     awful.button({ }, 5, awful.tag.viewprev)
--- ))
--- }}}
-
-    -- -- Prompt
-    -- awful.key({ modkey },            "r",     function () awful.screen.focused().mypromptbox:run() end,
-    --           {description = "run prompt", group = "launcher"}),
-
-    -- awful.key({ modkey }, "x",
-    --           function ()
-    --               awful.prompt.run {
-    --                 prompt       = "Run Lua code: ",
-    --                 textbox      = awful.screen.focused().mypromptbox.widget,
-    --                 exe_callback = awful.util.eval,
-    --                 history_path = awful.util.get_cache_dir() .. "/history_eval"
-                  -- }
-              -- end,
-              -- {description = "lua execute prompt", group = "awesome"}),
-    -- Menubar
-    -- awful.key({ modkey }, "p", function() menubar.show() end,
-    --           {description = "show the menubar", group = "launcher"})
--- )
--- ),
-
 -- Bind all key numbers to tags.
 -- Be careful: we use keycodes to make it work on any keyboard layout.
 -- This should map on the top row of your keyboard, usually 1 to 9.
@@ -294,20 +243,20 @@ for i = 1, 9 do
     )
 end
 
-clientbuttons = gears.table.join(
-    awful.button({ }, 1, function (c)
-        c:emit_signal("request::activate", "mouse_click", {raise = true})
-    end),
-    awful.button({ modkey }, 1, function (c)
-        c:emit_signal("request::activate", "mouse_click", {raise = true})
-        awful.mouse.client.move(c)
-    end),
-    awful.button({ modkey }, 3, function (c)
-        c:emit_signal("request::activate", "mouse_click", {raise = true})
-        awful.mouse.client.resize(c)
-    end)
-)
-
+-- clientbuttons = gears.table.join(
+--     awful.button({ }, 1, function (c)
+--         c:emit_signal("request::activate", "mouse_click", {raise = true})
+--     end),
+--     awful.button({ modkey }, 1, function (c)
+--         c:emit_signal("request::activate", "mouse_click", {raise = true})
+--         awful.mouse.client.move(c)
+--     end),
+--     awful.button({ modkey }, 3, function (c)
+--         c:emit_signal("request::activate", "mouse_click", {raise = true})
+--         awful.mouse.client.resize(c)
+--     end)
+-- )
+--
 
 -- {{{ Rules
 -- Rules to apply to new clients (through the "manage" signal).
