@@ -78,10 +78,7 @@ globalkeys = gears.table.join(
                     )
                   end
               end,
-              {description = "restore minimized", group = "client"})
-)
-
-clientkeys = gears.table.join(
+              {description = "restore minimized", group = "client"}),
     awful.key({ modkey,           }, "f",
         function (c)
             c.fullscreen = not c.fullscreen
@@ -125,7 +122,7 @@ clientkeys = gears.table.join(
         {description = "(un)maximize horizontally", group = "client"})
 )
 
+
 -- Set keys
 root.keys(globalkeys)
-root.keys(clientkeys)
 -- }}}
