@@ -12,22 +12,25 @@ exit_wm () {
         i3)
             exec i3-msg exit
             ;;
-        Bspwm)
+        bspwm)
             exec bspc quit
             ;;
-        Qtile)
+        qtile)
             exec pkill qtile
             ;;
-        Xmonad)
+        xmonad)
             exec pkill xmonad
             ;;
-        AwesomeWM)
+        awesomeWM)
             exec pkill awesome
             ;;
-        LeftWM)
+        spectrwm)
+            exec pkill spectrwm
+            ;;
+        leftWM)
             exec pkill leftwm
             ;;
-        Openbox)
+        openbox)
             exec openbox --exit
             ;;
     esac

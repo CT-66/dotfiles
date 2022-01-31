@@ -16,6 +16,7 @@ dirs=(
     qtile
     xmonad
     awesome
+    spectrwm
     openbox
     kitty
     lsd

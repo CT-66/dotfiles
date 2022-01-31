@@ -59,7 +59,9 @@ apps=(
     qtile
     xmonad
     awesome
+    spectrwm
     openbox
+    leftwm
     feh
     flameshot
     xrandr
@@ -110,7 +112,6 @@ apps=(
     bitwarden
     btop
     xorg-xinit
-    ueberzug
     python-pynvim
     jq
     neovide-git
@@ -171,7 +172,6 @@ apps=(
     flatpak
     links
     xournalpp
-    leftwm
 )
 
 # for app in "${apps[@]}"; do
