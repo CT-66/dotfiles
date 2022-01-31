@@ -243,20 +243,20 @@ for i = 1, 9 do
     )
 end
 
--- clientbuttons = gears.table.join(
---     awful.button({ }, 1, function (c)
---         c:emit_signal("request::activate", "mouse_click", {raise = true})
---     end),
---     awful.button({ modkey }, 1, function (c)
---         c:emit_signal("request::activate", "mouse_click", {raise = true})
---         awful.mouse.client.move(c)
---     end),
---     awful.button({ modkey }, 3, function (c)
---         c:emit_signal("request::activate", "mouse_click", {raise = true})
---         awful.mouse.client.resize(c)
---     end)
--- )
---
+clientbuttons = gears.table.join(
+    awful.button({ }, 1, function (c)
+        c:emit_signal("request::activate", "mouse_click", {raise = true})
+    end),
+    awful.button({ modkey }, 1, function (c)
+        c:emit_signal("request::activate", "mouse_click", {raise = true})
+        awful.mouse.client.move(c)
+    end),
+    awful.button({ modkey }, 3, function (c)
+        c:emit_signal("request::activate", "mouse_click", {raise = true})
+        awful.mouse.client.resize(c)
+    end)
+)
+
 
 -- {{{ Rules
 -- Rules to apply to new clients (through the "manage" signal).
@@ -381,7 +381,7 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- }}}
 
 awful.spawn.with_shell("~/Dotfiles/startup.sh")
--- awful.util.spawn("pkill polybar")
+awful.util.spawm.with_shell("pkill polybar")
 
 beautiful.useless_gap = 15
 beautiful.border_width = 2
