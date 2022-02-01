@@ -1,5 +1,4 @@
 from typing import List  # noqa: F401
-
 from libqtile import bar, layout, widget
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
@@ -9,8 +8,7 @@ import os
 import subprocess
 
 MOD = "mod4"
-# terminal = guess_terminal()
-terminal = "st"
+TERMINAL = "st"
 HOME = os.path.expanduser("~")
 
 
@@ -55,7 +53,7 @@ keys = [
         "Return",
         lazy.layout.toggle_split(),
     ),
-    Key([MOD], "Return", lazy.spawn(terminal)),
+    Key([MOD, "shift", "mod1", "control"], "Return", lazy.spawn("xterm")),
     Key([MOD], "f", lazy.window.toggle_fullscreen()),
     # Toggle between different layouts as defined below
     Key([MOD], "Tab", lazy.next_layout()),
