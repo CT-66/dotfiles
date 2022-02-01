@@ -10,6 +10,8 @@ import subprocess
 MOD = "mod4"
 TERMINAL = "st"
 HOME = os.path.expanduser("~")
+ctrl = "control"
+alt = "mod1"
 
 
 # Startup
@@ -35,28 +37,24 @@ keys = [
     Key([MOD, "shift"], "k", lazy.layout.shuffle_up()),
     # Grow windows. If current window is on the edge of screen and direction
     # will be to screen edge - window would shrink.
-    Key([MOD, "control"], "h", lazy.layout.grow_left()),
-    Key([MOD, "control"], "l", lazy.layout.grow_right()),
-    Key([MOD, "control"], "j", lazy.layout.grow_down()),
-    Key([MOD, "control"], "k", lazy.layout.grow_up()),
+    Key([MOD, ctrl], "h", lazy.layout.grow_left()),
+    Key([MOD, ctrl], "l", lazy.layout.grow_right()),
+    Key([MOD, ctrl], "j", lazy.layout.grow_down()),
+    Key([MOD, ctrl], "k", lazy.layout.grow_up()),
     Key([MOD], "n", lazy.layout.normalize()),
     # Toggle between split and unsplit sides of stack.
     # Split = all windows displayed
     # Unsplit = 1 window displayed, like Max layout, but still with
     # multiple stack panes
-    Key(
-        [MOD, "shift"],
-        "Return",
-        lazy.layout.toggle_split(),
-    ),
-    Key([MOD, "shift", "mod1", "control"], "Return", lazy.spawn("xterm")),
+    Key([MOD, "shift"], "Return", lazy.layout.toggle_split()),
+    Key([MOD, "shift", alt, ctrl], "Return", lazy.spawn("xterm")),
     Key([MOD], "f", lazy.window.toggle_fullscreen()),
     # Toggle between different layouts as defined below
     Key([MOD], "Tab", lazy.next_layout()),
     Key([MOD, "shift"], "q", lazy.window.kill()),
     Key([MOD, "shift"], "c", lazy.reload_config()),
-    Key([MOD, "shift", "mod1", "control"], "r", lazy.restart()),
-    # Key([MOD, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
+    Key([MOD, "shift", alt, ctrl], "r", lazy.restart()),
+    # Key([MOD, ctrl], "q", lazy.shutdown(), desc="Shutdown Qtile"),
 ]
 
 # Workspaces
