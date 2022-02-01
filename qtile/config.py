@@ -59,7 +59,7 @@ keys = [
     Key([MOD], "Tab", lazy.next_layout()),
     Key([MOD, "shift"], "q", lazy.window.kill()),
     Key([MOD, "shift"], "c", lazy.reload_config()),
-    Key([MOD, "shift", "mod1"], "r", lazy.restart()),
+    Key([MOD, "shift", "mod1", "control"], "r", lazy.restart()),
     # Key([MOD, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
 ]
 

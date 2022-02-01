@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=gotop
+GenericName=Process Viewer
+Comment=open gotop
+Icon=htop
+Exec=st -e gotop
+Terminal=false
+Categories=System;Monitor;ConsoleOnly;
+Keywords=system;process;task
