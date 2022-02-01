@@ -47,7 +47,7 @@ font-0 = JetBrainsMono Nerd Font:style=Bold:pixelsize=12;3
 font-1 = JetBrainsMono Nerd Font:size=14;4
 font-2 = Material Design Icons:style=Regular:size=12;3
 
-modules-left = round-left workspaces round-right empty-space mpd
+modules-left = round-left i3 round-right empty-space mpd
 # modules-center =
 modules-right = reddit empty-space updates github empty-space round-left audio round-right empty-space network empty-space round-left cpu round-right empty-space memory empty-space battery empty-space round-left time round-right empty-space tray-icon empty-space
 
@@ -89,43 +89,39 @@ tray-background = ${colors.background}
 
 # =======================================
 
-# [[[
-# format-background = #2a2e36
-#
-# label-mode-padding = 2
-# label-mode-foreground = ${colors.foreground}
-# label-mode-background = ${colors.background}
-#
-# label-focused = ""
-# # label-focused-foreground = 61AFEF
-# label-focused-padding = 1
-# # label-focused-font = 3
-#
-# label-unfocused = ""
-# # label-unfocused-foreground = 61AFEF
-# label-unfocused-padding = 1
-# # label-unfocused-font = 3
-# ]]]
-
-[module/workspaces]
-type = internal/xworkspaces
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+wrapping-scroll = true
 enable-click = true
 enable-scroll = false
-format = <label-state>
-pin-workspaces = true
+format-background = #2a2e36
 
-label-active = ""
-label-active-foreground = ${colors.foreground}
-label-active-background = ${colors.background}
-label-active-padding = 2
+# Only show workspaces on the same output as the bar
+#pin-workspaces = true
 
-label-occupied = ""
+label-mode-padding = 2
+label-mode-foreground = ${colors.foreground}
+label-mode-background = ${colors.background}
+
+# focused = Active workspace on focused monitor
+
+label-focused = ""
+# label-focused-foreground = 61AFEF
+label-focused-padding = 1
+# label-focused-font = 3
+
+# unfocused = Inactive workspace on any monitor
+label-unfocused = ""
+# label-unfocused-foreground = 61AFEF
+label-unfocused-padding = 1
+# label-unfocused-font = 3
+
+# urgent = Workspace with urgency hint set
 label-urgent = ""
 label-urgent-foreground = ${colors.color1}
-label-urgent-padding = 2
-
-label-empty = 
-label-empty-padding = 2
+# label-urgent-font = 3
+label-urgent-padding = 1
 
 # ======================================
 
