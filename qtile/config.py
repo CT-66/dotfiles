@@ -89,7 +89,7 @@ for i in groups:
 layout_theme = {
     "border_focus":  "#ffffff",
     "border_width": 2,
-    "margin": 5
+    "margin": 15
 }
 
 layouts = [
