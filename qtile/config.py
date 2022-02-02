@@ -95,7 +95,7 @@ layouts = [
         margin_on_single = 15,
         insert_position = 1
     ),
-    layout.Max(),
+    # layout.Max(),
     layout.MonadTall(
         align = 0,
         border_focus = "#ffffff",
