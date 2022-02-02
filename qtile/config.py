@@ -3,12 +3,9 @@ from libqtile import layout
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile import hook
-from libqtile.command.client import CommandClient
 
 import os
 import subprocess
-
-c = CommandClient()
 
 MOD = "mod4"
 TERMINAL = "st"
@@ -21,10 +18,6 @@ shift = "shift"
 @hook.subscribe.startup
 def autostart():
     subprocess.Popen(HOME + "/Dotfiles/startup.sh")
-
-def display_layout():
-    layout_name = c.layout.info().replace(",", "").replace("'", "")
-    os.system(f"notify-send \"Qtile\" \"Layout: {layout_name}\")
 
 keys = [
     # A list of available commands that can be bound to keys can be found
@@ -56,7 +49,7 @@ keys = [
     Key([MOD, shift, alt, ctrl], "Return", lazy.spawn("xterm")),
     Key([MOD], "f", lazy.window.toggle_fullscreen()),
     # Toggle between different layouts as defined below
-    Key([MOD, shift], "Tab", lazy.next_layout()); display_layout() ,
+    Key([MOD, shift], "Tab", lazy.next_layout()),
     Key([MOD, shift], "q", lazy.window.kill()),
     Key([MOD, shift], "c", lazy.reload_config()),
     Key([MOD, shift, alt, ctrl], "r", lazy.restart()),
