@@ -59,9 +59,9 @@ keys = [
     Key([MOD], "x", lazy.screen.next_group()),
 
     # adjust gaps on the fly
-    gaps = 15,
-    Key([MOD], "p", gaps+=5,
-    Key([MOD, shift], "p", gaps-=5,
+    # gaps = 15,
+    # Key([MOD], "p", gaps+=5),
+    # Key([MOD, shift], "p", gaps-=5),
 ]
 
 # Workspaces
@@ -94,7 +94,8 @@ for i in groups:
 layout_theme = {
     "border_focus":  "#ffffff",
     "border_width": 2,
-    "margin": gaps
+    # "margin": gaps
+    "margins": 15
 }
 
 layouts = [
