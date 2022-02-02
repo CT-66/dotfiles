@@ -144,4 +144,4 @@ reconfigure_screens = True
 # focus, should we respect this or not?
 auto_minimize = False
 
-wmname = "LG3D"
+wmname = "Qtile"
