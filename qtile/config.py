@@ -87,7 +87,6 @@ for i in groups:
 
 layouts = [
     layout.Columns(
-        # border_focus_stack=["#ffffff", "#ffffff"], border_width=2, margin=15
         border_focus = "#ffffff",
         border_width = 2,
         margin = 15,
@@ -96,7 +95,6 @@ layouts = [
     ),
     layout.Max(),
     layout.MonadTall(),
-    layout.Stack(num_stacks=2)
     layout.Stack(num_stacks=2),
     layout.Bsp(),
     layout.Matrix(),
