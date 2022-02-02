@@ -89,7 +89,8 @@ layouts = [
         border_width = 2,
         margin = 15,
         border_on_single = True,
-        margin_on_single = 15
+        margin_on_single = 15,
+        insert_position = 1
     ),
     layout.Max(),
     # layout.MonadTall(),
