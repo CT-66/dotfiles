@@ -14,12 +14,10 @@ ctrl = "control"
 alt = "mod1"
 shift = "shift"
 
-
 # Startup
 @hook.subscribe.startup
 def autostart():
     subprocess.Popen(HOME + "/Dotfiles/startup.sh")
-
 
 keys = [
     # A list of available commands that can be bound to keys can be found
@@ -107,39 +105,6 @@ layouts = [
     # layout.Zoomy(),
 ]
 
-widget_defaults = dict(
-    font="Caskaydia Code Nerd Font",
-    fontsize=12,
-    padding=3,
-)
-extension_defaults = widget_defaults.copy()
-
-screens = [
-    Screen(
-        # bottom=bar.Bar(
-        #     [
-        #         widget.CurrentLayout(),
-        #         # widget.TextBox("TEST MESSAGE"),
-        #         widget.GroupBox(),
-        #         # widget.Prompt(),
-        #         # widget.WindowName(),
-        #         # widget.Chord(
-        #         #     chords_colors={
-        #         #         "launch": ("#ff0000u, "#ffffff"),
-        #         #     },
-        #         #     name_transform=lambda name: name.upper(),
-        #         # ),
-        #         widget.Systray(),
-        #         widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
-        #         widget.Battery(),
-        #     ],
-        #     24,
-        #     # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
-        #     # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
-        # ),
-    ),
-]
-
 # Drag floating layouts.
 mouse = [
     Drag(
@@ -177,14 +142,6 @@ reconfigure_screens = True
 
 # If things like steam games want to auto-minimize themselves when losing
 # focus, should we respect this or not?
-auto_minimize = True
+auto_minimize = False
 
-# XXX: Gasp! We're lying here. In fact, nobody really uses or cares about this
-# string besides java UI toolkits; you can see several discussions on the
-# mailing lists, GitHub issues, and other WM documentation that suggest setting
-# this string if your java app doesn't work correctly. We may as well just lie
-# and say that we're a working one by default.
-#
-# We choose LG3D to maximize irony: it is a 3D non-reparenting WM written in
-# java that happens to be on java's whitelist.
 wmname = "LG3D"
