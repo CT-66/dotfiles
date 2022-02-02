@@ -95,7 +95,6 @@ layouts = [
         margin_on_single = 15,
         insert_position = 1
     ),
-    # layout.Max(),
     layout.MonadTall(
         align = 0,
         border_focus = "#ffffff",
@@ -106,7 +105,11 @@ layouts = [
         single_margin = 15
 
     ),
-    layout.Bsp(),
+    layout.Bsp(
+        border_focus = "#ffffff",
+        border_width = 2,
+        lower_right = True
+    ),
     layout.MonadWide(),
 ]
 
