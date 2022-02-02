@@ -54,6 +54,8 @@ keys = [
     Key([MOD, shift], "c", lazy.reload_config()),
     Key([MOD, shift, alt, ctrl], "r", lazy.restart()),
     Key([MOD, ctrl], "r", lazy.restart()),
+    Key([MOD], "z", lazy.screen.prev_group()),
+    Key([MOD], "x", lazy.screen.next_group()),
 ]
 
 # Workspaces
