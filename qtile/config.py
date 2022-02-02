@@ -86,31 +86,34 @@ for i in groups:
         ]
     )
 
+layout_theme = {
+    "border_focus":  "#ffffff",
+    "border_width": 2,
+    "margin": 15
+}
+
 layouts = [
     layout.Columns(
-        border_focus = "#ffffff",
-        border_width = 2,
-        margin = 15,
+        **layout_theme,
         border_on_single = True,
         margin_on_single = 15,
         insert_position = 1
     ),
     layout.MonadTall(
+        **layout_theme,
         align = 0,
-        border_focus = "#ffffff",
-        border_width = 2,
-        margin = 15,
         new_client_position = "bottom",
         single_border_width = 2,
         single_margin = 15
 
     ),
     layout.Bsp(
-        border_focus = "#ffffff",
-        border_width = 2,
-        lower_right = False
+        **layout_theme,
+        lower_right = True
     ),
-    layout.MonadWide(),
+    layout.MonadWide(
+        **layout_theme,
+    ),
 ]
 
 # Drag floating layouts.
