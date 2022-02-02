@@ -40,7 +40,7 @@ keys = [
     Key([MOD, ctrl], "l", lazy.layout.grow_right()),
     Key([MOD, ctrl], "j", lazy.layout.grow_down()),
     Key([MOD, ctrl], "k", lazy.layout.grow_up()),
-    Key([MOD], "n", lazy.layout.normalize()),
+    # Key([MOD], "n", lazy.layout.normalize()),
     # Toggle between split and unsplit sides of stack.
     # Split = all windows displayed
     # Unsplit = 1 window displayed, like Max layout, but still with
