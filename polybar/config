@@ -89,24 +89,6 @@ tray-background = ${colors.background}
 
 # =======================================
 
-# [[[
-# format-background = #2a2e36
-#
-# label-mode-padding = 2
-# label-mode-foreground = ${colors.foreground}
-# label-mode-background = ${colors.background}
-#
-# label-focused = ""
-# # label-focused-foreground = 61AFEF
-# label-focused-padding = 1
-# # label-focused-font = 3
-#
-# label-unfocused = ""
-# # label-unfocused-foreground = 61AFEF
-# label-unfocused-padding = 1
-# # label-unfocused-font = 3
-# ]]]
-
 [module/workspaces]
 type = internal/xworkspaces
 enable-click = true

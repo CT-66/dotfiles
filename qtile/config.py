@@ -12,10 +12,11 @@ TERMINAL = "st"
 HOME = os.path.expanduser("~")
 ctrl = "control"
 alt = "mod1"
+shift = "shift"
 
 
 # Startup
-@hook.subscribe.startup_once
+@hook.subscribe.startup
 def autostart():
     subprocess.Popen(HOME + "/Dotfiles/startup.sh")
 
@@ -31,10 +32,10 @@ keys = [
     Key([MOD], "space", lazy.layout.next()),
     # Move windows between left/right columns or move up/down in current stack.
     # Moving out of range in Columns layout will create new column.
-    Key([MOD, "shift"], "h", lazy.layout.shuffle_left()),
-    Key([MOD, "shift"], "l", lazy.layout.shuffle_right()),
-    Key([MOD, "shift"], "j", lazy.layout.shuffle_down()),
-    Key([MOD, "shift"], "k", lazy.layout.shuffle_up()),
+    Key([MOD, shift], "h", lazy.layout.shuffle_left()),
+    Key([MOD, shift], "l", lazy.layout.shuffle_right()),
+    Key([MOD, shift], "j", lazy.layout.shuffle_down()),
+    Key([MOD, shift], "k", lazy.layout.shuffle_up()),
     # Grow windows. If current window is on the edge of screen and direction
     # will be to screen edge - window would shrink.
     Key([MOD, ctrl], "h", lazy.layout.grow_left()),
@@ -46,14 +47,14 @@ keys = [
     # Split = all windows displayed
     # Unsplit = 1 window displayed, like Max layout, but still with
     # multiple stack panes
-    Key([MOD, "shift"], "Return", lazy.layout.toggle_split()),
-    Key([MOD, "shift", alt, ctrl], "Return", lazy.spawn("xterm")),
+    Key([MOD, shift], "Return", lazy.layout.toggle_split()),
+    Key([MOD, shift, alt, ctrl], "Return", lazy.spawn("xterm")),
     Key([MOD], "f", lazy.window.toggle_fullscreen()),
     # Toggle between different layouts as defined below
-    Key([MOD], "Tab", lazy.next_layout()),
-    Key([MOD, "shift"], "q", lazy.window.kill()),
-    Key([MOD, "shift"], "c", lazy.reload_config()),
-    Key([MOD, "shift", alt, ctrl], "r", lazy.restart()),
+    Key([MOD, shift], "Tab", lazy.next_layout()),
+    Key([MOD, shift], "q", lazy.window.kill()),
+    Key([MOD, shift], "c", lazy.reload_config()),
+    Key([MOD, shift, alt, ctrl], "r", lazy.restart()),
     # Key([MOD, ctrl], "q", lazy.shutdown(), desc="Shutdown Qtile"),
 ]
 
@@ -72,7 +73,7 @@ for i in groups:
             ),
             # MOD1 + shift + letter of group = switch to & move focused window to group
             Key(
-                [MOD, "shift"],
+                [MOD, shift],
                 i.name,
                 lazy.window.togroup(i.name, switch_group=True),
                 desc="Switch to & move focused window to group {}".format(i.name),
