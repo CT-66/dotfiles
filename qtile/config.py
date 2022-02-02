@@ -53,7 +53,7 @@ keys = [
     Key([MOD, shift], "q", lazy.window.kill()),
     Key([MOD, shift], "c", lazy.reload_config()),
     Key([MOD, shift, alt, ctrl], "r", lazy.restart()),
-    # Key([MOD, ctrl], "q", lazy.shutdown(), desc="Shutdown Qtile"),
+    Key([MOD, shift], "r", lazy.restart()),
 ]
 
 # Workspaces
