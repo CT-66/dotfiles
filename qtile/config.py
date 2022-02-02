@@ -108,7 +108,7 @@ layouts = [
     layout.Bsp(
         border_focus = "#ffffff",
         border_width = 2,
-        lower_right = True
+        lower_right = False
     ),
     layout.MonadWide(),
 ]
