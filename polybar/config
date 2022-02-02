@@ -341,6 +341,6 @@ content-padding = 1
 
 [module/qtile]
 type = custom/script
-exec = ~/Dotfiles/polybar/scripts/qtile.py
-# interval = 1
-
+exec = python3 ~/Dotfiles/polybar/scripts/qtile.py
+interval = 1
+format-foreground = #989cff
