@@ -95,24 +95,18 @@ layouts = [
         margin_on_single = True
     ),
     layout.Max(),
-    # gaps
-    # layout.MonadTall(
-    #     font="Caskaydia Code Nerd Font",
-    #     fontsize="10",
-    #     margin="8",
-    # ),
-    # layout.Stack(num_stacks=2)
-    # Try more layouts by unleashing below layouts.
-    # layout.Stack(num_stacks=2),
-    # layout.Bsp(),
-    # layout.Matrix(),
-    # layout.MonadTall(),
-    # layout.MonadWide(),
-    # layout.RatioTile(),
-    # layout.Tile(),
-    # layout.TreeTab(),
-    # layout.VerticalTile(),
-    # layout.Zoomy(),
+    layout.MonadTall(),
+    layout.Stack(num_stacks=2)
+    layout.Stack(num_stacks=2),
+    layout.Bsp(),
+    layout.Matrix(),
+    layout.MonadTall(),
+    layout.MonadWide(),
+    layout.RatioTile(),
+    layout.Tile(),
+    layout.TreeTab(),
+    layout.VerticalTile(),
+    layout.Zoomy(),
 ]
 
 widget_defaults = dict(
