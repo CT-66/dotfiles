@@ -50,6 +50,7 @@ keys = [
     Key([MOD], "f", lazy.window.toggle_fullscreen()),
     # Toggle between different layouts as defined below
     Key([MOD, shift], "Tab", lazy.next_layout()),
+    # Key([MOD, ctrl], "Tab", lazy.layout.columns.Columns),
     Key([MOD, shift], "q", lazy.window.kill()),
     Key([MOD, shift], "c", lazy.reload_config()),
     Key([MOD, shift, alt, ctrl], "r", lazy.restart()),
@@ -95,11 +96,15 @@ layouts = [
         insert_position = 1
     ),
     layout.Max(),
-    layout.MonadTall(),
+    layout.MonadTall(
+        align = 0,
+        border_focus = "#ffffff",
+        border_width = 2,
+
+    ),
     layout.Stack(num_stacks=2),
     layout.Bsp(),
     layout.Matrix(),
-    layout.MonadTall(),
     layout.MonadWide(),
     layout.RatioTile(),
     layout.Tile(),
