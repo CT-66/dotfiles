@@ -87,7 +87,12 @@ for i in groups:
 
 layouts = [
     layout.Columns(
-        border_focus_stack=["#ffffff", "#ffffff"], border_width=2, margin=15
+        # border_focus_stack=["#ffffff", "#ffffff"], border_width=2, margin=15
+        border_focus = "#ffffff",
+        border_width = 2,
+        margin = 15,
+        border_on_single = True,
+        margin_on_single = True
     ),
     layout.Max(),
     # gaps
