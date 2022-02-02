@@ -100,6 +100,10 @@ layouts = [
         align = 0,
         border_focus = "#ffffff",
         border_width = 2,
+        margin = 15,
+        new_client_position = "bottom",
+        single_border_width = 2,
+        single_margin = 15
 
     ),
     layout.Stack(num_stacks=2),
