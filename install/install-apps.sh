@@ -218,6 +218,3 @@ makepkg -si
 cd $HOME
 rm -rf $HOME/archcraft-themes
 echo "Done"
-
-echo "Installing i3-layouts..."
-pip install --user i3-layouts
