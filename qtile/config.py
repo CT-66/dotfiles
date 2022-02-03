@@ -18,6 +18,7 @@ shift = "shift"
 @hook.subscribe.startup
 def autostart():
     subprocess.Popen(HOME + "/Dotfiles/startup.sh")
+    bottom.show(False)
 
 
 keys = [
@@ -31,10 +32,10 @@ keys = [
     Key([MOD], "space", lazy.layout.next()),
     # Move windows between left/right columns or move up/down in current stack.
     # Moving out of range in Columns layout will create new column.
-    # Key([MOD, shift], "h", lazy.layout.shuffle_left()),
-    # Key([MOD, shift], "l", lazy.layout.shuffle_right()),
-    Key([MOD, shift], "h", lazy.layout.swap_left()),
-    Key([MOD, shift], "l", lazy.layout.swap_right()),
+    Key([MOD, shift], "h", lazy.layout.shuffle_left()),
+    Key([MOD, shift], "l", lazy.layout.shuffle_right()),
+    # Key([MOD, shift], "h", lazy.layout.swap_left()),
+    # Key([MOD, shift], "l", lazy.layout.swap_right()),
     Key([MOD, ctrl], "h", lazy.layout.grow_left()),
     Key([MOD, ctrl], "l", lazy.layout.grow_right()),
     Key([MOD, ctrl], "j", lazy.layout.grow_down()),
