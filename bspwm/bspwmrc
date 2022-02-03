@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 $HOME/Dotfiles/startup.sh &
 pkill sxhkd
 sxhkd -c $HOME/Dotfiles/sxhkd/sxhkdrc -c $HOME/Dotfiles/bspwm/sxhkdrc &
