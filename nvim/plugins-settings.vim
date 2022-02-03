@@ -17,6 +17,9 @@ let g:rainbow_active = 1
 " let g:airline_theme='one'
 let g:onedark_termcolors=256
 
+let g:tokyonight_italic_comments=0
+let g:tokyonight_italic_keywords=0
+
 " -----
 " better whitespace
 let g:better_whitespace_enabled=1

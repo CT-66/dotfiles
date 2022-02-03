@@ -156,8 +156,8 @@ let g:vimsyn_embed = 'l' " get lua syntax highlighting in vimscript
 " -----
 
 " colorscheme nord
-colorscheme onedark
-" colorscheme material
+" colorscheme onedark
+colorscheme tokyonight
 
 " highlight Visual guibg=#434C5E gui=bold
 " highlight Search guifg=#C678DD guibg=#4C566A gui=bold
