@@ -262,7 +262,7 @@ format-discharging-padding = 1
 # =======================================
 
 [settings]
-screenchange-reload = true
+screenchange-reload = false
 #compositing-background = xor
 #compositing-background = screen
 #compositing-foreground = source
