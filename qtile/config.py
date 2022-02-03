@@ -33,7 +33,8 @@ keys = [
     # Moving out of range in Columns layout will create new column.
     # Key([MOD, shift], "h", lazy.layout.shuffle_left()),
     # Key([MOD, shift], "l", lazy.layout.shuffle_right()),
-    Key([MOD, shift], "h", lazy.layout.swa
+    Key([MOD, shift], "h", lazy.layout.swap_left()),
+    Key([MOD, shift], "l", lazy.layout.swap_right()),
     Key([MOD, ctrl], "h", lazy.layout.grow_left()),
     Key([MOD, ctrl], "l", lazy.layout.grow_right()),
     Key([MOD, ctrl], "j", lazy.layout.grow_down()),
