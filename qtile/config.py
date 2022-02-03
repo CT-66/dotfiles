@@ -33,12 +33,7 @@ keys = [
     # Moving out of range in Columns layout will create new column.
     # Key([MOD, shift], "h", lazy.layout.shuffle_left()),
     # Key([MOD, shift], "l", lazy.layout.shuffle_right()),
-    Key([MOD, shift], "h", lazy.layout.swap_left()),
-    Key([MOD, shift], "l", lazy.layout.swap_right()),
-    Key([MOD, shift], "j", lazy.layout.shuffle_down()),
-    Key([MOD, shift], "k", lazy.layout.shuffle_up()),
-    # Grow windows. If current window is on the edge of screen and direction
-    # will be to screen edge - window would shrink.
+    Key([MOD, shift], "h", lazy.layout.swa
     Key([MOD, ctrl], "h", lazy.layout.grow_left()),
     Key([MOD, ctrl], "l", lazy.layout.grow_right()),
     Key([MOD, ctrl], "j", lazy.layout.grow_down()),
