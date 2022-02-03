@@ -19,6 +19,7 @@ shift = "shift"
 def autostart():
     subprocess.Popen(HOME + "/Dotfiles/startup.sh")
 
+
 keys = [
     # A list of available commands that can be bound to keys can be found
     # at https://docs.qtile.org/en/latest/manual/config/lazy.html
@@ -30,8 +31,10 @@ keys = [
     Key([MOD], "space", lazy.layout.next()),
     # Move windows between left/right columns or move up/down in current stack.
     # Moving out of range in Columns layout will create new column.
-    Key([MOD, shift], "h", lazy.layout.shuffle_left()),
-    Key([MOD, shift], "l", lazy.layout.shuffle_right()),
+    # Key([MOD, shift], "h", lazy.layout.shuffle_left()),
+    # Key([MOD, shift], "l", lazy.layout.shuffle_right()),
+    Key([MOD, shift], "h", lazy.layout.swap_left()),
+    Key([MOD, shift], "l", lazy.layout.swap_right()),
     Key([MOD, shift], "j", lazy.layout.shuffle_down()),
     Key([MOD, shift], "k", lazy.layout.shuffle_up()),
     # Grow windows. If current window is on the edge of screen and direction
@@ -57,7 +60,6 @@ keys = [
     Key([MOD, ctrl], "r", lazy.restart()),
     Key([MOD], "z", lazy.screen.prev_group()),
     Key([MOD], "x", lazy.screen.next_group()),
-
     # adjust gaps on the fly
     # gaps = 15,
     # Key([MOD], "p", gaps+=5),
@@ -92,31 +94,24 @@ for i in groups:
     )
 
 layout_theme = {
-    "border_focus":  "#ffffff",
+    "border_focus": "#ffffff",
     "border_width": 2,
     # "margin": gaps
-    "margin": 15
+    "margin": 15,
 }
 
 layouts = [
     layout.Columns(
-        **layout_theme,
-        border_on_single = True,
-        margin_on_single = 15,
-        insert_position = 1
+        **layout_theme, border_on_single=True, margin_on_single=15, insert_position=1
     ),
     layout.MonadTall(
         **layout_theme,
-        align = 0,
-        new_client_position = "bottom",
-        single_border_width = 2,
-        single_margin = 15
-
+        align=0,
+        new_client_position="bottom",
+        single_border_width=2,
+        single_margin=15,
     ),
-    layout.Bsp(
-        **layout_theme,
-        lower_right = True
-    ),
+    layout.Bsp(**layout_theme, lower_right=True),
     layout.MonadWide(
         **layout_theme,
     ),
