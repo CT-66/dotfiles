@@ -154,3 +154,7 @@ inoremap <C-l> <right>
 nnoremap Q qw
 nnoremap K @w
 
+" tab bindings
+nnoremap <C-n> :tabnew<CR>
+nnoremap <C-tab> :tabnext<CR>
+nnoremap <C-S-tab> :tabprevious<CR>

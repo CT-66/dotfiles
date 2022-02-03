@@ -123,7 +123,6 @@ autocmd FileType json set filetype=jsonc
 " set default filetype for new file as `.md`
 autocmd BufEnter * if &filetype == "" | setlocal ft=markdown | endif
 
-
 " https://github.com/plasticboy/vim-markdown/issues/126
 au filetype markdown set formatoptions+=ro
 au filetype markdown set comments=b:*,b:-,b:+,b:1.,n:>
@@ -134,6 +133,10 @@ au filetype markdown set comments=b:*,b:-,b:+,b:1.,n:>
 " open `:help` in a new tab
 cnoreabbrev <expr> h getcmdtype() == ":" && getcmdline() == 'h' ? 'tab help' : 'h'
 cnoreabbrev <expr> help getcmdtype() == ":" && getcmdline() == 'help' ? 'tab help' : 'help'
+
+" always open files in a new tab
+autocmd VimEnter * tab all
+autocmd BufAdd * exe 'tablast | tabe "' . expand( "<afile") .'"'
 
 " enable relative line numbers in normal mode, and regular line numbers in insert mode
 autocmd InsertEnter * :set norelativenumber

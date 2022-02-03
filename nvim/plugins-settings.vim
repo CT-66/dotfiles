@@ -139,7 +139,7 @@ autocmd FileType html,css EmmetInstall
 " -----
 " ranger.vim
 let g:ranger_map_keys = 0
-nnoremap <C-n> :RangerCurrentDirectoryNewTab<CR>
+nnoremap <A-f> :RangerCurrentDirectoryNewTab<CR>
 let g:ranger_replace_netrw = 1
 
 " -----
