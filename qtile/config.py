@@ -95,7 +95,7 @@ layout_theme = {
     "border_focus":  "#ffffff",
     "border_width": 2,
     # "margin": gaps
-    "margin": 15
+    # "margin": 15
 }
 
 layouts = [
