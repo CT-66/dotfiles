@@ -210,7 +210,7 @@ cd $HOME
 git clone https://github.com/MichaelAquilina/zsh-auto-notify
 sudo mv $HOME/zsh-auto-notify /usr/share/zsh/plugins
 
-echo "Installing openbox themes.."
+echo "Installing openbox themes..."
 cd $HOME
 git clone https://github.com/archcraft-os/archcraft-themes
 cd $HOME/archcraft-themes/archcraft-gtk-theme-arc
@@ -218,3 +218,6 @@ makepkg -si
 cd $HOME
 rm -rf $HOME/archcraft-themes
 echo "Done"
+
+echo "Installing i3-layouts..."
+pip install --user i3-layouts
