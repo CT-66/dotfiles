@@ -128,8 +128,6 @@ function vi-yank-custom {
 zle -N vi-yank-custom
 bindkey -M vicmd 'y' vi-yank-custom
 
-autopair-init
-
 # bind alt+s -> sudo !!
 bindkey -s "^[s" "sudo !!"
 
@@ -137,4 +135,5 @@ bindkey "^Xa" _expand_alias
 zstyle ':completion:*' completer _expand_alias _complete _ignored
 zstyle ':completion:*' regular true
 
+autopair-init
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
