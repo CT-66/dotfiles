@@ -14,8 +14,7 @@ done
 
 # open ranger in current directory
 _ () {
-    #ranger --choosedir=$HOME/.cache/.rangerdir; LASTDIR=`\cat $HOME/.cache/.rangerdir`; cd $LASTDIR
-    ranger
+    ranger --choosedir=$HOME/.cache/.rangerdir; LASTDIR=`\cat $HOME/.cache/.rangerdir`; cd $LASTDIR
 }
 
 # exit the shell and return to ranger (to be used after pressing `S` in ranger)
