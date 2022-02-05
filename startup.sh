@@ -29,3 +29,6 @@ wallpaper="067.jpg"
 # wallpaper="011.jpg"
 # wallpaper="049.jpg"
 feh --bg-scale ~/Pictures/Wallpapers/$wallpaper &
+
+# test
+python3 ~/Desktop/py-trayicon-example.py &
