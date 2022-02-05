@@ -33,3 +33,9 @@ git clone https://github.com/CT-66/wallpapers ~/Pictures/Wallpapers
 
 # ===============
 sudo systemctl disable lightdm.service
+
+# ==============
+
+sudo mkdir -p /etc/systemd/system/getty@tty1.service.d
+sudo cp ~/Dotfiles/systemd/getty@tty1.service.d/skip-username.conf /etc/systemd/system/getty@tty1.service.d/skip-username.conf
+sudo systemctl enable getty@tty1
