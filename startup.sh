@@ -29,7 +29,7 @@ wallpaper="067.jpg"
 # wallpaper="011.jpg"
 # wallpaper="049.jpg"
 # feh --bg-scale ~/Pictures/Wallpapers/$wallpaper &
-feh --recursive --bg-scale --randomize ~/Pictures/Wallpapers
+feh --bg-scale --randomize ~/Pictures/Wallpapers/ ~/Pictures/Wallpapers/dt-wallpapers/ ~/Pictures/Wallpapers/mac-wallpapers/ &
 
 # test
 pkill py-trayicon-exa && sleep 2
