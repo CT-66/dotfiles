@@ -36,6 +36,8 @@ sudo systemctl disable lightdm.service
 
 # ==============
 
-sudo mkdir -p /etc/systemd/system/getty@tty1.service.d
-sudo cp ~/Dotfiles/systemd/getty@tty1.service.d/skip-username.conf /etc/systemd/system/getty@tty1.service.d/skip-username.conf
-sudo systemctl enable getty@tty1
+for tty_num in {1..7}; do
+    sudo mkdir -p "/etc/systemd/system/getty@tty$tty_num.service.d"
+    sudo cp ~/Dotfiles/systemd/getty@tty.service.d/skip-username.conf "/etc/systemd/system/getty@tty$tty_num.service.d/skip-username.conf"
+    sudo systemctl enable getty@tty$tty_num
+done
