@@ -3,6 +3,11 @@ static char *font = "CaskaydiaCove Nerd Font:pixelsize=14:antialias=true:autohin
 static char *font2[] = { "CaskaydiaCove Nerd Font:pixelsize=14:antialias=true:autohint=true" };
 static int borderpx = 2;
 
+// Selection colors patch
+unsigned int selectionbg = 8;
+// unsigned int selectionfg = 15;
+static int ignoreselfg = 1;
+
 /*
  * What program is execed by st depends of these precedence rules:
  * 1: program passed with -e
@@ -267,8 +272,8 @@ static Shortcut shortcuts[] = {
 	{ MODKEY,               XK_Down,        kscrolldown,    {.i =  1} },
 	{ MODKEY,               XK_u,           kscrollup,      {.i = -1} },
 	{ MODKEY,               XK_d,           kscrolldown,    {.i = -1} },
-        { MODKEY,		XK_q,		changealpha,	{.f = -0.05} }, 
-	{ MODKEY,		XK_w,		changealpha,	{.f = +0.05} }, 
+        { MODKEY,		XK_q,		changealpha,	{.f = -0.05} },
+	{ MODKEY,		XK_w,		changealpha,	{.f = +0.05} },
 	/* { TERMMOD,              XK_Up,          zoom,           {.f = +1} }, */
 	/* { TERMMOD,              XK_Down,        zoom,           {.f = -1} }, */
 	/* { TERMMOD,              XK_K,           zoom,           {.f = +1} }, */
