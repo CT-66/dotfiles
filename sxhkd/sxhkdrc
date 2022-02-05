@@ -83,9 +83,6 @@ super + n
 super + shift + n
     notify-send.py a --hint boolean:deadd-notification-center:true string:type:clearInCenter
 
-
-# test
-super + o; {ctrl+f}
-    {ranger-common-dirs.sh}
-super + o; {ctrl+s}
-    {rofi-exec-scripts.sh}
+# random wallpaper
+super + w
+    feh --bg-scale --randomize ~/Pictures/Wallpapers/ ~/Pictures/Wallpapers/dt-wallpapers/ ~/Pictures/Wallpapers/mac-wallpapers/
