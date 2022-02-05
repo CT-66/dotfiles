@@ -3,6 +3,8 @@
 
 from os import system
 import sys
+import threading
+import queue
 
 
 def exit():
@@ -16,59 +18,81 @@ def start(name, path):
 
 default_wm = "/usr/bin/i3"
 
-try:
+def get_input(message, channel):
+    response = input(message)
+    channel.put(response)
 
-    print(
-        """WM/DE:
-- i3 (1)
-- Bspwm (2)
-- Qtile (3)
-- Xmonad (4)
-- AwesomeWM (5)
-- Spectrwm (6)
-- LeftWM(7)
-- Openbox (8)
-- KDE Plasma (9)
-- Gnome (10)
-- Dont't start xorg (0)
-"""
-    )
+def input_with_timeout(message, timeout):
+    channel = queue.Queue()
+    message = message + " [{} sec timeout] ".format(timeout)
+    thread = threading.Thread(target=get_input, args=(message, channel))
+    thread.daemon = True
+    thread.start()
 
-    wm = str(input("> ").strip().rstrip())
-
-    if wm == "1":
-        start("i3", "i3")
-    elif wm == "2":
-        start("Bspwm", "bspwm")
-    elif wm == "3":
-        start("Qtile", "qtile start")
-    elif wm == "4":
-        start("Xmonad", "xmonad")
-    elif wm == "5":
-        start("AwesomeWM", "awesome")
-    elif wm == "6":
-        start("Spectrwm", "spectrwm")
-    elif wm == "7":
-        start("LeftWM", "exec dbus-launch leftwm")
-    elif wm == "8":
-        start("Openbox", "openbox-session")
-    elif wm == "9":
-        system("export DESKTOP_SESSION=plasma")
-        start("KDE Plasma", "startplasma-x11")
-    elif wm == "10":
-        system("export XDG_SESSION_TYPE=x11 && export GDK_BACKEND=x11")
-        start("Gnome", "gnome-session")
-    elif wm == "0":
+    try:
+        response = channel.get(True, timeout)
+        return response
+    except queue.Empty:
         pass
-    elif wm == "":
-        print(f"Starting {default_wm}")
-        system(f"startx {default_wm} 2>/dev/null")
-    else:
-        print("Invalid input")
+    print(f"Starting {default_wm}")
+    system(f"startx {default_wm} 2>/dev/null")
+
+
+if __name__ == "__main__":
+    try:
+
+        print(
+            """WM/DE:
+    - i3 (1)
+    - Bspwm (2)
+    - Qtile (3)
+    - Xmonad (4)
+    - AwesomeWM (5)
+    - Spectrwm (6)
+    - LeftWM(7)
+    - Openbox (8)
+    - KDE Plasma (9)
+    - Gnome (10)
+    - Dont't start xorg (0)
+    """
+        )
+
+        wm = input_with_timeout("> ", 15)
+        wm = str(wm).strip().rstrip()
+
+        if wm == "1":
+            start("i3", "i3")
+        elif wm == "2":
+            start("Bspwm", "bspwm")
+        elif wm == "3":
+            start("Qtile", "qtile start")
+        elif wm == "4":
+            start("Xmonad", "xmonad")
+        elif wm == "5":
+            start("AwesomeWM", "awesome")
+        elif wm == "6":
+            start("Spectrwm", "spectrwm")
+        elif wm == "7":
+            start("LeftWM", "exec dbus-launch leftwm")
+        elif wm == "8":
+            start("Openbox", "openbox-session")
+        elif wm == "9":
+            system("export DESKTOP_SESSION=plasma")
+            start("KDE Plasma", "startplasma-x11")
+        elif wm == "10":
+            system("export XDG_SESSION_TYPE=x11 && export GDK_BACKEND=x11")
+            start("Gnome", "gnome-session")
+        elif wm == "0":
+            pass
+        # elif wm == "":
+        #     print(f"Starting {default_wm}")
+        #     system(f"startx {default_wm} 2>/dev/null")
+        else:
+            print("Invalid input")
+            exit()
+
+    except KeyboardInterrupt:
         exit()
 
-except KeyboardInterrupt:
-    exit()
-
-except EOFError:
-    exit()
+    except EOFError:
+        exit()
