@@ -173,6 +173,7 @@ apps=(
     links
     xournalpp
     sd
+    tealdeer
 )
 
 # for app in "${apps[@]}"; do
