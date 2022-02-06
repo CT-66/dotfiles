@@ -90,3 +90,7 @@ super + w
 # switch back to default wallpaper
 super + shift + w
     wallpaper.sh --default
+
+# shoe/hide secondary polybar
+super + b
+    polybar-msg cmd toggle
