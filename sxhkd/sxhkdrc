@@ -85,4 +85,8 @@ super + shift + n
 
 # random wallpaper
 super + w
-    feh --bg-scale --randomize ~/Pictures/Wallpapers/ ~/Pictures/Wallpapers/dt-wallpapers/ ~/Pictures/Wallpapers/mac-wallpapers/
+    wallpaper.sh --random
+
+# switch back to default wallpaper
+super + shift + w
+    wallpaper.sh --default

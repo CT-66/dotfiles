@@ -23,13 +23,8 @@ pkill picom; picom -b &
 pkill flashfocus; flashfocus &
 
 
-# wallpaper="066.jpg"
-wallpaper="067.jpg"
-# wallpaper="004.jpg"
-# wallpaper="011.jpg"
-# wallpaper="049.jpg"
-# feh --bg-scale ~/Pictures/Wallpapers/$wallpaper &
-feh --bg-scale --randomize ~/Pictures/Wallpapers/ ~/Pictures/Wallpapers/dt-wallpapers/ ~/Pictures/Wallpapers/mac-wallpapers/ &
+# wallpaper.sh --default &
+wallpaper.sh --random &
 
 # test
 pkill py-trayicon-exa && sleep 2
