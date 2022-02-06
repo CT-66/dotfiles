@@ -177,6 +177,10 @@ apps=(
     obs-studio
     jgmenu
     obmenu-generator
+    gotop
+    bottom
+    qutebrowser
+    vieb-bin
 )
 
 # for app in "${apps[@]}"; do
