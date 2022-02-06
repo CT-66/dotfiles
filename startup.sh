@@ -5,7 +5,6 @@ xrdb -merge $HOME/Dotfiles/X11/Xresources && sleep 0.0001
 xmodmap $HOME/Dotfiles/X11/Xmodmap && sleep 0.0001
 
 $HOME/Dotfiles/polybar/launch.sh &
-polybar-msg cmd hide &
 sxhkd &
 #  xrandr --output Virtual1 --mode 1920x1080
 # export $(dbus-launch) && dunst &
