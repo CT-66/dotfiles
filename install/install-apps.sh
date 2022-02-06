@@ -172,6 +172,7 @@ apps=(
     flatpak
     links
     xournalpp
+    sd
 )
 
 # for app in "${apps[@]}"; do
