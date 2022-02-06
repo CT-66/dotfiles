@@ -174,6 +174,7 @@ apps=(
     xournalpp
     sd
     tealdeer
+    obs-studio
 )
 
 # for app in "${apps[@]}"; do
