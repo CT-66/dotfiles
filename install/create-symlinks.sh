@@ -47,6 +47,7 @@ dirs=(
     nvchad
     deadd
     xplr
+    jgmenu
 )
 
  if [ -d ~/.config ]; then

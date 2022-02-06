@@ -175,6 +175,7 @@ apps=(
     sd
     tealdeer
     obs-studio
+    jgmenu
 )
 
 # for app in "${apps[@]}"; do
