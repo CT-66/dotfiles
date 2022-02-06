@@ -176,6 +176,7 @@ apps=(
     tealdeer
     obs-studio
     jgmenu
+    obmenu-generator
 )
 
 # for app in "${apps[@]}"; do
