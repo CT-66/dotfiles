@@ -2,7 +2,6 @@
 
 ! Nord
 ! *.foreground: #D8DEE9
-! ! *foreground: #4c566a
 ! *.background: #2E3440
 ! *.color0:  #3B4252
 ! *.color1: #BF616A
@@ -23,8 +22,7 @@
 
 ! TokyoNight
 *background: #1a1b26
-! *foreground: #c0caf5
-*foreground: #4c566a
+*foreground: #c0caf5
 *color0: #15161E
 *color1: #f7768e
 *color2: #9ece6a
