@@ -11,6 +11,7 @@ def main():
 
     for x in parse(url).entries[:entries]:
         print(f"索 {x.title}")
+        global link
         link = x.link
 
 
@@ -23,6 +24,9 @@ def handler(signum, frame):
 
 
 if __name__ == "__main__":
-    main()
-    while True:
-        signal.signal(signal.SIGUSR1, handler)
+    try:
+        main()
+        while True:
+            signal.signal(signal.SIGUSR1, handler)
+    except:
+        print("索 Error")
