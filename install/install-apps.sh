@@ -182,6 +182,8 @@ apps=(
     qutebrowser
     vieb-bin
     stalonetray
+    python-feedparser
+    pavucontrol-qt
 )
 
 # for app in "${apps[@]}"; do
