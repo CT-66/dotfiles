@@ -1,6 +1,7 @@
 #!/bin/python3
 from feedparser import parse
 import signal
+from os import system
 
 
 def main():
@@ -16,9 +17,9 @@ def main():
 # exec qutebrowser "link"
 
 
-def handler(signum):
+def handler(signum, frame):
     if signum == signal.SIGUSR1:
-        print("test")
+        system(f'qutebrowser "{link}"')
 
 
 if __name__ == "__main__":
