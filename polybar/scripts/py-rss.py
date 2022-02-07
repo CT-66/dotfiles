@@ -1,9 +1,11 @@
-#!/bin/python3
+#!/bin/python3 -u
 from feedparser import parse
 import signal
 from os import system
 from random import choice
 import time
+
+# from sys import stdout
 
 urls = [
     "https://www.makeuseof.com/feed/category/linux/",
@@ -41,6 +43,7 @@ if __name__ == "__main__":
         main()
         while True:
             print(f"索 {title}")
+            # stdout.flush()
             time.sleep(1)
             signal.signal(signal.SIGUSR1, handler)
             signal.signal(signal.SIGUSR2, handler)
