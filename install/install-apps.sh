@@ -181,6 +181,7 @@ apps=(
     bottom
     qutebrowser
     vieb-bin
+    stalonetray
 )
 
 # for app in "${apps[@]}"; do
