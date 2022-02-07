@@ -1,30 +1,11 @@
 # vim:filetype=config:tw=80:et
-#
-# This is sample ~/.stalonetrayrc, resembling default configuration.
-# Remember: command line parameters take precedence.
-#
-# Directives introduced in @VERSION_STR@ are marked with "NEW in @VERSION_STR@"
-#
-####################################################################
-#
-# stalonetray understands following directives
-#
-####################################################################
 
-# background <color>         # color can be specified as an HTML hex triplet or
-                             # as a name from rgb.txt, note that '#' must be quoted
-background "#777777"
+background "#2E3440"
 
-# decorations <decspec>      # set trays window decorations; possible values for
-                             # decspec are: all, title, border, none
-decorations none
-
-# display <display name>     # as usual
-
-# dockapp_mode <mode>        # set dockapp mode, which can be either simple (for
-                             # e.g. OpenBox, wmaker for WindowMaker, or none
-                             # (default). NEW in @VERSION_STR@.
-dockapp_mode none
+# decorations none
+# decorations all
+# decorations title
+# decorations border
 
 # fuzzy_edges [<level>]      # enable fuzzy edges and set fuzziness level. level
                              # can be from 0 (disabled) to 3; this setting works
@@ -49,10 +30,6 @@ icon_gravity NW
 # icon_size <int>            # specifies dimensions of typical icon slot
 icon_size 24
 
-# log_level <level>          # controls the amount of logging output, level can
-                             # be err (default), info, or trace (enabled only
-                             # when stalonetray configured with --enable-debug)
-                             # NEW in @VERSION_STR@.
 log_level err
 
 # kludges kludge[,kludge]    # enable specific kludges to work around
@@ -134,4 +111,3 @@ window_type dock
 
 # xsync [<bool>]             # whether to operate on X server synchronously (SLOOOOW)
 xsync false
-
