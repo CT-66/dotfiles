@@ -181,7 +181,6 @@ apps=(
     bottom
     qutebrowser
     vieb-bin
-    hideit.sh-git
 )
 
 # for app in "${apps[@]}"; do
