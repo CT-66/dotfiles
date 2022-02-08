@@ -38,7 +38,6 @@ dirs=(
     calcurse
     sxhkd
     mpv
-    betterlockscreenrc
     cava
     lf
     newsboat
@@ -69,10 +68,11 @@ sudo ln -s ~/Dotfiles/icons/default/index.theme /usr/share/icons/default/index.t
 ln -s ~/Dotfiles/Scripts ~/Scripts
 ln -s ~/Dotfiles/Scripts/autokey ~/.config/autokey/data
 ln -s ~/Dotfiles/stalonetray/stalonetrayrc ~/.stalonetrayrc
+ln -s ~/Dotfiles/betterlockscreen/betterlockscreenrc ~/.config/betterlockscreenrc
 
 if [ -f ~/.bashrc ]; then
     mv ~/.bashrc ~/.bashrc.bak
-ln -s ~/Dotfiles/bashrc ~/.bashrc
+ln -s ~/Dotfiles/bash/bashrc ~/.bashrc
 
 if [ -f ~/.xinitrc ]; then
     mv ~/.xinitrc ~/.xinitrc.bak

@@ -34,18 +34,18 @@ def handler(signum, frame):
     if signum == signal.SIGUSR1:
         system(f'qutebrowser "{link}"')
     # change feed
-    elif signum == signal.SIGUSR2:
-        main()
+    # elif signum == signal.SIGUSR2:
+    #     main()
 
 
 if __name__ == "__main__":
     try:
         main()
         while True:
-            print(f"索 {title}")
+            print(f"\n索 {title}", end="")
             # stdout.flush()
-            time.sleep(1)
+            # time.sleep(1)
             signal.signal(signal.SIGUSR1, handler)
-            signal.signal(signal.SIGUSR2, handler)
+            # signal.signal(signal.SIGUSR2, handler)
     except:
         print("索 Error")
