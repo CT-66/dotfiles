@@ -1,11 +1,11 @@
 # vim:filetype=config:tw=80:et
 
 background "#2E3440"
-fuzzy_edges 0
+fuzzy_edges 2
 
 # geometry <geometry>        # tray's geometry in standard X notation; width and
                              # height are specified in slot_size multiples
-geometry 1x1+1520x1030
+geometry 1x1+1920x1080
 
 # grow_gravity <gravity>     # one of N, S, E, W, NW, NE, SW, SE; tray will grow
                              # in the direction opposite to one specified by
@@ -18,33 +18,21 @@ grow_gravity SW
 # icon_gravity <gravity>     # icon placement gravity, one of NW, NE, SW, SE
 # icon_gravity NW
 icon_gravity SW
-
-# icon_size <int>            # specifies dimensions of typical icon slot
-icon_size 24
+icon_size 25
+slot_size 26
 
 # max_geometry <geometry>    # maximal tray dimensions; 0 in width/height means
                              # no limit
-max_geometry 0x0
+max_geometry 0x1
 
 no_shrink false
-
-# parent_bg [<bool>]         # whether to use pseudo-transparency
-                             # (looks better when reparented into smth like FvwmButtons)
 parent_bg false
-
-# pixmap_bg <path_to_xpm>    # use pixmap from specified xpm file for (tiled) background
-# pixmap_bg /home/user/.stalonetraybg.xpm
-
 scrollbars none
 sticky true
-
 tint_color white
 tint_level 0
 transparent false
 vertical false
-
-# window_layer <layer>       # set the EWMH-compatible window layer; one of:
-                             # bottom, normal, top
 window_layer normal
 window_strut auto
 xsync false

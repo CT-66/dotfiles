@@ -10,7 +10,7 @@ export KEYTIMEOUT=1
 export EDITOR=nvim
 export VISUAL=nvim
 export TERMINAL=st
-export PAGER='bat --paging always'
+# export PAGER='bat --paging always'
 
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#abb2bf"
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)

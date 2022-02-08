@@ -25,6 +25,3 @@ pkill flashfocus; flashfocus &
 
 # wallpaper.sh --default &
 wallpaper.sh --random &
-
-# test
-python3 ~/Desktop/py-trayicon-example.py &
