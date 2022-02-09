@@ -52,7 +52,7 @@
 
 from feedparser import parse
 from os import system
-from random import choice
+from secrets import choice
 
 urls = [
     "https://www.makeuseof.com/feed/category/linux/",
