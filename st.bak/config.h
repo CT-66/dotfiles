@@ -3,6 +3,11 @@ static char *font = "CaskaydiaCove Nerd Font:pixelsize=14:antialias=true:autohin
 static char *font2[] = { "CaskaydiaCove Nerd Font:pixelsize=14:antialias=true:autohint=true" };
 static int borderpx = 2;
 
+// Selection colors patch
+unsigned int selectionbg = 8;
+// unsigned int selectionfg = 15;
+static int ignoreselfg = 1;
+
 /*
  * What program is execed by st depends of these precedence rules:
  * 1: program passed with -e
@@ -223,12 +228,12 @@ ResourcePref resources[] = {
  */
 static MouseShortcut mshortcuts[] = {
 	/* mask                 button   function        argument       release */
+	{ ShiftMask,            Button4, ttysend,        {.s = "\033[5;2~"} },
+	{ ShiftMask,            Button5, ttysend,        {.s = "\033[6;2~"} },
 	{ XK_NO_MOD,            Button4, kscrollup,      {.i = 1} },
 	{ XK_NO_MOD,            Button5, kscrolldown,    {.i = 1} },
 	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
-	{ ShiftMask,            Button4, ttysend,        {.s = "\033[5;2~"} },
 	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
-	{ ShiftMask,            Button5, ttysend,        {.s = "\033[6;2~"} },
 	{ XK_ANY_MOD,           Button5, ttysend,        {.s = "\005"} },
 };
 
@@ -244,40 +249,39 @@ static char *copyoutput[] = { "/bin/sh", "-c", "st-copyout", "externalpipe", NUL
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
 	{ XK_ANY_MOD,           XK_Break,       sendbreak,      {.i =  0} },
+	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
-	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
-	/* { TERMMOD,              XK_Prior,       zoom,           {.f = +1} }, */
-	/* { TERMMOD,              XK_Next,        zoom,           {.f = -1} }, */
-	/* { TERMMOD,              XK_Home,        zoomreset,      {.f =  0} }, */
-	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
-	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
-	{ MODKEY,               XK_c,           clipcopy,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      clippaste,      {.i =  0} },
-	{ MODKEY,               XK_v,           clippaste,      {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
-	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
 	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
+	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
+	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
+	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 	{ MODKEY,               XK_Page_Up,     kscrollup,      {.i = -1} },
 	{ MODKEY,               XK_Page_Down,   kscrolldown,    {.i = -1} },
+    // copy/paste (alt+c, alt+v)
+	{ MODKEY,               XK_c,           clipcopy,       {.i =  0} },
+	{ MODKEY,               XK_v,           clippaste,      {.i =  0} },
+    // vim navigation (alt+d, alt+u, alt+j, alt+k)
 	{ MODKEY,               XK_k,           kscrollup,      {.i =  1} },
 	{ MODKEY,               XK_j,           kscrolldown,    {.i =  1} },
 	{ MODKEY,               XK_Up,          kscrollup,      {.i =  1} },
 	{ MODKEY,               XK_Down,        kscrolldown,    {.i =  1} },
 	{ MODKEY,               XK_u,           kscrollup,      {.i = -1} },
 	{ MODKEY,               XK_d,           kscrolldown,    {.i = -1} },
-        { MODKEY,		XK_q,		changealpha,	{.f = -0.05} }, 
-	{ MODKEY,		XK_w,		changealpha,	{.f = +0.05} }, 
-	/* { TERMMOD,              XK_Up,          zoom,           {.f = +1} }, */
-	/* { TERMMOD,              XK_Down,        zoom,           {.f = -1} }, */
-	/* { TERMMOD,              XK_K,           zoom,           {.f = +1} }, */
-	/* { TERMMOD,              XK_J,           zoom,           {.f = -1} }, */
-	/* { TERMMOD,              XK_U,           zoom,           {.f = +2} }, */
-	/* { TERMMOD,              XK_D,           zoom,           {.f = -2} }, */
+    // Zoom (ctrl++, ctrl+-, ctrl+0)
     { ControlMask,          XK_equal,       zoom,           {.f = +1} },
     { ControlMask,          XK_minus,       zoom,           {.f = -1} },
-    { ControlMask,          XK_0,       zoomreset,          {.f =  0} },
+    { ControlMask,          XK_0,           zoomreset,      {.f =  0} },
+    // change transparency on the fly (alt+q, alt+w)
+    { MODKEY,	        	XK_q,	        changealpha,	{.f = -0.05} },
+    { MODKEY,		        XK_w,	        changealpha,	{.f = +0.05} },
+    // vim browse: enter normal mode (alt+esc or ctrl+esc)
+	/* { MODKEY,               XK_Escape,           normalMode,      {.i =  0} }, */
+	/* { ControlMask,          XK_Escape,           normalMode,      {.i =  0} }, */
+    // Miscellaneous
 	{ MODKEY,               XK_l,           externalpipe,   {.v = openurlcmd } },
 	{ MODKEY,               XK_y,           externalpipe,   {.v = copyurlcmd } },
 	{ MODKEY,               XK_o,           externalpipe,   {.v = copyoutput } },
