@@ -1,13 +1,7 @@
 static char *font = "CaskaydiaCove Nerd Font:pixelsize=14:antialias=true:autohint=true";
 static char *font2[] = { "CaskaydiaCove Nerd Font:pixelsize=14:antialias=true:autohint=true" };
 
-#if RELATIVEBORDER_PATCH
-/* borderperc: percentage of cell width to use as a border
- *             0 = no border, 100 = border width is same as cell width */
-int borderperc = 20;
-#else
 static int borderpx = 2;
-#endif // RELATIVEBORDER_PATCH
 
 #if OPENURLONCLICK_PATCH
 static char *url_opener = "xdg-open";
@@ -21,7 +15,7 @@ static char *url_opener = "xdg-open";
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char *shell = "/bin/sh";
+static char *shell = "/bin/zsh";
 char *utmp = NULL;
 /* scroll program: to enable use a string like "scroll" */
 char *scroll = NULL;
@@ -84,7 +78,6 @@ static unsigned int blinktimeout = 800;
  */
 static unsigned int cursorthickness = 2;
 
-#if BOXDRAW_PATCH
 /*
  * 1: render most of the lines/blocks characters without using the font for
  *    perfect alignment between cells (U2500 - U259F except dashes/diagonals).
@@ -96,7 +89,6 @@ const int boxdraw_bold = 0;
 
 /* braille (U28XX):  1: render as adjacent "pixels",  0: use font */
 const int boxdraw_braille = 0;
-#endif // BOXDRAW_PATCH
 
 /*
  * bell volume. It must be a value between -100 and 100. Use 0 for disabling
@@ -126,9 +118,7 @@ unsigned int tabspaces = 4;
 
 /* bg opacity */
 float alpha = 0.9;
-#if ALPHA_FOCUS_HIGHLIGHT_PATCH
-float alphaUnfocused = 0.6;
-#endif // ALPHA_FOCUS_HIGHLIGHT_PATCH
+/* float alphaUnfocused = 0.6; */
 float alphaOffset = 0.0;
 float alphaUnfocus;
 
@@ -162,12 +152,8 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-#if ALPHA_PATCH && ALPHA_FOCUS_HIGHLIGHT_PATCH
-unsigned int defaultbg = 259;
-unsigned int bg = 17, bgUnfocused = 16;
-#else
 unsigned int defaultbg = 258;
-#endif // ALPHA_FOCUS_HIGHLIGHT_PATCH
+/* unsigned int bg = 17, bgUnfocused = 16; */
 unsigned int defaultfg = 259;
 unsigned int defaultcs = 256;
 unsigned int defaultrcs = 257;
@@ -297,43 +283,28 @@ static uint forcemousemod = ShiftMask;
  * Beware that overloading Button1 will disable the selection.
  */
 static MouseShortcut mshortcuts[] = {
-	#if UNIVERSCROLL_PATCH
-	/* mask                 button   function        argument       release   alt */
-	#else
 	/* mask                 button   function        argument       release */
-	#endif // UNIVERSCROLL_PATCH
-	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
-	#if SCROLLBACK_MOUSE_PATCH
-	{ ShiftMask,            Button4, kscrollup,      {.i = 1} },
-	{ ShiftMask,            Button5, kscrolldown,    {.i = 1} },
-	#elif UNIVERSCROLL_PATCH
-	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\033[5;2~"}, 0, -1 },
-	{ XK_ANY_MOD,           Button5, ttysend,        {.s = "\033[6;2~"}, 0, -1 },
-	#else
 	{ ShiftMask,            Button4, ttysend,        {.s = "\033[5;2~"} },
 	{ ShiftMask,            Button5, ttysend,        {.s = "\033[6;2~"} },
-	#endif // SCROLLBACK_MOUSE_PATCH
-	#if SCROLLBACK_MOUSE_ALTSCREEN_PATCH
 	{ XK_NO_MOD,            Button4, kscrollup,      {.i = 1} },
 	{ XK_NO_MOD,            Button5, kscrolldown,    {.i = 1} },
-	#else
+	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
 	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
 	{ XK_ANY_MOD,           Button5, ttysend,        {.s = "\005"} },
-	#endif // SCROLLBACK_MOUSE_ALTSCREEN_PATCH
 };
 
-#if SCROLLBACK_MOUSE_ALTSCREEN_PATCH
-static MouseShortcut maltshortcuts[] = {
-	/* mask                 button   function        argument       release */
-	#if CLIPBOARD_PATCH
-	{ XK_ANY_MOD,           Button2, clippaste,      {.i = 0},      1 },
-	#else
-	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
-	#endif // CLIPBOARD_PATCH
-	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
-	{ XK_ANY_MOD,           Button5, ttysend,        {.s = "\005"} },
-};
-#endif // SCROLLBACK_MOUSE_ALTSCREEN_PATCH
+/* #if SCROLLBACK_MOUSE_ALTSCREEN_PATCH */
+/* static MouseShortcut maltshortcuts[] = { */
+/* 	/1* mask                 button   function        argument       release *1/ */
+/* 	#if CLIPBOARD_PATCH */
+/* 	{ XK_ANY_MOD,           Button2, clippaste,      {.i = 0},      1 }, */
+/* 	#else */
+/* 	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 }, */
+/* 	#endif // CLIPBOARD_PATCH */
+/* 	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} }, */
+/* 	{ XK_ANY_MOD,           Button5, ttysend,        {.s = "\005"} }, */
+/* }; */
+/* #endif // SCROLLBACK_MOUSE_ALTSCREEN_PATCH */
 
 /* Internal keyboard shortcuts. */
 #define MODKEY Mod1Mask
