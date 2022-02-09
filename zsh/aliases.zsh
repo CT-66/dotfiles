@@ -9,7 +9,7 @@ alias pf="clear && pfetch | lolcat"
 alias cmatrix="cmatrix -bs -C blue"
 # alias .date='date +"%d %b, %Y | %I:%M %p"'
  alias .date='date +"%a %d %b | %I:%M %p"'
-alias grep="grep -ina --color=auto"
+alias grep="grep -inaI --color=auto"
 alias find='fd'
 alias .history='nvim ~/.cache/zsh/history'
 alias mkf='touch'

@@ -62,9 +62,9 @@ wallp () {
 }
 
 hgrep () {
-    cat ~/.cache/zsh/history | \grep -ina --color=auto "$1"
+    cat ~/.cache/zsh/history | \grep -inaI --color=auto "$1"
 }
 
 lgrep () {
-    \ls -a | \grep -ina --color=auto "$1"
+    \ls -a | \grep -inaI --color=auto "$1"
 }

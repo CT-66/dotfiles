@@ -69,6 +69,7 @@ ln -s ~/Dotfiles/Scripts ~/Scripts
 ln -s ~/Dotfiles/Scripts/autokey ~/.config/autokey/data
 ln -s ~/Dotfiles/stalonetray/stalonetrayrc ~/.stalonetrayrc
 ln -s ~/Dotfiles/betterlockscreen/betterlockscreenrc ~/.config/betterlockscreenrc
+ln -s ~/Dotfiles/xdg/mimeapps.list ~/.config/mimeapps.list
 
 if [ -f ~/.bashrc ]; then
     mv ~/.bashrc ~/.bashrc.bak
