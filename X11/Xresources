@@ -23,5 +23,6 @@ Xft.lcdfilter: lcddefault
 !st.alpha: 0.9
 ! st.alpha: 1.0
 st.alpha: 0.85
+st.borderpx: 6
 st.font: JetBrainsMono Nerd Font:pixelsize=15:antialias=true:autohint=true
 ! st.font: CaskaydiaCove Nerd Font:pixelsize=14:antialias=true:autohint=true
