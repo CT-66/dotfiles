@@ -286,8 +286,8 @@ static MouseShortcut mshortcuts[] = {
 	/* mask                 button   function        argument       release */
 	{ ShiftMask,            Button4, ttysend,        {.s = "\033[5;2~"} },
 	{ ShiftMask,            Button5, ttysend,        {.s = "\033[6;2~"} },
-	{ XK_NO_MOD,            Button4, kscrollup,      {.i = 1} },
-	{ XK_NO_MOD,            Button5, kscrolldown,    {.i = 1} },
+	/* { XK_NO_MOD,            Button4, kscrollup,      {.i = 1} }, */
+	/* { XK_NO_MOD,            Button5, kscrolldown,    {.i = 1} }, */
 	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
 	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
 	{ XK_ANY_MOD,           Button5, ttysend,        {.s = "\005"} },
@@ -328,8 +328,8 @@ static Shortcut shortcuts[] = {
 	{ MODKEY,              XK_c,           clipcopy,        {.i =  0} },
 	{ MODKEY,              XK_v,           clippaste,       {.i =  0} },
 	#if SCROLLBACK_PATCH
-	{ ShiftMask,            XK_Page_Up,     kscrollup,       {.i = -1} },
-	{ ShiftMask,            XK_Page_Down,   kscrolldown,     {.i = -1} },
+	/* { ShiftMask,            XK_Page_Up,     kscrollup,       {.i = -1} }, */
+	/* { ShiftMask,            XK_Page_Down,   kscrolldown,     {.i = -1} }, */
 	#endif // SCROLLBACK_PATCH
 	#if CLIPBOARD_PATCH
 	{ TERMMOD,              XK_Y,           clippaste,       {.i =  0} },
