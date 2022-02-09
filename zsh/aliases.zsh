@@ -54,6 +54,11 @@ alias .....='cd ../../../../../'
 alias .5='cd ../../../../../'
 
 alias mkdir='mkdir -p'
+alias mkd=mkdir
+
+alias chmod="chmod --preserve-root"
+alias chown="chown --preserve-root"
+alias chgrp="chgrp --preserve-root"
 
 alias exa='exa -1Fb --color=always --icons --group-directories-first --no-permissions --no-user'
 alias ls='exa'
