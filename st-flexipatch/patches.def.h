@@ -1,3 +1,5 @@
+/* Patches */
+
 /* The alpha patch adds transparency for the terminal.
  * You need to uncomment the corresponding line in config.mk to use the -lXrender library
  * when including this patch.
@@ -117,7 +119,7 @@
 /* This patch adds the option of disabling italic fonts globally.
  * https://st.suckless.org/patches/disable_bold_italic_fonts/
  */
-#define DISABLE_ITALIC_FONTS_PATCH 1
+#define DISABLE_ITALIC_FONTS_PATCH 0
 
 /* This patch adds the option of disabling roman fonts globally.
  * https://st.suckless.org/patches/disable_bold_italic_fonts/
@@ -260,7 +262,7 @@
 /* Scroll back through terminal output using Shift+{PageUp, PageDown}.
  * https://st.suckless.org/patches/scrollback/
  */
-#define SCROLLBACK_PATCH 0
+#define SCROLLBACK_PATCH 1
 
 /* Scroll back through terminal output using Shift+MouseWheel.
  * This variant depends on SCROLLBACK_PATCH being enabled.
@@ -388,7 +390,7 @@
 /* Adds support for w3m images.
  * https://st.suckless.org/patches/w3m/
  */
-#define W3M_PATCH 1
+#define W3M_PATCH 0
 
 /* Adds proper glyphs rendering in st allowing wide glyphs to be drawn as-is as opposed to
  * smaller or cut glyphs being rendered.
