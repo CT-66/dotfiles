@@ -28,3 +28,4 @@ wallpaper.sh --random &
 
 
 i3-layouts
+i3l vstack 0.5
