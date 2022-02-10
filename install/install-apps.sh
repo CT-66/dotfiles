@@ -184,6 +184,7 @@ apps=(
     stalonetray
     python-feedparser
     pavucontrol-qt
+    i3-layouts
 )
 
 # for app in "${apps[@]}"; do
