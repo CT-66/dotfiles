@@ -25,3 +25,6 @@ pkill flashfocus; flashfocus &
 
 # wallpaper.sh --default &
 wallpaper.sh --random &
+
+
+i3-layouts
