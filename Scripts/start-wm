@@ -84,9 +84,9 @@ if __name__ == "__main__":
             start("Gnome", "gnome-session")
         elif wm == "0":
             pass
-        # elif wm == "":
-        #     print(f"Starting {default_wm}")
-        #     system(f"startx {default_wm} 2>/dev/null")
+        elif wm == "":
+            print(f"Starting {default_wm}")
+            system(f"startx {default_wm} 2>/dev/null")
         else:
             print("Invalid input")
             exit()
