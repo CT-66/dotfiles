@@ -28,5 +28,5 @@ wallpaper.sh --random &
 
 
 sleep 2
-i3-layouts
-i3l vstack 0.5
+i3-layouts &
+i3l vstack 0.5 &
