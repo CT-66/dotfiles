@@ -188,6 +188,8 @@ popup_during_fullscreen leave_fullscreen
 
 exec_always "$HOME/Dotfiles/startup.sh &"
 # exec_always "pkill alternating_layouts.py; alternating_layouts.py &"
+exec_always "i3-layouts &"
+exec_always "i3l vstack 0.5 &"
 
 # =======================
 
