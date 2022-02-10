@@ -188,13 +188,15 @@ popup_during_fullscreen leave_fullscreen
 
 exec_always "$HOME/Dotfiles/startup.sh &"
 # exec_always "pkill alternating_layouts.py; alternating_layouts.py &"
-exec_always "i3-layouts"
+exec_always "i3-layouts &"
 
 # =======================
 
+# i3 layouts
 set $i3l vstack 0.5 up to $ws10
 
-bindsym $mod+period exec i3l vstack 0.5 && notify-send "i3" "Layout: Master/Stack"
-bindsym $mod+comma exec i3l autosplit && notify-send "i3" "Layout: Bspwm"
+bindsym $mod+period exec i3l vstack 0.5 && notify-send -t 5000 "i3" "Layout: Master/Stack"
+bindsym $mod+comma exec i3l autosplit && notify-send -t 5000 "i3" "Layout: Bspwm"
 bindsym $mod+s exec i3l swap container with previous
-# autosplit; vstack 0.5, swap
+
+# =======================
