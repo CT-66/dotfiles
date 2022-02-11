@@ -42,3 +42,10 @@ for tty_num in {1..7}; do
     sudo cp ~/Dotfiles/systemd/getty@tty.service.d/skip-username.conf "/etc/systemd/system/getty@tty$tty_num.service.d/skip-username.conf"
     sudo systemctl enable getty@tty$tty_num
 done
+
+# ==============
+
+sudo mkdir /etc/systemd/system/getty@.service.d
+sudo cp ~/Dotfiles/systemd/getty@.service.d/activate-numlock.conf /etc/systemd/system/getty@.service.d/activate-numlock.conf
+
+# ==============
