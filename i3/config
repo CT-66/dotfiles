@@ -192,6 +192,7 @@ set $i3l vstack 0.5 up to $ws10
 bindsym $mod+period exec i3l vstack 0.5 && notify-send -t 5000 "i3" "Layout: Master/Stack"
 bindsym $mod+comma exec i3l autosplit && notify-send -t 5000 "i3" "Layout: Bspwm"
 bindsym $mod+s exec i3l swap container with previous
+bindsym $mod+shift+s exec i3l swap container with next
 
 # =======================
 

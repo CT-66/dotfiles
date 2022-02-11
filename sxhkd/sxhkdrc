@@ -26,7 +26,7 @@ super + shift + ctrl + d
 super + Tab
     rofi -show window
 
-super + shift + s
+super + ctrl + s
     exec-scripts
 
 # screenshots
