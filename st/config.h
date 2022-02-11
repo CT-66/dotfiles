@@ -273,13 +273,19 @@ static Shortcut shortcuts[] = {
 	{ MODKEY,               XK_Down,        kscrolldown,    {.i =  1} },
 	{ MODKEY,               XK_u,           kscrollup,      {.i = -1} },
 	{ MODKEY,               XK_d,           kscrolldown,    {.i = -1} },
-    // Zoom (ctrl++, ctrl+-, ctrl+0, alt++, alt+-, alt+0)
+    // Zoom (ctrl++, ctrl+-, ctrl+0, alt++, alt+-, alt+0, numpad compatible)
     { ControlMask,          XK_equal,       zoom,           {.f = +1} },
     { ControlMask,          XK_minus,       zoom,           {.f = -1} },
     { ControlMask,          XK_0,           zoomreset,      {.f =  0} },
     { MODKEY,               XK_equal,       zoom,           {.f = +1} },
     { MODKEY,               XK_minus,       zoom,           {.f = -1} },
     { MODKEY,               XK_0,           zoomreset,      {.f =  0} },
+    { ControlMask,          XK_KP_Add,      zoom,           {.f = +1} },
+    { ControlMask,          XK_KP_Subtract, zoom,           {.f = -1} },
+    { ControlMask,          XK_KP_0,        zoomreset,      {.f =  0} },
+    { MODKEY,               XK_KP_Add,      zoom,           {.f = +1} },
+    { MODKEY,               XK_KP_Subtract, zoom,           {.f = -1} },
+    { MODKEY,               XK_KP_0,        zoomreset,      {.f =  0} },
     // change transparency on the fly (alt+q, alt+w)
     { MODKEY,	        	XK_q,	        changealpha,	{.f = -0.05} },
     { MODKEY,		        XK_w,	        changealpha,	{.f = +0.05} },
