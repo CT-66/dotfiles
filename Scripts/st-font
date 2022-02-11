@@ -1,0 +1,25 @@
+#!/bin/bash
+
+font="$(echo "CaskaydiaCove|JetBrainsMono|FiraCode|Source Code Pro" | rofi -dmenu -i -p "Font" -sep '|')"
+if [ "$font" == "" ]; then
+    st
+fi
+
+function exec_cmd(){
+    st -f "$1:pixelsize=15:antialias=true:autohint=true"
+}
+
+case $font in
+    "CaskaydiaCove")
+        exec_cmd "CaskaydiaCove Nerd Font"
+        ;;
+    "JetBrainsMono")
+        exec_cmd "JetBrainsMono Nerd Font"
+        ;;
+    "FiraCode")
+        exec_cmd "FiraCode Nerd Font"
+        ;;
+    "Source Code Pro")
+        exec_cmd "Sauce Code Pro Nerd Font"
+        ;;
+esac

@@ -6,7 +6,7 @@
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "python.analysis.diagnosticPublishDelay": 999,
-    "editor.fontFamily": "CaskaydiaCove Nerd Font",
+    "editor.fontFamily": "JetBrainsMono Nerd Font",
     "editor.fontSize": 14,
     "editor.fontLigatures": true,
     "editor.smoothScrolling": true,
