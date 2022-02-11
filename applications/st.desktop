@@ -7,7 +7,7 @@ Icon=utilities-terminal
 Terminal=false
 Categories=System;TerminalEmulator;
 
-Name=Suckless Terminal
+Name=st
 GenericName=Terminal
 Comment=Suckless Terminal Emulator
 StartupWMClass=st
