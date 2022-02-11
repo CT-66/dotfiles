@@ -24,7 +24,6 @@ def get_input(message, channel):
 
 def input_with_timeout(message, timeout):
     channel = queue.Queue()
-    # message = message + " [{} sec timeout] ".format(timeout)
     thread = threading.Thread(target=get_input, args=(message, channel))
     thread.daemon = True
     thread.start()
