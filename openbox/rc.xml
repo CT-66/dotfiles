@@ -35,37 +35,37 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>Caskaydia Cove Nerd Font</name>
+      <name>JetBrainsMono Nerd Font</name>
       <size>9</size>
       <weight>bold</weight>
       <slant>normal</slant>
     </font>
     <font place="InactiveWindow">
-      <name>Caskaydia Cove Nerd Font</name>
+      <name>JetBrainsMono Nerd Font</name>
       <size>9</size>
       <weight>normal</weight>
       <slant>normal</slant>
     </font>
     <font place="MenuHeader">
-      <name>Caskaydia Cove Nerd Font</name>
+      <name>JetBrainsMono Nerd Font</name>
       <size>9</size>
       <weight>Bold</weight>
       <slant>normal</slant>
     </font>
     <font place="MenuItem">
-      <name>Caskaydia Cove Nerd Font</name>
+      <name>JetBrainsMono Nerd Font</name>
       <size>9</size>
       <weight>normal</weight>
       <slant>normal</slant>
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>Caskaydia Cove Nerd Font</name>
+      <name>JetBrainsMono Nerd Font</name>
       <size>9</size>
       <weight>bold</weight>
       <slant>normal</slant>
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>Caskaydia Cove Nerd Font</name>
+      <name>JetBrainsMono Nerd Font</name>
       <size>9</size>
       <weight>bold</weight>
       <slant>normal</slant>
