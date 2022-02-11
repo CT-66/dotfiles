@@ -264,17 +264,22 @@ static Shortcut shortcuts[] = {
     // copy/paste (alt+c, alt+v)
 	{ MODKEY,               XK_c,           clipcopy,       {.i =  0} },
 	{ MODKEY,               XK_v,           clippaste,      {.i =  0} },
-    // vim navigation (alt+d, alt+u, alt+j, alt+k)
+    // vim navigation (alt+d, alt+u, alt+j, alt+k, ctrl+j, ctrl+k)
 	{ MODKEY,               XK_k,           kscrollup,      {.i =  1} },
 	{ MODKEY,               XK_j,           kscrolldown,    {.i =  1} },
+	{ ControlMask,          XK_k,           kscrollup,      {.i =  1} },
+	{ ControlMask,          XK_j,           kscrolldown,    {.i =  1} },
 	{ MODKEY,               XK_Up,          kscrollup,      {.i =  1} },
 	{ MODKEY,               XK_Down,        kscrolldown,    {.i =  1} },
 	{ MODKEY,               XK_u,           kscrollup,      {.i = -1} },
 	{ MODKEY,               XK_d,           kscrolldown,    {.i = -1} },
-    // Zoom (ctrl++, ctrl+-, ctrl+0)
+    // Zoom (ctrl++, ctrl+-, ctrl+0, alt++, alt+-, alt+0)
     { ControlMask,          XK_equal,       zoom,           {.f = +1} },
     { ControlMask,          XK_minus,       zoom,           {.f = -1} },
     { ControlMask,          XK_0,           zoomreset,      {.f =  0} },
+    { MODKEY,               XK_equal,       zoom,           {.f = +1} },
+    { MODKEY,               XK_minus,       zoom,           {.f = -1} },
+    { MODKEY,               XK_0,           zoomreset,      {.f =  0} },
     // change transparency on the fly (alt+q, alt+w)
     { MODKEY,	        	XK_q,	        changealpha,	{.f = -0.05} },
     { MODKEY,		        XK_w,	        changealpha,	{.f = +0.05} },
