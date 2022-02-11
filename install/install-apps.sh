@@ -178,7 +178,6 @@ apps=(
     jgmenu
     obmenu-generator
     gotop
-    bottom
     qutebrowser
     vieb-bin
     stalonetray
