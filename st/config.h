@@ -1,6 +1,5 @@
-
-static char *font = "CaskaydiaCove Nerd Font:pixelsize=14:antialias=true:autohint=true";
-static char *font2[] = { "JetBrainsMono Nerd Font:pixelsize=15:antialias=true:autohint=true" };
+static char *font = "JetBrainsMono Nerd Font:pixelsize=15:antialias=true:autohint=true";
+static char *font2[] = { "CaskaydiaCove Nerd Font:pixelsize=15:antialias=true:autohint=true" };
 static int borderpx = 2;
 
 // Selection colors patch
