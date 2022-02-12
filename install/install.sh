@@ -49,3 +49,9 @@ sudo mkdir /etc/systemd/system/getty@.service.d
 sudo cp ~/Dotfiles/systemd/getty@.service.d/activate-numlock.conf /etc/systemd/system/getty@.service.d/activate-numlock.conf
 
 # ==============
+sudo mkdir -p /usr/local/share/kbd/keymaps
+sudo cp ~/Dotfiles/keymaps/us-custom.map.gz /usr/local/share/kbd/keymaps
+sudo mv /etc/vconsole.conf /etc/vconsole.conf.old
+sudo cp ~/Dotfiles/keymaps/vconsole.conf /etc/vconsole.conf
+
+# ==============
