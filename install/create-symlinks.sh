@@ -47,6 +47,7 @@ dirs=(
     deadd
     xplr
     jgmenu
+    autokey
 )
 
  if [ -d ~/.config ]; then
@@ -66,7 +67,6 @@ ln -s ~/Dotfiles/emacs.d ~/.emacs.d
 sudo mv /usr/share/icons/default/index.theme /usr/share/icons/default/index.theme.bak
 sudo ln -s ~/Dotfiles/icons/default/index.theme /usr/share/icons/default/index.theme
 ln -s ~/Dotfiles/Scripts ~/Scripts
-ln -s ~/Dotfiles/Scripts/autokey ~/.config/autokey/data
 ln -s ~/Dotfiles/stalonetray/stalonetrayrc ~/.stalonetrayrc
 ln -s ~/Dotfiles/betterlockscreen/betterlockscreenrc ~/.config/betterlockscreenrc
 ln -s ~/Dotfiles/xdg/mimeapps.list ~/.config/mimeapps.list

@@ -60,3 +60,7 @@ hgrep () {
 lgrep () {
     \ls -a | \grep -inaI --color=auto "$1"
 }
+
+cgrep () {
+    \cat "$1" | grep "$2"
+}

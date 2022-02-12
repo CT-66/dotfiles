@@ -11,5 +11,5 @@ if [ -n "$notifications" ] && [ "$notifications" -gt 1 ]; then
 elif [ -n "$notifications" ] && [ "$notifications" -eq 1 ]; then
     echo "%{F#E06C75} $notifications"
 else
-    echo "%{F#E06C75} 0"
+    echo ""
 fi

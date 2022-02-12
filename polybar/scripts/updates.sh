@@ -16,7 +16,7 @@ if [ "$updates" -gt 1 ]; then
 elif [ "$updates" -eq 1 ]; then
     echo "%{F#BF616A} $updates"
 else
-    echo "%{F#BF616A} 0"
+    echo ""
 fi
 
 #BF616A
