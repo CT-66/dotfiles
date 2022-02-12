@@ -6,7 +6,7 @@ export XDG_DATA_HOME="$HOME/.local/share"
 
 export XINITRC="$XDG_CONFIG_HOME/X11/xinitrc"
 export XSERVERRC="$XDG_CONFIG_HOME/X11/xserverc"
-export XAUTHORITY="$XDG_CONFIG_HOME/X11/Xauthority"
+# export XAUTHORITY="$XDG_CONFIG_HOME/X11/Xauthority"
 export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc"
 export LESSHISTFILE="$XDG_CACHE_HOME/less/lesshst"
 export GNUPGHOME="$XDG_CONFIG_HOME/gnupg"
