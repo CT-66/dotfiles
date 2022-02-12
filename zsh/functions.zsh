@@ -4,14 +4,6 @@ mcd() {
     cd $1
 }
 
-files_to_be_removed=(.viminfo .bash_history .node_repl_history .lesshst .wget-hsts .xsession-errors .xsession-errors.old)
-
-for file in "${files_to_be_removed[@]}"; do
-    if [ -f "$HOME/$file" ]; then
-        rm -r "$HOME/$file"
-    fi
-done
-
 # open ranger in current directory
 _ () {
     ranger --choosedir=$HOME/.cache/.rangerdir; LASTDIR=`\cat $HOME/.cache/.rangerdir`; cd $LASTDIR
