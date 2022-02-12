@@ -75,11 +75,6 @@ if [ -f ~/.bashrc ]; then
     mv ~/.bashrc ~/.bashrc.bak
 ln -s ~/Dotfiles/bash/bashrc ~/.bashrc
 
-if [ -f ~/.xinitrc ]; then
-    mv ~/.xinitrc ~/.xinitrc.bak
-fi
-ln -s ~/Dotfiles/X11/xinitrc ~/.xinitrc
-
 if [ -f ~/.zshenv ]; then
     mv ~/.zshenv ~/.zshenv.bak
 fi
