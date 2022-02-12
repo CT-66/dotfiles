@@ -93,9 +93,13 @@ alias vim-plugins-settings='nvim ~/.config/nvim/plugins-settings.vim'
 alias vim-plugins-settings-lua='nvim ~/.config/nvim/lua/plugins-settings.lua'
 alias vim-keymaps='nvim ~/.config/nvim/keymaps.vim'
 alias xresources='nvim ~/.config/X11/Xresources'
-alias reload-xresources='xrdb -remove * && xrdb -merge ~/.config/X11/Xresources'
-
 alias tmux-settings='nvim ~/.config/tmux/tmux.conf'
+alias i3rc='nvim ~/.config/i3/config'
+alias sxhkdrc='nvim ~/.config/sxhkd/sxhkdrc'
+alias polybar-config='nvim ~/.config/polybar/config'
+alias startup.sh='nvim ~/Dotfiles/startup.sh'
+
+alias reload-xresources='xrdb -remove * && xrdb -merge ~/.config/X11/Xresources'
 
 alias py=python3
 alias python=python3
