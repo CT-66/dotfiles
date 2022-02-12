@@ -13,7 +13,8 @@ for file in "$files[@]"; do
     source ~/.config/zsh/$file
 done
 
-source $HOME/Scripts/sudo.lib
+# source $HOME/Scripts/sudo.lib
+source $HOME/Scripts/doas.lib
 
 autoload -Uz compinit
 compinit -d ~/.cache/zsh/zsh_compinit_dumpfiles
@@ -130,7 +131,8 @@ zle -N vi-yank-custom
 bindkey -M vicmd 'y' vi-yank-custom
 
 # bind alt+s -> sudo !!
-bindkey -s "^[s" "sudo !!"
+# bindkey -s "^[s" "sudo !!"
+bindkey -s "^[s" "doas !!"
 
 bindkey "^Xa" _expand_alias
 zstyle ':completion:*' completer _expand_alias _complete _ignored

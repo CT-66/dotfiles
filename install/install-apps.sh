@@ -184,6 +184,7 @@ apps=(
     python-feedparser
     pavucontrol-qt
     i3-layouts
+    opendoas
 )
 
 # for app in "${apps[@]}"; do

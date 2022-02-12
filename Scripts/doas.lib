@@ -1,0 +1,6 @@
+#!/bin/bash
+
+doas(){
+    notify-send --urgency=critical --expire-time=60000 "sudo password" "A program is requesting sudo permission"
+    /usr/bin/doas "$@"
+}
