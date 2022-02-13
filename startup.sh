@@ -16,7 +16,7 @@ sxhkd &
 deadd-notification-center &
 $HOME/Scripts/dotfiles
 numlockx &
-kill_program greenclip; greenclip daemon &
+pkill greenclip; greenclip daemon &
 kill_program nm-applet; nm-applet &
 
 # picom-ibhagwan
@@ -35,4 +35,4 @@ wallpaper.sh --random &
 i3-layouts &
 # i3l vstack 0.5 &
 
-autokey-gtk &
+autokey-gtk -c &
