@@ -98,3 +98,7 @@ super + b
 # toggle borders (i3)
 super + shift + b
     i3-msg "border toggle"
+
+# i3 marks (easyfocus)
+super + m
+    i3-easyfocus --color-unfocused-fg 000000 --color-unfocused-bg FFFFFF --color-focused-fg 000000 --color-focused-bg FFFFFF --color-urgent-fg 000000 --color-urgent-bg FFFFFF

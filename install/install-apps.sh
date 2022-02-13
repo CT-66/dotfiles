@@ -185,6 +185,7 @@ apps=(
     pavucontrol-qt
     i3-layouts
     opendoas
+    i3-easyfocus-git
 )
 
 # for app in "${apps[@]}"; do
