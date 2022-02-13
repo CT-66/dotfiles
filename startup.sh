@@ -1,5 +1,9 @@
 #!/bin/bash
 
+function kill_program () {
+    xdotool search --all --screen $DISPLAY --classname $1 windowkill %@
+}
+
 export XDG_SESSION_TYPE=x11
 xrdb -merge $HOME/Dotfiles/X11/Xresources && sleep 0.0001
 xmodmap $HOME/Dotfiles/X11/Xmodmap && sleep 0.0001
@@ -12,15 +16,15 @@ sxhkd &
 deadd-notification-center &
 $HOME/Scripts/dotfiles
 numlockx &
-pkill greenclip; greenclip daemon &
-pkill nm-applet; nm-applet &
+kill_program greenclip; greenclip daemon &
+kill_program nm-applet; nm-applet &
 
 # picom-ibhagwan
-pkill picom; picom -b &
+kill_program picom; picom -b &
 
 # picom-jonaburg
-# pkill picom; picom -f --experimental-backend -b &
-pkill flashfocus; flashfocus &
+# kill_program picom; picom -f --experimental-backend -b &
+kill_program flashfocus; flashfocus &
 
 
 # wallpaper.sh --default &
