@@ -1,0 +1,68 @@
+https://firefoxcss-store.github.io/#
+https://www.reddit.com/r/FirefoxCSS/comments/8kqkmq/how_to_change_colors_of_minimize_maximizerestore/
+https://www.reddit.com/r/FirefoxCSS/comments/9mwwyy/customizing_the_minimize_maximize_and_close/
+https://www.userchrome.org/what-is-userchrome-css.html#hidemenuitem
+https://github.com/CristianDragos/FirefoxThemes/tree/master/Simplify%20Silver%20Peach
+https://www.reddit.com/r/FirefoxCSS/comments/nm0pby/would_this_be_possible_to_do_through_css_i_dont/
+
+https://github.com/Aris-t2/CustomCSSforFx/tree/master/classic/css/generalui
+https://github.com/Aris-t2/CustomCSSforFx/blob/master/classic/css/generalui/close_icon_firefox3.css
+https://github.com/Timvde/UserChrome-Tweaks
+https://github.com/MrOtherGuy/firefox-csshacks/
+
+https://www.google.com/search?q=how+to+change+firefox+urlbar+text+color&iflsig=AINFCbYAAAAAYHpeSWHb3GUT8404IfKXDhVEJ1627zwi
+https://www.reddit.com/r/FirefoxCSS/comments/9flp4e/how_to_change_url_bar_highlight_color/
+https://support.mozilla.org/en-US/questions/1319456
+https://support.mozilla.org/en-US/questions/1274579
+https://support.mozilla.org/en-US/questions/1289355
+https://support.mozilla.org/en-US/questions/1295653
+https://developer.mozilla.org/en-US/docs/Tools/Eyedropper
+
+https://www.reddit.com/r/FirefoxCSS/comments/l5sl5n/trying_to_install_flyingfox_but_it_looks_messed_up/
+https://github.com/akshat46/FlyingFox/wiki/%23-Installation
+https://github.com/akshat46/FlyingFox/wiki/0.-Customize
+https://www.reddit.com/r/FirefoxCSS/comments/mpdg3q/materialfox_looks_great_but_the_url_bar_text_is/
+
+///////////////////////////////////
+
+https://www.google.com/search?q=how+to+import+browsing+history+from+brave+to+firefox
+https://google.com/search?q=firefox+remove+close+tab+button
+https://google.com/search?q=firefox+darkreader+slow
+
+normal
+
+
+https://stackoverflow.com/questions/6165472/custom-css-scrollbar-for-firefox
+https://www.tutorialrepublic.com/faq/how-to-change-the-default-text-selection-color-in-the-browsers-using-css.php
+https://support.mozilla.org/en-US/questions/1063215
+https://support.mozilla.org/en-US/questions/1214517
+https://developer.mozilla.org/en-US/docs/Tools/Browser_Toolbox
+https://github.com/muckSponge/MaterialFox
+
+reenable remember session
+
+https://www.reddit.com/r/firefox/comments/7dvtw0/guide_how_to_edit_your_context_menu/
+
+customize overflow meny to something like a small circle and put all add-ons there
+
+hide close tab button, but display on hover (ask on reddit)
+hide control buttons
+tab bar on top from simlify mint
+
+Context menu radius
+Url bar, slightly curved (likr brave)
+Back, forward, reload butttons
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+about:config
+extensions settings
+    ubo settings
+    cad settings
+    dark reader settings
+history
+about:preferences
+userChrome.css
+
+cookies from brave to chrome.....
