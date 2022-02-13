@@ -119,3 +119,4 @@ alias tmux-ls='tmux list-sessions'
 alias tmux-ks='tmux kill-session'
 
 alias linux="\cat ~/Documents/Copypastas/interjection | \xclip -sel clip"
+alias interject="\cat ~/Documents/Copypastas/interjection | \xclip -sel clip"
