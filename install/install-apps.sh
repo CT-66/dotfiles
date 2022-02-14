@@ -49,7 +49,6 @@ apps=(
     firefox
     alacritty
     kitty
-    sxiv
     vieb
     lolcat
     htop
