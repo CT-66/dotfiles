@@ -48,6 +48,7 @@ dirs=(
     xplr
     jgmenu
     autokey
+    feh
 )
 
  if [ -d ~/.config ]; then

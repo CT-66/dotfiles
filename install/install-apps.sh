@@ -186,6 +186,7 @@ apps=(
     i3-layouts
     opendoas
     i3-easyfocus-git
+    rsync
 )
 
 # for app in "${apps[@]}"; do

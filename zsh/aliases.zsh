@@ -48,6 +48,7 @@ alias df='duf'
 alias du='dust -br'
 # alias sctl='sudo systemctl'
 alias sctl='doas systemctl'
+alias rsync='rsync -Pr'
 
 alias cd..='cd ../'
 alias ..='cd ../'
