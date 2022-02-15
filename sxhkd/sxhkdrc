@@ -20,7 +20,10 @@ super + shift + d
     rofi -show run
 
 # dmenu
-super + shift + ctrl + d
+super + ctrl + d
+    dmenu_run
+
+super + ctrl + shift + d
     dmenu_run
 
 super + Tab
