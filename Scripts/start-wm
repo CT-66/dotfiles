@@ -47,11 +47,11 @@ if __name__ == "__main__":
     - Qtile (3)
     - Xmonad (4)
     - AwesomeWM (5)
-    - Spectrwm (6)
-    - LeftWM(7)
-    - Openbox (8)
-    - KDE Plasma (9)
-    - Gnome (10)
+    - Dwm (6)
+    - Spectrwm (7)
+    - LeftWM (8)
+    - Openbox (9)
+    - KDE Plasma (10)
     - Dont't start xorg (0)
     """
         )
@@ -70,17 +70,18 @@ if __name__ == "__main__":
         elif wm == "5":
             start("AwesomeWM", "awesome")
         elif wm == "6":
-            start("Spectrwm", "spectrwm")
+            # start("Dwm", "startx /usr/local/bin/dwm")
+            print(f"Starting Dwm")
+            system(f"startx /usr/local/bin/dwm 2>/dev/null")
         elif wm == "7":
-            start("LeftWM", "exec dbus-launch leftwm")
+            start("Spectrwm", "spectrwm")
         elif wm == "8":
-            start("Openbox", "openbox-session")
+            start("LeftWM", "exec dbus-launch leftwm")
         elif wm == "9":
+            start("Openbox", "openbox-session")
+        elif wm == "10":
             system("export DESKTOP_SESSION=plasma")
             start("KDE Plasma", "startplasma-x11")
-        elif wm == "10":
-            system("export XDG_SESSION_TYPE=x11 && export GDK_BACKEND=x11")
-            start("Gnome", "gnome-session")
         elif wm == "0":
             pass
         elif wm == "":
