@@ -29,7 +29,7 @@ super + ctrl + shift + d
 super + Tab
     rofi -show window
 
-super + ctrl + s
+super + shift + s
     exec-scripts
 
 # screenshots
