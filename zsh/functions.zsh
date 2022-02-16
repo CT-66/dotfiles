@@ -62,5 +62,5 @@ lgrep () {
 }
 
 cgrep () {
-    \cat "$1" | grep "$2"
+    \cat "$1" | grep -inaI --color=auto "$2"
 }
