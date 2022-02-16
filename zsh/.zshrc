@@ -72,7 +72,7 @@ bindkey -v
 export KEYTIMEOUT=1
 zmodload -i zsh/complist
 
-# Use vim keys in tab complete menu:
+# Use vim keys in tab complete menu
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -M menuselect 'k' vi-up-line-or-history
@@ -81,23 +81,31 @@ bindkey -M menuselect 'left' vi-backward-char
 bindkey -M menuselect 'down' vi-down-line-or-history
 bindkey -M menuselect 'up' vi-up-line-or-history
 bindkey -M menuselect 'right' vi-forward-char
+bindkey -M menuselect '^[[Z' reverse-menu-complete
 # Fix backspace bug when switching modes
 bindkey "^?" backward-delete-char
+# ctrl+r -> reverse history search
 bindkey '^R' history-incremental-search-backward
+# press g or G to go to beginning/end of line (similar to gg/G in vim)
 bindkey -M vicmd 'g' vi-beginning-of-line
 bindkey -M vicmd 'G' end-of-line
-bindkey -M menuselect '^[[Z' reverse-menu-complete
 # press left/right arrow in vim mode to go to beginning/end of line
 bindkey -M vicmd "^[[D" beginning-of-line
 bindkey -M vicmd "^[[C" end-of-line
-# bindkey -M viins "^[H" backward-char
-# bindkey -M viins "^[L" forward-char
-bindkey -M viins "^W" "vi-backward-kill-word"
-bindkey -M vicmd "." "insert-last-word"
+# ctrl+w
+bindkey -M vicmd "^W" "vi-backward-kill-word"
+bindkey "^W" backward-kill-word
+# ctrl+backspace
+bindkey -M vicmd "^H" "vi-backward-kill-word"
+bindkey "^H" backward-kill-word
+# alt+. -> inserts argument of previous command
+bindkey -M vicmd "^[[." "insert-last-word"
+bindkey "^[[." insert-last-word
 # ctrl+left/right
 bindkey "^[[1;5D" backward-word
 bindkey "^[[1;5C" forward-word
-
+bindkey -M vicmd "^[[1;5D" backward-word
+bindkey -M vicmd "^[[1;5C" forward-word
 # alt+left to go to the parent directory
 bindkey -s "^[[1;3D" "cd ../\n"
 
