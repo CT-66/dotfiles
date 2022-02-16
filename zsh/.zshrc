@@ -99,8 +99,9 @@ bindkey "^W" backward-kill-word
 bindkey -M vicmd "^H" "vi-backward-kill-word"
 bindkey "^H" backward-kill-word
 # alt+. -> inserts argument of previous command
-bindkey -M vicmd "^[[." "insert-last-word"
-bindkey "^[[." insert-last-word
+# bindkey -M vicmd "^[[." "insert-last-word"
+# bindkey "^[[." insert-last-word
+bindkey -s "^[." " !$"
 # ctrl+left/right
 bindkey "^[[1;5D" backward-word
 bindkey "^[[1;5C" forward-word
@@ -108,6 +109,12 @@ bindkey -M vicmd "^[[1;5D" backward-word
 bindkey -M vicmd "^[[1;5C" forward-word
 # alt+left to go to the parent directory
 bindkey -s "^[[1;3D" "cd ../\n"
+# bind alt+s -> sudo !!
+# bindkey -s "^[s" "sudo !!"
+bindkey -s "^[s" "doas !!"
+# press tab to expand aliases
+bindkey "^Xa" _expand_alias
+zstyle ':completion:*' completer _expand_alias _complete _ignored
 
 
 # Change cursor shape for different vi modes.
@@ -159,14 +166,6 @@ function vi-yank-custom {
 
 zle -N vi-yank-custom
 bindkey -M vicmd 'y' vi-yank-custom
-
-# bind alt+s -> sudo !!
-# bindkey -s "^[s" "sudo !!"
-bindkey -s "^[s" "doas !!"
-
-# press tab to expand aliases
-bindkey "^Xa" _expand_alias
-zstyle ':completion:*' completer _expand_alias _complete _ignored
 
 zstyle ':completion:*' regular true
 zstyle ':completion:*' rehash true
