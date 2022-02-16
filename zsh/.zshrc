@@ -48,7 +48,21 @@ setopt HIST_REDUCE_BLANKS # Remove superfluous blanks before recording entry
 setopt HIST_IGNORE_SPACE # Don't record an entry starting with a space
 
 
-# compinit
+# dirstack (type `dirs -v` and cd -<NUM>)
+autoload -Uz add-zsh-hook
+DIRSTACKFILE="${XDG_CACHE_HOME:-$HOME/.cache}/zsh/dirs"
+if [[ -f "$DIRSTACKFILE" ]] && (( ${#dirstack} == 0 )); then
+	dirstack=("${(@f)"$(< "$DIRSTACKFILE")"}")
+	[[ -d "${dirstack[1]}" ]]
+fi
+chpwd_dirstack() {
+	print -l -- "$PWD" "${(u)dirstack[@]}" > "$DIRSTACKFILE"
+}
+add-zsh-hook -Uz chpwd chpwd_dirstack
+DIRSTACKSIZE='20'
+setopt AUTO_PUSHD PUSHD_SILENT PUSHD_TO_HOME
+setopt PUSHD_IGNORE_DUPS
+setopt PUSHD_MINUS
 
 # DISABLE_AUTO_UPDATE="true"
 # ENABLE_CORRECTION="true"
@@ -73,12 +87,20 @@ bindkey '^R' history-incremental-search-backward
 bindkey -M vicmd 'g' vi-beginning-of-line
 bindkey -M vicmd 'G' end-of-line
 bindkey -M menuselect '^[[Z' reverse-menu-complete
+# press left/right arrow in vim mode to go to beginning/end of line
 bindkey -M vicmd "^[[D" beginning-of-line
 bindkey -M vicmd "^[[C" end-of-line
 # bindkey -M viins "^[H" backward-char
 # bindkey -M viins "^[L" forward-char
 bindkey -M viins "^W" "vi-backward-kill-word"
 bindkey -M vicmd "." "insert-last-word"
+# ctrl+left/right
+bindkey "^[[1;5D" backward-word
+bindkey "^[[1;5C" forward-word
+
+# alt+left to go to the parent directory
+bindkey -s "^[[1;3D" "cd ../\n"
+
 
 # Change cursor shape for different vi modes.
 function zle-keymap-select {
@@ -137,6 +159,7 @@ bindkey -s "^[s" "doas !!"
 bindkey "^Xa" _expand_alias
 zstyle ':completion:*' completer _expand_alias _complete _ignored
 zstyle ':completion:*' regular true
+zstyle ':completion:*' rehash true
 
 autopair-init
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
