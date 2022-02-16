@@ -60,3 +60,7 @@ sudo chown -c root:root /etc/doas.conf
 sudo chmod -c 0400 /etc/doas.conf
 
 # ==============
+sudo cp /etc/pacman.conf/etc/pacman.conf.bak
+sudo echo "Color" >> /etc/pacman.conf
+
+# ==============
