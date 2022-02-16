@@ -156,8 +156,10 @@ bindkey -M vicmd 'y' vi-yank-custom
 # bindkey -s "^[s" "sudo !!"
 bindkey -s "^[s" "doas !!"
 
+# press tab to expand aliases
 bindkey "^Xa" _expand_alias
 zstyle ':completion:*' completer _expand_alias _complete _ignored
+
 zstyle ':completion:*' regular true
 zstyle ':completion:*' rehash true
 
