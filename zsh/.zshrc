@@ -1,4 +1,5 @@
 pfetch
+# arch-fetch
 # cd $HOME
 
 files=(
