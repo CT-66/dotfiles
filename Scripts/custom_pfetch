@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# less bloated version of pfetch
+# hardcoded commands specific to arch

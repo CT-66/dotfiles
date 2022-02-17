@@ -30,7 +30,7 @@ bindkey -M vicmd "^[h" "backward-char"
 bindkey -M vicmd "^[l" "forward-char"
 # ctrl+w
 bindkey -M vicmd "^W" "vi-backward-kill-word"
-bindkey "^W" backward-kill-word
+# bindkey "^W" backward-kill-word
 # ctrl+backspace
 bindkey -M vicmd "^H" "vi-backward-kill-word"
 bindkey "^H" backward-kill-word
