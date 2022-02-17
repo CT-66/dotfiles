@@ -106,3 +106,35 @@ function vi-yank-custom {
 
 zle -N vi-yank-custom
 bindkey -M vicmd 'y' vi-yank-custom
+
+# enable history search
+autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+[[ -n "${key[Up]}"   ]] && bindkey -- "${key[Up]}"   up-line-or-beginning-search
+[[ -n "${key[Down]}" ]] && bindkey -- "${key[Down]}" down-line-or-beginning-search
+
+# open ranger in current directory
+_ () {
+    ranger --choosedir=$HOME/.cache/.rangerdir; LASTDIR=`\cat $HOME/.cache/.rangerdir`; cd $LASTDIR
+}
+
+# exit the shell and return to ranger (to be used after pressing `S` in ranger)
+__ () {
+    exit
+}
+
+# open lf in current directory
+lf_cd () {
+    tmp="$(mktemp)"
+    lf -last-dir-path="$tmp" "$@"
+    if [ -f "$tmp" ]; then
+        dir="$(cat "$tmp")"
+        rm -f "$tmp" >/dev/null
+        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
+    fi
+}
+
+bindkey -s '^F' '_\n' # ctrl+f -> ranger
+bindkey -s '^Z' '__\n' # ctrl+z -> exit the shell inside ranger
+bindkey -s '^[^F' 'lf_cd\n' # ctrl+alt+f -> lf

@@ -4,30 +4,6 @@ mcd() {
     cd $1
 }
 
-# open ranger in current directory
-_ () {
-    ranger --choosedir=$HOME/.cache/.rangerdir; LASTDIR=`\cat $HOME/.cache/.rangerdir`; cd $LASTDIR
-}
-
-# exit the shell and return to ranger (to be used after pressing `S` in ranger)
-__ () {
-    exit
-}
-
-lf_cd () {
-    tmp="$(mktemp)"
-    lf -last-dir-path="$tmp" "$@"
-    if [ -f "$tmp" ]; then
-        dir="$(cat "$tmp")"
-        rm -f "$tmp" >/dev/null
-        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
-    fi
-}
-
-bindkey -s '^F' '_\n' # ctrl+f
-bindkey -s '^Z' '__\n' # exit the shell inside ranger
-bindkey -s '^[^F' 'lf_cd\n' # ctrl+alt+f
-
 extract () {
     if [ -f $1 ]; then
         case $1 in

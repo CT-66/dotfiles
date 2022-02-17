@@ -10,3 +10,5 @@ plugins=(
 for plugin in "$plugins[@]"; do
     source $plugins_dir/$plugin
 done
+
+autopair-init
