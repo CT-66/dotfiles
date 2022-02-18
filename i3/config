@@ -210,6 +210,6 @@ exec_always "$HOME/Dotfiles/startup.sh &"
 # i3-layouts &
 # i3l vstack 0.5 &
 # exec "alternating_layouts.py &"
-exec_always --no-startup-id i3-master-layout.py
+exec "i3-master-layout.py &"
 
 # =======================
