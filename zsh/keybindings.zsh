@@ -135,6 +135,6 @@ lf_cd () {
     fi
 }
 
-bindkey -s '^F' '_\n' # ctrl+f -> ranger
-bindkey -s '^Z' '__\n' # ctrl+z -> exit the shell inside ranger
+bindkey -s '^[f' '_\n' # ctrl+f -> ranger
+bindkey -s '^[z' '__\n' # ctrl+z -> exit the shell inside ranger
 bindkey -s '^[^F' 'lf_cd\n' # ctrl+alt+f -> lf
