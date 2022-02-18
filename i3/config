@@ -24,10 +24,14 @@ bindsym $mod+$up focus up
 bindsym $mod+$right focus right
 
 # move focused window
-bindsym $mod+Shift+$left exec i3l move left
-bindsym $mod+Shift+$down exec i3l move down
-bindsym $mod+Shift+$up exec i3l move up
-bindsym $mod+Shift+$right exec i3l move right
+# bindsym $mod+Shift+$left exec i3l move left
+# bindsym $mod+Shift+$down exec i3l move down
+# bindsym $mod+Shift+$up exec i3l move up
+# bindsym $mod+Shift+$right exec i3l move right
+bindsym $mod+Shift+$left exec move left
+bindsym $mod+Shift+$down exec move down
+bindsym $mod+Shift+$up exec move up
+bindsym $mod+Shift+$right exec move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -188,11 +192,13 @@ popup_during_fullscreen leave_fullscreen
 # =======================
 
 # i3 layouts
-set $i3l vstack 0.5 up to $ws10
+# set $i3l vstack 0.5 up to $ws10
 
-bindsym $mod+period exec i3l vstack 0.5 && notify-send -t 5000 "i3" "Layout: Master/Stack"
-bindsym $mod+comma exec i3l autosplit && notify-send -t 5000 "i3" "Layout: Bspwm"
-bindsym $mod+s exec i3l swap container with previous
+# bindsym $mod+period exec i3l vstack 0.5 && notify-send -t 5000 "i3" "Layout: Master/Stack"
+# bindsym $mod+comma exec i3l autosplit && notify-send -t 5000 "i3" "Layout: Bspwm"
+# bindsym $mod+s exec i3l swap container with previous
+
+bindsym $mod+s exec i3-swap-master.py
 
 # =======================
 
@@ -203,6 +209,7 @@ exec_always "$HOME/Dotfiles/startup.sh &"
 
 # i3-layouts &
 # i3l vstack 0.5 &
-exec "alternating_layouts.py &"
+# exec "alternating_layouts.py &"
+exec_always --no-startup-id i3-master-layout.py
 
 # =======================

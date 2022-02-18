@@ -232,3 +232,11 @@ makepkg -si
 cd $HOME
 rm -rf $HOME/archcraft-themes
 echo "Done"
+
+
+# ========
+pip3 install i3ipc
+cd $HOME
+git clone https://github.com/Hippo0o/i3-master-layout --depth 1
+cd i3-master-layout
+cp i3-master-layout.py i3-swap-master.py ~/.local/bin
