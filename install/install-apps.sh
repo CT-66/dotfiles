@@ -187,6 +187,7 @@ apps=(
     opendoas
     i3-easyfocus-git
     rsync
+    xcolor
 )
 
 # for app in "${apps[@]}"; do
