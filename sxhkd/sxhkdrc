@@ -11,6 +11,9 @@ super + alt + Return
 super + ctrl + Return
     st -e fish
 
+super + KP_Enter
+    xterm
+
 ctrl + alt + t
     alacritty
 
@@ -69,6 +72,7 @@ super + {less, greater, slash}
 super + bracketleft
     pamixer -d 5
 
+# numlock subtract
 super + KP_Subtract
     pamixer -d 5
 
@@ -76,6 +80,7 @@ super + KP_Subtract
 super + bracketright
     pamixer -i 5
 
+# numlock add
 super + KP_Add
     pamixer -i 5
 
@@ -83,7 +88,8 @@ super + KP_Add
 super + backslash
     pamixer -t
 
-super + KP_0
+# numlock zero
+super + KP_Insert
     pamixer -t
 
 # launch apps
