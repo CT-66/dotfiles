@@ -12,7 +12,6 @@ files=(
     completions.zsh
     options.zsh
     history.zsh
-    vim-mode.zsh
 )
 
 for file in "$files[@]"; do
