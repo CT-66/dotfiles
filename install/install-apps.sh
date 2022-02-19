@@ -135,6 +135,7 @@ apps=(
     zsh-autosuggestions
     zsh-autopair-git
     zsh-theme-powerlevel10k-bin-git
+    zsh-history-substring-search
     brightnessctl
     alternating-layouts-git
     pamixer

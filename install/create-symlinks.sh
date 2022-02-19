@@ -49,6 +49,7 @@ dirs=(
     jgmenu
     autokey
     feh
+    fish
 )
 
  if [ -d ~/.config ]; then
