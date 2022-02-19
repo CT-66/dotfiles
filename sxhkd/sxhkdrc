@@ -8,6 +8,9 @@ super + shift + Return
 super + alt + Return
     st -e bash
 
+super + ctrl + Return
+    st -e fish
+
 ctrl + alt + t
     alacritty
 
@@ -66,12 +69,21 @@ super + {less, greater, slash}
 super + bracketleft
     pamixer -d 5
 
+super + KP_Subtract
+    pamixer -d 5
+
 # increase volume by 5
 super + bracketright
     pamixer -i 5
 
+super + KP_Add
+    pamixer -i 5
+
 # mute/unmute
 super + backslash
+    pamixer -t
+
+super + KP_0
     pamixer -t
 
 # launch apps
