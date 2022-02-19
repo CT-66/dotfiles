@@ -5,3 +5,5 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}' # case insensitive tab co
 zstyle ':completion:*' menu select 'm:{a-z}={A-Za-z}' # case insensitive tab completion
 zstyle ':completion:*' regular true
 zstyle ':completion:*' rehash true
+zstyle ':completion:*' use-cache on # use cache to speed up commands
+zstyle ':completion:*' cache-path "~/.cache/zsh/.zcompcache"
