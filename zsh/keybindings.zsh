@@ -55,6 +55,11 @@ bindkey -s "^[s" "doas !!"
 # press tab to expand aliases
 bindkey "^Xa" _expand_alias
 zstyle ':completion:*' completer _expand_alias _complete _ignored
+# zsh history substring search
+bindkey "^[[A" history-substring-search-up
+bindkey "^[[B" history-substring-search-down
+bindkey -M vicmd "k" history-substring-search-up
+bindkey -M vicmd "j" history-substring-search-down
 
 # Change cursor shape for different vi modes.
 function zle-keymap-select {
