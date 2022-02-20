@@ -48,7 +48,6 @@ apps=(
     zip
     firefox
     alacritty
-    kitty
     vieb
     lolcat
     htop

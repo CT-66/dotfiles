@@ -18,7 +18,6 @@ dirs=(
     awesome
     spectrwm
     openbox
-    kitty
     lsd
     neofetch
     nvim
