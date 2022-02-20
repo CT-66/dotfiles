@@ -1,4 +1,5 @@
 unsetopt BEEP # turn off beeps
+unsetopt HIST_BEEP # do not beep when a widget attempts to access non-existent history entry
 setopt NO_CASE_GLOB # Set case insensitive globbing
 unsetopt AUTO_CD # DO NOT automatically cd into a directory without typing `cd`
 unsetopt correct_all # do not correct arguments of commands
