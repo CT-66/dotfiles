@@ -30,7 +30,8 @@ bindkey -M vicmd "^[h" "backward-char"
 bindkey -M vicmd "^[l" "forward-char"
 # ctrl+w
 bindkey -M vicmd "^W" "vi-backward-kill-word"
-# bindkey "^W" backward-kill-word
+# alt+w
+bindkey "^[w" backward-kill-word
 # ctrl+backspace
 bindkey -M vicmd "^H" "vi-backward-kill-word"
 bindkey "^H" backward-kill-word
@@ -60,6 +61,10 @@ bindkey "^[[A" history-substring-search-up
 bindkey "^[[B" history-substring-search-down
 bindkey -M vicmd "k" history-substring-search-up
 bindkey -M vicmd "j" history-substring-search-down
+# ctrl+space to accept autosuggestion
+bindkey "^ " autosuggest-accept
+# alt+space to accept and execute autosuggestion
+bindkey "^[ " autosuggest-execute
 
 # Change cursor shape for different vi modes.
 function zle-keymap-select {

@@ -285,9 +285,9 @@ static Shortcut shortcuts[] = {
     { MODKEY,               XK_KP_Add,      zoom,           {.f = +1} },
     { MODKEY,               XK_KP_Subtract, zoom,           {.f = -1} },
     { MODKEY,               XK_KP_0,        zoomreset,      {.f =  0} },
-    // change transparency on the fly (alt+q, alt+w)
+    // change transparency on the fly (alt+q, alt+shift+q)
     { MODKEY,	        	XK_q,	        changealpha,	{.f = -0.05} },
-    { MODKEY,		        XK_w,	        changealpha,	{.f = +0.05} },
+    { MODKEY|ShiftMask,     XK_Q,	        changealpha,	{.f = +0.05} },
     // vim browse: enter normal mode (alt+esc or ctrl+esc)
 	/* { MODKEY,               XK_Escape,           normalMode,      {.i =  0} }, */
 	/* { ControlMask,          XK_Escape,           normalMode,      {.i =  0} }, */
