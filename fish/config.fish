@@ -4,8 +4,6 @@ set fish_greeting
 # vim mode
 fish_vi_key_bindings
 
-starship init fish | source
-
 # vim mode cursor
 function fish_mode_prompt
   switch $fish_bind_mode

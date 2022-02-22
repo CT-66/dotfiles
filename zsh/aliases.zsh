@@ -1,5 +1,6 @@
 alias cp='cp -iv'
 alias mv='mv -iv'
+alias rm='rm -iv'
 alias ZZ='exit'
 alias ZQ='exit'
 # alias pls='sudo $(fc -ln -1)'
