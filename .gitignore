@@ -23,3 +23,6 @@ __pycache__
 .pyc
 
 Xauthority
+
+autokey.json
+autokey.json\~
