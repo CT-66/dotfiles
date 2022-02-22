@@ -23,6 +23,9 @@ bindkey -M vicmd 'G' end-of-line
 # press left/right arrow in vim mode to go to beginning/end of line
 bindkey -M vicmd "^[[D" beginning-of-line
 bindkey -M vicmd "^[[C" end-of-line
+# ctrl+j/k instead of up/down arrows
+bindkey "^J" down-history
+bindkey "^K" up-history
 # alt+h/l instead to left/right arrows
 bindkey "^[h" backward-char
 bindkey "^[l" forward-char
