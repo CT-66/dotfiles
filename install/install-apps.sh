@@ -110,6 +110,9 @@ apps=(
     bitwarden
     btop
     xorg-xinit
+    xorg-xev
+    xorg-server-xephyr
+    xorg-xmodmap
     python-pynvim
     jq
     neovide-git
@@ -140,14 +143,12 @@ apps=(
     pamixer
     dos2unix
     cava
-    xorg-server-xephyr
     tmpmail-git
     bar-protonmail
     prettier
     ffmpegthumbnailer
     gzip
     xclip
-    xorg-xev
     diskus
     hyperfine
     trash-cli
