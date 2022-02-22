@@ -26,6 +26,8 @@ export BROWSER="qutebrowser"
 
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#abb2bf"
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+# https://github.com/zsh-users/zsh-autosuggestions/issues/544
+export ZSH_AUTOSUGGEST_MANUAL_REBIND="anything"
 export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND='bg=#545862,fg=#eaeef3,bold'
 export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND='bg=#bf616a,fg=#eaeef3,bold'
 export AUTO_NOTIFY_THRESHOLD=10
