@@ -150,3 +150,12 @@ lf_cd () {
 bindkey -s '^[f' '_\n' # ctrl+f -> ranger
 bindkey -s '^[z' '__\n' # ctrl+z -> exit the shell inside ranger
 bindkey -s '^[^F' 'lf_cd\n' # ctrl+alt+f -> lf
+
+# display dots when waiting for tab completion list
+expand-or-complete-with-dots() {
+    echo -n "\e[31m...\e[0m"
+    zle expand-or-complete
+    zle redisplay
+}
+zle -N expand-or-complete-with-dots
+bindkey "^I" expand-or-complete-with-dots
