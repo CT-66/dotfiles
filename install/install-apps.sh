@@ -188,6 +188,7 @@ apps=(
     i3-easyfocus-git
     rsync
     xcolor
+    gnome-clocks
 )
 
 # for app in "${apps[@]}"; do
