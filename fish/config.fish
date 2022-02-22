@@ -1,5 +1,6 @@
 # disable startup message
 set fish_greeting
+set TERM "xterm-256color"
 
 # vim mode
 fish_vi_key_bindings
