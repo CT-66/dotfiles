@@ -51,7 +51,7 @@ alias df='duf'
 alias du='dust -br'
 # alias sctl='sudo systemctl'
 alias sctl='doas systemctl'
-alias qmv='qmv -f do'
+alias qmv='qmv -fv do'
 alias bulkrename=qmv
 
 # -P: display progress bar
