@@ -23,9 +23,6 @@ bindkey -M vicmd 'G' end-of-line
 # press left/right arrow in vim mode to go to beginning/end of line
 bindkey -M vicmd "^[[D" beginning-of-line
 bindkey -M vicmd "^[[C" end-of-line
-# ctrl+j/k instead of up/down arrows
-bindkey "^J" down-history
-bindkey "^K" up-history
 # alt+h/l instead to left/right arrows
 bindkey "^[h" backward-char
 bindkey "^[l" forward-char
@@ -64,6 +61,9 @@ bindkey "^[[A" history-substring-search-up
 bindkey "^[[B" history-substring-search-down
 bindkey -M vicmd "k" history-substring-search-up
 bindkey -M vicmd "j" history-substring-search-down
+# ctrl+j/k instead of up/down arrows
+bindkey "^J" history-substring-search-down
+bindkey "^K" history-substring-search-up
 # ctrl+space to accept autosuggestion
 bindkey "^ " autosuggest-accept
 # alt+space to accept and execute autosuggestion

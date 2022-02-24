@@ -51,7 +51,17 @@ alias df='duf'
 alias du='dust -br'
 # alias sctl='sudo systemctl'
 alias sctl='doas systemctl'
-alias rsync='rsync -Pr'
+
+# -P: display progress bar
+# -r: recursive
+# -v: verbose
+# -hh: output numbers in human readable format
+# --info=stats1,progress2
+# stats1: display transfer statistics with verbosity level 1
+# progress2: prints total transfer progress instead of per-file transfer progress
+# --modify-window=1: when comparing the timestamps of two files, treat their timestamps as being equivalent if their timestamps have a difference of less than 1 second
+# -a: groups these options- copy symlinks as symlinks, not files (-l), preserve permissions (-p), preserve time (-t), preserve group (-g), preserve owner (-o), devices (-D) # use only for backup purposes
+alias rsync='rsync -Prv -hh --info=stats1,progress2 --modify-window=1'
 
 alias cd..='cd ../'
 alias ..='cd ../'
@@ -70,14 +80,17 @@ alias chmod="chmod --preserve-root"
 alias chown="chown --preserve-root"
 alias chgrp="chgrp --preserve-root"
 
+# -1: displays one file per line (--oneline)
+# -F: display if a file is a directory, executable, normal file, symlink, fifo or socket (--classify)
+# -b: list file sizes with binary prefixes (kb, mb, gb, etc.)
 alias exa='exa -1Fb --color=always --icons --group-directories-first --no-permissions --no-user'
 alias ls='exa'
 alias l='ls'
 alias ll='ls -l'
 alias lla='ls -la'
 alias la='ls -a'
-alias lg='ls -aG'
-alias lt='ls -aT'
+alias lg='ls -aG' # -G: grid (exa specific)
+alias lt='ls -aT' # -T: tree (exa specific)
 # alias l.='exa -1Fa | egrep -in "^\."'
 alias l.='\ls -Ap | egrep -in "^\."'
 
