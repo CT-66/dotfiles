@@ -21,6 +21,7 @@ export KEYTIMEOUT=1
 export EDITOR=nvim
 export VISUAL=nvim
 export TERMINAL=st
+export TERMCMD=st
 export BROWSER="qutebrowser"
 # export PAGER='bat --paging always'
 
