@@ -189,6 +189,7 @@ apps=(
     rsync
     xcolor
     gnome-clocks
+    renameutils
 )
 
 # for app in "${apps[@]}"; do
