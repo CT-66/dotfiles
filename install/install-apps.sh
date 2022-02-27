@@ -190,6 +190,8 @@ apps=(
     xcolor
     gnome-clocks
     renameutils
+    neovim-symlinks
+    geany
 )
 
 # for app in "${apps[@]}"; do
