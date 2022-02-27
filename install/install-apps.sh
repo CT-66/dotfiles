@@ -193,6 +193,7 @@ apps=(
     renameutils
     neovim-symlinks
     geany
+    onefetch
 )
 
 # for app in "${apps[@]}"; do
