@@ -71,6 +71,7 @@ apps=(
     libnotify
     picom-jonaburg-git
     arc-gtk-theme
+    arc-icon-theme
     w3m
     rtv
     newsboat
