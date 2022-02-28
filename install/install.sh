@@ -64,3 +64,5 @@ sudo cp /etc/pacman.conf/etc/pacman.conf.bak
 sudo echo "Color" >> /etc/pacman.conf
 
 # ==============
+mkdir -p ~/.config/tmux/plugins
+git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
