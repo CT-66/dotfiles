@@ -36,6 +36,7 @@ set linebreak
 " -----
 " go to previous/next line when pressing left/right arrow in beginning/end of line (only in insert mode)
 " do not map h and l since it may break plugins and operations like `3h`, `d3l`, etc.
+" it will not work in normal mode as left/right have already been mapped to `^` and `$` respectively
 set whichwrap+=[,]
 
 " -----
