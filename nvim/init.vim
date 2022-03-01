@@ -34,6 +34,10 @@ set wrap
 set linebreak
 
 " -----
+" go to previous/next line when pressing left/right arrow in beginning/end of line
+set whichwrap+=b,s,h,l,<,>,[,]
+
+" -----
 
 set number relativenumber
 set visualbell
@@ -106,7 +110,6 @@ set matchpairs+=<:>
 set ruler
 
 set backspace=indent,eol,start
-set whichwrap+=<,>,h,l
 
 set encoding=utf-8
 
