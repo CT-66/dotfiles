@@ -34,8 +34,9 @@ set wrap
 set linebreak
 
 " -----
-" go to previous/next line when pressing left/right arrow in beginning/end of line
-set whichwrap+=b,s,h,l,<,>,[,]
+" go to previous/next line when pressing left/right arrow in beginning/end of line (only in insert mode)
+" do not map h and l since it may break plugins and operations like `3h`, `d3l`, etc.
+set whichwrap+=[,]
 
 " -----
 
