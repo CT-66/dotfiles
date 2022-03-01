@@ -7,6 +7,7 @@
 # wallpaper="049.jpg"
 # wallpaper="089.jpg"
 # wallpaper="004.jpg"
+# wallpaper="095.jpg"
 wallpaper="092.png"
 
 while [[ $# -gt 0 ]]; do
