@@ -193,6 +193,7 @@ apps=(
     renameutils
     neovim-symlinks
     geany
+    geany-plugins
     onefetch
     tmux-plugin-manager
 )

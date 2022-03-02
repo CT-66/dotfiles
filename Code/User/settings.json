@@ -213,8 +213,7 @@
     "security.workspace.trust.enabled": false,
     "terminal.integrated.ignoreProcessNames": [],
     "terminal.integrated.tabs.enableAnimation": false,
-    "editor.selectionHighlight": false,
-    "window.zoomLevel": 1
+    "editor.selectionHighlight": false
 }
 /*
     "[javascript]": {
