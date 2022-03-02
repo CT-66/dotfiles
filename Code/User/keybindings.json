@@ -83,11 +83,6 @@
         "when": "terminalFocus"
     },
     {
-        "key": "alt+win+right",
-        "command": "workbench.action.positionPanelRight",
-        "when": "panelFocus"
-    },
-    {
         "key": "ctrl+b",
         "command": "python.execInTerminal",
         "when": "resourceExtname == .py"
@@ -124,13 +119,18 @@
     },
     */
     {
-        "key": "alt+win+down",
+        "key": "alt+super+down",
         "command": "workbench.action.positionPanelBottom",
         "when": "panelFocus"
     },
     {
-        "key": "alt+win+left",
+        "key": "alt+super+left",
         "command": "workbench.action.positionPanelLeft",
+        "when": "panelFocus"
+    },
+    {
+        "key": "alt+super+right",
+        "command": "workbench.action.positionPanelRight",
         "when": "panelFocus"
     },
     /*
@@ -147,14 +147,6 @@
         "key": "ctrl+b",
         "command": "java.debug.runJavaFile",
         "when": "resourceExtname == .java"
-    },
-    {
-        "key": "ctrl+b",
-        "command": "workbench.action.terminal.sendSequence",
-        "args": {
-            "text": "cd '${fileDirname}'\u000Ddel ${fileBasenameNoExtension}.exe\u000Dcsc '${file}'\u000Dcls\u000D.\\${fileBasenameNoExtension}.exe\u000D",
-        },
-        "when": "resourceExtname == .cs"
     },
     {
         "key": "ctrl+b",
@@ -229,4 +221,18 @@
         "key": "ctrl+9",
         "command": "workbench.action.lastEditorInGroup"
     },
+    {
+        "key": "f1",
+        "command": "-workbench.action.showCommands"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "editor.action.insertLineAfter",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+enter",
+        "command": "editor.action.insertLineBefore",
+        "when": "editorTextFocus && !editorReadonly"
+    }
 ]

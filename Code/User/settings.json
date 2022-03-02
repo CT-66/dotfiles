@@ -2,10 +2,11 @@
     "python.pythonPath": "python",
     "workbench.sideBar.location": "left",
     "editor.wordWrap": "on",
-    "python.defaultInterpreterPath": "/usr/bin/python3",
+    "python.defaultInterpreterPath": "/bin/python",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "python.analysis.diagnosticPublishDelay": 999,
+    // "editor.fontFamily": "CaskaydiaCove Nerd Font",
     "editor.fontFamily": "JetBrainsMono Nerd Font",
     "editor.fontSize": 14,
     "editor.fontLigatures": true,
@@ -212,7 +213,8 @@
     "security.workspace.trust.enabled": false,
     "terminal.integrated.ignoreProcessNames": [],
     "terminal.integrated.tabs.enableAnimation": false,
-    "editor.selectionHighlight": false
+    "editor.selectionHighlight": false,
+    "window.zoomLevel": 1
 }
 /*
     "[javascript]": {
