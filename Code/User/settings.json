@@ -11,8 +11,8 @@
     "editor.fontSize": 14,
     "editor.fontLigatures": true,
     "editor.smoothScrolling": true,
-    // "editor.cursorSmoothCaretAnimation": true,
-    // "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorBlinking": "smooth",
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "editor.tabCompletion": "on",
@@ -162,14 +162,21 @@
     // Vim
     "vim.highlightedyank.enable": true,
     "vim.leader": " ",
-    "vim.mouseSelectionGoesIntoVisualMode": false,
-    // "vim.searchHighlightTextColor": "#FFFF00\t",
-    "vim.showmodename": false,
+    "vim.searchHighlightTextColor": "#C678DD\t",
+    "vim.showmodename": true,
     "vim.useSystemClipboard": true,
     "keyboard.dispatch": "keyCode",
     // "vim.useCtrlKeys": true
     "vim.vimrc.enable": true,
-    "vim.vimrc.path": "~/Dotfiles/nvim/init.vim",
+    "vim.vimrc.path": "~/Dotfiles/Code/User/vscode-vim.vim",
+    "vim.highlightedyank.duration": 100,
+    "vim.hlsearch": true,
+    "vim.matchpairs": "(:),{:},[:],':',\":\",<:>",
+    "vim.shell": "zsh",
+    "vim.showMarksInGutter": true,
+    "vim.startofline": false,
+    "vim.surround": true,
+    "vim.whichwrap": "[,]",
     "files.associations": {
         "*.json": "jsonc"
     },
@@ -190,7 +197,7 @@
     "material-icon-theme.hidesExplorerArrows": true,
     "update.mode": "default",
     // "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName}",
-    "editor.scrollBeyondLastLine": false,
+    "editor.scrollBeyondLastLine": true,
     "editor.lineNumbers": "relative",
     "editor.bracketPairColorization.enabled": true,
     "editor.accessibilitySupport": "off",
@@ -213,7 +220,7 @@
     "security.workspace.trust.enabled": false,
     "terminal.integrated.ignoreProcessNames": [],
     "terminal.integrated.tabs.enableAnimation": false,
-    "editor.selectionHighlight": false
+    "editor.selectionHighlight": false,
 }
 /*
     "[javascript]": {
