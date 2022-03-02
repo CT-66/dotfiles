@@ -23,6 +23,7 @@ apps=(
     lf-bin
     ranger
     tmux
+    visual-studio-code-bin
     cmatrix
     ninvaders
     git
@@ -192,8 +193,6 @@ apps=(
     gnome-clocks
     renameutils
     neovim-symlinks
-    geany
-    geany-plugins
     onefetch
     tmux-plugin-manager
 )
