@@ -406,5 +406,10 @@
         "key": "ctrl+k",
         "command": "notifications.focusPreviousToast",
         "when": "notificationFocus && notificationToastsVisible"
+    },
+    {
+        "key": "alt+f",
+        "command": "workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled"
     }
 ]
