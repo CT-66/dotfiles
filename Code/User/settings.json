@@ -187,7 +187,6 @@
     "workbench.activityBar.visible": false,
     "sync.quietSync": true,
     "sync.autoUpload": true,
-    "breadcrumbs.enabled": false,
     "workbench.colorTheme": "One Dark Pro",
     "vscode_custom_css.imports": [
         "file:///home/arch/Dotfiles/Code/User/custom-css.css"
@@ -221,6 +220,7 @@
     "terminal.integrated.ignoreProcessNames": [],
     "terminal.integrated.tabs.enableAnimation": false,
     "editor.selectionHighlight": false,
+    "breadcrumbs.enabled": false,
 }
 /*
     "[javascript]": {
