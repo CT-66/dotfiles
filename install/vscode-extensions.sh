@@ -42,7 +42,7 @@ zhuangtongfa.material-theme
 )
 
 for extension in "${extensions[@]}"; do
-    code --install-extension $extension
+    codium --install-extension $extension
 done
 
 echo "Done"

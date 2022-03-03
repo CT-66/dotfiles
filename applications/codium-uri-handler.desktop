@@ -1,9 +1,9 @@
 [Desktop Entry]
-Name=Visual Studio Code - URL Handler
+Name=VSCodium - URL Handler
 Comment=Code Editing. Redefined.
 GenericName=Text Editor
-Exec=/opt/visual-studio-code/code --no-sandbox --open-url %U
-Icon=visual-studio-code
+Exec=/opt/vscodium-bin/bin/codium --open-url %U
+Icon=vscodium
 Type=Application
 NoDisplay=true
 StartupNotify=true

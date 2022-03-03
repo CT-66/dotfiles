@@ -23,7 +23,7 @@ apps=(
     lf-bin
     ranger
     tmux
-    visual-studio-code-bin
+    vscodium-bin
     cmatrix
     ninvaders
     git

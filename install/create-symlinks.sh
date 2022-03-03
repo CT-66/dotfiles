@@ -29,7 +29,7 @@ dirs=(
     ranger
     bat
     doom
-    Code/User
+    VSCodium/User
     Kvantum
     qt5ct
     mpd
@@ -71,6 +71,7 @@ ln -s ~/Dotfiles/Scripts ~/Scripts
 ln -s ~/Dotfiles/stalonetray/stalonetrayrc ~/.stalonetrayrc
 ln -s ~/Dotfiles/betterlockscreen/betterlockscreenrc ~/.config/betterlockscreenrc
 ln -s ~/Dotfiles/xdg/mimeapps.list ~/.config/mimeapps.list
+sudo ln -s /usr/bin/codium /usr/bin/code
 
 if [ -f ~/.bashrc ]; then
     mv ~/.bashrc ~/.bashrc.bak

@@ -202,6 +202,7 @@ dir_node_exact_matches = {
     ".git": "",
     ".mozilla": "",
     ".vscode": "",
+    ".vscode-oss": "",
     ".Trash": "󰆴",
     "Trash": "󰆴",
     "arch": "󰣇",

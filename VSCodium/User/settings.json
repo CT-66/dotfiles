@@ -168,7 +168,7 @@
     "keyboard.dispatch": "keyCode",
     // "vim.useCtrlKeys": true
     "vim.vimrc.enable": true,
-    "vim.vimrc.path": "~/Dotfiles/Code/User/vscode-vim.vim",
+    "vim.vimrc.path": "~/Dotfiles/VSCodium/User/vscode-vim.vim",
     "vim.highlightedyank.duration": 100,
     "vim.hlsearch": true,
     "vim.matchpairs": "(:),{:},[:],':',\":\",<:>",
@@ -189,7 +189,7 @@
     "sync.autoUpload": true,
     "workbench.colorTheme": "One Dark Pro",
     "vscode_custom_css.imports": [
-        "file:///home/arch/Dotfiles/Code/User/custom-css.css"
+        "file:///home/arch/Dotfiles/VSCodium/User/custom-css.css"
     ],
     "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
     "terminal.integrated.tabs.enabled": false,
