@@ -72,6 +72,7 @@ ln -s ~/Dotfiles/stalonetray/stalonetrayrc ~/.stalonetrayrc
 ln -s ~/Dotfiles/betterlockscreen/betterlockscreenrc ~/.config/betterlockscreenrc
 ln -s ~/Dotfiles/xdg/mimeapps.list ~/.config/mimeapps.list
 sudo ln -s /usr/bin/codium /usr/bin/code
+ln -s ~/Dotfiles/VSCodium/product.json ~/.config/VSCodium/product.json
 
 if [ -f ~/.bashrc ]; then
     mv ~/.bashrc ~/.bashrc.bak

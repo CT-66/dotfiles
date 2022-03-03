@@ -17,11 +17,8 @@ nmap <leader>a ggVG
 " nmap <C-b> :call RunPythonFile()<cr>
 
 
-" nmap <leader>v :source ~/.config/nvim/init.vim<cr>
-
 nnoremap <C-s> :w<cr>
 nmap <C-a> ggVG
-nnoremap <A-a> <C-a>
 
 nnoremap U <C-r>
 
@@ -67,9 +64,6 @@ vnoremap <right> $
 " imap <left> <C-o>^
 " imap <right> <C-o>$
 
-" disable  ex mode
-nnoremap Q <Nop>
-
 nmap ; :
 
 " Stay in visual mode when indenting
@@ -87,10 +81,6 @@ vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
-
-" " disable trying to find man page entry (K)
-" nnoremap K <Nop>
-" xnoremap K <Nop>
 
 " center cursor on movements like `j`, `k`, `G` and `n`, `N`
 " set scrolloff=999
@@ -138,9 +128,6 @@ nnoremap = <C-w>=
 " paste in command mode
 cnoremap <C-v> <C-r>+
 
-" paste in insert mode
-imap <C-v> <C-r>+
-
 " hjkl like movements in insert mode
 inoremap <C-h> <left>
 inoremap <C-j> <down>
@@ -156,11 +143,6 @@ inoremap <C-l> <right>
 
 nnoremap Q qw
 nnoremap K @w
-
-" tab bindings
-nnoremap <C-n> :tabnew<CR>
-nnoremap <C-tab> :tabnext<CR>
-nnoremap <C-S-tab> :tabprevious<CR>
 
 " -----
 " Main Settings

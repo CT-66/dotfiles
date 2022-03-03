@@ -209,7 +209,7 @@
     "workbench.settings.useSplitJSON": true,
     "window.customMenuBarAltFocus": false,
     "window.enableMenuBarMnemonics": false,
-    "window.menuBarVisibility": "hidden",
+    // "window.menuBarVisibility": "hidden",
     "window.titleBarStyle": "custom",
     "extensions.webWorker": false,
     "terminal.external.linuxExec": "alacritty",
@@ -220,7 +220,7 @@
     "terminal.integrated.ignoreProcessNames": [],
     "terminal.integrated.tabs.enableAnimation": false,
     "editor.selectionHighlight": false,
-    "breadcrumbs.enabled": false,
+    "breadcrumbs.enabled": false
 }
 /*
     "[javascript]": {
