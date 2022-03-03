@@ -234,6 +234,10 @@
         "command": "editor.action.insertLineBefore",
         "when": "editorTextFocus && !editorReadonly"
     },
+    {
+        "key": "ctrl+a",
+        "command": "editor.action.selectAll"
+    },
     // global vim bindings
     // j
     {

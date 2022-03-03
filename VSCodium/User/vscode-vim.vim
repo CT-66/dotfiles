@@ -18,7 +18,7 @@ nmap <leader>a ggVG
 
 
 nnoremap <C-s> :w<cr>
-nmap <C-a> ggVG
+" nmap <C-a> ggVG
 
 nnoremap U <C-r>
 
@@ -71,16 +71,11 @@ vnoremap < <gv
 vnoremap > >gv
 
 " clear highlighted results after a search
-nnoremap <esc> :noh<return><esc>
-nnoremap <esc>^[ <esc>^[
+nnoremap <esc> :noh<return>
+"nnoremap <esc>^[ <esc>^[
 
 vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>/<C-R>=@/<CR><CR>
 vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
-
-" disable help (f1)
-inoremap <F1> <ESC>
-nnoremap <F1> <ESC>
-vnoremap <F1> <ESC>
 
 " center cursor on movements like `j`, `k`, `G` and `n`, `N`
 " set scrolloff=999
