@@ -212,7 +212,7 @@
     // "window.menuBarVisibility": "hidden",
     "window.titleBarStyle": "custom",
     "extensions.webWorker": false,
-    "terminal.external.linuxExec": "alacritty",
+    "terminal.external.linuxExec": "st",
     "terminal.integrated.cursorWidth": 2,
     "telemetry.telemetryLevel": "off",
     "security.workspace.trust.banner": "never",
