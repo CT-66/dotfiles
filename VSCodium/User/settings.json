@@ -166,17 +166,34 @@
     "vim.showmodename": true,
     "vim.useSystemClipboard": true,
     "keyboard.dispatch": "keyCode",
-    // "vim.useCtrlKeys": true
     "vim.vimrc.enable": true,
     "vim.vimrc.path": "~/Dotfiles/VSCodium/User/vscode-vim.vim",
     "vim.highlightedyank.duration": 100,
-    "vim.hlsearch": true,
     "vim.matchpairs": "(:),{:},[:],':',\":\",<:>",
     "vim.shell": "zsh",
     "vim.showMarksInGutter": true,
     "vim.startofline": false,
     "vim.surround": true,
     "vim.whichwrap": "[,]",
+    "vim.hlsearch": true,
+    "vim.incsearch": true,
+    // "vim.ignorecase": true,
+    "vim.smartcase": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "esc"
+            ],
+            "commands": [
+                ":nohl"
+            ],
+        }
+    ],
+    "vim.handleKeys": {
+        "<C-n>": false,
+        "<C-a>": false,
+        "<C-q>": false,
+    },
     "files.associations": {
         "*.json": "jsonc"
     },

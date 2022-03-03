@@ -435,5 +435,14 @@
         "key": "alt+u",
         "command": "workbench.action.terminal.scrollUp",
         "when": "terminalFocus && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocus && terminalProcessSupported && !terminalAltBufferActive"
+    },
+    {
+        "key": "ctrl+alt+w",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+alt+f",
+        "command": "actions.find",
+        "when": "editorFocus || editorIsOpen"
     }
 ]
