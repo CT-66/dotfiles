@@ -226,13 +226,25 @@
     },
     {
         "key": "ctrl+enter",
-        "command": "editor.action.insertLineAfter",
-        "when": "editorTextFocus && !editorReadonly"
+        "command": "extension.multiCommand.execute",
+        "args": {
+            "sequence": [
+                "editor.action.insertLineAfter",
+                "extension.vim_insert"
+            ]
+        },
+        "when": "editorTextFocus && !editorReadonly && vim.mode != 'Insert'"
     },
     {
         "key": "ctrl+shift+enter",
-        "command": "editor.action.insertLineBefore",
-        "when": "editorTextFocus && !editorReadonly"
+        "command": "extension.multiCommand.execute",
+        "args": {
+            "sequence": [
+                "editor.action.insertLineBefore",
+                "extension.vim_insert"
+            ]
+        },
+        "when": "editorTextFocus && !editorReadonly && vim.mode != 'Insert'"
     },
     {
         "key": "ctrl+a",
