@@ -142,3 +142,8 @@ nnoremap K @w
 " -----
 " Main Settings
 set whichwrap=[,]
+set linebreak
+set confirm
+set foldcolumn=1
+set foldmethod=indent
+set matchpairs+=<:>

@@ -182,8 +182,12 @@
     "vim.timeout": 500,
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-            "before": ["esc"],
-            "commands": [":nohl"]
+            "before": [
+                "esc"
+            ],
+            "commands": [
+                ":nohl"
+            ]
         }
     ],
     "vim.handleKeys": {
