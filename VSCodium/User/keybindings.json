@@ -271,18 +271,28 @@
         "command": "search.focus.nextInputBox",
         "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible"
     },
-    {
-        "key": "ctrl+j",
-        "command": "list.scrollDown",
-        "when": "listFocus && !inputFocus"
-    },
+    // {
+    //     "key": "ctrl+j",
+    //     "command": "list.scrollDown",
+    //     "when": "listFocus && !inputFocus"
+    // },
     {
         "key": "j",
         "command": "list.focusDown",
         "when": "notebookEditorFocused && !inputFocus"
     },
     {
+        "key": "ctrl+j",
+        "command": "list.focusDown",
+        "when": "notebookEditorFocused && !inputFocus"
+    },
+    {
         "key": "j",
+        "command": "list.focusDown",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+j",
         "command": "list.focusDown",
         "when": "listFocus && !inputFocus"
     },
@@ -322,18 +332,28 @@
         "command": "search.focus.prevInputBox",
         "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible"
     },
-    {
-        "key": "ctrl+k",
-        "command": "list.scrollUp",
-        "when": "listFocus && !inputFocus"
-    },
+    // {
+    //     "key": "ctrl+k",
+    //     "command": "list.scrollUp",
+    //     "when": "listFocus && !inputFocus"
+    // },
     {
         "key": "k",
         "command": "list.focusUp",
         "when": "notebookEditorFocused && !inputFocus"
     },
     {
+        "key": "ctrl+k",
+        "command": "list.focusUp",
+        "when": "notebookEditorFocused && !inputFocus"
+    },
+    {
         "key": "k",
+        "command": "list.focusUp",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+k",
         "command": "list.focusUp",
         "when": "listFocus && !inputFocus"
     },
