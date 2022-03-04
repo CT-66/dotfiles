@@ -75,7 +75,7 @@ alias .4='cd ../../../../'
 alias .....='cd ../../../../../'
 alias .5='cd ../../../../../'
 
-alias mkdir='mkdir -p'
+alias mkdir='mkdir -pv'
 alias mkd=mkdir
 
 alias chmod="chmod --preserve-root"
