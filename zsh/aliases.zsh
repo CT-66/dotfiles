@@ -20,20 +20,12 @@ alias grep="grep -inaI --color=auto"
 alias find='fd'
 alias .history='nvim ~/.cache/zsh/history'
 alias mkf='touch'
-alias g=git
-# alias p='sudo pacman'
-alias p='doas pacman'
 alias sv='sudoedit'
 alias h=htop
 alias b=btop
 alias ranger='ranger --choosedir=$HOME/.cache/.rangerdir; LASTDIR=`\cat $HOME/.cache/.rangerdir`; cd $LASTDIR'
 alias r=ranger
 alias tty-clock='tty-clock -cbt -C 4'
-alias gp='git add . && git commit -m "$(date +"%d %b, %Y | %I:%M %p")" && git push -u origin master'
-alias gc='git clone'
-alias gcg='git clone https://github.com/'
-alias gd='git diff'
-alias gs='git status'
 alias bw-list='bw list items --pretty --search'
 alias cat=bat
 alias f=fzf
@@ -53,6 +45,19 @@ alias du='dust -br'
 alias sctl='doas systemctl'
 alias qmv='qmv -fv do'
 alias bulkrename=qmv
+
+# alias p='sudo pacman'
+alias p='doas pacman'
+alias S='yay -S'
+alias rns='yay -Rns'
+alias Qq='yay -Qq'
+
+alias g=git
+alias gp='git add . && git commit -m "$(date +"%d %b, %Y | %I:%M %p")" && git push -u origin master'
+alias gc='git clone'
+alias gcg='git clone https://github.com/'
+alias gd='git diff'
+alias gs='git status'
 
 # -P: display progress bar
 # -r: recursive
