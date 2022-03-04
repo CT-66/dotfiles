@@ -250,6 +250,26 @@
         "key": "ctrl+a",
         "command": "editor.action.selectAll"
     },
+    {
+        "key": "ctrl+alt+down",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus && vim.mode == 'Insert'"
+    },
+    {
+        "key": "ctrl+alt+up",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus && vim.mode =='Insert'",
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus && vim.mode == 'Insert'"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus && vim.mode =='Insert'",
+    },
     // global vim bindings
     // j
     {
