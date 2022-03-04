@@ -51,6 +51,7 @@ alias P='doas pacman'
 alias S='yay -S'
 alias Rns='yay -Rns'
 alias Qq='yay -Qq'
+alias Ps='yay -Ps'
 
 alias g=git
 alias gp='git add . && git commit -m "$(date +"%d %b, %Y | %I:%M %p")" && git push -u origin master'
