@@ -49,6 +49,7 @@ dirs=(
     autokey
     feh
     fish
+    yay
 )
 
  if [ -d ~/.config ]; then
