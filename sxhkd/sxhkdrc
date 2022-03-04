@@ -112,6 +112,10 @@ super + w
 super + shift + w
     wallpaper.sh --default
 
+# display the filename of current wallpaper
+super + alt + w
+    wallpaper.sh --current-wallpaper
+
 # show/hide secondary polybar
 super + b
     polybar-msg cmd toggle

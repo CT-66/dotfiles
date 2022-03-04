@@ -24,6 +24,18 @@ while [[ $# -gt 0 ]]; do
             feh --bg-scale ~/Pictures/Wallpapers/$wallpaper
             exit 0
             ;;
+        -c|--current-wallpaper)
+            if [ -f "$HOME/.fehbg" ]; then
+                current_wallpaper="$(awk '{print $4}' ~/.fehbg)"
+                notify-send "wallpaper.sh" "Current wallpaper: $current_wallpaper"
+                echo "$current_wallpaper" | xclip -sel clip
+                exit 0
+            elif [ ! -f "HOME/.fehbg" ]; then
+                notify-send "wallpaper.sh" "Error"
+                exit 1
+            fi
+            ;;
+
     esac
 done
 
