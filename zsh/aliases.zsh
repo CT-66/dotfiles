@@ -47,10 +47,10 @@ alias qmv='qmv -fv do'
 alias bulkrename=qmv
 
 # alias p='sudo pacman'
-alias p='doas pacman'
+alias P='doas pacman'
 alias S='yay -S'
-alias rns='yay -Rns'
-alias qq='yay -Qq'
+alias Rns='yay -Rns'
+alias Qq='yay -Qq'
 
 alias g=git
 alias gp='git add . && git commit -m "$(date +"%d %b, %Y | %I:%M %p")" && git push -u origin master'
