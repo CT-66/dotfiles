@@ -195,6 +195,7 @@ apps=(
     neovim-symlinks
     onefetch
     tmux-plugin-manager
+    moreutils
 )
 
 # for app in "${apps[@]}"; do
