@@ -256,6 +256,16 @@
         "when": "editorTextFocus && vim.mode == 'Insert'"
     },
     {
+        "key": "ctrl+alt+j",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus && vim.mode == 'Insert'"
+    },
+    {
+        "key": "ctrl+alt+up",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus && vim.mode =='Insert'",
+    },
+    {
         "key": "ctrl+alt+up",
         "command": "editor.action.insertCursorAbove",
         "when": "editorTextFocus && vim.mode =='Insert'",
