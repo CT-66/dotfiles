@@ -140,9 +140,8 @@ alias yt-dl-playlist="yt-dlp -o \"%(playlist_index)s-%(title)s.%(ext)s\""
 # tmux
 alias tmux='tmux -f ~/.config/tmux/tmux.conf'
 alias t=tmux
-alias t-ls='tmux list-sessions'
 alias tls='tmux list-sessions'
-alias tmux-ls='tmux list-sessions'
+alias ta='tmux attach -t '
 alias tmux-ks='tmux kill-session'
 
 alias linux="\cat ~/Documents/Copypastas/interjection | \xclip -sel clip"
