@@ -194,7 +194,6 @@ apps=(
     renameutils
     neovim-symlinks
     onefetch
-    tmux-plugin-manager
     moreutils
 )
 
