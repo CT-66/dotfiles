@@ -1,4 +1,4 @@
-# tmux 2>/dev/null
+tmux 2>/dev/null
 pfetch
 # arch-fetch
 # cd $HOME
