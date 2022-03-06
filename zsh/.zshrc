@@ -1,4 +1,5 @@
-tmux 2>/dev/null
+# tmux 2>/dev/null
+[ -z "${TMUX}" ] && { tmux attach || tmux; } >/dev/null 2>&1
 pfetch
 # arch-fetch
 # cd $HOME
