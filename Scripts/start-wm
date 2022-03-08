@@ -17,7 +17,8 @@ AwesomeWM
 Dwm
 Spectrwm
 Openbox
-KDE Plasma' | fzf --reverse | tr '[:upper:]' '[:lower:]')"
+KDE Plasma
+None' | fzf --reverse --border=rounded --cycle --height=50% | tr '[:upper:]' '[:lower:]')"
 
 if [ "$wm" = "" ]; then
     echo "Starting $default_wm"
@@ -50,6 +51,9 @@ else
         "kde plasma")
             export DESKTOP_SESSION=plasma
             start "KDE Plasma" "startplasma-x11"
+            ;;
+        "none")
+            exit 0
             ;;
         *)
             echo "Invalid input"
