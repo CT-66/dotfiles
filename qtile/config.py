@@ -91,7 +91,8 @@ for i in groups:
     )
 
 layout_theme = {
-    "border_focus": "#ffffff",
+    # "border_focus": "#d8dee9",
+    "border_focus": "#61AFEF",
     "border_width": 2,
     # "margin": gaps
     "margin": 15,
