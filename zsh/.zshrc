@@ -24,5 +24,9 @@ done
 # source $HOME/Scripts/sudo.lib
 source $HOME/Scripts/doas.lib
 
+# fzf
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
+
 # always in end
 source ~/.config/zsh/p10k.zsh

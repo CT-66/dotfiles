@@ -39,6 +39,14 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
 --border=rounded
 --cycle
 --height=50%
+--bind ctrl-h:backward-char
+--bind ctrl-l:forward-char
+--bind ctrl-g:first
+--bind ctrl-alt-g:last
+--bind ctrl-f:page-down
+--bind ctrl-b:page-up
+--bind ctrl-d:half-page-down
+--bind ctrl-u:half-page-up
 --color=dark
 --padding=1
 --color=fg:-1,bg:-1,hl:#c678dd,fg+:#ffffff,bg+:#4b5263,hl+:#d858fe
