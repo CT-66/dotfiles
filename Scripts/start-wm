@@ -28,7 +28,8 @@ else
             start "Bspwm" "bspwm"
             ;;
         "qtile")
-            start "Qtile" "qtile start"
+            echo "Starting Qtile"
+            exec startx /usr/bin/qtile start
             ;;
         "xmonad")
             start "Xmonad" "xmonad"
