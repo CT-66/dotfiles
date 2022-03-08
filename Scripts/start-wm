@@ -1,98 +1,62 @@
-#!/bin/python3
-# vim: filetype=python
+#!/bin/bash
 
-from os import system
-import sys
-import threading
-import queue
+default_wm="/usr/bin/i3"
 
+# $1:name, $2:path
+function start() {
+    echo "Starting $1"
+    exec startx /usr/bin/"$2" 2>/dev/null
+}
 
-def exit():
-    sys.exit()
+function main() {
+    wm="$(echo 'i3
+Bspwm
+Qtile
+Xmonad
+AwesomeWM
+Dwm
+Spectrwm
+Openbox
+KDE Plasma' | fzf --reverse | tr '[:upper:]' '[:lower:]')"
 
+if [ "$wm" = "" ]; then
+    echo "Starting $default_wm"
+    exec startx "$default_wm"
+else
+    case $wm in
+        "bspwm")
+            start "Bspwm" "bspwm"
+            ;;
+        "qtile")
+            start "Qtile" "qtile start"
+            ;;
+        "xmonad")
+            start "Xmonad" "xmonad"
+            ;;
+        "awesomewm")
+            start "AwesomeWM" "awesome"
+            ;;
+        "dwm")
+            echo "Starting Dwm"
+            exec startx /usr/local/bin/dwm 2>/dev/null
+            ;;
+        "spectrwm")
+            start "Spectrwm" "spectrwm"
+            ;;
+        "openbox")
+            start "Openbox" "openbox-session"
+            ;;
+        "kde plasma")
+            export DESKTOP_SESSION=plasma
+            start "KDE Plasma" "startplasma-x11"
+            ;;
+        *)
+            echo "Invalid input"
+            exit 1
+    esac
 
-def start(name, path):
-    print(f"Starting {name}")
-    system(f"startx /usr/bin/{path} 2>/dev/null")
+fi
 
+}
 
-default_wm = "/usr/bin/i3"
-
-def get_input(message, channel):
-    response = input(message)
-    channel.put(response)
-
-def input_with_timeout(message, timeout):
-    channel = queue.Queue()
-    thread = threading.Thread(target=get_input, args=(message, channel))
-    thread.daemon = True
-    thread.start()
-
-    try:
-        response = channel.get(True, timeout)
-        return response
-    except queue.Empty:
-        pass
-    print(f"Starting {default_wm}")
-    system(f"startx {default_wm} 2>/dev/null")
-
-
-if __name__ == "__main__":
-    try:
-
-        print(
-            """WM/DE:
-    - i3 (1)
-    - Bspwm (2)
-    - Qtile (3)
-    - Xmonad (4)
-    - AwesomeWM (5)
-    - Dwm (6)
-    - Spectrwm (7)
-    - LeftWM (8)
-    - Openbox (9)
-    - KDE Plasma (10)
-    - Dont't start xorg (0)
-    """
-        )
-
-        wm = input_with_timeout("> ", 15)
-        wm = str(wm).strip().rstrip()
-
-        if wm == "1":
-            start("i3", "i3")
-        elif wm == "2":
-            start("Bspwm", "bspwm")
-        elif wm == "3":
-            start("Qtile", "qtile start")
-        elif wm == "4":
-            start("Xmonad", "xmonad")
-        elif wm == "5":
-            start("AwesomeWM", "awesome")
-        elif wm == "6":
-            # start("Dwm", "startx /usr/local/bin/dwm")
-            print(f"Starting Dwm")
-            system(f"startx /usr/local/bin/dwm 2>/dev/null")
-        elif wm == "7":
-            start("Spectrwm", "spectrwm")
-        elif wm == "8":
-            start("LeftWM", "exec dbus-launch leftwm")
-        elif wm == "9":
-            start("Openbox", "openbox-session")
-        elif wm == "10":
-            system("export DESKTOP_SESSION=plasma")
-            start("KDE Plasma", "startplasma-x11")
-        elif wm == "0":
-            pass
-        elif wm == "":
-            print(f"Starting {default_wm}")
-            system(f"startx {default_wm} 2>/dev/null")
-        else:
-            print("Invalid input")
-            exit()
-
-    except KeyboardInterrupt:
-        exit()
-
-    except EOFError:
-        exit()
+main

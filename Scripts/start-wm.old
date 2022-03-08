@@ -1,0 +1,98 @@
+#!/bin/python3
+# vim: filetype=python
+
+from os import system
+import sys
+import threading
+import queue
+
+
+def exit():
+    sys.exit()
+
+
+def start(name, path):
+    print(f"Starting {name}")
+    system(f"startx /usr/bin/{path} 2>/dev/null")
+
+
+default_wm = "/usr/bin/i3"
+
+def get_input(message, channel):
+    response = input(message)
+    channel.put(response)
+
+def input_with_timeout(message, timeout):
+    channel = queue.Queue()
+    thread = threading.Thread(target=get_input, args=(message, channel))
+    thread.daemon = True
+    thread.start()
+
+    try:
+        response = channel.get(True, timeout)
+        return response
+    except queue.Empty:
+        pass
+    print(f"Starting {default_wm}")
+    system(f"startx {default_wm} 2>/dev/null")
+
+
+if __name__ == "__main__":
+    try:
+
+        print(
+            """WM/DE:
+    - i3 (1)
+    - Bspwm (2)
+    - Qtile (3)
+    - Xmonad (4)
+    - AwesomeWM (5)
+    - Dwm (6)
+    - Spectrwm (7)
+    - LeftWM (8)
+    - Openbox (9)
+    - KDE Plasma (10)
+    - Dont't start xorg (0)
+    """
+        )
+
+        wm = input_with_timeout("> ", 15)
+        wm = str(wm).strip().rstrip()
+
+        if wm == "1":
+            start("i3", "i3")
+        elif wm == "2":
+            start("Bspwm", "bspwm")
+        elif wm == "3":
+            start("Qtile", "qtile start")
+        elif wm == "4":
+            start("Xmonad", "xmonad")
+        elif wm == "5":
+            start("AwesomeWM", "awesome")
+        elif wm == "6":
+            # start("Dwm", "startx /usr/local/bin/dwm")
+            print(f"Starting Dwm")
+            system(f"startx /usr/local/bin/dwm 2>/dev/null")
+        elif wm == "7":
+            start("Spectrwm", "spectrwm")
+        elif wm == "8":
+            start("LeftWM", "exec dbus-launch leftwm")
+        elif wm == "9":
+            start("Openbox", "openbox-session")
+        elif wm == "10":
+            system("export DESKTOP_SESSION=plasma")
+            start("KDE Plasma", "startplasma-x11")
+        elif wm == "0":
+            pass
+        elif wm == "":
+            print(f"Starting {default_wm}")
+            system(f"startx {default_wm} 2>/dev/null")
+        else:
+            print("Invalid input")
+            exit()
+
+    except KeyboardInterrupt:
+        exit()
+
+    except EOFError:
+        exit()

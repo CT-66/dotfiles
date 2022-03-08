@@ -53,3 +53,36 @@ bak (){
         echo "ERROR: File \"$1\" doesn't exist"
     fi
 }
+
+function mksh() {
+    if echo "$1" | grep -q ".sh" > /dev/null; then
+        filename="$1"
+    elif [ "$1" = "" ]; then
+        echo "No filename given"
+        exit 1
+    else
+        filename="$1.sh"
+    fi
+    if [ -f "$filename" ]; then
+        echo "ERROR: File already exists"
+        exit 1
+    else
+        touch "$filename"
+    fi
+    chmod +x "$filename"
+    printf "#\!\/bin\/bash\n\n\n" >> "$filename"
+    read -p "Edit script '$filename'? " prompt
+    case $prompt in
+        y|yes)
+            $EDITOR "$filename"
+            ;;
+        n|no)
+            :
+            exit 0
+            ;;
+        *)
+            echo "Invalid input"
+            exit 1
+            ;;
+    esac
+}
