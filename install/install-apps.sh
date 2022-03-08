@@ -140,6 +140,7 @@ apps=(
     zsh-autopair-git
     zsh-theme-powerlevel10k-bin-git
     zsh-history-substring-search
+    fzf-tab-git
     brightnessctl
     alternating-layouts-git
     pamixer

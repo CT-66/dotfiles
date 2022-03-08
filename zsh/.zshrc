@@ -10,9 +10,9 @@ files=(
     aliases.zsh
     variables.zsh
     plugins.zsh
+    completions.zsh
     functions.zsh
     keybindings.zsh
-    completions.zsh
     options.zsh
     history.zsh
 )
@@ -27,6 +27,7 @@ source $HOME/Scripts/doas.lib
 # fzf
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
+source /usr/share/zsh/plugins/fzf-tab-git/fzf-tab.plugin.zsh
 
 # always in end
 source ~/.config/zsh/p10k.zsh
