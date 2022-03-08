@@ -58,31 +58,35 @@ function mksh() {
     if echo "$1" | grep -q ".sh" > /dev/null; then
         filename="$1"
     elif [ "$1" = "" ]; then
-        echo "No filename given"
-        exit 1
+        echo "ERROR: No filename given"
+        # exit 1
+        return 1
     else
         filename="$1.sh"
     fi
     if [ -f "$filename" ]; then
         echo "ERROR: File already exists"
-        exit 1
+        # exit 1
+        return 1
     else
         touch "$filename"
     fi
     chmod +x "$filename"
-    printf "#\!\/bin\/bash\n\n\n" >> "$filename"
-    read -p "Edit script '$filename'? " prompt
+    echo "#!/bin/bash\n\n" >> "$filename"
+    # read -p "Edit script '$filename'? " prompt
+    read "prompt?Edit script '$filename'? "
     case $prompt in
         y|yes)
             $EDITOR "$filename"
             ;;
         n|no)
             :
-            exit 0
+            return 0
             ;;
         *)
             echo "Invalid input"
-            exit 1
+            # exit 1
+            return 1
             ;;
     esac
 }
