@@ -58,7 +58,7 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
 
 export EXA_ICON_SPACING=2
 
-export PATH="$HOME/Scripts:$HOME/.local/bin:$PATH"
+export PATH="$HOME/Scripts:$HOME/.local/bin:$PATH:$HOME/.emacs.d/bin"
 # export QT_QPA_PLATFORMTHEME=qt5ct
 export QT_QPA_PLATFORMTHEME=kde
 
