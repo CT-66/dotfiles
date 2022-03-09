@@ -112,7 +112,7 @@ bindsym $mod+shift+x move container to workspace next
 bindsym $mod+shift+z move container to workspace prev
 
 # alt-tab functionality but with workspaces
-bindsym Mod1+Tab workspace back_and_forth
+# bindsym Mod1+Tab workspace back_and_forth
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
