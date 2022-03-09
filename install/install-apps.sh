@@ -196,6 +196,7 @@ apps=(
     neovim-symlinks
     onefetch
     moreutils
+    ripgrep
 )
 
 # for app in "${apps[@]}"; do
