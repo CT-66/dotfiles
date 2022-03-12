@@ -1,3 +1,5 @@
+# alias grep="rg -in --color=always"
+
 # Make a directory and switch to it immediately
 mcd() {
     mkdir "$1"
@@ -30,15 +32,15 @@ wallp () {
 }
 
 hgrep () {
-    cat ~/.cache/zsh/history | \grep -inaI --color=auto "$1"
+    cat ~/.cache/zsh/history | rg -in --color=always "$1"
 }
 
 lgrep () {
-    \ls -a | \grep -inaI --color=auto "$1"
+    \ls -a | rg -in --color=always "$1"
 }
 
 cgrep () {
-    \cat "$1" | grep -inaI --color=auto "$2"
+    \cat "$1" | rg -in --color=always "$2"
 }
 
 bak (){
@@ -55,7 +57,7 @@ bak (){
 }
 
 function mksh() {
-    if echo "$1" | grep -q ".sh" > /dev/null; then
+    if echo "$1" | \grep -q ".sh" > /dev/null; then
         filename="$1"
     elif [ "$1" = "" ]; then
         echo "ERROR: No filename given"
