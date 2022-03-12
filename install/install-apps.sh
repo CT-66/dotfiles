@@ -1,12 +1,13 @@
 #!/bin/bash
 
+mkdir -p ~/.cache/tmp/repos
+
 echo "Installing yay..."
-cd $HOME
 sudo pacman -S --needed git base-devel
-git clone https://aur.archlinux.org/yay-bin.git
+git clone https://aur.archlinux.org/yay-bin.git ~/.cache/tmp/repos/yay-bin
 cd yay-bin
 makepkg -si
-rm -rf $HOME/yay-bin
+cd $HOME
 echo "Done"
 
 echo "Installing apps..."
@@ -219,8 +220,6 @@ echo "Installing Emacs..."
 git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
 ~/.emacs.d/bin/doom install
 echo "Done"
-
-mkdir -p ~/.cache/tmp/repos
 
 echo "Installing cursors..."
 cd $HOME

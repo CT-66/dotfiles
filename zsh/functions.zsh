@@ -32,15 +32,15 @@ wallp () {
 }
 
 hgrep () {
-    cat ~/.cache/zsh/history | rg -in --color=always "$1"
+    cat ~/.cache/zsh/history | grep "$1"
 }
 
 lgrep () {
-    \ls -a | rg -in --color=always "$1"
+    \ls -a | grep "$1"
 }
 
 cgrep () {
-    \cat "$1" | rg -in --color=always "$2"
+    \cat "$1" | grep "$2"
 }
 
 bak (){
