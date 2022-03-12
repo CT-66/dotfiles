@@ -4,7 +4,7 @@ mkdir -p ~/.cache/tmp/repos
 
 echo "Installing yay..."
 sudo pacman -S --needed git base-devel
-git clone https://aur.archlinux.org/yay-bin.git ~/.cache/tmp/repos/yay-bin
+git clone --depth 1 https://aur.archlinux.org/yay-bin.git ~/.cache/tmp/repos/yay-bin
 cd yay-bin
 makepkg -si
 cd $HOME
