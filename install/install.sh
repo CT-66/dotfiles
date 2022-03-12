@@ -6,8 +6,7 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
-echo "Enter your username"
-read user_name
+read -p "Enter your username: " user_name
 HOME=/home/$user_name
 
 CONFIG_DIR=$HOME/.config
@@ -29,10 +28,9 @@ touch ~/.cache/zsh/history
 
 # ==============
 mkdir -p ~/Pictures/Wallpapers
-git clone https://github.com/CT-66/wallpapers ~/Pictures/Wallpapers
+git clone --depth 1 https://github.com/CT-66/wallpapers ~/Pictures/Wallpapers
 
 # ===============
-sudo systemctl disable lightdm.service
 sudo systemctl --user enable mpd.service
 
 # ==============
@@ -62,7 +60,3 @@ sudo chmod -c 0400 /etc/doas.conf
 # ==============
 sudo cp /etc/pacman.conf /etc/pacman.conf.bak
 sudo echo "Color" >> /etc/pacman.conf
-
-# ==============
-mkdir -p ~/.config/tmux/plugins
-git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm

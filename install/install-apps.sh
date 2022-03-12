@@ -53,7 +53,7 @@ apps=(
     lolcat
     htop
     virtualbox
-    i3
+    i3-gaps
     bspwm
     qtile
     xmonad
@@ -220,26 +220,25 @@ git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
 ~/.emacs.d/bin/doom install
 echo "Done"
 
+mkdir -p ~/.cache/tmp/repos
 
 echo "Installing cursors..."
 cd $HOME
-git clone https://github.com/archcraft-os/archcraft-cursors/
-cd $HOME/archcraft-cursors/archcraft-cursor-qogirr
+git clone --depth 1 https://github.com/archcraft-os/archcraft-cursors/ ~/.cache/tmp/repos/archcraft-cursors
+cd ~/.cache/tmp/repos/archcraft-cursors
 makepkg -si
 cd $HOME
-rm -rf $HOME/archcraft-cursors
 echo "Done"
 
 echo "Installing additional zsh plugins..."
 cd $HOME
-git clone https://github.com/MichaelAquilina/zsh-auto-notify
+git clone --depth 1 https://github.com/MichaelAquilina/zsh-auto-notify
 sudo mv $HOME/zsh-auto-notify /usr/share/zsh/plugins
 
 echo "Installing openbox themes..."
 cd $HOME
-git clone https://github.com/archcraft-os/archcraft-themes
-cd $HOME/archcraft-themes/archcraft-gtk-theme-arc
+git clone --depth 1 https://github.com/archcraft-os/archcraft-themes ~/.cache/tmp/repos/archcraft-themes
+cd ~/.cache/tmp/repos/archcraft-themes/archcraft-gtk-theme-arc
 makepkg -si
 cd $HOME
-rm -rf $HOME/archcraft-themes
 echo "Done"
