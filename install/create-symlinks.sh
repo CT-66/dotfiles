@@ -29,7 +29,6 @@ dirs=(
     ranger
     bat
     doom
-    VSCodium/User
     Kvantum
     qt5ct
     mpd
@@ -63,6 +62,10 @@ for dir in "${dirs[@]}"; do
 	ln -s ~/Dotfiles/$dir ~/.config/$dir
 done
 
+mkdir ~/.config/VSCodium
+ln -s ~/Dotfiles/VSCodium/User ~/.config/VSCodium/User
+ln -s ~/Dotfiles/VSCodium/product.json ~/.config/VSCodium/product.json
+sudo ln -s /usr/bin/codium /usr/bin/code
 ln -s ~/Dotfiles/fonts ~/.local/share/fonts
 ln -s ~/Dotfiles/applications ~/.local/share/applications
 # ln -s ~/Dotfiles/doom ~/.emacs.d
@@ -72,8 +75,7 @@ ln -s ~/Dotfiles/Scripts ~/Scripts
 ln -s ~/Dotfiles/stalonetray/stalonetrayrc ~/.stalonetrayrc
 ln -s ~/Dotfiles/betterlockscreen/betterlockscreenrc ~/.config/betterlockscreenrc
 ln -s ~/Dotfiles/xdg/mimeapps.list ~/.config/mimeapps.list
-sudo ln -s /usr/bin/codium /usr/bin/code
-ln -s ~/Dotfiles/VSCodium/product.json ~/.config/VSCodium/product.json
+sudo ln -s /usr/bin/nvim /usr/bin/v
 
 if [ -f ~/.bashrc ]; then
     mv ~/.bashrc ~/.bashrc.bak
