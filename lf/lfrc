@@ -1,6 +1,7 @@
 set drawbox true
 set icons true
 set ignorecase true
+set relativenumber
 
 # cd to commonly used directories
 map gh cd ~

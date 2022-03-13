@@ -241,3 +241,5 @@ cd ~/.cache/tmp/repos/archcraft-themes/archcraft-gtk-theme-arc
 makepkg -si
 cd $HOME
 echo "Done"
+
+sudo cp /usr/share/icons/breeze/apps/16/utilities-terminal.svg /usr/share/icons/Arc/apps/16/utilities-terminal.svg
