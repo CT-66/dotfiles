@@ -23,7 +23,9 @@ export VISUAL=nvim
 export TERMINAL=st
 export TERMCMD=st
 export BROWSER="qutebrowser"
-# export PAGER='bat --paging always'
+export PAGER='bat --paging=always'
+export MANPAGER="sh -c 'col -bx | bat -l man -p --paging=always --style=header,numbers --color=always --theme=\"OneHalfDark\"'"
+export MANROFFOFT="-c"
 
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#abb2bf"
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)

@@ -58,8 +58,8 @@ alias Ps='yay -Ps'
 
 alias g=git
 alias gp='git add . && git commit -m "$(date +"%d %b, %Y | %I:%M %p")" && git push -u origin master'
-alias gc='git clone'
-alias gcg='git clone https://github.com/'
+alias gc='git clone --depth 1'
+alias gcg='git clone --depth 1 https://github.com/'
 alias gd='git diff'
 alias gs='git status'
 

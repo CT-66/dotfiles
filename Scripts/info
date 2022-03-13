@@ -1,0 +1,58 @@
+#!/bin/bash
+
+# %w: creation date (not human readable)
+# %x: last accessed (not human readable)
+# %y: last modified (not human readable)
+
+# displays file info
+# doesnt work with directories
+
+function bytesToHumanReadable() {
+    awk '
+        BEGIN {
+        split("B,kiB,MiB,GiB", suff, ",")
+        }
+
+        {
+        size=$1;
+        rank=int(log(size)/log(1024));
+        printf "%.4g %s\n", size/(1024**rank), suff[rank+1]
+        }
+    '
+}
+
+# input="$(realpath $1 | sed \"s/ /\ /g\")"
+input="$(readlink -f "$@")"
+echo "TEST: $input"
+
+# type=$(stat --format='%F' $input)
+type=$(file --mime-type -L $input | awk '{print $2}') # -L: follow symlinks
+location=$(stat --format='%N' $input | sed "s/'//g")
+filename=$(stat --format='%N' $input | sed "s/'//g" | sed "s/\// /g" | awk 'NF>1{print $NF}')
+size=$(stat --format='%s' $input | bytesToHumanReadable)
+creation_date=$(stat tldr --format="%W" | awk '{print strftime("%A, %d %b, %I:%M %p", $1)}')
+last_modified=$(stat tldr --format="%Y" | awk '{print strftime("%A, %d %b, %I:%M %p", $1)}')
+last_accessed=$(stat tldr --format="%X" | awk '{print strftime("%A, %d %b, %I:%M %p", $1)}')
+owner=$(stat --format='%U' $input)
+group=$(stat --format='%G' $input)
+perms=$(stat --format='%A' $input)
+
+
+function main() {
+    echo "Name: $filename"
+    echo "Type: $type"
+    echo "Location: $location"
+    echo "Size: $size"
+    echo "Creation Date: $creation_date"
+    echo "Last Modified: $last_modified"
+    echo "Last Accessed: $last_accessed"
+    echo "Owner: $owner"
+    echo "Group: $group"
+    echo "Permissions: $perms"
+}
+
+if [ -f "$input" ]; then
+    main
+else
+    echo "ERROR: Invalid path"
+fi
