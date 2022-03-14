@@ -95,12 +95,15 @@ alias cx='chmod +x '
 # -1: displays one file per line (--oneline)
 # -F: display if a file is a directory, executable, normal file, symlink, fifo or socket (--classify)
 # -b: list file sizes with binary prefixes (kb, mb, gb, etc.)
-alias exa='exa -1Fb --color=always --icons --group-directories-first'
+# -m: modified time
+# -U: created time
+#"%a %d %b %Y, %I:%M %p"
+alias exa='exa -1Fb --color=always --icons --group-directories-first -mU'
 alias ls='exa'
 alias l='ls'
-alias ll='ls -l'
-alias lla='ls -la'
 alias la='ls -a'
+alias ll='ls -l --header --group'
+alias lla='ll -a'
 alias lg='ls -aG' # -G: grid (exa specific)
 alias lt='ls -aT' # -T: tree (exa specific)
 # alias l.='exa -1Fa | egrep -in "^\."'
