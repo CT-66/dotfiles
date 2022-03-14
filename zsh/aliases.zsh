@@ -95,7 +95,7 @@ alias cx='chmod +x '
 # -1: displays one file per line (--oneline)
 # -F: display if a file is a directory, executable, normal file, symlink, fifo or socket (--classify)
 # -b: list file sizes with binary prefixes (kb, mb, gb, etc.)
-alias exa='exa -1Fb --color=always --icons --group-directories-first --no-permissions --no-user'
+alias exa='exa -1Fb --color=always --icons --group-directories-first'
 alias ls='exa'
 alias l='ls'
 alias ll='ls -l'
