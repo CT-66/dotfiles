@@ -198,6 +198,9 @@ apps=(
     onefetch
     moreutils
     ripgrep
+    ascii-image-converter
+    absolutely-proprietary
+
 )
 
 # for app in "${apps[@]}"; do
