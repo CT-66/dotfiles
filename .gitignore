@@ -27,5 +27,7 @@ Xauthority
 autokey.json
 autokey.json\~
 
-fish_variables
-
+fish/fish_variables
+fish/completions
+fish/conf.d
+fish/functions
