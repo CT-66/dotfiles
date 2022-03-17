@@ -159,3 +159,16 @@ expand-or-complete-with-dots() {
 }
 zle -N expand-or-complete-with-dots
 bindkey "^I" expand-or-complete-with-dots
+
+# fzf
+# CTRL-T - Paste the selected file path(s) into the command line
+zle     -N   fzf-file-widget
+bindkey '^T' fzf-file-widget
+
+# CTRL-R - Paste the selected command from history into the command line
+zle     -N   fzf-history-widget
+bindkey '^R' fzf-history-widget
+
+# ~~ALT-C~~ ALT-X - cd into the selected directory
+zle -N fzf-cd-widget
+bindkey '\ex' fzf-cd-widget
