@@ -92,3 +92,12 @@ function mksh() {
             ;;
     esac
 }
+
+# edit dotfiles
+function de() {
+    if [ "$1" = "" ]; then
+        $EDITOR "$(\find ~/Dotfiles -type f | fzf)"
+    else
+        $EDITOR "$(\find ~/Dotfiles -type f | fzf --query $1)"
+    fi
+}
