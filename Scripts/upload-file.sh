@@ -31,3 +31,19 @@ link=$(curl -F "file=@$file" $url)
 
 echo "Link: $link"
 echo "$link" | xclip -sel clip
+
+read -p "Shorten URL? " prompt
+case $prompt in
+    "y"|"yes")
+        shortened_link=$(curl -F "shorten=$link" https://ttm.sh)
+        echo "Shortened URL: $shortened_link"
+        echo "$shortened_link" | xclip -sel clip
+        ;;
+    "n"|"no")
+        :
+        ;;
+    *)
+        echo "ERROR: Invalid input"
+        return 1
+        ;;
+esac
