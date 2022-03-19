@@ -200,7 +200,8 @@ apps=(
     ripgrep
     ascii-image-converter
     absolutely-proprietary
-
+    gallery-dl
+    tokei
 )
 
 # for app in "${apps[@]}"; do
