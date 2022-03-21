@@ -17,7 +17,7 @@ while [[ $# -gt 0 ]]; do
             exit 0
             ;;
         -h|--help)
-            echo "No help"
+            echo "~~RTFM~~ Read The Fucking Script"
             exit 0
             ;;
         -d|--default)

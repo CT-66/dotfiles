@@ -202,6 +202,7 @@ apps=(
     absolutely-proprietary
     gallery-dl
     tokei
+    imagemagick
 )
 
 # for app in "${apps[@]}"; do
