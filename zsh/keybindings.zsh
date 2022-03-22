@@ -38,7 +38,7 @@ bindkey "^H" backward-kill-word
 # alt+. -> inserts argument of previous command
 # bindkey -M vicmd "^[[." "insert-last-word"
 # bindkey "^[[." insert-last-word
-bindkey -s "^[." " !$"
+bindkey -s "^[." " !$ ^Xa " # `^Xa`: tab (automatically expands !$)
 # ctrl+left/right arrow
 bindkey "^[[1;5D" backward-word
 bindkey "^[[1;5C" forward-word
@@ -52,7 +52,7 @@ bindkey -M vicmd "^[[1;3C" "forward-word"
 # alt+right/left
 # bind alt+s -> sudo !!
 # bindkey -s "^[s" "sudo !!"
-bindkey -s "^[s" "doas !!"
+bindkey -s "^[s" "doas !!^Xa " # `^Xa`: tab (automatically expands !!)
 # press tab to expand aliases
 bindkey "^Xa" _expand_alias
 zstyle ':completion:*' completer _expand_alias _complete _ignored
@@ -147,8 +147,8 @@ lf_cd () {
     fi
 }
 
-bindkey -s '^[f' '_\n' # ctrl+f -> ranger
-bindkey -s '^[z' '__\n' # ctrl+z -> exit the shell inside ranger
+bindkey -s '^[f' '_\n' # alt+f -> ranger
+bindkey -s '^[z' '__\n' # alt+z -> exit the shell inside ranger
 bindkey -s '^[^F' 'lf_cd\n' # ctrl+alt+f -> lf
 
 # display dots when waiting for tab completion list

@@ -1,7 +1,9 @@
 let mapleader = " "
 
-" leader key bindings
+" save
+nnoremap <C-s> :w<cr>
 nmap <leader><leader> :w<cr>
+" comments
 nmap <C-_> gcc
 xmap <C-_> gc
 nmap \ gcc
@@ -9,19 +11,25 @@ xmap \ gc
 nmap <leader>/ gcc
 xmap <leader>/ gc
 
+
+" select all
 nmap <leader>a ggVG
+nmap <C-a> ggVG
+
+" run code (python)
 nmap <leader>b :call RunPythonFile()<cr>
 nmap <C-b> :call RunPythonFile()<cr>
 
-
+" reload vimrc
 nmap <leader>v :source ~/.config/nvim/init.vim<cr>
 
-nnoremap <C-s> :w<cr>
-nmap <C-a> ggVG
+" since ctrl+a is binded to select all, this binds alt+a to increment numbers
 nnoremap <A-a> <C-a>
 
+" redo
 nnoremap U <C-r>
 
+" do not yank while cut/delete/change/substitute
 nnoremap d "_d
 vnoremap d "_d
 nnoremap D "_D
@@ -32,10 +40,12 @@ nnoremap C "_C
 nnoremap s "_s
 nnoremap S "_S
 
+" yank till end of line
 nnoremap Y y$
 
 " nmap j gj
 " nmap k gk
+" up/down in same line when a line is wrapped
 nmap j gj
 nmap k gk
 
@@ -44,17 +54,22 @@ nmap k gk
 noremap <up> <nop>
 noremap <down> <nop>
 
+" paste in next line
 nmap pn <esc>o<esc>p
 
+" left/right to go to beginnning/end of line
 nnoremap <Left> ^
 nnoremap <Right> $
 
+" delete till beginnning/end of line
 nmap d<Left> d^
 nmap d<Right> d$
 
+" yank till beginnning/end of line
 nmap y<Left> y^
 nmap y<Right> y$
 
+" change till beginnning/end of line
 nmap c<Left> c^
 nmap c<Right> c$
 
@@ -99,6 +114,7 @@ vnoremap <F1> <ESC>
 
 " nnoremap G Gzz
 
+" center the cursor when performing common actions (ctrl+d, ctrl+u, etc)
 nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz
 
@@ -151,6 +167,7 @@ inoremap <C-l> <right>
 " imap jj <esc>
 
 
+" macros
 nnoremap Q qw
 nnoremap K @w
 
@@ -158,3 +175,14 @@ nnoremap K @w
 nnoremap <C-n> :tabnew<CR>
 nnoremap <C-tab> :tabnext<CR>
 nnoremap <C-S-tab> :tabprevious<CR>
+
+" ctrl+left/right arrow to move to previous/next word
+" ctrl+shift+left/right arrow to select previous/next word
+nnoremap <C-Left> b
+nnoremap <C-Right> w
+vnoremap <C-S-Left> b
+vnoremap <C-S-Right> w
+nnoremap <C-S-Left> gh<C-O>b
+nnoremap <C-S-Right> gh<C-O>w
+inoremap <C-S-Left> <C-\><C-O>gh<C-O>b
+inoremap <C-S-Right> <C-\><C-O>gh<C-O>w
