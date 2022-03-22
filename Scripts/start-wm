@@ -8,8 +8,7 @@ function start() {
     exec startx /usr/bin/"$2" 2>/dev/null
 }
 
-function main() {
-    wm="$(echo 'i3
+wm="$(echo 'i3
 Bspwm
 Qtile
 Xmonad
@@ -25,6 +24,9 @@ if [ "$wm" = "" ]; then
     exec startx "$default_wm"
 else
     case $wm in
+        "i3")
+            start "i3" "i3"
+            ;;
         "bspwm")
             start "Bspwm" "bspwm"
             ;;
@@ -61,7 +63,3 @@ else
     esac
 
 fi
-
-}
-
-main
