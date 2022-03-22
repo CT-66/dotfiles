@@ -39,7 +39,6 @@ alias ncdu='ncdu --color dark'
 alias speedtest='speedtest-cli --simple'
 alias rss=newsboat
 alias wall="feh --bg-scale"
-alias xclip="xclip -sel clip"
 alias ncmp=ncmpcpp
 # alias df='df -h'
 alias df='duf'
@@ -64,6 +63,10 @@ alias gc='git clone --depth 1'
 alias gcg='git clone --depth 1 https://github.com/'
 alias gd='git diff'
 alias gs='git status'
+
+alias xclip="xclip -sel clip"
+alias copy="xclip -sel clip"
+alias paste="xclip -sel clip -o"
 
 # -P: display progress bar
 # -r: recursive
