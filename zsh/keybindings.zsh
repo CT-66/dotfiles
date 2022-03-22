@@ -24,8 +24,8 @@ bindkey -M vicmd 'G' end-of-line
 bindkey -M vicmd "^[[D" beginning-of-line
 bindkey -M vicmd "^[[C" end-of-line
 # alt+h/l instead to left/right arrows
-bindkey "^[h" backward-char
-bindkey "^[l" forward-char
+# bindkey "^[h" backward-char
+# bindkey "^[l" forward-char
 bindkey -M vicmd "^[h" "backward-char"
 bindkey -M vicmd "^[l" "forward-char"
 # ctrl+w
