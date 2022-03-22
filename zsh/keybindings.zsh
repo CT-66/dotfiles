@@ -61,6 +61,9 @@ bindkey "^[[A" history-substring-search-up
 bindkey "^[[B" history-substring-search-down
 bindkey -M vicmd "k" history-substring-search-up
 bindkey -M vicmd "j" history-substring-search-down
+# undo, redo (`u`, `U`)
+bindkey -M vicmd "u" undo
+bindkey -M vicmd "U" redo
 # ctrl+j/k instead of up/down arrows
 bindkey "^J" history-substring-search-down
 bindkey "^K" history-substring-search-up
@@ -241,7 +244,7 @@ for key     kcap   seq        mode   widget (
 
 zle -N widget::copy-selection
 
-# copy selected terminal text to clipboard (`y`, works without entering vi mode)
+# copy selected terminal text to clipboard
 function widget::copy-selection {
     if ((REGION_ACTIVE)); then
         zle copy-region-as-kill
@@ -249,4 +252,41 @@ function widget::copy-selection {
     fi
 }
 
-bindkey 'y' widget::copy-selection
+# cut selected terminal text to clipboard
+zle -N widget::cut-selection
+function widget::cut-selection() {
+    if ((REGION_ACTIVE)) then
+        zle kill-region
+        printf "%s" $CUTBUFFER | xclip -sel clip
+    fi
+}
+
+# paste clipboard contents
+zle -N widget::paste
+function widget::paste() {
+    ((REGION_ACTIVE)) && zle kill-region
+    RBUFFER="$(xclip -sel clip -o)${RBUFFER}"
+    CURSOR=$(( CURSOR + $(echo -n "$(xclip -sel clip -o)" | wc -m | bc) ))
+}
+
+# select entire prompt
+zle -N widget::select-all
+function widget::select-all() {
+    local buflen=$(echo -n "$BUFFER" | wc -m | bc)
+    CURSOR=$buflen   # if this is messing up try: CURSOR=9999999
+    zle set-mark-command
+    while [[ $CURSOR > 0 ]]; do
+        zle beginning-of-line
+    done
+}
+
+# ctrl+a -> select all text
+bindkey "^a" widget::select-all
+# ctrl+x -> cut selected text
+bindkey "^x" widget::cut-selection
+# ctrl+y -> copy selected text
+bindkey '^y' widget::copy-selection
+# ctrl+v -> paste selection
+bindkey "^v" widget::paste
+# ctrl+z -> undo
+bindkey "^z" undo
