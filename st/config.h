@@ -291,8 +291,8 @@ static Shortcut shortcuts[] = {
 	/* { ControlMask,          XK_Escape,           normalMode,      {.i =  0} }, */
     // Miscellaneous
 	/* { MODKEY,               XK_l,           externalpipe,   {.v = openurlcmd } }, */
-	{ MODKEY,               XK_y,           externalpipe,   {.v = copyurlcmd } },
-	{ MODKEY,               XK_o,           externalpipe,   {.v = copyoutput } },
+	/* { MODKEY,               XK_y,           externalpipe,   {.v = copyurlcmd } }, */
+	/* { MODKEY,               XK_o,           externalpipe,   {.v = copyoutput } }, */
 };
 
 /*
