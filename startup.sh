@@ -30,3 +30,4 @@ kill_program flashfocus; flashfocus &
 wallpaper.sh --random &
 
 autokey-gtk &
+flameshot &
