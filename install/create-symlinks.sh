@@ -75,6 +75,7 @@ ln -s ~/Dotfiles/stalonetray/stalonetrayrc ~/.stalonetrayrc
 ln -s ~/Dotfiles/betterlockscreen/betterlockscreenrc ~/.config/betterlockscreenrc
 ln -s ~/Dotfiles/greenclip/greenclip.toml ~/.config/greenclip.toml
 ln -s ~/Dotfiles/xdg/mimeapps.list ~/.config/mimeapps.list
+ln -s ~/Dotfiles/xdg/user-dirs.dirs ~/.config/user-dirs.dirs
 sudo ln -s /usr/bin/nvim /usr/bin/v
 sudo ln -s ~/Dotfiles/pacman/pacman.conf /etc/pacman.conf
 
