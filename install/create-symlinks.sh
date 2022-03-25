@@ -73,6 +73,7 @@ sudo ln -s ~/Dotfiles/icons/default/index.theme /usr/share/icons/default/index.t
 ln -s ~/Dotfiles/Scripts ~/Scripts
 ln -s ~/Dotfiles/stalonetray/stalonetrayrc ~/.stalonetrayrc
 ln -s ~/Dotfiles/betterlockscreen/betterlockscreenrc ~/.config/betterlockscreenrc
+ln -s ~/Dotfiles/greenclip/greenclip.toml ~/.config/greenclip.toml
 ln -s ~/Dotfiles/xdg/mimeapps.list ~/.config/mimeapps.list
 sudo ln -s /usr/bin/nvim /usr/bin/v
 sudo ln -s ~/Dotfiles/pacman/pacman.conf /etc/pacman.conf
