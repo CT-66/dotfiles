@@ -2,6 +2,8 @@
 set fish_greeting
 set TERM "xterm-256color"
 
+echo "FISH"
+
 # vim mode
 fish_vi_key_bindings
 
