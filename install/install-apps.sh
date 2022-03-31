@@ -204,6 +204,8 @@ apps=(
     tokei
     imagemagick
     konsole
+    xdg-desktop-portal
+    xdg-desktop-portal-kde
 )
 
 # for app in "${apps[@]}"; do
