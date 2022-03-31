@@ -31,3 +31,5 @@ fish/fish_variables
 fish/completions
 fish/conf.d
 fish/functions
+
+accels.scm

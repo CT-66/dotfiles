@@ -217,6 +217,7 @@
     "editor.scrollBeyondLastLine": true,
     "editor.lineNumbers": "relative",
     "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
     "editor.accessibilitySupport": "off",
     "editor.autoClosingDelete": "always",
     "editor.occurrencesHighlight": false,

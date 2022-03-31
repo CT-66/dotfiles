@@ -48,6 +48,7 @@ dirs=(
     feh
     fish
     yay
+    Thunar
 )
 
  if [ -d ~/.config ]; then

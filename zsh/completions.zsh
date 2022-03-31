@@ -7,5 +7,8 @@ zstyle ':completion:*' regular true
 zstyle ':completion:*' rehash true
 zstyle ':completion:*' use-cache on # use cache to speed up commands
 zstyle ':completion:*' cache-path "~/.cache/zsh/.zcompcache"
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1F --color=always --icons --group-directories-first $realpath'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+# preview directories during tab completion
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1F --color=always --icons --group-directories-first $realpath'
+# do continuous completions for traversing paths with '`'
+zstyle ":fzf-tab:*" continuous-trigger '`'

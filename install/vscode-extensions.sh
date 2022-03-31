@@ -8,7 +8,6 @@ akamud.vscode-theme-onedark
 arcticicestudio.nord-visual-studio-code
 asvetliakov.vscode-neovim
 be5invis.vscode-custom-css
-CoenraadS.bracket-pair-colorizer
 danielpinto8zz6.c-cpp-compile-run
 dbaeumer.vscode-eslint
 esbenp.prettier-vscode
