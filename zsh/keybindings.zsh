@@ -50,6 +50,9 @@ bindkey "^[[1;3C" forward-word
 bindkey -M vicmd "^[[1;3D" "backward-word"
 bindkey -M vicmd "^[[1;3C" "forward-word"
 # alt+right/left
+# bind alt+s -> sudo !!
+# bindkey -s "^[s" "sudo !!"
+bindkey -s "^[s" "doas !!^Xa " # `^Xa`: tab (automatically expands !!)
 # press tab to expand aliases
 bindkey "^Xa" _expand_alias
 zstyle ':completion:*' completer _expand_alias _complete _ignored
@@ -169,71 +172,9 @@ bindkey '^T' fzf-file-widget
 zle     -N   fzf-history-widget
 bindkey '^R' fzf-history-widget
 
-# ~~ALT-C~~ ALT-X or ctrl+space - cd into the selected directory
+# ~~ALT-C~~ ALT-X - cd into the selected directory
 zle -N fzf-cd-widget
 bindkey '\ex' fzf-cd-widget
-bindkey '^@' fzf-cd-widget
-
-# bind alt+s -> sudo !!
-# bindkey -s "^[s" "sudo !!"
-# bindkey -s "^[s" "doas !!^Xa " # `^Xa`: tab (automatically expands !!)
-__sudo-replace-buffer() {
-  local old=$1 new=$2 space=${2:+ }
-  if [[ $cursor -le ${#old} ]]; then
-    buffer="${new}${space}${buffer#$old }"
-    cursor=${#new}
-  else
-    lbuffer="${new}${space}${lbuffer#$old }"
-  fi
-}
-
-sudo-command-line() {
-  [[ -z $buffer ]] && lbuffer="$(fc -ln -1)"
-  local whitespace=""
-  if [[ ${lbuffer:0:1} = " " ]]; then
-    whitespace=" "
-    lbuffer="${lbuffer:1}"
-  fi
-
-  {
-    local editor=${sudo_editor:-${visual:-$editor}}
-    if [[ -z "$editor" ]]; then
-      case "$buffer" in
-        sudo\ -e\ *) __sudo-replace-buffer "sudo -e" "" ;;
-        sudo\ *) __sudo-replace-buffer "sudo" "" ;;
-        *) lbuffer="sudo $lbuffer" ;;
-      esac
-      return
-    fi
-    local cmd="${${(az)buffer}[1]}"
-    local realcmd="${${(az)aliases[$cmd]}[1]:-$cmd}"
-    local editorcmd="${${(az)editor}[1]}"
-
-    if [[ "$realcmd" = (\$editor|$editorcmd|${editorcmd:c}) \
-      || "${realcmd:c}" = ($editorcmd|${editorcmd:c}) ]] \
-      || builtin which -a "$realcmd" | command grep -fx -q "$editorcmd"; then
-      __sudo-replace-buffer "$cmd" "sudo -e"
-      return
-    fi
-
-    case "$buffer" in
-      $editorcmd\ *) __sudo-replace-buffer "$editorcmd" "sudo -e" ;;
-      \$editor\ *) __sudo-replace-buffer '$editor' "sudo -e" ;;
-      sudo\ -e\ *) __sudo-replace-buffer "sudo -e" "$editor" ;;
-      sudo\ *) __sudo-replace-buffer "sudo" "" ;;
-      *) lbuffer="sudo $lbuffer" ;;
-    esac
-  } always {
-    lbuffer="${whitespace}${lbuffer}"
-
-    zle redisplay
-  }
-}
-
-zle -N sudo-command-line
-
-bindkey "^[s" sudo-command-line
-
 
 # ctrl+shift+left/right arrow -> select previous/next word
 # shift+left/right arrow -> select previous/next character
