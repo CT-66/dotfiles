@@ -203,6 +203,7 @@ apps=(
     gallery-dl
     tokei
     imagemagick
+    konsole
 )
 
 # for app in "${apps[@]}"; do

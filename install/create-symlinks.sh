@@ -79,6 +79,7 @@ ln -s ~/Dotfiles/xdg/mimeapps.list ~/.config/mimeapps.list
 ln -s ~/Dotfiles/xdg/user-dirs.dirs ~/.config/user-dirs.dirs
 sudo ln -s /usr/bin/nvim /usr/bin/v
 sudo ln -s ~/Dotfiles/pacman/pacman.conf /etc/pacman.conf
+ln -s ~/Dotfiles/kde/* ~/.config
 
 if [ -f ~/.bashrc ]; then
     mv ~/.bashrc ~/.bashrc.bak

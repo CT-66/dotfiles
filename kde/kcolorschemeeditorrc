@@ -1,0 +1,8 @@
+[ColorEffects:Inactive]
+ChangeSelectionColor=true
+
+[General]
+shadeSortColumn=true
+
+[KDE]
+contrast=4
