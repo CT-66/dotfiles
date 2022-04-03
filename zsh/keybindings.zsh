@@ -172,10 +172,9 @@ bindkey '^T' fzf-file-widget
 zle     -N   fzf-history-widget
 bindkey '^R' fzf-history-widget
 
-# ~~ALT-C~~ ALT-X or ctrl+space - cd into the selected directory
+# ~~ALT-C~~ ALT-X - cd into the selected directory
 zle -N fzf-cd-widget
 bindkey '\ex' fzf-cd-widget
-bindkey '^@' fzf-cd-widget
 
 # ctrl+shift+left/right arrow -> select previous/next word
 # shift+left/right arrow -> select previous/next character
