@@ -186,3 +186,5 @@ nnoremap <C-S-Left> gh<C-O>b
 nnoremap <C-S-Right> gh<C-O>w
 inoremap <C-S-Left> <C-\><C-O>gh<C-O>b
 inoremap <C-S-Right> <C-\><C-O>gh<C-O>w
+
+nnoremap <C-q> :call ToggleTransparentBackground()<cr>
