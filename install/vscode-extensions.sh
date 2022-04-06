@@ -35,6 +35,8 @@ vscjava.vscode-java-test
 vscjava.vscode-maven
 vscodevim.vim
 zhuangtongfa.material-theme
+# rust-lang.rust
+matklad.rust-analyzer
 )
 
 for extension in "${extensions[@]}"; do

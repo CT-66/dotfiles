@@ -173,7 +173,6 @@ apps=(
     dust
     xplr
     dragon-drag-and-drop
-    flatpak
     links
     xournalpp
     sd
@@ -206,6 +205,10 @@ apps=(
     konsole
     xdg-desktop-portal
     xdg-desktop-portal-kde
+    eww-git
+    rustup
+    rust-analyzer
+    nsxiv
 )
 
 # for app in "${apps[@]}"; do

@@ -83,7 +83,6 @@
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "rust-analyzer.rustfmt.enableRangeFormatting": true,
     "[rust]": {
         "editor.defaultFormatter": "matklad.rust-analyzer",
     },

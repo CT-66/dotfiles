@@ -49,6 +49,7 @@ dirs=(
     fish
     yay
     Thunar
+    eww
 )
 
  if [ -d ~/.config ]; then

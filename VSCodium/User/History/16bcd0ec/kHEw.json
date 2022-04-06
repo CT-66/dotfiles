@@ -83,10 +83,6 @@
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "rust-analyzer.rustfmt.enableRangeFormatting": true,
-    "[rust]": {
-        "editor.defaultFormatter": "matklad.rust-analyzer",
-    },
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.minimap.enabled": false,
     "workbench.list.smoothScrolling": true,

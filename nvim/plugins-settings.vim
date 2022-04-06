@@ -31,7 +31,7 @@ let g:better_whitespace_filetypes_blacklist=[]
 
 " -----
 " coc.nvim
-let g:coc_global_extensions = ['coc-pyright', 'coc-pairs', 'coc-json', 'coc-sh', 'coc-tsserver', 'coc-html', 'coc-snippets']
+let g:coc_global_extensions = ['coc-pyright', 'coc-pairs', 'coc-json', 'coc-sh', 'coc-tsserver', 'coc-html', 'coc-snippets', 'coc-rust-analyzer']
 
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
