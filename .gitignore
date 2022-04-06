@@ -6,6 +6,7 @@ syncLocalSettings.json
 git/config
 globalStorage/
 workspaceStorage/
+History
 .env
 polybar/scripts/.env
 .gh-token.token
