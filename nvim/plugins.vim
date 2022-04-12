@@ -37,6 +37,7 @@ Plug 'rbgrouleff/bclose.vim'
 Plug 'francoiscabrol/ranger.vim'
 Plug 'junegunn/fzf.vim'
 Plug 'rust-lang/rust.vim'
+Plug 'elkowar/yuck.vim'
 " Plug 'luochen1990/rainbow'
 
 call plug#end()

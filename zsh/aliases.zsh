@@ -95,7 +95,8 @@ alias mkd=mkdir
 alias chmod="chmod --preserve-root"
 alias chown="chown --preserve-root"
 alias chgrp="chgrp --preserve-root"
-alias cx='chmod +x '
+alias c+x='chmod +x '
+alias c-x='chmod -x '
 
 # -1: displays one file per line (--oneline)
 # -F: display if a file is a directory, executable, normal file, symlink, fifo or socket (--classify)

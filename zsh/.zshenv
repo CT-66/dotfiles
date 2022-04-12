@@ -40,7 +40,6 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
 --reverse
 --border=rounded
 --cycle
---height=80%
 --bind ctrl-h:backward-char
 --bind ctrl-l:forward-char
 --bind ctrl-g:first
