@@ -80,7 +80,7 @@ ln -s ~/Dotfiles/xdg/mimeapps.list ~/.config/mimeapps.list
 ln -s ~/Dotfiles/xdg/user-dirs.dirs ~/.config/user-dirs.dirs
 sudo ln -s /usr/bin/nvim /usr/bin/v
 sudo ln -s ~/Dotfiles/pacman/pacman.conf /etc/pacman.conf
-sudo ln -s ~/Dotfiles/etc/fstab /etc/fstab
+sudo cp ~/Dotfiles/etc/fstab /etc/fstab
 ln -s ~/Dotfiles/kde/* ~/.config
 
 if [ -f ~/.bashrc ]; then
