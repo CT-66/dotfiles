@@ -1,0 +1,5 @@
+# <device>   <dir>    <type>  <options>     <dump><fsck>
+/dev/sda1    /boot    vfat    rw,noatime    0     2
+/dev/sda2    /        ext4    rw,noatime    0     1
+/dev/sda3    /home    ext4    rw,noatime    0     2
+#/dev/sda4    none     swap    defaults      0     0

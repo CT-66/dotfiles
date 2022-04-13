@@ -1,0 +1,7 @@
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/sda1 (/boot)
+UUID=33FB-E551      	                    /boot     	vfat      	rw,noatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+# /dev/sda2 (/)
+UUID=955fc7e4-aa4e-4f75-a35d-dae2a85e36cf	/         	ext4      	rw,noatime	0 1
+# /dev/sda3 (/home)
+UUID=d320dd03-7b5c-496b-a1a2-4f70c7c1a3ac	/home     	ext4      	rw,noatime	0 2

@@ -209,6 +209,7 @@ apps=(
     rustup
     rust-analyzer
     nsxiv
+    yad
 )
 
 # for app in "${apps[@]}"; do
