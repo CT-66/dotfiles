@@ -10,6 +10,7 @@ alias pls='doas $(fc -ln -1)'
 alias please='doas $(fc -ln -1)'
 alias v=nvim
 alias vim=nvim
+alias neofetch=paleofetch
 alias nf="clear && neofetch | lolcat"
 alias pf="clear && pfetch | lolcat"
 alias fet="fet.sh"

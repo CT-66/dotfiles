@@ -23,6 +23,9 @@ chsh -s /usr/bin/zsh
 cd $HOME/Dotfiles/st
 sudo make clean install
 
+cd $HOME/Dotfiles/paleofetch
+make install
+
 mkdir ~/.cache/zsh
 touch ~/.cache/zsh/history
 

@@ -254,4 +254,12 @@ makepkg -si
 cd $HOME
 echo "Done"
 
+echo "Installing paleofetch..."
+cd $HOME
+git clone --depth 1 https://github.com/JaGoLi/paleofetch ~/.cache/tmp/repos/paleofetch
+cd ~/.cache/tmp/repos/paleofetch
+make install
+cd $HOME
+echo "Done"
+
 sudo cp /usr/share/icons/breeze/apps/16/utilities-terminal.svg /usr/share/icons/Arc/apps/16/utilities-terminal.svg

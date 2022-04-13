@@ -1,8 +1,8 @@
 # tmux 2>/dev/null
 [ -z "${TMUX}" ] && { tmux attach || tmux; } >/dev/null 2>&1
 # tmux new-window -a
-pfetch
-# arch-fetch
+# pfetch
+paleofetch
 # cd $HOME
 
 files=(
