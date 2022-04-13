@@ -590,7 +590,6 @@ static char *get_disk_usage(const char *folder) {
     total = file_stats.f_blocks * file_stats.f_frsize;
     free = file_stats.f_bfree * file_stats.f_frsize;
     used = total - free;
-    percentage = (used / (double) total) * 100;
 #define TO_GB(A) ((A) / (1024.0 * 1024 * 1024))
     snprintf(disk_usage, BUF_SIZE, "%.1fGiB / %.1fGiB (%d%%)", TO_GB(used), TO_GB(total), percentage);
 #undef TO_GB
