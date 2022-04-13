@@ -1,4 +1,4 @@
-#include "logos/arch.h"
+#include "logos/arch_small.h"
 //define colors
 #define BLACK  "\e[1;30m"
 #define RED    "\e[1;31m"
@@ -13,28 +13,18 @@
 //define display colors
 #define COLOR BLUE
 #define LOGOCOLOR CYAN
-#define TITLECOLOR BLUE
+#define TITLECOLOR PURPLE
 
 #define CONFIG \
 { \
    /* name            function                 cached */\
-    SPACER \
-    { "",             get_title,               false }, \
-    { "",             get_bar,                 false }, \
-    { "OS: ",         get_os,                  true  }, \
-    { "Host: ",       get_host,                true  }, \
-    { "Kernel: ",     get_kernel,              true  }, \
-    { "Uptime: ",     get_uptime,              false }, \
-    { "Packages: ",   get_packages_pacman,   false }, \
-    { "Shell: ",      get_shell,             false }, \
-    { "Resolution: ", get_resolution,        false }, \
-    { "Terminal: ",   get_terminal,          false }, \
-    { "CPU: ",        get_cpu,               true  }, \
-    { "GPU: ",        get_gpu1,              true }, \
-    { "Memory: ",     get_memory,            false }, \
-    SPACER \
-    { "",             get_colors1,           false }, \
-    { "",             get_colors2,           false }, \
+    { "",            get_title,               false }, \
+    { "os     ",         get_os,                  true  }, \
+    { "host   ",       get_host,                true  }, \
+    { "kernel ",     get_kernel,              true  }, \
+    { "uptime ",     get_uptime,              false }, \
+    { "pkgs   ",       get_packages_pacman,     false }, \
+    { "memory ",     get_memory,              false }, \
 }
 
 #define CPU_CONFIG \
