@@ -283,7 +283,7 @@ static char *get_packages(const char* dirname, const char* pacname, int num_extr
     status = closedir(dirp);
 
     char *packages = malloc(BUF_SIZE);
-    snprintf(packages, BUF_SIZE, "%d (%s)", num_packages, pacname);
+    snprintf(packages, BUF_SIZE, "%d", num_packages);
 
     return packages;
 }
