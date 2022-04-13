@@ -32,12 +32,12 @@
     { "Shell: ",      get_shell,             false }, \
     { "Resolution: ", get_resolution,        false }, \
     { "Terminal: ",   get_terminal,          false }, \
-    { "CPU: ",        get_cpu,                 true  }, \
-    { "GPU: ",        get_gpu1,                true }, \
-    { "Memory: ",     get_memory,              false }, \
+    { "CPU: ",        get_cpu,               true  }, \
+    { "GPU: ",        get_gpu1,              true }, \
+    { "Memory: ",     get_memory,            false }, \
     SPACER \
-    { "",             get_colors1,             false }, \
-    { "",             get_colors2,             false }, \
+    { "",             get_colors1,           false }, \
+    { "",             get_colors2,           false }, \
 }
 
 #define CPU_CONFIG \
