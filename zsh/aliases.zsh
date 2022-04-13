@@ -73,6 +73,7 @@ alias gs='git status'
 alias xclip="xclip -sel clip"
 alias copy="xclip -sel clip"
 alias paste="xclip -sel clip -o"
+alias yp="pwd | copy"
 
 # -P: display progress bar
 # -r: recursive
