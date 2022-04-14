@@ -17,6 +17,7 @@ Dwm
 Spectrwm
 Openbox
 KDE Plasma
+Xfce
 None' | fzf --reverse --border=rounded --cycle --height=50% --padding=1 | tr '[:upper:]' '[:lower:]')"
 
 if [ "$wm" = "" ]; then
@@ -53,6 +54,9 @@ else
         "kde plasma")
             export DESKTOP_SESSION=plasma
             start "KDE Plasma" "startplasma-x11"
+            ;;
+        "xfce")
+            start "Xfce" "startxfce4"
             ;;
         "none")
             exit 0

@@ -167,6 +167,8 @@ apps=(
     plasma-desktop
     kde-applications
     konsave
+    xfce4
+    xfce4-goodies
     deadd-notification-center-bin
     notify-send-py
     duf
