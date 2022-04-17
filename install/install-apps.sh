@@ -112,6 +112,7 @@ apps=(
     bitwarden-cli
     bitwarden
     btop
+    bottom
     xorg-xinit
     xorg-xev
     xorg-server-xephyr

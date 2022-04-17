@@ -20,6 +20,7 @@ alias find='fd'
 alias .history='nvim ~/.cache/zsh/history'
 alias mkf='touch'
 alias sv='sudoedit'
+alias htop='btm --basic'
 alias h=htop
 alias b=btop
 alias ranger='ranger --choosedir=$HOME/.cache/.rangerdir; LASTDIR=`\cat $HOME/.cache/.rangerdir`; cd $LASTDIR'
@@ -74,6 +75,11 @@ alias xclip="xclip -sel clip"
 alias copy="xclip -sel clip"
 alias paste="xclip -sel clip -o"
 alias yp="pwd | copy"
+
+alias b64=base64
+alias b64d='base64 -d'
+alias b32=base32
+alias b32d='base32 -d'
 
 # -P: display progress bar
 # -r: recursive

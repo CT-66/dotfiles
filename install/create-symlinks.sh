@@ -50,6 +50,7 @@ dirs=(
     yay
     Thunar
     eww
+    bottom
 )
 
  if [ -d ~/.config ]; then

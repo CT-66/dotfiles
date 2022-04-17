@@ -63,6 +63,9 @@ super + Escape
 super + ctrl + Escape
     st -e btop
 
+super + ctrl + shift + Escape
+    st -e btm
+
 # music control
 super + {less, greater, slash}
     {mpc prev, mpc next, mpc toggle}
