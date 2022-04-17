@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=bottom
+GenericName=Process Viewer
+Comment=open bottom
+Icon=htop
+Exec=st -e btm
+Terminal=false
+Categories=System;Monitor;ConsoleOnly;
+Keywords=system;process;task
