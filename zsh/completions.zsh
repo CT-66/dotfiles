@@ -5,6 +5,7 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}' # case insensitive tab co
 zstyle ':completion:*' menu select 'm:{a-z}={A-Za-z}' # case insensitive tab completion
 zstyle ':completion:*' regular true
 zstyle ':completion:*' rehash true
+zstyle ':completion:*' ignore-line yes # With commands like `rm' it's annoying if one gets offered the same filename again even if it is already on the command line. this prevents that
 zstyle ':completion:*' use-cache on # use cache to speed up commands
 zstyle ':completion:*' cache-path "~/.cache/zsh/.zcompcache"
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"

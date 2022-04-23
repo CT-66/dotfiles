@@ -83,9 +83,13 @@ sudo ln -s /usr/bin/nvim /usr/bin/v
 sudo ln -s ~/Dotfiles/pacman/pacman.conf /etc/pacman.conf
 sudo cp ~/Dotfiles/etc/fstab /etc/fstab
 ln -s ~/Dotfiles/kde/* ~/.config
+ln -s ~/Dotfiles/paleofetch/paleofetch ~/.local/bin/paleofetch
+ln -s ~/Dotfiles/paleofetch2/paleofetch2 ~/.local/bin/paleofetch2
 
 if [ -f ~/.bashrc ]; then
     mv ~/.bashrc ~/.bashrc.bak
+fi
+
 ln -s ~/Dotfiles/bash/bashrc ~/.bashrc
 
 if [ -f ~/.zshenv ]; then

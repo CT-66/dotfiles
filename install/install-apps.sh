@@ -39,10 +39,10 @@ apps=(
     fd
     ffmpeg
     figlet
-    fortune
+    fortune-mod
     cowsay
     fzf
-    golang
+    go
     python3
     ncurses
     shellcheck
@@ -64,7 +64,7 @@ apps=(
     leftwm
     feh
     flameshot
-    xrandr
+    xorg-xrandr
     dunst
     sxhkd
     rofi
@@ -122,7 +122,7 @@ apps=(
     neovide-git
     timeshift
     qt5ct-kde
-    qt5ct
+    # qt5ct
     betterlockscreen
     networkmanager
     network-manager-applet
@@ -175,7 +175,7 @@ apps=(
     duf
     dust
     xplr
-    dragon-drag-and-drop
+    dragon-drop
     links
     xournalpp
     sd
@@ -254,14 +254,6 @@ cd $HOME
 git clone --depth 1 https://github.com/archcraft-os/archcraft-themes ~/.cache/tmp/repos/archcraft-themes
 cd ~/.cache/tmp/repos/archcraft-themes/archcraft-gtk-theme-arc
 makepkg -si
-cd $HOME
-echo "Done"
-
-echo "Installing paleofetch..."
-cd $HOME
-git clone --depth 1 https://github.com/JaGoLi/paleofetch ~/.cache/tmp/repos/paleofetch
-cd ~/.cache/tmp/repos/paleofetch
-make install
 cd $HOME
 echo "Done"
 
