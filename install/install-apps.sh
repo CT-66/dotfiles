@@ -239,15 +239,15 @@ echo "Done"
 echo "Installing cursors..."
 cd $HOME
 git clone --depth 1 https://github.com/archcraft-os/archcraft-cursors/ ~/.cache/tmp/repos/archcraft-cursors
-cd ~/.cache/tmp/repos/archcraft-cursors
+cd ~/.cache/tmp/repos/archcraft-cursors/archcraft-cursor-qogirr
 makepkg -si
 cd $HOME
 echo "Done"
 
 echo "Installing additional zsh plugins..."
 cd $HOME
-git clone --depth 1 https://github.com/MichaelAquilina/zsh-auto-notify
-sudo mv $HOME/zsh-auto-notify /usr/share/zsh/plugins
+git clone --depth 1 https://github.com/MichaelAquilina/zsh-auto-notify ~/.cache/tmp/repos/zsh-auto-notify
+sudo mv ~/.cache/tmp/repos/zsh-auto-notify /usr/share/zsh/plugins
 
 echo "Installing openbox themes..."
 cd $HOME

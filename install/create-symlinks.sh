@@ -80,7 +80,6 @@ ln -s ~/Dotfiles/greenclip/greenclip.toml ~/.config/greenclip.toml
 ln -s ~/Dotfiles/xdg/mimeapps.list ~/.config/mimeapps.list
 ln -s ~/Dotfiles/xdg/user-dirs.dirs ~/.config/user-dirs.dirs
 sudo ln -s /usr/bin/nvim /usr/bin/v
-sudo ln -s ~/Dotfiles/pacman/pacman.conf /etc/pacman.conf
 sudo cp ~/Dotfiles/etc/fstab /etc/fstab
 ln -s ~/Dotfiles/kde/* ~/.config
 ln -s ~/Dotfiles/paleofetch/paleofetch ~/.local/bin/paleofetch
@@ -97,6 +96,21 @@ if [ -f ~/.zshenv ]; then
 fi
 
 ln -s ~/Dotfiles/zsh/.zshenv ~/.zshenv
+
+if [ -f /etc/pacman.conf ]; then
+    mv /etc/pacman.conf /etc/pacman.conf.bak
+fi
+
+sudo ln -s ~/Dotfiles/pacman/pacman.conf /etc/pacman.conf
+
+
+if [ ! -d ~/.config/gnupg ]; then
+    mkdir ~/.config/gnupg
+fi
+
+if [ ! -d ~/.cache/wget ]; then
+    mkdir ~/.cache/wget
+fi
 
 
 echo "Done"
