@@ -127,6 +127,7 @@ alias lg='ls -aG' # -G: grid (exa specific)
 alias lt='ls -aT' # -T: tree (exa specific)
 # alias l.='exa -1Fa | egrep -in "^\."'
 alias l.='\ls -Ap | egrep -in "^\."'
+alias lsfzf='ls | fzf --ansi'
 
 alias ping='ping -c 5'
 
