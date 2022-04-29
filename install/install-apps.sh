@@ -70,6 +70,8 @@ apps=(
     rofi
     rofi-greenclip
     rofi-emoji
+    noto-fonts-emoji
+    ttf-unifont
     libnotify
     picom-jonaburg-git
     arc-gtk-theme
@@ -213,8 +215,6 @@ apps=(
     rust-analyzer
     nsxiv
     yad
-    noto-fonts-emoji
-    ttf-unifont
 )
 
 # for app in "${apps[@]}"; do
