@@ -213,6 +213,8 @@ apps=(
     rust-analyzer
     nsxiv
     yad
+    noto-fonts-emoji
+    ttf-unifont
 )
 
 # for app in "${apps[@]}"; do

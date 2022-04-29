@@ -25,6 +25,9 @@ super + d
 super + shift + d
     rofi -show run
 
+super + period
+    rofi -show emoji -matching normal
+
 # dmenu
 super + ctrl + d
     dmenu_run
