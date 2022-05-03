@@ -46,6 +46,7 @@ alias du='du -sh'
 alias sctl='doas systemctl'
 alias qmv='qmv -fv do'
 alias bulkrename=qmv
+alias sxiv=nsxiv
 
 alias _neofetch='\neofetch'
 alias _pfetch='\pfetch'
@@ -57,6 +58,7 @@ alias fet="fet.sh"
 
 # alias p='sudo pacman'
 alias P='doas pacman'
+alias Syu='sudo pacman -Syu'
 alias y=yay
 alias S='yay -S'
 alias Rns='yay -Rns'
