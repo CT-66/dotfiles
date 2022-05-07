@@ -21,6 +21,10 @@ ViewPropsTimestamp=2021,12,12,14,50,30.417
 [IconsMode]
 FontWeight=50
 
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
 [KPropertiesDialog]
 Virtual1 Height 1920x1080=464
 Virtual1 Height 1920x975=464
@@ -31,16 +35,20 @@ Virtual1 Width 1920x975=410
 MenuBar=Disabled
 ToolBarsMovable=Disabled
 Virtual1 Height 1920x1001=954
+Virtual1 Height 1920x1025=893
 Virtual1 Height 1920x1080=948
 Virtual1 Height 1920x975=975
 Virtual1 Width 1920x1001=945
+Virtual1 Width 1920x1025=920
 Virtual1 Width 1920x1080=920
 Virtual1 Width 1920x975=1920
 Virtual1 Window-Maximized 1920x975=true
 Virtual1 XPosition 1920x1001=964
+Virtual1 XPosition 1920x1025=969
 Virtual1 XPosition 1920x1080=969
 Virtual1 XPosition 1920x975=0
 Virtual1 YPosition 1920x1001=36
+Virtual1 YPosition 1920x1025=66
 Virtual1 YPosition 1920x1080=66
 Virtual1 YPosition 1920x975=0
 
