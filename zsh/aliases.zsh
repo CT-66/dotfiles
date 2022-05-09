@@ -47,6 +47,7 @@ alias sctl='doas systemctl'
 alias qmv='qmv -fv do'
 alias bulkrename=qmv
 alias sxiv=nsxiv
+alias kde_screenlock="/usr/lib/kscreenlocker_greet"
 
 alias _neofetch='\neofetch'
 alias _pfetch='\pfetch'

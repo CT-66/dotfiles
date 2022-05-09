@@ -66,3 +66,5 @@ export QT_QPA_PLATFORMTHEME=kde
 export ELECTRON_TRASH=trash-cli code
 
 export GTK_USE_PORTAL=1
+
+export TERM="xterm-256color"
