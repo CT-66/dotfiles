@@ -210,3 +210,6 @@ exec_always "$HOME/Dotfiles/startup.sh &"
 exec "alternating_layouts.py &"
 
 # =======================
+
+
+bindsym ctrl+button1 exec "xdotool click 3"
