@@ -27,7 +27,9 @@ alias ranger='ranger --choosedir=$HOME/.cache/.rangerdir; LASTDIR=`\cat $HOME/.c
 alias r=ranger
 alias tty-clock='tty-clock -cbt -C 4'
 alias bw-list='bw list items --pretty --search'
-alias cat=bat
+alias cat='bat --paging=never'
+alias catp='bat --paging=always'
+alias less='bat --paging=always'
 alias f=fzf
 alias vf='nvim $(fzf)'
 alias mf='mpv "$(fzf)"'
