@@ -2,7 +2,7 @@
 
 # Make a directory and switch to it immediately
 mcd() {
-    mkdir "$1"
+    mkdir -pv "$1"
     cd "$1"
 }
 
