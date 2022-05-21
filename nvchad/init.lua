@@ -8,13 +8,7 @@ map("n", "<leader>q", ":q <CR>")
 -- Install plugins
 local customPlugins = require "core.customPlugins"
 
--- customPlugins.add(function(use)
---    use {
---       "user or orgname/reponame",
---       --further packer options
---    }
--- end)
+customPlugins.add(function(use)
+   use "tpope/vim-surround"
+end)
 
--- NOTE: we heavily suggest using Packer's lazy loading (with the 'event','cmd' fields)
--- see: https://github.com/wbthomason/packer.nvim
--- https://nvchad.github.io/config/walkthrough
