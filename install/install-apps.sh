@@ -122,6 +122,7 @@ apps=(
     xorg-xev
     xorg-server-xephyr
     xorg-xmodmap
+    xorg-setxkbmap
     python-pynvim
     jq
     neovide-git

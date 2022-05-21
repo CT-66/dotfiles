@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=setxkbmap
+Exec=setxkbmap -option caps:escape
+Comment=setxkbmap
+

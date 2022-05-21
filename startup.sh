@@ -6,7 +6,8 @@ function kill_program () {
 
 export XDG_SESSION_TYPE=x11
 xrdb -merge $HOME/Dotfiles/X11/Xresources && sleep 0.0001
-xmodmap $HOME/Dotfiles/X11/Xmodmap && sleep 0.0001
+# xmodmap $HOME/Dotfiles/X11/Xmodmap && sleep 0.0001
+setxkbmap -option caps:escape && sleep 0.0001
 
 $HOME/Dotfiles/polybar/launch.sh &
 sxhkd &

@@ -1,3 +1,4 @@
 #!/bin/sh
 xrdb -merge $HOME/Dotfiles/X11/Xresources
-xmodmap $HOME/Dotfiles/X11/Xmodmap
+# xmodmap $HOME/Dotfiles/X11/Xmodmap && sleep 0.0001
+setxkbmap -option caps:escape && sleep 0.0001
