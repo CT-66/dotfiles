@@ -40,7 +40,6 @@ dirs=(
     newsboat
     plank
     lvim
-    nvchad
     deadd
     xplr
     jgmenu
@@ -84,6 +83,7 @@ sudo cp ~/Dotfiles/etc/fstab /etc/fstab
 ln -s ~/Dotfiles/kde/* ~/.config
 ln -s ~/Dotfiles/paleofetch/paleofetch ~/.local/bin/paleofetch
 ln -s ~/Dotfiles/paleofetch2/paleofetch2 ~/.local/bin/paleofetch2
+# ln -s ~/Dotfiles/nvchad/lua/custom/chadrc.lua ~/.config/nvim/lua/custom/chadrc.lua
 
 if [ -f ~/.bashrc ]; then
     mv ~/.bashrc ~/.bashrc.bak
