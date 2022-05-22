@@ -9,6 +9,6 @@ map("n", "<leader>q", ":q <CR>")
 local customPlugins = require "core.customPlugins"
 
 customPlugins.add(function(use)
-   use "tpope/vim-surround"
+   use 'tpope/vim-surround'
 end)
 

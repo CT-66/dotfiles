@@ -32,3 +32,5 @@ wallpaper.sh --random &
 
 autokey-gtk &
 flameshot &
+
+mpv --no-video ~/Downloads/windows-xp-startup-sound.wav &
