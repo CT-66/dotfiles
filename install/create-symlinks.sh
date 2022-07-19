@@ -50,6 +50,7 @@ dirs=(
     Thunar
     eww
     bottom
+    sway
 )
 
  if [ -d ~/.config ]; then
