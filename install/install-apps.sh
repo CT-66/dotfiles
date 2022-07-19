@@ -219,6 +219,11 @@ apps=(
     rust-analyzer
     nsxiv
     yad
+    qbittorrent
+    wayland
+    sway
+    hyprland-bin
+    foot
 )
 
 # for app in "${apps[@]}"; do
