@@ -220,10 +220,10 @@ apps=(
     nsxiv
     yad
     qbittorrent
-    wayland
     sway
     hyprland-bin
     foot
+    waybar
 )
 
 # for app in "${apps[@]}"; do

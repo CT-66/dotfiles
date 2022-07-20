@@ -218,4 +218,5 @@ include /etc/sway/config.d/*
 
 input * {
   xkb_options "caps:escape"
+  xkb_numlock enable
 }

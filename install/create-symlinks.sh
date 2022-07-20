@@ -51,6 +51,8 @@ dirs=(
     eww
     bottom
     sway
+    hypr
+    waybar
 )
 
  if [ -d ~/.config ]; then
