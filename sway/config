@@ -21,10 +21,6 @@ set $term st
 set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
 ### Output configuration
-#
-# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-#
 # Example configuration:
 #
 #   output HDMI-A-1 resolution 1920x1080 position 1920,0
@@ -220,3 +216,6 @@ input * {
   xkb_options "caps:escape"
   xkb_numlock enable
 }
+
+set $opacity 0.9
+for_window [class=".*"] opacity $opacity

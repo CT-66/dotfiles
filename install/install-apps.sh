@@ -221,9 +221,11 @@ apps=(
     yad
     qbittorrent
     sway
+    swaybg
     hyprland-bin
     foot
     waybar
+    xorg-xwayland
 )
 
 # for app in "${apps[@]}"; do

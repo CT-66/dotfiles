@@ -11,7 +11,7 @@ numlockx &
 # pkill greenclip; greenclip daemon &
 # kill_program nm-applet; nm-applet &
 
-# wallpaper.sh --default &
-wallpaper.sh --random &
+# wallpaper-wayland.sh --default &
+wallpaper-wayland.sh --random &
 
 mpv --no-video ~/Downloads/windows-xp-startup-sound.wav &
