@@ -1,5 +1,6 @@
 #!/bin/bash
 
+export XDG_SESSION_TYPE=wayland
 xrdb -merge $HOME/Dotfiles/X11/Xresources && sleep 0.0001
 setxkbmap -option caps:escape && sleep 0.0001
 

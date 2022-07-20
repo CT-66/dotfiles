@@ -172,6 +172,7 @@ apps=(
     inkscape
     krita
     plasma-desktop
+    plasma-wayland-session
     kde-applications
     konsave
     xfce4
