@@ -15,4 +15,4 @@ sudo pacman -Rns $(pacman -Qtdq)
 paccache -r
 
 # empty the trash
-trash-empty
+# trash-empty
