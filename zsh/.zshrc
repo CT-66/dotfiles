@@ -23,7 +23,7 @@ for file in "$files[@]"; do
 done
 
 # source $HOME/Scripts/sudo.lib
-source $HOME/Scripts/doas.lib
+# source $HOME/Scripts/doas.lib
 
 # fzf
 source /usr/share/fzf/key-bindings.zsh

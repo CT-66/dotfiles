@@ -76,9 +76,6 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
     # Reload the configuration file
     bindsym $mod+Shift+c reload
-
-    # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 #
 # Moving around:
 #
@@ -192,24 +189,6 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-#
-# Status Bar:
-#
-# Read `man 5 sway-bar` for more information about this section.
-bar {
-    position top
-
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
-    status_command while date +'%Y-%m-%d %I:%M:%S %p'; do sleep 1; done
-
-    colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
-}
-
 include /etc/sway/config.d/*
 
 input * {
@@ -217,5 +196,25 @@ input * {
   xkb_numlock enable
 }
 
+# transparency
 set $opacity 0.9
 for_window [class=".*"] opacity $opacity
+
+# gaps
+# for_window [class=".*"] border pixel 0
+for_window [class=".*"] border pixel 2
+# for_window [class=".*"] border pixel 1
+gaps inner 15
+gaps outer 15
+
+# smart_gaps inverse_outer
+
+# increase gaps
+bindsym $mod+p gaps inner current plus 5; gaps outer current plus 5
+
+# decrease gaps
+bindsym $mod+shift+p gaps inner current minus 5; gaps outer current minus 5
+
+# temporary
+exec_always "waybar &"
+exec_always "swaybg -i ~/Pictures/Wallpapers/001.jpg &"
