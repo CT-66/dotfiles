@@ -226,6 +226,7 @@ apps=(
     foot
     waybar
     xorg-xwayland
+    kdialog
 )
 
 # for app in "${apps[@]}"; do

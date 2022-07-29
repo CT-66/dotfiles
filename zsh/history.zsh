@@ -10,3 +10,4 @@ setopt HIST_IGNORE_ALL_DUPS # Don't record an entry that was just recorded again
 setopt HIST_FIND_NO_DUPS # Do not display a line previously found
 setopt HIST_REDUCE_BLANKS # Remove superfluous blanks before recording entry
 setopt HIST_IGNORE_SPACE # Don't record an entry starting with a space
+setopt EXTENDED_HISTORY # Record timestamp of each command
