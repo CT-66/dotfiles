@@ -70,3 +70,5 @@ export GTK_USE_PORTAL=1
 export TERM="xterm-256color"
 
 export WLR_NO_HARDWARE_CURSORS=1
+
+export XDG_CURRENT_DESKTOP="WM"
