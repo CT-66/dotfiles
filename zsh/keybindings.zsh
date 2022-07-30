@@ -38,7 +38,7 @@ bindkey "^H" backward-kill-word
 # alt+. -> inserts argument of previous command
 # bindkey -M vicmd "^[[." "insert-last-word"
 # bindkey "^[[." insert-last-word
-bindkey -s "^[." " !$ ^Xa " # `^Xa`: tab (automatically expands !$)
+bindkey -s "^[." " !* ^Xa " # `^Xa`: tab (automatically expands !*)
 # ctrl+left/right arrow
 bindkey "^[[1;5D" backward-word
 bindkey "^[[1;5C" forward-word
