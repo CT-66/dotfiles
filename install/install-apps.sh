@@ -226,6 +226,8 @@ apps=(
     foot
     waybar
     xorg-xwayland
+    wev
+    wl-clipboard
     kdialog
 )
 
