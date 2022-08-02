@@ -46,8 +46,10 @@ nnoremap Y y$
 " nmap j gj
 " nmap k gk
 " up/down in same line when a line is wrapped
-nmap j gj
-nmap k gk
+" ~~nmap j gj~~
+" ~~nmap k gk~~
+noremap <expr> j v:count ? 'j' : 'gj'
+noremap <expr> k v:count ? 'k' : 'gk'
 
 " nmap <Up> gk
 " nmap <Down> gj

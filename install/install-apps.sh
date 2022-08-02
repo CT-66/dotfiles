@@ -229,6 +229,8 @@ apps=(
     wev
     wl-clipboard
     kdialog
+    exiv2
+    perl-image-exiftool
 )
 
 # for app in "${apps[@]}"; do
