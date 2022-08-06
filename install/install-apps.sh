@@ -50,6 +50,7 @@ apps=(
     shellcheck
     unzip
     zip
+    firefox-developer-edition
     firefox
     alacritty
     vieb
