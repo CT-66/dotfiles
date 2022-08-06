@@ -137,7 +137,6 @@ ForegroundVisited=143,188,187
 
 [General]
 BrowserApplication=brave-browser.desktop
-ColorScheme=Nordic
 ColorSchemeHash=a935e515e29025e6636b957f51c3dda99b47f986
 Name=Breeze Light
 TerminalApplication=st

@@ -1,5 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=xmodmap
-Exec=xmodmap ~/Dotfiles/X11/Xmodmap
-Comment=xmodmap

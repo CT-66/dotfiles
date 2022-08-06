@@ -175,6 +175,7 @@ apps=(
     plasma-desktop
     plasma-wayland-session
     kde-applications
+    kdeplasma-addons
     konsave
     xfce4
     xfce4-goodies
@@ -232,6 +233,7 @@ apps=(
     kdialog
     exiv2
     perl-image-exiftool
+    notepadqq
 )
 
 # for app in "${apps[@]}"; do
