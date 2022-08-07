@@ -176,5 +176,4 @@ alias ta='tmux attach -t '
 alias tmux-ks='tmux kill-session'
 alias tn='tmux new-session -s '
 
-alias linux="\cat ~/Documents/Copypastas/interjection | \xclip -sel clip"
-alias interject="\cat ~/Documents/Copypastas/interjection | \xclip -sel clip"
+alias open=xdg-open
