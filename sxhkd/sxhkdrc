@@ -35,8 +35,8 @@ super + ctrl + d
 super + ctrl + shift + d
     dmenu_run
 
-super + Tab
-    rofi -show window
+# super + Tab
+#    rofi -show window
 
 super + shift + s
     exec-scripts

@@ -234,6 +234,7 @@ apps=(
     exiv2
     perl-image-exiftool
     notepadqq
+    kate
 )
 
 # for app in "${apps[@]}"; do
