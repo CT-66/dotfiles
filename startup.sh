@@ -19,6 +19,7 @@ $HOME/Scripts/dotfiles
 numlockx &
 pkill greenclip; greenclip daemon &
 kill_program nm-applet; nm-applet &
+krunner -d
 
 # picom-ibhagwan
 kill_program picom; picom -b &

@@ -41,6 +41,12 @@ super + ctrl + shift + d
 super + shift + s
     exec-scripts
 
+ctrl + shift + space
+    krunner
+
+ctrl + alt + space
+    krunner
+
 # screenshots
 super + r
     flameshot gui
