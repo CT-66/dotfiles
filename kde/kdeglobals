@@ -135,6 +135,10 @@ ForegroundNormal=216,222,233
 ForegroundPositive=163,190,140
 ForegroundVisited=143,188,187
 
+[DirSelect Dialog]
+DirSelectDialog Size=839,598
+History Items[$e]=file:$HOME/Pictures
+
 [General]
 BrowserApplication=brave-browser.desktop
 ColorSchemeHash=a935e515e29025e6636b957f51c3dda99b47f986
