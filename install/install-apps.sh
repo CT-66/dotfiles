@@ -215,6 +215,7 @@ apps=(
     tokei
     imagemagick
     konsole
+    xdg-desktop-portal
     xdg-desktop-portal-kde
     eww-git
     rustup
