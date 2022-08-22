@@ -66,3 +66,7 @@ fi
 sudo cp ~/Dotfiles/sudo/sudoers /etc/sudoers
 sudo chown -c root:root /etc/sudoers
 sudo chmod -c 0440 /etc/sudoers
+
+# ==============
+# disable locking out user after 3 failed attempts
+sudo sed -i '32s/.*/deny = 0/' /etc/security/faillock.conf
