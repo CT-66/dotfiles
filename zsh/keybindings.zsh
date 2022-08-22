@@ -51,8 +51,7 @@ bindkey -M vicmd "^[[1;3D" "backward-word"
 bindkey -M vicmd "^[[1;3C" "forward-word"
 # alt+right/left
 # bind alt+s -> sudo !!
-# bindkey -s "^[s" "sudo !!"
-bindkey -s "^[s" "doas !!^Xa " # `^Xa`: tab (automatically expands !!)
+bindkey -s "^[s" "sudo !!^Xa " # `^Xa`: tab (automatically expands !!)
 # press tab to expand aliases
 bindkey "^Xa" _expand_alias
 zstyle ':completion:*' completer _expand_alias _complete _ignored

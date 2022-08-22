@@ -59,6 +59,10 @@ sudo mv /etc/vconsole.conf /etc/vconsole.conf.old
 sudo cp ~/Dotfiles/keymaps/vconsole.conf /etc/vconsole.conf
 
 # ==============
-sudo cp ~/Dotfiles/doas/doas.conf /etc/doas.conf
-sudo chown -c root:root /etc/doas.conf
-sudo chmod -c 0400 /etc/doas.conf
+if [ -f "/etc/sudoers" ]; then
+  mv /etc/sudoers /etc/sudoers.bak
+fi
+
+sudo cp ~/Dotfiles/sudo/sudoers /etc/sudoers
+sudo chown -c root:root /etc/sudoers
+sudo chmod -c 0400 /etc/sudoers

@@ -199,7 +199,6 @@ apps=(
     python-feedparser
     pavucontrol-qt
     i3-layouts
-    opendoas
     i3-easyfocus-git
     rsync
     xcolor

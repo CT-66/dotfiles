@@ -5,7 +5,6 @@ alias ZZ='exit'
 alias ZQ='exit'
 # alias pls='sudo $(fc -ln -1)'
 # alias please='sudo $(fc -ln -1)'
-alias sudo="doas"
 alias pls='sudo $(fc -ln -1)'
 alias please='sudo $(fc -ln -1)'
 alias v=nvim
