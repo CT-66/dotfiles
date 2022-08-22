@@ -69,4 +69,5 @@ sudo chmod -c 0440 /etc/sudoers
 
 # ==============
 # disable locking out user after 3 failed attempts
+sudo cp /etc/security/faillock.conf /etc/security/faillock.conf.bak
 sudo sed -i '32s/.*/deny = 0/' /etc/security/faillock.conf
