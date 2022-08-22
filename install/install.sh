@@ -65,4 +65,4 @@ fi
 
 sudo cp ~/Dotfiles/sudo/sudoers /etc/sudoers
 sudo chown -c root:root /etc/sudoers
-sudo chmod -c 0400 /etc/sudoers
+sudo chmod -c 0440 /etc/sudoers

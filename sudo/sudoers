@@ -95,6 +95,16 @@ root ALL=(ALL) ALL
 ## Read drop-in files from /etc/sudoers.d
 @includedir /etc/sudoers.d
 
-## Show asterisk when entering sudo password
-Defaults env_reset,pwfeedback
+Defaults env_reset
 
+## Show asterisk when entering sudo password
+Defaults pwfeedback
+
+## Enable insults
+Defaults insults
+
+## Disable timeout
+Defaults passwd_timeout=0
+
+## Send a bell character during password prompt
+Defaults passprompt="^G[sudo] password for %p: "
