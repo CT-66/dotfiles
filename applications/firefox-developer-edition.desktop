@@ -9,7 +9,6 @@ Icon=firefox-developer-edition
 Terminal=false
 X-MultipleArgs=false
 Type=Application
-MimeType=text/html;text/xml;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;application/x-xpinstall;application/pdf;application/json;
 StartupNotify=true
 StartupWMClass=firefoxdeveloperedition
 Categories=Network;WebBrowser;
@@ -22,3 +21,4 @@ Exec=/usr/lib/firefox-developer-edition/firefox --class="firefoxdeveloperedition
 [Desktop Action new-private-window]
 Name=New Private Window
 Exec=/usr/lib/firefox-developer-edition/firefox --class="firefoxdeveloperedition" --private-window %u
+MimeType=x-scheme-handler/unknown;x-scheme-handler/about;text/html;text/xml;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;application/x-xpinstall;application/pdf;application/json;

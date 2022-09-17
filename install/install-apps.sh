@@ -10,8 +10,6 @@ makepkg -si
 cd $HOME
 echo "Done"
 
-curl -s 'https://download.opensuse.org/repositories/home:/ungoogled_chromium/Arch/x86_64/home_ungoogled_chromium_Arch.key' | sudo pacman-key -a -
-
 echo "Installing apps..."
 
 apps=(
@@ -99,9 +97,7 @@ apps=(
     polybar
     tty-clock
     flashfocus-git
-    ungoogled-chromium
     brave-bin
-    brave-beta-bin
     insect
     espeak-ng
     emacs
