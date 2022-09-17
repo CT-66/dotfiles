@@ -140,10 +140,11 @@ DirSelectDialog Size=839,598
 History Items[$e]=file:$HOME/Pictures
 
 [General]
-BrowserApplication=brave-browser.desktop
+BrowserApplication=firefox-developer-edition.desktop
 ColorSchemeHash=a935e515e29025e6636b957f51c3dda99b47f986
 Name=Breeze Light
 TerminalApplication=st
+TerminalService=st.desktop
 accentColorFromWallpaper=false
 shadeSortColumn=true
 widgetStyle=Breeze

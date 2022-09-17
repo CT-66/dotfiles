@@ -8,7 +8,8 @@
 # wallpaper="089.jpg"
 # wallpaper="004.jpg"
 # wallpaper="095.jpg"
-wallpaper="092.png"
+# wallpaper="092.png"
+wallpaper="112.png"
 
 while [[ $# -gt 0 ]]; do
     case $1 in
