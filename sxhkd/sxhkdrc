@@ -105,8 +105,8 @@ super + KP_Insert
     pamixer -t
 
 # launch apps
-super + o; {n, shift+n, shift+alt+n, f, shift+f, shift+alt+f, m, shift+m, c, shift+c,shift+alt+c, b, shift+b, r, shift+r, i, shift+i}
-    {st -e nvim, st -e nvim -u NONE, st -e lvim, st -e ranger, dolphin, thunar, st -e ncmpcpp, st -e cava, st -e insect, st -e python3 -q, st -e bc -q, brave, brave-beta, st -e newsboat, st -e rtv, brave --incognito, firefox --private}
+super + o; {n, shift+n, shift+alt+n, f, shift+f, shift+alt+f, m, shift+m, c, shift+c, shift+alt+c, b, shift+b, r, shift+r}
+    {st -e nvim, st -e nvim -u NONE, st -e lvim, st -e ranger, dolphin, thunar, st -e ncmpcpp, st -e cava, st -e insect, st -e python3 -q, st -e bc -q, firefox-developer-edition, brave, st -e newsboat, st -e rtv}
 
 # open notification center
 super + n

@@ -4,9 +4,9 @@ application/x-desktop=nvim.desktop;
 image/jpeg=feh.desktop;
 inode/directory=org.kde.dolphin.desktop;
 x-scheme-handler/geo=openstreetmap-geo-handler.desktop;
-x-scheme-handler/http=firefox-developer-edition.desktop;firefox-developer-edition;
-x-scheme-handler/https=firefox-developer-edition.desktop;firefox-developer-edition;
-x-scheme-handler/mailto=firefox-developer-edition.desktop;firefox-developer-edition;
+x-scheme-handler/http=firefox-developer-edition.desktop;
+x-scheme-handler/https=firefox-developer-edition.desktop;
+x-scheme-handler/mailto=firefox-developer-edition.desktop;
 
 [Default Applications]
 application/pdf=org.pwmt.zathura.desktop
