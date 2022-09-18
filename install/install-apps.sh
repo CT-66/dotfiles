@@ -172,6 +172,7 @@ apps=(
     plasma-wayland-session
     kde-applications
     kdeplasma-addons
+    plasma-pa 
     konsave
     xfce4
     xfce4-goodies

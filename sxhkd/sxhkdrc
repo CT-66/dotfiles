@@ -67,10 +67,10 @@ super + v
 
 # system monitor
 super + Escape
-    $HOME/Dotfiles/i3/scripts/empty-workspace.sh && st -e btop
+    st -e btop
 
 super + ctrl + Escape
-    st -e btop
+    plasma-systemmonitor
 
 super + ctrl + shift + Escape
     st -e btm
@@ -109,8 +109,8 @@ super + o; {n, shift+n, shift+alt+n, f, shift+f, shift+alt+f, m, shift+m, c, shi
     {st -e nvim, st -e nvim -u NONE, st -e lvim, st -e ranger, dolphin, thunar, st -e ncmpcpp, st -e cava, st -e insect, st -e python3 -q, st -e bc -q, firefox-developer-edition, brave, st -e newsboat, st -e rtv}
 
 # open notification center
-super + n
-    pkill -USR1 deadd-notificat
+# super + n
+#     pkill -USR1 deadd-notificat
 
 # clear all notifications in the notification center
 super + shift + n
