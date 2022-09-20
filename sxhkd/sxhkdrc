@@ -82,27 +82,27 @@ super + {less, greater, slash}
 # volume control
 # decrease volume by 5
 super + bracketleft
-    pamixer -d 5
+    qdbus org.kde.kglobalaccel /component/kmix invokeShortcut "decrease_volume"
 
 # numlock subtract
 super + KP_Subtract
-    pamixer -d 5
+    qdbus org.kde.kglobalaccel /component/kmix invokeShortcut "decrease_volume"
 
 # increase volume by 5
 super + bracketright
-    pamixer -i 5
+    qdbus org.kde.kglobalaccel /component/kmix invokeShortcut "increase_volume"
 
 # numlock add
 super + KP_Add
-    pamixer -i 5
+    qdbus org.kde.kglobalaccel /component/kmix invokeShortcut "increase_volume"
 
 # mute/unmute
 super + backslash
-    pamixer -t
+    qdbus org.kde.kglobalaccel /component/kmix invokeShortcut "mute"
 
 # numlock zero
 super + KP_Insert
-    pamixer -t
+    qdbus org.kde.kglobalaccel /component/kmix invokeShortcut "mute"
 
 # launch apps
 super + o; {n, shift+n, shift+alt+n, f, shift+f, shift+alt+f, m, shift+m, c, shift+c, shift+alt+c, b, shift+b, r, shift+r}
