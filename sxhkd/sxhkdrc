@@ -145,6 +145,10 @@ super + n
 super + shift + n 
     vscodium
 
+# kwrite
+super + ctrl + n 
+    kwrite
+
 # kate 
 super + shift + alt + n 
     kate
