@@ -108,18 +108,60 @@ super + backslash
 super + KP_Insert
     qdbus org.kde.kglobalaccel /component/kmix invokeShortcut "mute"
 
+# right click
+shift + F10
+    sleep 0.2 && xdotool click 3
+
 # launch apps
 super + o; {n, shift+n, shift+alt+n, f, shift+f, shift+alt+f, m, shift+m, c, shift+c, shift+alt+c, b, shift+b, r, shift+r}
     {st -e nvim, st -e nvim -u NONE, st -e lvim, st -e ranger, dolphin, thunar, st -e ncmpcpp, st -e cava, st -e insect, st -e python3 -q, st -e bc -q, firefox-developer-edition, brave, st -e newsboat, st -e rtv}
 
-# open notification center
-# super + n
-#     pkill -USR1 deadd-notificat
+# frequently used applications
+# firefox
+super + b
+    firefox-developer-edition
 
-# clear all notifications in the notification center
-super + shift + n
-    notify-send.py a --hint boolean:deadd-notification-center:true string:type:clearInCenter
+# brave
+super + shift + b
+    brave
 
+# dolphin
+super + e 
+    dolphin
+
+# ranger
+super + shift + e 
+    st -e ranger
+
+# thunar 
+super + shift + alt + e 
+    thunar
+
+# nvim
+super + n 
+    st -e nvim 
+
+# vscodium 
+super + shift + n 
+    vscodium
+
+# kate 
+super + shift + alt + n 
+    kate
+
+# insect 
+super + c
+    st -e insect 
+
+# python shell
+super + shift + c
+    st -e python3 -q 
+
+# bc 
+super + shift + alt + c
+    st -e bc -q
+
+# wallpapers
 # random wallpaper
 super + w
     wallpaper.sh --random
@@ -132,18 +174,3 @@ super + shift + w
 super + alt + w
     wallpaper.sh --current-wallpaper
 
-# show/hide secondary polybar
-super + b
-    polybar-msg cmd toggle
-
-# toggle borders (i3)
-super + shift + b
-    i3-msg "border toggle"
-
-# i3 marks (easyfocus)
-# super + m
-#    i3-easyfocus --color-unfocused-fg 000000 --color-unfocused-bg FFFFFF --color-focused-fg 000000 --color-focused-bg FFFFFF --color-urgent-fg 000000 --color-urgent-bg FFFFFF
-
-# right click
-shift + F10
-    sleep 0.2 && xdotool click 3
