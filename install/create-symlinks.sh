@@ -91,6 +91,7 @@ ln -s ~/Dotfiles/applications/autostart ~/.config/autostart
 # ln -s ~/Dotfiles/nvchad/chadrc.lua ~/.config/nvim/lua/custom/chadrc.lua
 # ln -s ~/Dotfiles/nvchad/init.lua ~/.config/nvim/lua/custom/init.lua
 ln -s ~/Dotfiles/X11/Xresources ~/.Xdefaults
+ln -s ~/Dotfiles/spectacle/spectaclerc ~/.config/spectaclerc
 
 if [ -f ~/.bashrc ]; then
     mv ~/.bashrc ~/.bashrc.bak

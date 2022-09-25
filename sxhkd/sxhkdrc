@@ -48,18 +48,18 @@ ctrl + alt + space
     krunner
 
 # screenshots
-super + r
-    ksnip --rectarea -d 0
-
-alt + r
-    ksnip --rectarea -d 0
-
-super + shift + r
-    ksnip --fullscreen -d 0
-
-alt + shift + r
-    ksnip --fullscreen -d 0
-
+# super + r
+#     ksnip --rectarea -d 0
+# 
+# alt + r
+#     ksnip --rectarea -d 0
+# 
+# super + shift + r
+#     ksnip --fullscreen -d 0
+# 
+# alt + shift + r
+#   ksnip --fullscreen -d 0
+ 
 
 # lock screen
 super + shift + Escape

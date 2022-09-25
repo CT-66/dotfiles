@@ -1,0 +1,13 @@
+[General]
+clipboardGroup=PostScreenshotCopyImage
+onLaunchAction=DoNotTakeScreenshot
+showMagnifier=true
+
+[GuiConfig]
+captureMode=5
+window-position=526,224
+
+[Save]
+defaultSaveLocation=file:///home/arch/Pictures/Screenshots/
+lastSaveLocation=file:///home/arch/Pictures/Screenshots/Screenshot_25-09-22_19-35.png
+saveFilenameFormat=Screenshot_%D-%M-%y_%H-%m
