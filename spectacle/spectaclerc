@@ -1,11 +1,10 @@
 [General]
 clipboardGroup=PostScreenshotCopyImage
-onLaunchAction=DoNotTakeScreenshot
 showMagnifier=true
 
 [GuiConfig]
 captureMode=5
-window-position=526,224
+window-position=554,173
 
 [Save]
 defaultSaveLocation=file:///home/arch/Pictures/Screenshots/
