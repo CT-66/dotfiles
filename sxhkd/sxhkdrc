@@ -49,13 +49,17 @@ ctrl + alt + space
 
 # screenshots
 super + r
-    flameshot gui
+    ksnip --rectarea -d 0
+
+alt + r
+    ksnip --rectarea -d 0
 
 super + shift + r
-    flameshot full -c -p ~/Pictures/Screenshots && notify-send 'Screenshot saved to ~/Pictures/Screenshots'
+    ksnip --fullscreen -d 0
 
-# alt + r
-#     flameshot gui -c -p ~/Pictures/Screenshots"
+alt + shift + r
+    ksnip --fullscreen -d 0
+
 
 # lock screen
 super + shift + Escape
@@ -139,3 +143,7 @@ super + shift + b
 # i3 marks (easyfocus)
 # super + m
 #    i3-easyfocus --color-unfocused-fg 000000 --color-unfocused-bg FFFFFF --color-focused-fg 000000 --color-focused-bg FFFFFF --color-urgent-fg 000000 --color-urgent-bg FFFFFF
+
+# right click
+shift + F10
+    sleep 0.2 && xdotool click 3

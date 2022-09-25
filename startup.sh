@@ -19,7 +19,6 @@ $HOME/Scripts/dotfiles
 numlockx &
 pkill greenclip; greenclip daemon &
 kill_program nm-applet; nm-applet &
-krunner -d &
 
 # picom-ibhagwan
 kill_program picom; picom -b &
@@ -32,6 +31,6 @@ kill_program flashfocus; flashfocus &
 wallpaper.sh --random &
 
 autokey-gtk &
-flameshot &
+ksnip &
 
 mpv --no-video ~/Downloads/windows-xp-startup-sound.wav &

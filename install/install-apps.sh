@@ -64,7 +64,6 @@ apps=(
     openbox
     leftwm
     feh
-    flameshot
     xorg-xrandr
     dunst
     sxhkd
@@ -173,6 +172,8 @@ apps=(
     kde-applications
     kdeplasma-addons
     plasma-pa 
+    plasma-nm
+    ksnip
     konsave
     xfce4
     xfce4-goodies

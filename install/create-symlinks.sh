@@ -7,7 +7,6 @@ dirs=(
     alacritty
     btop
     dunst
-    flameshot
     flashfocus
     gtk-3.0
     htop
@@ -49,6 +48,7 @@ dirs=(
     yay
     Thunar
     eww
+    ksnip
     bottom
     sway
     hypr
