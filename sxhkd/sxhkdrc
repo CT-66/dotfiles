@@ -145,13 +145,13 @@ super + n
 super + shift + n 
     vscodium
 
-# kwrite
-super + ctrl + n 
-    kwrite
-
 # kate 
-super + shift + alt + n 
+super + ctrl n 
     kate
+
+# kwrite
+super + alt + n 
+    kwrite
 
 # insect 
 super + c
