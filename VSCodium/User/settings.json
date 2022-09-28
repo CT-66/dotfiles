@@ -245,7 +245,10 @@
     "editor.selectionHighlight": false,
     "breadcrumbs.enabled": false,
     "path-autocomplete.enableFolderTrailingSlash": true,
-    "path-autocomplete.disableUpOneFolder": true
+    "path-autocomplete.disableUpOneFolder": true,
+    "terminal.integrated.smoothScrolling": true,
+    "window.menuBarVisibility": "toggle",
+    "workbench.layoutControl.type": "menu"
 }
 /*
     "[javascript]": {
