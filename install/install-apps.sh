@@ -174,6 +174,7 @@ apps=(
     plasma-pa 
     plasma-nm
     ksnip
+    latte-dock
     konsave
     xfce4
     xfce4-goodies
