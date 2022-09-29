@@ -474,6 +474,11 @@
         "when": "viewContainer.workbench.view.explorer.enabled"
     },
     {
+        "key": "alt+g",
+        "command": "workbench.view.scm",
+        "when": "workbench.scm.active"
+    },
+    {
         "key": "alt+j",
         "command": "workbench.action.terminal.scrollDown",
         "when": "terminalFocus && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocus && terminalProcessSupported && !terminalAltBufferActive"

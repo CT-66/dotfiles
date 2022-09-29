@@ -248,7 +248,20 @@
     "path-autocomplete.disableUpOneFolder": true,
     "terminal.integrated.smoothScrolling": true,
     "window.menuBarVisibility": "toggle",
-    "workbench.layoutControl.type": "menu"
+    "workbench.layoutControl.type": "menu",
+    "workbench.editor.decorations.colors": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.statusBar.visible": true,
+    "workbench.statusBar.visible": true,
+    "workbench.tree.expandMode": "singleClick",
+    "window.restoreWindows": "preserve",
+    "explorer.confirmDelete": true,
+    "explorer.confirmDragAndDrop": true,
+    "explorer.compactFolders": true,
+    "explorer.decorations.badges": true,
+    "explorer.decorations.colors": true,
+    "explorer.enableDragAndDrop": true,
+    "explorer.enableUndo": true
 }
 /*
     "[javascript]": {
