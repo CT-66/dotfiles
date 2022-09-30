@@ -86,6 +86,8 @@ apps=(
     mpv
     zathura
     zathura-pdf-mupdf
+    zathura-cb
+    okular
     yt-dlp
     bat
     pacman-contrib
