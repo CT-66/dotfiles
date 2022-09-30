@@ -236,6 +236,7 @@ apps=(
     perl-image-exiftool
     kate
     expect
+    ghostwriter
 )
 
 # for app in "${apps[@]}"; do

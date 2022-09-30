@@ -153,6 +153,10 @@ super + ctrl n
 super + alt + n 
     kwrite
 
+# ghostwriter
+super + alt + shift + n
+    ghostwriter
+
 # insect 
 super + c
     st -e insect 
