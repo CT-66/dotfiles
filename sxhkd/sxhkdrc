@@ -125,6 +125,10 @@ super + b
 super + shift + b
     brave
 
+# falkon
+super + ctrl + b 
+    falkon
+
 # dolphin
 super + e 
     dolphin

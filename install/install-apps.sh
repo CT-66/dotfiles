@@ -50,6 +50,8 @@ apps=(
     zip
     firefox-developer-edition
     firefox
+    brave-bin
+    falkon
     alacritty
     vieb
     lolcat
@@ -98,7 +100,6 @@ apps=(
     polybar
     tty-clock
     flashfocus-git
-    brave-bin
     insect
     espeak-ng
     emacs
