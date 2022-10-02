@@ -177,6 +177,7 @@ apps=(
     plasma-pa 
     plasma-nm
     ksnip
+    gwenview
     latte-dock
     konsave
     xfce4

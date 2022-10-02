@@ -1,7 +1,7 @@
 [Added Associations]
-application/octet-stream=feh.desktop;
+application/octet-stream=org.kde.gwenview.desktop;
 application/x-desktop=nvim.desktop;
-image/jpeg=feh.desktop;
+image/jpeg=org.kde.gwenview.desktop;
 inode/directory=org.kde.dolphin.desktop;
 x-scheme-handler/geo=openstreetmap-geo-handler.desktop;
 x-scheme-handler/http=firefox-developer-edition.desktop;
@@ -10,8 +10,8 @@ x-scheme-handler/mailto=firefox-developer-edition.desktop;
 
 [Default Applications]
 application/pdf=org.kde.okular.desktop
-image/jpeg=feh.desktop
-image/png=feh.desktop
+image/jpeg=org.kde.gwenview.desktop
+image/png=org.kde.gwenview.desktop
 inode/directory=org.kde.dolphin.desktop;
 text/html=firefox-developer-edition;
 text/plain=nvim.desktop
