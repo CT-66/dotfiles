@@ -69,7 +69,7 @@ bindkey "^K" history-substring-search-up
 # ctrl+space to accept autosuggestion
 bindkey "^ " autosuggest-accept
 # alt+space to accept and execute autosuggestion
-bindkey "^[ " autosuggest-execute
+# bindkey "^[ " autosuggest-execute
 
 # Change cursor shape for different vi modes.
 function zle-keymap-select {
