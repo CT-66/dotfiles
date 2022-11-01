@@ -18,6 +18,7 @@ extract () {
             *.tar)      tar xfv "$1"       ;;
             *.tbz2)     tar xjf "$1"       ;;
             *.tgz)      tar xzf "$1"       ;;
+            *.txz)      tar xvf "$1"       ;;
             *.tar.zst)  tar --use-compress-program=unzstd -xvf "$1"       ;;
             *.zip)      unzip "$1"         ;;
             *.Z)        uncompress "$1"    ;;

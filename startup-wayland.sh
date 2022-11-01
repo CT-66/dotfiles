@@ -14,5 +14,3 @@ numlockx &
 
 # wallpaper-wayland.sh --default &
 wallpaper-wayland.sh --random &
-
-mpv --no-video ~/Downloads/windows-xp-startup-sound.wav &

@@ -32,5 +32,3 @@ wallpaper.sh --random &
 
 autokey-gtk &
 ksnip &
-
-mpv --no-video ~/Downloads/windows-xp-startup-sound.wav &
