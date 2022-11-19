@@ -153,9 +153,8 @@ super + shift + n
 super + ctrl n 
     kate
 
-# kwrite
 super + alt + n 
-    kwrite
+    kate
 
 # ghostwriter
 super + alt + shift + n

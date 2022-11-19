@@ -84,7 +84,6 @@ ln -s ~/Dotfiles/xdg/user-dirs.dirs ~/.config/user-dirs.dirs
 sudo ln -s ~/Dotfiles/xdg/xdg-desktop-portal/portals/kde.portal /usr/share/xdg-desktop-portal/portals/kde.portal
 sudo ln -s /usr/bin/nvim /usr/bin/v
 sudo cp ~/Dotfiles/etc/fstab /etc/fstab
-ln -s ~/Dotfiles/kde/* ~/.config
 ln -s ~/Dotfiles/paleofetch/paleofetch ~/.local/bin/paleofetch
 ln -s ~/Dotfiles/paleofetch2/paleofetch2 ~/.local/bin/paleofetch2
 ln -s ~/Dotfiles/applications/autostart ~/.config/autostart
