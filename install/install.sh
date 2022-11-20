@@ -37,7 +37,7 @@ mkdir -p ~/Pictures/Wallpapers
 git clone --depth 1 https://github.com/CT-66/wallpapers ~/Pictures/Wallpapers
 
 # ===============
-sudo systemctl --user enable mpd.service
+systemctl --user enable mpd.service
 
 # ==============
 
@@ -60,7 +60,7 @@ sudo cp ~/Dotfiles/keymaps/vconsole.conf /etc/vconsole.conf
 
 # ==============
 if [ -f "/etc/sudoers" ]; then
-  mv /etc/sudoers /etc/sudoers.bak
+  sudo mv /etc/sudoers /etc/sudoers.bak
 fi
 
 sudo cp ~/Dotfiles/sudo/sudoers /etc/sudoers
