@@ -53,6 +53,7 @@ dirs=(
     sway
     hypr
     waybar
+    mpDris2
 )
 
  if [ -d ~/.config ]; then

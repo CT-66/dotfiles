@@ -239,6 +239,7 @@ apps=(
     kate
     expect
     ghostwriter
+    mpdris2
 )
 
 # for app in "${apps[@]}"; do

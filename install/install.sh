@@ -38,6 +38,7 @@ git clone --depth 1 https://github.com/CT-66/wallpapers ~/Pictures/Wallpapers
 
 # ===============
 systemctl --user enable mpd.service
+systemctl enable --user mpDris2.service
 
 # ==============
 
