@@ -74,7 +74,7 @@ super + Escape
     st -e btop
 
 super + ctrl + Escape
-    plasma-systemmonitor
+    ksysguard
 
 super + ctrl + shift + Escape
     st -e btm

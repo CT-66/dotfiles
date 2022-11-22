@@ -241,6 +241,7 @@ apps=(
     ghostwriter
     mpdris2
     plasma-browser-integration 
+    ksysguard
 )
 
 # for app in "${apps[@]}"; do
