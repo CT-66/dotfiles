@@ -240,6 +240,7 @@ apps=(
     expect
     ghostwriter
     mpdris2
+    plasma-browser-integration 
 )
 
 # for app in "${apps[@]}"; do
