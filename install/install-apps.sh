@@ -242,6 +242,7 @@ apps=(
     mpdris2
     plasma-browser-integration 
     ksysguard
+    akregator
 )
 
 # for app in "${apps[@]}"; do
