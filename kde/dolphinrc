@@ -22,9 +22,6 @@ ShowToolTips=true
 Version=202
 ViewPropsTimestamp=2021,12,12,14,50,30.417
 
-[IconsMode]
-PreviewSize=80
-
 [KFileDialog Settings]
 Places Icons Auto-resize=false
 Places Icons Static Size=22
@@ -68,3 +65,6 @@ History=gwe,ter
 
 [PreviewSettings]
 Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail
+
+[Search]
+Location=Everywhere
