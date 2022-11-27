@@ -35,25 +35,8 @@ super + ctrl + d
 super + ctrl + shift + d
     dmenu_run
 
-super + Tab
-   rofi -show window
-
 super + shift + s
     exec-scripts
-
-ctrl + shift + space
-    krunner
-
-ctrl + alt + space
-    krunner
-
-# lock screen
-super + shift + Escape
-    mpc pause && betterlockscreen -l
-
-# clipboard
-super + v
-    rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 
 # system monitor
 super + Escape
@@ -68,31 +51,6 @@ super + ctrl + shift + Escape
 # music control
 super + {less, greater, slash}
     {mpc prev, mpc next, mpc toggle}
-
-# volume control
-# decrease volume by 5
-super + bracketleft
-    pamixer -d 5
-#
-# # numlock subtract
-super + KP_Subtract
-    pamixer -d 5
-#
-# # increase volume by 5
-super + bracketright
-    pamixer -i 5
-#
-# # numlock add
-super + KP_Add
-    pamixer -i 5
-#
-# # mute/unmute
-super + backslash
-    pamixer -t
-#
-# # numlock zero
-super + KP_Insert
-    pamixer -t
 
 # right click
 shift + F10
