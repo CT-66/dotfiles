@@ -2,9 +2,6 @@
 super + Return
     st
 
-super + shift + Return
-    $HOME/Dotfiles/i3/scripts/empty-workspace.sh && st
-
 super + alt + Return
     st -e bash
 
