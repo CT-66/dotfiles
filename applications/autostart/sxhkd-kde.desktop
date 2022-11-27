@@ -1,5 +1,5 @@
 [Desktop Entry]
 Type=Application
 Name=sxhkd-kde
-Exec=~/Scripts/sxhkd-kde.sh
+Exec=/home/arch/Scripts/sxhkd-kde.sh
 Comment=sxhkd
