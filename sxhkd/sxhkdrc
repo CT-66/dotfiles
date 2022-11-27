@@ -41,11 +41,11 @@ super + ctrl + shift + d
 super + shift + s
     exec-scripts
 
-ctrl + shift + space
-    krunner
-
-ctrl + alt + space
-    krunner
+# ctrl + shift + space
+#     krunner
+#
+# ctrl + alt + space
+#     krunner
 
 # screenshots
 # super + r
@@ -66,8 +66,8 @@ super + shift + Escape
     mpc pause && betterlockscreen -l
 
 # clipboard
-super + v
-    rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+# super + v
+#     rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 
 # system monitor
 super + Escape
@@ -85,28 +85,28 @@ super + {less, greater, slash}
 
 # volume control
 # decrease volume by 5
-super + bracketleft
-    qdbus org.kde.kglobalaccel /component/kmix invokeShortcut "decrease_volume"
-
-# numlock subtract
-super + KP_Subtract
-    qdbus org.kde.kglobalaccel /component/kmix invokeShortcut "decrease_volume"
-
-# increase volume by 5
-super + bracketright
-    qdbus org.kde.kglobalaccel /component/kmix invokeShortcut "increase_volume"
-
-# numlock add
-super + KP_Add
-    qdbus org.kde.kglobalaccel /component/kmix invokeShortcut "increase_volume"
-
-# mute/unmute
-super + backslash
-    qdbus org.kde.kglobalaccel /component/kmix invokeShortcut "mute"
-
-# numlock zero
-super + KP_Insert
-    qdbus org.kde.kglobalaccel /component/kmix invokeShortcut "mute"
+# super + bracketleft
+#     qdbus org.kde.kglobalaccel /component/kmix invokeShortcut "decrease_volume"
+#
+# # numlock subtract
+# super + KP_Subtract
+#     qdbus org.kde.kglobalaccel /component/kmix invokeShortcut "decrease_volume"
+#
+# # increase volume by 5
+# super + bracketright
+#     qdbus org.kde.kglobalaccel /component/kmix invokeShortcut "increase_volume"
+#
+# # numlock add
+# super + KP_Add
+#     qdbus org.kde.kglobalaccel /component/kmix invokeShortcut "increase_volume"
+#
+# # mute/unmute
+# super + backslash
+#     qdbus org.kde.kglobalaccel /component/kmix invokeShortcut "mute"
+#
+# # numlock zero
+# super + KP_Insert
+#     qdbus org.kde.kglobalaccel /component/kmix invokeShortcut "mute"
 
 # right click
 shift + F10
