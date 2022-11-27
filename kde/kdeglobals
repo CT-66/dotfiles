@@ -192,6 +192,8 @@ MaximumRemoteSize=0
 
 [Shortcuts]
 Close=Ctrl+W
+Help=
+WhatsThis=
 
 [WM]
 activeBackground=47,52,63
@@ -200,3 +202,5 @@ activeForeground=211,218,227
 inactiveBackground=47,52,63
 inactiveBlend=47,52,63
 inactiveForeground=102,106,115
+frame=97,175,239
+inactiveFrame=46,52,64

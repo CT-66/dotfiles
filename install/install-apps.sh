@@ -243,6 +243,7 @@ apps=(
     plasma-browser-integration 
     ksysguard
     akregator
+    kwin-bismuth-bin
 )
 
 # for app in "${apps[@]}"; do
