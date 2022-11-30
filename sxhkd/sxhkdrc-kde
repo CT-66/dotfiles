@@ -94,9 +94,6 @@ super + shift + n
 super + ctrl n 
     kate
 
-super + alt + n 
-    kate
-
 # ghostwriter
 super + alt + shift + n
     ghostwriter
