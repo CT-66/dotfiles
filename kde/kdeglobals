@@ -141,8 +141,9 @@ History Items[$e]=file:$HOME/Pictures
 
 [General]
 BrowserApplication=firefox-developer-edition.desktop
+ColorScheme=Nordic
 ColorSchemeHash=a935e515e29025e6636b957f51c3dda99b47f986
-Name=Breeze Light
+Name=Nordic
 TerminalApplication=st
 TerminalService=st.desktop
 XftHintStyle=hintslight
@@ -154,7 +155,7 @@ shadeSortColumn=true
 widgetStyle=Breeze
 
 [Icons]
-Theme=breeze-dark
+Theme=breeze
 
 [KDE]
 ColorScheme=BreezeLight
@@ -162,7 +163,7 @@ LookAndFeelPackage=Nordic
 ShowDeleteCommand=false
 SingleClick=false
 contrast=4
-widgetStyle=Breeze
+widgetStyle=Lightly
 
 [KFileDialog Settings]
 Allow Expansion=false

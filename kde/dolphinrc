@@ -14,6 +14,7 @@ Virtual1 Height 1920x1025=560
 Virtual1 Width 1920x1025=1272
 
 [General]
+CommandBarLastUsedActions=
 EditableUrl=true
 RememberOpenedTabs=false
 ShowFullPath=true

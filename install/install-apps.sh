@@ -244,6 +244,7 @@ apps=(
     ksysguard
     akregator
     kwin-bismuth-bin
+    lightly-qt
 )
 
 # for app in "${apps[@]}"; do
