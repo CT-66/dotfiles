@@ -246,6 +246,7 @@ apps=(
     kwin-bismuth-bin
     lightly-qt
     sysstat
+    normcap
 )
 
 # for app in "${apps[@]}"; do
