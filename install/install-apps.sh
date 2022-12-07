@@ -174,7 +174,7 @@ apps=(
     plasma-wayland-session
     kde-applications
     kdeplasma-addons
-    plasma-pa 
+    plasma-pa
     plasma-nm
     ksnip
     gwenview
@@ -240,11 +240,12 @@ apps=(
     expect
     ghostwriter
     mpdris2
-    plasma-browser-integration 
+    plasma-browser-integration
     ksysguard
     akregator
     kwin-bismuth-bin
     lightly-qt
+    sysstat
 )
 
 # for app in "${apps[@]}"; do
