@@ -54,6 +54,7 @@ dirs=(
     hypr
     waybar
     mpDris2
+    xkeysnail
 )
 
  if [ -d ~/.config ]; then

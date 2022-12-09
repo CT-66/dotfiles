@@ -247,6 +247,7 @@ apps=(
     lightly-qt
     sysstat
     normcap
+    xkeysnail
 )
 
 # for app in "${apps[@]}"; do
