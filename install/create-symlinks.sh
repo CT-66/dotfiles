@@ -9,6 +9,7 @@ dirs=(
     dunst
     flashfocus
     gtk-3.0
+    gtk-4.0
     htop
     i3
     bspwm
