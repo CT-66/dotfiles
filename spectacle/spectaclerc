@@ -4,7 +4,7 @@ showMagnifier=true
 
 [GuiConfig]
 captureMode=5
-window-position=636,155
+window-position=400,230
 
 [Save]
 defaultSaveLocation=file:///home/arch/Pictures/Screenshots/
