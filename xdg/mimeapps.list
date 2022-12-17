@@ -1,6 +1,6 @@
 [Added Associations]
 application/octet-stream=org.kde.gwenview.desktop;
-application/x-desktop=nvim.desktop;
+application/x-desktop=org.kde.kate.desktop;
 image/jpeg=org.kde.gwenview.desktop;
 inode/directory=org.kde.dolphin.desktop;
 x-scheme-handler/geo=openstreetmap-geo-handler.desktop;
@@ -14,7 +14,7 @@ image/jpeg=org.kde.gwenview.desktop
 image/png=org.kde.gwenview.desktop
 inode/directory=org.kde.dolphin.desktop;
 text/html=firefox-developer-edition;
-text/plain=nvim.desktop
+text/plain=org.kde.kate.desktop
 x-scheme-handler/about=firefox-developer-edition;
 x-scheme-handler/geo=openstreetmap-geo-handler.desktop;
 x-scheme-handler/http=firefox-developer-edition.desktop;

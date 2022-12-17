@@ -141,8 +141,7 @@ History Items[$e]=file:$HOME/Pictures
 
 [General]
 BrowserApplication=firefox-developer-edition.desktop
-ColorScheme=Nordic2
-ColorSchemeHash=a935e515e29025e6636b957f51c3dda99b47f986
+ColorSchemeHash=16d76d665d21620173dad925e4b695cf36442076
 Name=Nordic
 TerminalApplication=st
 TerminalService=st.desktop

@@ -67,46 +67,47 @@ super + shift + b
     brave
 
 # falkon
-super + ctrl + b 
+super + ctrl + b
     falkon
 
 # dolphin
-super + e 
+super + e
     dolphin
 
 # ranger
-super + shift + e 
+super + shift + e
     st -e ranger
 
-# thunar 
-super + shift + alt + e 
+# thunar
+super + shift + alt + e
     thunar
 
-# nvim
-super + n 
-    st -e nvim 
+# kate
+super + n
+    kate
 
-# vscodium 
-super + shift + n 
+# vscodium
+super + shift + n
     vscodium
 
-# kate 
-super + ctrl n 
-    kate
+# nvim
+super + ctrl + n
+    st -e nvim
+
 
 # ghostwriter
 super + alt + shift + n
     ghostwriter
 
-# insect 
+# insect
 super + c
-    st -e insect 
+    st -e insect
 
 # python shell
 super + shift + c
-    st -e python3 -q 
+    st -e python3 -q
 
-# bc 
+# bc
 super + shift + alt + c
     st -e bc -q
 
@@ -122,4 +123,3 @@ super + shift + w
 # display the filename of current wallpaper
 super + alt + w
     wallpaper.sh --current-wallpaper
-
