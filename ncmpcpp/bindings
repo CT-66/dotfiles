@@ -591,6 +591,11 @@ def_key "G"
   move_end
 def_key "f"
   seek_forward
-
 def_key "b"
   seek_backward
+def_key "z"
+  shuffle
+def_key "Z"
+  shuffle
+def_key "s"
+  shuffle
