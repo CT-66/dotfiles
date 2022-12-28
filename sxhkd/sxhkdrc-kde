@@ -1,12 +1,12 @@
 # terminals
 super + Return
-    st
+    konsole
 
 super + alt + Return
-    st -e bash
+    konsole -e bash
 
 super + ctrl + Return
-    st -e fish
+    konsole -e fish
 
 super + KP_Enter
     xterm
@@ -37,13 +37,13 @@ super + shift + s
 
 # system monitor
 super + Escape
-    st -e btop
+    konsole -e btop
 
 super + ctrl + Escape
     ksysguard
 
 super + ctrl + shift + Escape
-    st -e btm
+    konsole -e btm
 
 # music control
 super + {less, greater, slash}
@@ -55,7 +55,7 @@ shift + F10
 
 # launch apps
 super + o; {n, shift+n, shift+alt+n, f, shift+f, shift+alt+f, m, shift+m, c, shift+c, shift+alt+c, b, shift+b, r, shift+r}
-    {st -e nvim, st -e nvim -u NONE, st -e lvim, st -e ranger, dolphin, thunar, st -e ncmpcpp, st -e cava, st -e insect, st -e python3 -q, st -e bc -q, firefox-developer-edition, brave, st -e newsboat, st -e rtv}
+    {konsole -e nvim, konsole -e nvim -u NONE, konsole -e lvim, konsole -e ranger, dolphin, thunar, konsole -e ncmpcpp, konsole -e cava, konsole -e insect, konsole -e python3 -q, konsole -e bc -q, firefox-developer-edition, brave, konsole -e newsboat, konsole -e rtv}
 
 # frequently used applications
 # firefox
@@ -76,7 +76,7 @@ super + e
 
 # ranger
 super + shift + e
-    st -e ranger
+    konsole -e ranger
 
 # thunar
 super + shift + alt + e
@@ -92,7 +92,7 @@ super + shift + n
 
 # nvim
 super + ctrl + n
-    st -e nvim
+    konsole -e nvim
 
 
 # ghostwriter
@@ -101,15 +101,15 @@ super + alt + shift + n
 
 # insect
 super + c
-    st -e insect
+    konsole -e insect
 
 # python shell
 super + shift + c
-    st -e python3 -q
+    konsole -e python3 -q
 
 # bc
 super + shift + alt + c
-    st -e bc -q
+    konsole -e bc -q
 
 # wallpapers
 # random wallpaper

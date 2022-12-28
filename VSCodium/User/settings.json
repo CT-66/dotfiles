@@ -235,7 +235,7 @@
     // "window.menuBarVisibility": "hidden",
     "window.titleBarStyle": "custom",
     "extensions.webWorker": false,
-    "terminal.external.linuxExec": "st",
+    "terminal.external.linuxExec": "konsole",
     "terminal.integrated.cursorWidth": 2,
     "telemetry.telemetryLevel": "off",
     "security.workspace.trust.banner": "never",

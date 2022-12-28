@@ -20,8 +20,8 @@ export LS_COLORS='no=00:rs=0:fi=00:di=01;34:ln=36:mh=04;36:pi=04;01;36:so=04;33:
 export KEYTIMEOUT=1
 export EDITOR=kate
 export VISUAL=kate
-export TERMINAL=st
-export TERMCMD=st
+export TERMINAL=konsole
+export TERMCMD=konsole
 export BROWSER="firefox-developer-edition"
 export PAGER='bat --paging=always'
 export MANPAGER="sh -c 'col -bx | bat -l man -p --paging=always --style=header,numbers --color=always --theme=\"OneHalfDark\"'"

@@ -8,7 +8,7 @@ import os
 import subprocess
 
 MOD = "mod4"
-TERMINAL = "st"
+TERMINAL = "konsole"
 HOME = os.path.expanduser("~")
 ctrl = "control"
 alt = "mod1"
