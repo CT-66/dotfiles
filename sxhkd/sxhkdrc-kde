@@ -12,6 +12,9 @@ super + KP_Enter
     xterm
 
 ctrl + alt + t
+    st
+
+ctrl + alt + shift + t
     alacritty
 
 
