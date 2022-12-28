@@ -1,0 +1,56 @@
+State=AAAA/wAAAAD9AAAAAQAAAAAAAAEYAAACYvwCAAAAAvsAAAAcAFMAUwBIAE0AYQBuAGEAZwBlAHIARABvAGMAawAAAABMAAACYgAAAUMBAAAJ+wAAACIAUQB1AGkAYwBrAEMAbwBtAG0AYQBuAGQAcwBEAG8AYwBrAAAAAEwAAAJiAAABtwEAAAkAAAdUAAADnAAAAAQAAAAEAAAACAAAAAj8AAAAAQAAAAIAAAACAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAABwAcwBlAHMAcwBpAG8AbgBUAG8AbwBsAGIAYQByAQAAAMr/////AAAAAAAAAAA=
+Virtual1=Virtual1
+Virtual1 Height 1920x1080 Virtual1=996
+Virtual1 Width 1920x1080 Virtual1=1876
+Virtual1 Window-Maximized 1920x1025=true
+Virtual1 XPosition 1920x1080 Virtual1=22
+Virtual1 YPosition 1920x1080 Virtual1=62
+
+[Desktop Entry]
+DefaultProfile=Main-Profile.profile
+
+[General]
+ConfigVersion=1
+
+[KFileDialog Settings]
+Recent Files[$e]=Oxygen-Im-Nudge.ogg,file:///usr/share/sounds/Oxygen-Im-Nudge.ogg
+Recent URLs[$e]=file:///usr/share/sounds/
+iconViewIconSize=64
+
+[KonsoleWindow]
+RememberWindowSize=false
+ShowWindowTitleOnTitleBar=true
+UseSingleInstance=true
+
+[MainWindow]
+RestorePositionForNextInstance=false
+State=AAAA/wAAAAD9AAAAAQAAAAAAAAEYAAACYvwCAAAAAvsAAAAcAFMAUwBIAE0AYQBuAGEAZwBlAHIARABvAGMAawAAAABMAAACYgAAAUMBAAAJ+wAAACIAUQB1AGkAYwBrAEMAbwBtAG0AYQBuAGQAcwBEAG8AYwBrAAAAAEwAAAJiAAABtwEAAAkAAAdUAAADZQAAAAQAAAAEAAAACAAAAAj8AAAAAQAAAAIAAAACAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAABwAcwBlAHMAcwBpAG8AbgBUAG8AbwBsAGIAYQByAQAAAMr/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
+Virtual1=Virtual1
+Virtual1 Height 1920x1025=893
+Virtual1 Height 1920x1025 Virtual1=941
+Virtual1 Height 1920x1080 Virtual1=996
+Virtual1 Height 1920x975=791
+Virtual1 Height 1920x975 Virtual1=891
+Virtual1 Width 1920x1025=1858
+Virtual1 Width 1920x1025 Virtual1=1876
+Virtual1 Width 1920x1080 Virtual1=1876
+Virtual1 Width 1920x975=1114
+Virtual1 Width 1920x975 Virtual1=1876
+Virtual1 XPosition 1920x1025=31
+Virtual1 XPosition 1920x1025 Virtual1=22
+Virtual1 XPosition 1920x1080 Virtual1=22
+Virtual1 XPosition 1920x975=358
+Virtual1 XPosition 1920x975 Virtual1=22
+Virtual1 YPosition 1920x1025=66
+Virtual1 YPosition 1920x1025 Virtual1=62
+Virtual1 YPosition 1920x1080 Virtual1=62
+Virtual1 YPosition 1920x975=113
+Virtual1 YPosition 1920x975 Virtual1=62
+
+[TabBar]
+NewTabButton=true
+TabBarVisibility=AlwaysShowTabBar
+
+[UiSettings]
+ColorScheme=
