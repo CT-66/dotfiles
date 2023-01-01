@@ -126,3 +126,7 @@ super + shift + w
 # display the filename of current wallpaper
 super + alt + w
     wallpaper.sh --current-wallpaper
+
+# search google using krunner (https://github.com/alex1701c/QuickWebShortcuts)
+super + g
+    qdbus org.kde.krunner /App org.kde.krunner.App.query ": "
