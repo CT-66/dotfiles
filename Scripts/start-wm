@@ -1,6 +1,6 @@
 #!/bin/bash
 
-default_wm="/usr/bin/i3"
+default_wm="startplasma-x11"
 
 # $1:name, $2:path
 function start() {
@@ -8,7 +8,8 @@ function start() {
     exec startx /usr/bin/"$2" 2>/dev/null
 }
 
-wm="$(echo 'i3
+wm="$(echo 'KDE Plasma
+i3
 Bspwm
 Qtile
 Xmonad
@@ -16,7 +17,6 @@ AwesomeWM
 Dwm
 Spectrwm
 Openbox
-KDE Plasma
 Xfce
 None' | fzf --reverse --border=rounded --cycle --height=50% --padding=1 | tr '[:upper:]' '[:lower:]')"
 
@@ -25,6 +25,10 @@ if [ "$wm" = "" ]; then
     exec startx "$default_wm"
 else
     case $wm in
+        "kde plasma")
+            export DESKTOP_SESSION=plasma
+            start "KDE Plasma" "startplasma-x11"
+            ;;
         "i3")
             start "i3" "i3"
             ;;
@@ -50,10 +54,6 @@ else
             ;;
         "openbox")
             start "Openbox" "openbox-session"
-            ;;
-        "kde plasma")
-            export DESKTOP_SESSION=plasma
-            start "KDE Plasma" "startplasma-x11"
             ;;
         "xfce")
             start "Xfce" "startxfce4"
