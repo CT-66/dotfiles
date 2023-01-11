@@ -248,6 +248,7 @@ apps=(
     sysstat
     normcap
     xkeysnail
+    kdocker
 )
 
 # for app in "${apps[@]}"; do

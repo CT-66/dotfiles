@@ -1,0 +1,11 @@
+#!/bin/bash
+
+logfile=$HOME/notifications.log
+
+dbus-monitor "interface='org.freedesktop.Notifications'" |\
+grep --line-buffered "string" |\
+grep --line-buffered -e method -e ":" -e 'string ""' -e urgency -e 'string "notify-send"' -e 'string "sender-pid"' -v |\
+grep --line-buffered '.*(?=string)|(?<=string).*' -oPi |\
+grep --line-buffered -v '^\s*$' |\
+xargs -I '{}' \
+printf "--- $(date +"%a %b %d %Y | %I:%M %p") ---\n"{}"\n\n" >> $logfile

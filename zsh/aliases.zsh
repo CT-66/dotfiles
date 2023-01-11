@@ -11,7 +11,7 @@ alias v=nvim
 alias vim=nvim
 alias cmatrix="cmatrix -bs -C blue"
 # alias .date='date +"%d %b, %Y | %I:%M %p"'
- alias .date='date +"%a %d %b | %I:%M %p"'
+ alias .date='date +"%a %b %d | %I:%M %p"'
 # alias grep="grep -inI --color=auto"
 alias rg="rg -in --color=always"
 alias grep=rg

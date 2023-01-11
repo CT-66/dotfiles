@@ -28,9 +28,9 @@ function open_paste() {
     if [ "$edit_prompt" = "y" ]; then
         # exec $EDITOR "$output"
         if [ -f "$paste_dir/paste-$currentdate" ]; then
-            exec $EDITOR "$paste_dir/paste-$currentdate"
+            exec $EDITOR "$paste_dir/paste-$currentdate" & disown
         elif [ -f "/tmp/paste-$currentdate" ]; then
-            exec $EDITOR "/tmp/paste-$currentdate"
+            exec $EDITOR "/tmp/paste-$currentdate" & disown
         else
             echo "Error"
             exit 1
