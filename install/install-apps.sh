@@ -170,6 +170,7 @@ apps=(
     gimp
     inkscape
     krita
+    plasma
     plasma-desktop
     plasma-wayland-session
     kde-applications
