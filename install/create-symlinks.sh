@@ -113,6 +113,12 @@ fi
 
 sudo ln -s ~/Dotfiles/pacman/pacman.conf /etc/pacman.conf
 
+if [ -f /etc/xdg/reflector/reflector.conf ]; then
+    mv /etc/xdg/reflector/reflector.conf /etc/xdg/reflector/reflector.conf.bak
+fi
+
+sudo ln -s ~/Dotfiles/pacman/reflector.conf /etc/xdg/reflector/reflector.conf
+
 
 if [ ! -d ~/.config/gnupg ]; then
     mkdir ~/.config/gnupg

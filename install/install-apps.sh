@@ -250,6 +250,8 @@ apps=(
     normcap
     xkeysnail
     kdocker
+    reflector
+    archlinux-keyring
 )
 
 # for app in "${apps[@]}"; do
