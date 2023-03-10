@@ -27,10 +27,10 @@
 @define-color theme_button_background_backdrop_insensitive_breeze #394150;
 @define-color theme_button_background_insensitive_breeze #394150;
 @define-color theme_button_background_normal_breeze #3c4454;
-@define-color theme_button_decoration_focus_backdrop_breeze #61afef;
-@define-color theme_button_decoration_focus_backdrop_insensitive_breeze #466584;
-@define-color theme_button_decoration_focus_breeze #61afef;
-@define-color theme_button_decoration_focus_insensitive_breeze #466584;
+@define-color theme_button_decoration_focus_backdrop_breeze #8fbcbb;
+@define-color theme_button_decoration_focus_backdrop_insensitive_breeze #556972;
+@define-color theme_button_decoration_focus_breeze #8fbcbb;
+@define-color theme_button_decoration_focus_insensitive_breeze #556972;
 @define-color theme_button_decoration_hover_backdrop_breeze #8fbcbb;
 @define-color theme_button_decoration_hover_backdrop_insensitive_breeze #556972;
 @define-color theme_button_decoration_hover_breeze #8fbcbb;
