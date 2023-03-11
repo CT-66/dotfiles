@@ -252,6 +252,7 @@ apps=(
     kdocker
     reflector
     archlinux-keyring
+    kde-rounded-corners
 )
 
 # for app in "${apps[@]}"; do
