@@ -33,11 +33,13 @@ Virtual-1 Width 1920x1080 Virtual-1=384
 Virtual1 Height 1920x1025=616
 Virtual1 Height 1920x1025 Virtual1=523
 Virtual1 Height 1920x1080=588
+Virtual1 Height 1920x1080 Virtual1=647
 Virtual1 Height 1920x975=464
 Virtual1 Height 1920x975 Virtual1=545
 Virtual1 Width 1920x1025=421
 Virtual1 Width 1920x1025 Virtual1=420
 Virtual1 Width 1920x1080=419
+Virtual1 Width 1920x1080 Virtual1=487
 Virtual1 Width 1920x975=410
 Virtual1 Width 1920x975 Virtual1=375
 
