@@ -74,6 +74,7 @@ apps=(
     rofi-emoji
     noto-fonts-emoji
     ttf-unifont
+    adobe-source-han-sans-jp-fonts
     libnotify
     picom-jonaburg-git
     arc-gtk-theme
