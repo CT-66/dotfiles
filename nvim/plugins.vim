@@ -19,6 +19,7 @@ Plug 'vim-scripts/matchit.zip'
 " Plug 'airblade/vim-gitgutter'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'tpope/vim-surround'
+Plug 'airblade/vim-matchquote'
 Plug 'karb94/neoscroll.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'romgrk/barbar.nvim'
