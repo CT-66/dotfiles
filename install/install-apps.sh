@@ -254,6 +254,7 @@ apps=(
     reflector
     archlinux-keyring
     kde-rounded-corners
+    libreoffice-fresh
 )
 
 # for app in "${apps[@]}"; do
