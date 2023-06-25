@@ -208,6 +208,7 @@ apps=(
     rsync
     xcolor
     gnome-clocks
+    kclock
     renameutils
     neovim-symlinks
     onefetch
