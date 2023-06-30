@@ -87,6 +87,7 @@ apps=(
     python-pip
     vlc
     mpv
+    haruna
     zathura
     zathura-pdf-mupdf
     zathura-cb
