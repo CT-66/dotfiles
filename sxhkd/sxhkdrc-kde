@@ -49,8 +49,9 @@ super + ctrl + shift + Escape
     konsole -e btm
 
 # music control
+    # {mpc prev, mpc next, mpc toggle}
 super + {less, greater, slash}
-    {mpc prev, mpc next, mpc toggle}
+    {playerctl --player=vlc previous, playerctl --player=vlc next, playerctl --player=vlc play-pause}
 
 # right click
 shift + F10
@@ -58,7 +59,7 @@ shift + F10
 
 # launch apps
 super + o; {n, shift+n, shift+alt+n, f, shift+f, shift+alt+f, m, shift+m, c, shift+c, shift+alt+c, b, shift+b, r, shift+r}
-    {konsole -e nvim, konsole -e nvim -u NONE, konsole -e lvim, konsole -e ranger, dolphin, thunar, konsole -e ncmpcpp, konsole -e cava, konsole -e insect, konsole -e python3 -q, konsole -e bc -q, firefox-developer-edition, brave, konsole -e newsboat, konsole -e rtv}
+    {konsole -e nvim, konsole -e nvim -u NONE, konsole -e lvim, konsole -e ranger, dolphin, thunar, vlc, konsole -e cava, konsole -e insect, konsole -e python3 -q, konsole -e bc -q, firefox-developer-edition, brave, konsole -e newsboat, konsole -e rtv}
 
 # frequently used applications
 # firefox
