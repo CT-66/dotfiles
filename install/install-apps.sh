@@ -257,6 +257,8 @@ apps=(
     archlinux-keyring
     kde-rounded-corners
     libreoffice-fresh
+    protonvpn-gui
+    pdfarranger
 )
 
 # for app in "${apps[@]}"; do
