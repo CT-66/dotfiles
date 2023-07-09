@@ -56,6 +56,7 @@ dirs=(
     waybar
     mpDris2
     xkeysnail
+    espanso
 )
 
  if [ -d ~/.config ]; then

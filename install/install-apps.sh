@@ -261,6 +261,7 @@ apps=(
     pdfarranger
     foliate
     arianna
+    espanso-bin
 )
 
 # for app in "${apps[@]}"; do
