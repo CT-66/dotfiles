@@ -259,6 +259,8 @@ apps=(
     libreoffice-fresh
     protonvpn
     pdfarranger
+    foliate
+    arianna
 )
 
 # for app in "${apps[@]}"; do
