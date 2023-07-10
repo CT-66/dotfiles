@@ -9,3 +9,4 @@ toggle_key: OFF
 # backend: Clipboard
 
 show_notifications: false
+search_shortcut: off
