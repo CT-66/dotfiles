@@ -262,6 +262,8 @@ apps=(
     foliate
     arianna
     espanso-bin
+    aria2
+    pdfgrep
 )
 
 # for app in "${apps[@]}"; do

@@ -48,6 +48,8 @@ alias sctl='sudo systemctl'
 alias qmv='qmv -fv do'
 alias bulkrename=qmv
 alias sxiv=nsxiv
+alias wget=aria2c
+alias download=wget
 alias kde_screenlock='/usr/lib/kscreenlocker_greet'
 alias restart-pulseaudio='pulseaudio -k'
 
