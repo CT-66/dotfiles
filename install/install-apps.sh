@@ -264,6 +264,7 @@ apps=(
     espanso-bin
     aria2
     pdfgrep
+    p7zip
 )
 
 # for app in "${apps[@]}"; do
