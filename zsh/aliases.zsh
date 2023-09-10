@@ -124,15 +124,16 @@ alias c-x='chmod -x '
 # -m: modified time
 # -U: created time
 #"%a %d %b %Y, %I:%M %p"
-alias exa='exa -1Fb --color=always --icons --group-directories-first -mU'
-alias ls='exa'
+alias eza='eza -1Fb --color=always --icons --group-directories-first -mU'
+alias exa='eza'
+alias ls='eza'
 alias l='ls'
 alias la='ls -a'
 alias ll='ls -l --header --group'
 alias lla='ll -a'
-alias lg='ls -aG' # -G: grid (exa specific)
-alias lt='ls -aT' # -T: tree (exa specific)
-# alias l.='exa -1Fa | egrep -in "^\."'
+alias lg='ls -aG' # -G: grid (eza specific)
+alias lt='ls -aT' # -T: tree (eza specific)
+# alias l.='eza -1Fa | egrep -in "^\."'
 alias l.='\ls -Ap | egrep -in "^\."'
 alias lsfzf='ls | fzf --ansi'
 

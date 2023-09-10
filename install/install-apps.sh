@@ -15,7 +15,7 @@ echo "Installing apps..."
 apps=(
     neovim
     zsh
-    exa
+    eza
     nodejs
     fish
     neofetch
