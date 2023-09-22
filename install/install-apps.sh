@@ -267,6 +267,7 @@ apps=(
     p7zip
     thorium-reader-git
     koreader-bin
+    calibre
 )
 
 # for app in "${apps[@]}"; do
