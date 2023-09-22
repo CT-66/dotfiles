@@ -265,6 +265,8 @@ apps=(
     aria2
     pdfgrep
     p7zip
+    thorium-reader-git
+    koreader-bin
 )
 
 # for app in "${apps[@]}"; do
