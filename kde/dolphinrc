@@ -23,6 +23,9 @@ ShowToolTips=true
 Version=202
 ViewPropsTimestamp=2021,12,12,14,50,30.417
 
+[IconsMode]
+IconSize=64
+
 [KFileDialog Settings]
 Places Icons Auto-resize=false
 Places Icons Static Size=22
@@ -73,3 +76,7 @@ Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvu
 
 [Search]
 Location=Everywhere
+
+[ViewPropertiesDialog]
+Virtual1 Height 1920x975 Virtual1=400
+Virtual1 Width 1920x975 Virtual1=391
