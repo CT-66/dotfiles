@@ -78,5 +78,5 @@ Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvu
 Location=Everywhere
 
 [ViewPropertiesDialog]
-Virtual1 Height 1920x975 Virtual1=400
+Virtual1 Height 1920x975 Virtual1=656
 Virtual1 Width 1920x975 Virtual1=391
