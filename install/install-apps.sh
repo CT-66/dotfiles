@@ -268,6 +268,7 @@ apps=(
     thorium-reader-git
     koreader-bin
     calibre
+    kbt
 )
 
 # for app in "${apps[@]}"; do
