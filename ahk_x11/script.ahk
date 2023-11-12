@@ -11,5 +11,5 @@ return
 ^w::Send ^{Backspace}
 return
 
-!w::SendInput ^{w}
+!w::Send ^{w}
 return
