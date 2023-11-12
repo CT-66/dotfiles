@@ -1,0 +1,13 @@
+hint_activation_key: F1
+grid_activation_key: F2
+activation_key: F3
+start: Left
+end: Right
+cursor_color: #61AFEF
+cursor_size: 10
+
+# hint2_activation_key: unbind
+# screen_activation_key: unbind
+# history_activation_key: unbind
+# hint_oneshot_key: unbind
+# hint2_oneshot_key: unbind
