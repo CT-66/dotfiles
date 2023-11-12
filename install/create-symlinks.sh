@@ -43,7 +43,6 @@ dirs=(
     deadd
     xplr
     jgmenu
-    autokey
     feh
     fish
     yay

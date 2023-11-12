@@ -166,7 +166,6 @@ apps=(
     trash-cli
     plank
     plank-theme-bigsur
-    autokey-gtk
     thunar
     tumbler
     gimp
