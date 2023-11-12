@@ -1,3 +1,6 @@
+; don't use this with anything other than kde since the `ctrl+backspace` section somehow sends ctrl+alt+backspace which kills the X server
+; kde has an option to disable this keybinding, but other WMs don't have one
+
 !h::Send {Left}
 return
 !j::Send {Down}
@@ -7,11 +10,9 @@ return
 !l::Send {Right}
 return
 
-!w::Send ^{w}
+
+^w::Send ^{Backspace}
 return
 
-; ^w::Send ^{Backspace}
-; return
-
-^w::MsgBox asdf
+!w::Send ^{w}
 return
