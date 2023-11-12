@@ -14,7 +14,7 @@ wallpaper="112.png"
 while [[ $# -gt 0 ]]; do
     case $1 in
         -r|--random)
-            feh --bg-scale --randomize ~/Pictures/Wallpapers ~/Pictures/Wallpapers/dt-wallpapers ~/Pictures/Wallpapers/mac-wallpapers ~/Pictures/Wallpapers/kurzgesagt
+            feh --bg-scale --randomize ~/Pictures/Wallpapers ~/Pictures/Wallpapers/anime ~/Pictures/Wallpapers/dt-wallpapers ~/Pictures/Wallpapers/mac-wallpapers ~/Pictures/Wallpapers/kurzgesagt
             exit 0
             ;;
         -h|--help)
