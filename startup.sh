@@ -30,5 +30,5 @@ kill_program flashfocus; flashfocus &
 # wallpaper.sh --default &
 wallpaper.sh --random &
 
-autokey-gtk &
 ksnip &
+warpd &

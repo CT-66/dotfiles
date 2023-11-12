@@ -57,6 +57,7 @@ dirs=(
     mpDris2
     xkeysnail
     espanso
+    warpd
 )
 
  if [ -d ~/.config ]; then

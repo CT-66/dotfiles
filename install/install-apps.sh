@@ -269,6 +269,7 @@ apps=(
     koreader-bin
     calibre
     kbt
+    warpd
 )
 
 # for app in "${apps[@]}"; do
