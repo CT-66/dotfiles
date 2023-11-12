@@ -7,9 +7,8 @@ return
 !l::Send {Right}
 return
 
-
-^w::Send ^{Backspace}
+!w::Send ^{w}
 return
 
-!w::Send ^{w}
+^w::Send ^{Backspace}
 return
