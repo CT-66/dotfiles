@@ -270,6 +270,7 @@ apps=(
     calibre
     kbt
     warpd
+    vimv-git
 )
 
 # for app in "${apps[@]}"; do
