@@ -10,5 +10,8 @@ return
 !w::Send ^{w}
 return
 
-^w::Send ^{Backspace}
+; ^w::Send ^{Backspace}
+; return
+
+^w::MsgBox asdf
 return
