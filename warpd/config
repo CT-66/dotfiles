@@ -1,6 +1,6 @@
 hint_activation_key: F1
-grid_activation_key: F2
-activation_key: F3
+activation_key: F2
+grid_activation_key: F3
 
 start: Left
 end: Right

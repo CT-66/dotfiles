@@ -1,6 +1,6 @@
 hint mode: F1
-grid mode: F2
-normal mode: F3
+normal mode: F2
+grid mode: F3
 
 # in normal mode:
 
