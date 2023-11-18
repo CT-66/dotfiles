@@ -88,16 +88,17 @@ alias b64d='base64 -d'
 alias b32=base32
 alias b32d='base32 -d'
 
-# -P: display progress bar
+# -P: display progress bar; same as --partial --progress
 # -r: recursive
 # -v: verbose
-# -hh: output numbers in human readable format
+# -h: output numbers in human readable format
+# --progress: print a simple progress bar for individual files
 # --info=stats1,progress2
 # stats1: display transfer statistics with verbosity level 1
 # progress2: prints total transfer progress instead of per-file transfer progress
 # --modify-window=1: when comparing the timestamps of two files, treat their timestamps as being equivalent if their timestamps have a difference of less than 1 second
 # -a: groups these options- copy symlinks as symlinks, not files (-l), preserve permissions (-p), preserve time (-t), preserve group (-g), preserve owner (-o), devices (-D) # use only for backup purposes
-alias rsync='rsync -Prv -hh --info=stats1,progress2 --modify-window=1'
+alias rsync='rsync -Pv -h --progress --info=stats1,progress2 --modify-window=1 -a'
 
 alias cd..='cd ../'
 alias ..='cd ../'
