@@ -270,6 +270,7 @@ apps=(
     kbt
     warpd
     vimv-git
+    localsend-bin
 )
 
 # for app in "${apps[@]}"; do
