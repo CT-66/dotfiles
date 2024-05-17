@@ -6,7 +6,7 @@ showMagnifier=true
 captureMode=5
 window-position=400,230
 
-[Save]
-defaultSaveLocation=file:///home/arch/Pictures/Screenshots/
-lastSaveLocation=file:///home/arch/Pictures/Screenshots/Screenshot_25-09-22_19-35.png
-saveFilenameFormat=Screenshot_%D-%M-%y_%H-%m
+[ImageSave]
+imageFilenameTemplate=Screenshot_%D-%M-%y_%H-%m
+imageSaveLocation=file:///home/arch/Pictures/Screenshots/
+lastImageSaveLocation=file:///home/arch/Pictures/Screenshots/Screenshot_25-09-22_19-35.png

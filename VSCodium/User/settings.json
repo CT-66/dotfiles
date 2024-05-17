@@ -11,7 +11,7 @@
     "editor.fontSize": 14,
     "editor.fontLigatures": true,
     "editor.smoothScrolling": true,
-    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorSmoothCaretAnimation": "on",
     "editor.cursorBlinking": "smooth",
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
@@ -94,7 +94,6 @@
     "explorer.incrementalNaming": "smart",
     "workbench.panel.defaultLocation": "right",
     "terminal.integrated.cursorBlinking": true,
-    "workbench.editor.untitled.hint": "hidden",
     "python.showStartPage": false,
     "highlight-matching-tag.enabled": true,
     "highlight-matching-tag.showPath": false,
@@ -204,9 +203,6 @@
     },
     "terminal.integrated.confirmOnExit": "always",
     "terminal.integrated.cursorStyle": "line",
-    // "terminal.integrated.fontFamily": "MesloLGS NF",
-    // "editor.cursorWidth": 5,
-    "workbench.activityBar.visible": false,
     "sync.quietSync": true,
     "sync.autoUpload": true,
     "workbench.colorTheme": "One Dark Pro",
@@ -224,7 +220,7 @@
     "editor.guides.bracketPairs": "active",
     "editor.accessibilitySupport": "off",
     "editor.autoClosingDelete": "always",
-    "editor.occurrencesHighlight": false,
+    "editor.occurrencesHighlight": "off",
     "python.linting.flake8Enabled": false,
     "python.formatting.provider": "autopep8",
     "files.insertFinalNewline": true,
@@ -261,7 +257,9 @@
     "explorer.decorations.badges": true,
     "explorer.decorations.colors": true,
     "explorer.enableDragAndDrop": true,
-    "explorer.enableUndo": true
+    "explorer.enableUndo": true,
+    "workbench.activityBar.location": "hidden",
+    "workbench.editor.empty.hint": "hidden"
 }
 /*
     "[javascript]": {

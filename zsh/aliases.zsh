@@ -125,7 +125,8 @@ alias c-x='chmod -x '
 # -m: modified time
 # -U: created time
 #"%a %d %b %Y, %I:%M %p"
-alias eza='eza -1Fb --color=always --icons --group-directories-first -mU'
+# alias eza='eza -1Fb --color=always --icons --group-directories-first -mU'
+alias eza='eza -1b --color=always --icons --group-directories-first -mU -F' # -F is kept at the end due to new bug in recent versions. functionality is unchanged.
 alias exa='eza'
 alias ls='eza'
 alias l='ls'

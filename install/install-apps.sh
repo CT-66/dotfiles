@@ -271,6 +271,7 @@ apps=(
     warpd
     vimv-git
     localsend-bin
+    kwin-polonium
 )
 
 # for app in "${apps[@]}"; do
