@@ -12,6 +12,6 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
 # fzf-tab.zsh
 # preview directories during tab completion
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1F --color=always --icons --group-directories-first $realpath'
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always --icons --group-directories-first -F $realpath'
 # do continuous completions for traversing paths with '`'
 zstyle ":fzf-tab:*" continuous-trigger '`'

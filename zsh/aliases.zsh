@@ -136,7 +136,8 @@ alias lla='ll -a'
 alias lg='ls -aG' # -G: grid (eza specific)
 alias lt='ls -aT' # -T: tree (eza specific)
 # alias l.='eza -1Fa | egrep -in "^\."'
-alias l.='\ls -Ap | egrep -in "^\."'
+# alias l.='\ls -Ap | egrep -in "^\."'
+alias l.='\ls -Ap | rg "^\."'
 alias lsfzf='ls | fzf --ansi'
 
 alias ping='ping -c 5'

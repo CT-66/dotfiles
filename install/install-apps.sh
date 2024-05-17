@@ -272,6 +272,7 @@ apps=(
     vimv-git
     localsend-bin
     kwin-polonium
+    android-file-transfer
 )
 
 # for app in "${apps[@]}"; do

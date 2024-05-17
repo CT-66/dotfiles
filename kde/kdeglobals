@@ -26,8 +26,8 @@ IntensityEffect=0
 [Colors:Button]
 BackgroundAlternate=64,69,82
 BackgroundNormal=60,68,84
-DecorationFocus=143,188,187
-DecorationHover=143,188,187
+DecorationFocus=76,86,106
+DecorationHover=76,86,106
 ForegroundActive=61,174,233
 ForegroundInactive=102,106,115
 ForegroundLink=41,128,185
@@ -81,23 +81,23 @@ ForegroundVisited[$d]
 
 [Colors:Selection]
 BackgroundAlternate=29,153,243
-BackgroundNormal=143,188,187
-DecorationFocus=143,188,187
-DecorationHover=143,188,187
+BackgroundNormal=129,161,193
+DecorationFocus=76,86,106
+DecorationHover=76,86,106
 ForegroundActive=46,52,64
-ForegroundInactive=46,52,64
+ForegroundInactive=216,222,233
 ForegroundLink=253,188,75
 ForegroundNegative=191,97,106
 ForegroundNeutral=208,135,112
-ForegroundNormal=46,52,64
+ForegroundNormal=216,222,233
 ForegroundPositive=163,190,140
 ForegroundVisited=189,195,199
 
 [Colors:Tooltip]
 BackgroundAlternate=47,52,63
 BackgroundNormal=53,57,69
-DecorationFocus=143,188,187
-DecorationHover=143,188,187
+DecorationFocus=76,86,106
+DecorationHover=76,86,106
 ForegroundActive=61,174,233
 ForegroundInactive=102,106,115
 ForegroundLink=41,128,185
@@ -108,11 +108,11 @@ ForegroundPositive=163,190,140
 ForegroundVisited=82,148,226
 
 [Colors:View]
-BackgroundAlternate=60,67,83
-BackgroundNormal=67,76,94
-DecorationFocus=143,188,187
-DecorationHover=143,188,187
-ForegroundActive=136,192,208
+BackgroundAlternate=46,52,64
+BackgroundNormal=59,66,82
+DecorationFocus=76,86,106
+DecorationHover=76,86,106
+ForegroundActive=76,86,106
 ForegroundInactive=102,106,115
 ForegroundLink=94,129,172
 ForegroundNegative=191,97,106
@@ -123,9 +123,9 @@ ForegroundVisited=124,183,255
 
 [Colors:Window]
 BackgroundAlternate=47,52,63
-BackgroundNormal=59,66,82
-DecorationFocus=143,188,187
-DecorationHover=143,188,187
+BackgroundNormal=46,52,64
+DecorationFocus=76,86,106
+DecorationHover=76,86,106
 ForegroundActive=61,174,233
 ForegroundInactive=102,106,115
 ForegroundLink=41,128,185
@@ -141,6 +141,7 @@ History Items[$e]=file:$HOME/Downloads/LocalSend,file:$HOME/Music,file:$HOME/Pic
 
 [General]
 BrowserApplication=firefox-developer-edition.desktop
+ColorScheme=nordicbluish
 ColorSchemeHash=a935e515e29025e6636b957f51c3dda99b47f986
 Name=Nordic
 TerminalApplication=konsole
@@ -158,11 +159,11 @@ Theme=breeze
 
 [KDE]
 ColorScheme=BreezeLight
-LookAndFeelPackage=Nordic
+LookAndFeelPackage=Nordic-bluish
 ShowDeleteCommand=false
 SingleClick=false
 contrast=4
-widgetStyle=Lightly
+widgetStyle=Breeze
 
 [KFileDialog Settings]
 Allow Expansion=false
@@ -185,7 +186,7 @@ Speedbar Width=138
 View Style=Simple
 
 [KShortcutsDialog Settings]
-Dialog Size=600,480
+Dialog Size=754,784
 
 [PreviewSettings]
 MaximumRemoteSize=0
