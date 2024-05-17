@@ -272,7 +272,7 @@ apps=(
     vimv-git
     localsend-bin
     kwin-polonium
-    android-file-transfer
+    plasma-active-accent-decorations
 )
 
 # for app in "${apps[@]}"; do

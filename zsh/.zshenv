@@ -65,7 +65,7 @@ export QT_QPA_PLATFORMTHEME=kde
 
 export ELECTRON_TRASH=trash-cli code
 
-export GTK_USE_PORTAL=1
+# export GTK_USE_PORTAL=1 # disabled since it breaks the cursor while using firefox on wayland, and the initial purpose of this flag meant for the file picker is solved by using portals
 export GDK_DEBUG=portals
 
 export TERM="xterm-256color"
