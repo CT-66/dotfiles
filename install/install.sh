@@ -24,10 +24,10 @@ cd $HOME/Dotfiles/st
 sudo make clean install
 
 cd $HOME/Dotfiles/paleofetch
-make install
+make clean install
 
 cd $HOME/Dotfiles/paleofetch2
-make install
+make clean install
 
 mkdir ~/.cache/zsh
 touch ~/.cache/zsh/history

@@ -126,7 +126,7 @@ apps=(
     xorg-setxkbmap
     python-pynvim
     jq
-    neovide-git
+    neovide
     timeshift
     qt5ct-kde
     # qt5ct
@@ -173,8 +173,7 @@ apps=(
     krita
     plasma
     plasma-desktop
-    plasma-wayland-session
-    kde-applications
+    # kde-applications
     kdeplasma-addons
     plasma-pa
     plasma-nm
@@ -230,7 +229,7 @@ apps=(
     qbittorrent
     sway
     swaybg
-    hyprland-bin
+    hyprland
     foot
     waybar
     xorg-xwayland
@@ -244,7 +243,6 @@ apps=(
     ghostwriter
     mpdris2
     plasma-browser-integration
-    ksysguard
     akregator
     kwin-bismuth-bin
     lightly-qt
