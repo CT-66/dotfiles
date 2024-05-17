@@ -5,7 +5,7 @@ GenericName=Web Browser
 StartupNotify=true
 StartupWMClass=brave-browser
 TryExec=brave
-Exec=brave %U
+Exec=brave --ozone-platform=wayland --enable-features=TouchpadOverscrollHistoryNavigation %U
 Terminal=false
 Icon=brave-desktop
 Type=Application
@@ -15,9 +15,9 @@ Actions=new-window;new-private-window;
 
 [Desktop Action new-window]
 Name=New Window
-Exec=brave
+Exec=brave --ozone-platform=wayland --enable-features=TouchpadOverscrollHistoryNavigation
 
 [Desktop Action new-private-window]
 Name=New Incognito Window
-Exec=brave --incognito
+Exec=brave --ozone-platform=wayland --enable-features=TouchpadOverscrollHistoryNavigation --incognito
 MimeType=x-scheme-handler/unknown;x-scheme-handler/about;text/html;text/xml;application/xhtml_xml;image/webp;x-scheme-handler/http;x-scheme-handler/https;

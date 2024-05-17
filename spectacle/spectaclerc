@@ -12,7 +12,8 @@ window-position=400,230
 [ImageSave]
 imageFilenameTemplate=Screenshot_%D-%M-%y_%H-%m
 imageSaveLocation=file:///home/arch/Pictures/Screenshots/
-lastImageSaveLocation=file:///home/arch/Pictures/Screenshots/Screenshot_25-09-22_19-35.png
+lastImageSaveAsLocation=file:///home/arch/Desktop/panel-settings.png
+lastImageSaveLocation=file:///home/arch/Desktop/panel-settings.png
 translatedScreenshotsFolder=Screenshots
 
 [VideoSave]
