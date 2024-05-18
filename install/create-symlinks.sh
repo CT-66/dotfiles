@@ -57,6 +57,7 @@ dirs=(
     xkeysnail
     espanso
     warpd
+    nvtop
 )
 
  if [ -d ~/.config ]; then

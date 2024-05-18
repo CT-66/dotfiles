@@ -272,6 +272,7 @@ apps=(
     kwin-polonium
     plasma-active-accent-decorations
     radeontop
+    nvtop
 )
 
 # for app in "${apps[@]}"; do

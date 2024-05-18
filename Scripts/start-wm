@@ -1,6 +1,6 @@
 #!/bin/bash
 
-default_wm="startplasma-x11"
+default_wm="startplasma-wayland"
 
 # $1:name, $2:path
 function start() {
@@ -10,6 +10,7 @@ function start() {
 
 wm="$(echo 'KDE Plasma
 i3
+Hyprland
 Bspwm
 Qtile
 Xmonad
@@ -21,16 +22,21 @@ Xfce
 None' | fzf --reverse --border=rounded --cycle --height=50% --padding=1 | tr '[:upper:]' '[:lower:]')"
 
 if [ "$wm" = "" ]; then
-    echo "Starting $default_wm"
-    exec startx "$default_wm"
+    # echo "Starting $default_wm"
+    # exec startx "$default_wm"
+    exec "startplasma-wayland"
 else
     case $wm in
         "kde plasma")
-            export DESKTOP_SESSION=plasma
-            start "KDE Plasma" "startplasma-x11"
+            # export DESKTOP_SESSION=plasma
+            # start "KDE Plasma" "startplasma-x11"
+            exec "startplasma-wayland"
             ;;
         "i3")
             start "i3" "i3"
+            ;;
+        "hyprland")
+            exec "Hyprland"
             ;;
         "bspwm")
             start "Bspwm" "bspwm"
