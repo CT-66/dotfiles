@@ -182,3 +182,5 @@ alias tmux-ks='tmux kill-session'
 alias tn='tmux new-session -s '
 
 alias open=xdg-open
+
+alias radeontop="radeontop --color --transparency"

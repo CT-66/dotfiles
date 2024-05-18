@@ -271,6 +271,7 @@ apps=(
     localsend-bin
     kwin-polonium
     plasma-active-accent-decorations
+    radeontop
 )
 
 # for app in "${apps[@]}"; do

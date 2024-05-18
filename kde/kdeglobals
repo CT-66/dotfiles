@@ -136,8 +136,8 @@ ForegroundPositive=163,190,140
 ForegroundVisited=143,188,187
 
 [DirSelect Dialog]
-DirSelectDialog Size=1920,1012
-History Items[$e]=file:$HOME/Downloads/LocalSend,file:$HOME/Music,file:$HOME/Pictures
+DirSelectDialog Size=758,422
+History Items[$e]=file:$HOME/tmp/.brave-extensions/Violentmonkey-beta-webext-v2.18.3,file:$HOME/Downloads/LocalSend,file:$HOME/Music,file:$HOME/Pictures
 
 [General]
 AccentColor=0,0,0,0
@@ -188,7 +188,7 @@ Speedbar Width=138
 View Style=Simple
 
 [KShortcutsDialog Settings]
-Dialog Size=754,784
+Dialog Size=758,812
 
 [PreviewSettings]
 MaximumRemoteSize=0

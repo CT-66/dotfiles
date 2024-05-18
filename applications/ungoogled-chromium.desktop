@@ -4,7 +4,7 @@ Name=Ungoogled Chromium
 GenericName=Web Browser
 StartupNotify=true
 StartupWMClass=chromium
-# TryExec=brave
+TryExec=~/.local/share/ungoogled-chromium.AppImage
 Exec=~/.local/bin/ungoogled-chromium.AppImage --ozone-platform=wayland --enable-features=TouchpadOverscrollHistoryNavigation %U
 Terminal=false
 Icon=~/.local/share/applications/ungoogled-chromium.png
