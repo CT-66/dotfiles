@@ -273,6 +273,7 @@ apps=(
     plasma-active-accent-decorations
     radeontop
     nvtop
+    obsidian
 )
 
 # for app in "${apps[@]}"; do
