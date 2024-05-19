@@ -1,0 +1,114 @@
+# terminals
+super + Return
+    konsole
+
+super + alt + Return
+    konsole -e bash
+
+super + ctrl + Return
+    konsole -e fish
+
+super + kp0
+    xterm
+
+ctrl + alt + t
+    st
+
+ctrl + alt + shift + t
+    alacritty
+
+
+# rofi
+super + d
+    rofi -show drun
+
+super + shift + d
+    rofi -show run
+
+# dmenu
+super + ctrl + d
+    dmenu_run
+
+super + ctrl + shift + d
+    dmenu_run
+
+super + shift + s
+    exec-scripts
+
+# system monitor
+super + escape
+    konsole -e btop
+
+super + ctrl + escape
+    plasma-systemmonitor
+
+super + ctrl + shift + escape
+    konsole -e btm
+
+# music control
+    # {mpc prev, mpc next, mpc toggle}
+super + {shift+comma, shift+dot, slash}
+    {playerctl --player=vlc previous, playerctl --player=vlc next, playerctl --player=vlc play-pause}
+
+
+# launch apps
+super + o; {n, shift+n, shift+alt+n, f, shift+f, shift+alt+f, m, shift+m, c, shift+c, shift+alt+c, b, shift+b}
+    {konsole -e nvim, konsole -e nvim -u NONE, konsole -e lvim, konsole -e ranger, dolphin, thunar, vlc, konsole -e cava, konsole -e insect, konsole -e python3 -q, konsole -e bc -q, firefox-developer-edition, brave}
+
+# frequently used applications
+# firefox
+super + b
+    firefox-developer-edition
+
+# brave
+super + shift + b
+    brave
+
+# falkon
+super + ctrl + b
+    falkon
+
+# dolphin
+super + e
+    dolphin
+
+# ranger
+super + shift + e
+    konsole -e ranger
+
+# thunar
+super + shift + alt + e
+    thunar
+
+# kate
+super + n
+    kate
+
+# vscodium
+super + shift + n
+    vscodium
+
+# nvim
+super + ctrl + n
+    konsole -e nvim
+
+
+# neovide
+super + alt + shift + n
+    neovide
+
+# insect
+super + c
+    konsole -e insect
+
+# python shell
+super + shift + c
+    konsole -e python3 -q
+
+# bc
+super + shift + alt + c
+    konsole -e bc -q
+
+# search google using krunner (https://github.com/alex1701c/QuickWebShortcuts)
+super + g
+    qdbus org.kde.krunner /App org.kde.krunner.App.query "g "

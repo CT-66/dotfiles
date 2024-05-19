@@ -58,6 +58,7 @@ dirs=(
     espanso
     warpd
     nvtop
+    swhkd
 )
 
  if [ -d ~/.config ]; then

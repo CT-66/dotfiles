@@ -274,6 +274,7 @@ apps=(
     radeontop
     nvtop
     obsidian
+    swhkd-bin
 )
 
 # for app in "${apps[@]}"; do

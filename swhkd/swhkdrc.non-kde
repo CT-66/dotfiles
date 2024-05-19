@@ -1,0 +1,173 @@
+# terminals
+super + Return
+    konsole
+
+super + shift + Return
+    $HOME/Dotfiles/i3/scripts/empty-workspace.sh && konsole
+
+super + alt + Return
+    konsole -e bash
+
+super + ctrl + Return
+    konsole -e fish
+
+super + KP_Enter
+    xterm
+
+ctrl + alt + t
+    st
+
+ctrl + alt + shift + t
+    alacritty
+
+
+# rofi
+super + d
+    rofi -show drun
+
+super + shift + d
+    rofi -show run
+
+super + period
+    rofi -show emoji -matching normal
+
+# dmenu
+super + ctrl + d
+    dmenu_run
+
+super + ctrl + shift + d
+    dmenu_run
+
+super + Tab
+   rofi -show window
+
+super + shift + s
+    exec-scripts
+
+ctrl + shift + space
+    krunner
+
+ctrl + alt + space
+    krunner
+
+# lock screen
+super + shift + Escape
+    mpc pause && betterlockscreen -l
+
+# clipboard
+super + v
+    rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+
+# system monitor
+super + Escape
+    konsole -e btop
+
+super + ctrl + Escape
+    plasma-systemmonitor
+
+super + ctrl + shift + Escape
+    konsole -e btm
+
+# music control
+    # {mpc prev, mpc next, mpc toggle}
+super + {less, greater, slash}
+    {playerctl --player=vlc previous, playerctl --player=vlc next, playerctl --player=vlc play-pause}
+
+# volume control
+# decrease volume by 5
+super + bracketleft
+    pamixer -d 5
+#
+# # numlock subtract
+super + KP_Subtract
+    pamixer -d 4
+#
+# # increase volume by 5
+super + bracketright
+    pamixer -i 5
+#
+# # numlock add
+super + KP_Add
+    pamixer -i 5
+#
+# # mute/unmute
+super + backslash
+    pamixer -t
+#
+# # numlock zero
+super + KP_Insert
+    pamixer -t
+
+# right click
+shift + F10
+    sleep 0.2 && xdotool click 3
+
+# launch apps
+super + o; {n, shift+n, shift+alt+n, f, shift+f, shift+alt+f, m, shift+m, c, shift+c, shift+alt+c, b, shift+b}
+    {konsole -e nvim, konsole -e nvim -u NONE, konsole -e lvim, konsole -e ranger, dolphin, thunar, vlc, konsole -e cava, konsole -e insect, konsole -e python3 -q, konsole -e bc -q, firefox-developer-edition, brave}
+
+# frequently used applications
+# firefox
+super + b
+    firefox-developer-edition
+
+# brave
+super + shift + b
+    brave
+
+# falkon
+super + ctrl + b
+    falkon
+
+# dolphin
+super + e
+    dolphin
+
+# ranger
+super + shift + e
+    konsole -e ranger
+
+# thunar
+super + shift + alt + e
+    thunar
+
+# kate
+super + n
+    kate
+
+# vscodium
+super + shift + n
+    vscodium
+
+# nvim
+super + ctrl + n
+    konsole -e nvim
+
+# neovide
+super + alt + shift + n
+    neovide
+
+# insect
+super + c
+    konsole -e insect
+
+# python shell
+super + shift + c
+    konsole -e python3 -q
+
+# bc
+super + shift + alt + c
+    konsole -e bc -q
+
+# wallpapers
+# random wallpaper
+super + w
+    wallpaper.sh --random
+
+# switch back to default wallpaper
+super + shift + w
+    wallpaper.sh --default
+
+# display the filename of current wallpaper
+super + alt + w
+    wallpaper.sh --current-wallpaper

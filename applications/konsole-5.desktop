@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=konsole -e python3 -q
+Name=konsole -e python3 -q
+NoDisplay=true
+StartupNotify=false
+Type=Application
+X-KDE-GlobalAccel-CommandShortcut=true

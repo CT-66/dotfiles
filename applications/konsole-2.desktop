@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=konsole -e fish
+Name=konsole -e fish
+NoDisplay=true
+StartupNotify=false
+Type=Application
+X-KDE-GlobalAccel-CommandShortcut=true

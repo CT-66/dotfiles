@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=\splayerctl --player=vlc play-pause
+Name=\splayerctl --player=vlc play-pause
+NoDisplay=true
+StartupNotify=false
+Type=Application
+X-KDE-GlobalAccel-CommandShortcut=true

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Name=Windows 10 LTSC
+Comment=Starts the VirtualBox machine Windows 10 LTSC
+Type=Application
+Exec=/usr/lib/virtualbox/VirtualBoxVM --comment "Windows 10 LTSC" --startvm "{4ee250f2-28d6-4951-a90c-d6bc36854d6e}"
+Icon=virtualbox-vbox.png

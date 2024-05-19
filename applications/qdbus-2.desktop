@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=qdbus org.kde.krunner /App org.kde.krunner.App.query "g "
+Name=qdbus org.kde.krunner /App org.kde.krunner.App.query "g "
+NoDisplay=true
+StartupNotify=false
+Type=Application
+X-KDE-GlobalAccel-CommandShortcut=true

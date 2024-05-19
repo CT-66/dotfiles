@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=konsole -e bash
+Name=konsole -e bash
+NoDisplay=true
+StartupNotify=false
+Type=Application
+X-KDE-GlobalAccel-CommandShortcut=true
