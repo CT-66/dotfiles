@@ -34,3 +34,5 @@ fish/conf.d
 fish/functions
 
 accels.scm
+
+spectacle/spectaclerc
