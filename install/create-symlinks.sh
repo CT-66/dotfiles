@@ -59,6 +59,7 @@ dirs=(
     warpd
     nvtop
     swhkd
+    xremap
 )
 
  if [ -d ~/.config ]; then

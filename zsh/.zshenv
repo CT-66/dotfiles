@@ -74,3 +74,7 @@ export TERM="xterm-256color"
 export WLR_NO_HARDWARE_CURSORS=1
 
 export QTWEBENGINE_CHROMIUM_FLAGS=--blink-settings=forceDarkModeEnabled=true
+
+# fractional scaling
+export QT_AUTO_SCREEN_SCALE_FACTOR=1
+export QT_ENABLE_HIGHDPI_SCALING=1

@@ -275,6 +275,7 @@ apps=(
     nvtop
     obsidian
     swhkd-bin
+    xremap-kde-bin
 )
 
 # for app in "${apps[@]}"; do

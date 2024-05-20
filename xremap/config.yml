@@ -1,0 +1,9 @@
+modmap:
+  - name: Global
+    remap:
+      CapsLock: Esc
+
+keymap:
+  - name: Global
+    remap:
+      C-n: down # testing
