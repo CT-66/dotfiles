@@ -32,7 +32,7 @@ Plug 'alvan/vim-closetag'
 Plug 'psf/black', { 'branch': 'stable' }
 Plug 'akinsho/toggleterm.nvim'
 Plug 'tversteeg/registers.nvim', { 'branch': 'main' }
-Plug 'prettier/vim-prettier'
+"Plug 'prettier/vim-prettier'
 Plug 'mattn/emmet-vim'
 Plug 'rbgrouleff/bclose.vim'
 Plug 'francoiscabrol/ranger.vim'
