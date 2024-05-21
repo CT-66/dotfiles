@@ -276,6 +276,7 @@ apps=(
     obsidian
     swhkd-bin
     xremap-kde-bin
+    lact
 )
 
 # for app in "${apps[@]}"; do

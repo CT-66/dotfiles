@@ -160,7 +160,7 @@ widgetStyle=Breeze
 Theme=breeze
 
 [KDE]
-AnimationDurationFactor=1.414213562373095
+AnimationDurationFactor=1
 ColorScheme=BreezeLight
 LookAndFeelPackage=Nordic-bluish
 ShowDeleteCommand=false
