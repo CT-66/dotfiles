@@ -75,6 +75,10 @@ export WLR_NO_HARDWARE_CURSORS=1
 
 export QTWEBENGINE_CHROMIUM_FLAGS=--blink-settings=forceDarkModeEnabled=true
 
-# fractional scaling
+# qt fractional scaling
 export QT_AUTO_SCREEN_SCALE_FACTOR=1
 export QT_ENABLE_HIGHDPI_SCALING=1
+
+# firefox
+export MOZ_USE_XINPUT2=1
+export MOZ_ENABLE_WAYLAND=1
