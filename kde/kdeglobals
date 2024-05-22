@@ -137,7 +137,7 @@ ForegroundVisited=143,188,187
 
 [DirSelect Dialog]
 DirSelectDialog Size=820,584
-History Items[$e]=file:$HOME/tmp/.brave-extensions/Violentmonkey-beta-webext-v2.18.3,file:$HOME/Downloads/LocalSend,file:$HOME/Music,file:$HOME/Pictures
+History Items[$e]=file:$HOME/VirtualBox VMs,file:$HOME/tmp/.brave-extensions/Violentmonkey-beta-webext-v2.18.3,file:$HOME/Downloads/LocalSend,file:$HOME/Music,file:$HOME/Pictures
 
 [General]
 AccentColor=0,0,0,0
@@ -163,7 +163,7 @@ Theme=breeze
 AnimationDurationFactor=1
 ColorScheme=BreezeLight
 LookAndFeelPackage=Nordic-bluish
-ShowDeleteCommand=false
+ShowDeleteCommand=true
 SingleClick=false
 contrast=4
 widgetStyle=Breeze

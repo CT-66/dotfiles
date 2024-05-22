@@ -1,0 +1,15 @@
+# alt+tab
+swipe:
+  3:
+    begin:
+      command: ydotool keydown Alt
+    right:
+      update:
+        command: ydotool key Tab
+        interval: 5
+    left:
+      update:
+        command: ydotool key Shift+Tab
+        interval: 5
+    end:
+      command: ydotool keyup Alt

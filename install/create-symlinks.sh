@@ -60,6 +60,7 @@ dirs=(
     nvtop
     swhkd
     xremap
+    fusuma
 )
 
  if [ -d ~/.config ]; then

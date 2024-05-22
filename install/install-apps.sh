@@ -277,6 +277,7 @@ apps=(
     swhkd-bin
     xremap-kde-bin
     lact
+    ruby-fusuma
 )
 
 # for app in "${apps[@]}"; do
