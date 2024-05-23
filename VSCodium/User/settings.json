@@ -262,7 +262,11 @@
     "workbench.editor.empty.hint": "hidden",
     "vim.camelCaseMotion.enable": true,
     "vim.cursorStylePerMode.insert": "line",
-    "vim.cursorStylePerMode.normal": "block"
+    "vim.cursorStylePerMode.normal": "block",
+    "vim.cursorStylePerMode.replace": "block-outline",
+    "vim.cursorStylePerMode.visual": "block-outline",
+    "vim.cursorStylePerMode.visualblock": "block-outline",
+    "vim.cursorStylePerMode.visualline": "block-outline",
 }
 /*
     "[javascript]": {
