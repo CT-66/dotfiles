@@ -277,6 +277,7 @@ apps=(
     ruby-fusuma
     nohang
     libadwaita-without-adwaita-git
+    picard
 )
 
 # for app in "${apps[@]}"; do
