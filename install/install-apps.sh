@@ -263,7 +263,6 @@ apps=(
     pdfgrep
     p7zip
     thorium-reader-git
-    koreader-bin
     calibre
     kbt
     warpd
