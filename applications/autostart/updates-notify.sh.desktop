@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=/home/arch/Scripts/updates-notify.sh
+Icon=application-x-shellscript
+Name=updates-notify.sh
+Type=Application
+X-KDE-AutostartScript=true

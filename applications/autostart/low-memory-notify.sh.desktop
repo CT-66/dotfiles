@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=/home/arch/Scripts/low-memory-notify.sh
+Icon=application-x-shellscript
+Name=low-memory-notify.sh
+Type=Application
+X-KDE-AutostartScript=true
