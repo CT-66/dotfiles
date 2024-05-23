@@ -259,7 +259,10 @@
     "explorer.enableDragAndDrop": true,
     "explorer.enableUndo": true,
     "workbench.activityBar.location": "hidden",
-    "workbench.editor.empty.hint": "hidden"
+    "workbench.editor.empty.hint": "hidden",
+    "vim.camelCaseMotion.enable": true,
+    "vim.cursorStylePerMode.insert": "line",
+    "vim.cursorStylePerMode.normal": "block"
 }
 /*
     "[javascript]": {
