@@ -262,8 +262,6 @@ apps=(
     aria2
     pdfgrep
     p7zip
-    thorium-reader-git
-    calibre
     kbt
     warpd
     vimv-git
@@ -277,6 +275,7 @@ apps=(
     xremap-kde-bin
     lact
     ruby-fusuma
+    nohang
 )
 
 # for app in "${apps[@]}"; do

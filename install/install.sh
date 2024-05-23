@@ -41,6 +41,7 @@ systemctl --user enable mpd.service
 systemctl enable --user mpDris2.service
 sudo systemctl enable reflector.service
 sudo systemctl enable archlinux-keyring-wkd-sync.timer
+sudo systemctl enable --now nohang-desktop.service
 
 # ==============
 
