@@ -157,7 +157,7 @@ cnoremap <C-v> <C-r>+
 imap <C-v> <C-r>+
 
 " hjkl like movements in insert mode
-inoremap <C-h> <left>
+"inoremap <C-h> <left>
 inoremap <C-j> <down>
 inoremap <C-k> <up>
 inoremap <C-l> <right>
@@ -190,3 +190,7 @@ inoremap <C-S-Left> <C-\><C-O>gh<C-O>b
 inoremap <C-S-Right> <C-\><C-O>gh<C-O>w
 
 nnoremap <C-q> :call ToggleTransparentBackground()<cr>
+
+
+" ctrl+backspace
+inoremap <C-h> <C-W>
