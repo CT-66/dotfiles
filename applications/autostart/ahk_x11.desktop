@@ -1,5 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=ahk_x11
-Exec=/home/arch/Dotfiles/ahk_x11/ahk_x11.AppImage /home/arch/Dotfiles/ahk_x11/script.ahk
-Comment=ahk_x11
