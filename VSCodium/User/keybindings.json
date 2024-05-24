@@ -502,8 +502,12 @@
         "key": "ctrl+alt+w",
         "command": "workbench.action.closeActiveEditor"
     },
+    // {
+    //     "key": "alt+w",
+    //     "command": "workbench.action.closeActiveEditor"
+    // },
     {
-        "key": "alt+w",
+        "key": "ctrl+w",
         "command": "workbench.action.closeActiveEditor"
     },
     {

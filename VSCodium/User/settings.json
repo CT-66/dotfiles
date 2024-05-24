@@ -228,8 +228,6 @@
     "workbench.settings.useSplitJSON": true,
     "window.customMenuBarAltFocus": false,
     "window.enableMenuBarMnemonics": false,
-    // "window.menuBarVisibility": "hidden",
-    "window.titleBarStyle": "custom",
     "extensions.webWorker": false,
     "terminal.external.linuxExec": "konsole",
     "terminal.integrated.cursorWidth": 2,
@@ -243,7 +241,6 @@
     "path-autocomplete.enableFolderTrailingSlash": true,
     "path-autocomplete.disableUpOneFolder": true,
     "terminal.integrated.smoothScrolling": true,
-    "window.menuBarVisibility": "toggle",
     "workbench.layoutControl.type": "menu",
     "workbench.editor.decorations.colors": true,
     "workbench.iconTheme": "material-icon-theme",
@@ -267,6 +264,8 @@
     "vim.cursorStylePerMode.visual": "block-outline",
     "vim.cursorStylePerMode.visualblock": "block-outline",
     "vim.cursorStylePerMode.visualline": "block-outline",
+    "window.titleBarStyle": "custom",
+    "window.menuBarVisibility": "visible",
 }
 /*
     "[javascript]": {
