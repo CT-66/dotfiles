@@ -252,7 +252,6 @@ apps=(
     kdocker
     reflector
     archlinux-keyring
-    kde-rounded-corners
     libreoffice-fresh
     protonvpn
     pdfarranger
@@ -278,6 +277,7 @@ apps=(
     nohang
     libadwaita-without-adwaita-git
     picard
+    kwin-effect-rounded-corners-git
 )
 
 # for app in "${apps[@]}"; do
