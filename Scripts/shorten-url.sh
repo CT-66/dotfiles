@@ -14,4 +14,9 @@ fi
 link=$(curl -F "shorten=$url" https://ttm.sh)
 
 echo "Link: $link"
-echo $link | xclip -sel clip
+
+if [ "$XDG_SESSION_TYPE" == "wayland" ]; then
+    wl-copy "$link"
+else
+    echo "$link" | xclip -sel clip
+fi

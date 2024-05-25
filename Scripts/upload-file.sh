@@ -29,15 +29,23 @@ esac
 
 link=$(curl -F "file=@$file" $url)
 
+copy() {
+    if [ $XDG_SESSION_TYPE == "wayland" ]; then
+        wl-copy "$1"
+    else
+        echo "$1" | xclip -sel clip
+    fi
+}
+
 echo "Link: $link"
-echo "$link" | xclip -sel clip
+copy "$link"
 
 read -p "Shorten URL? " prompt
 case $prompt in
     "y"|"yes")
         shortened_link=$(curl -F "shorten=$link" https://ttm.sh)
         echo "Shortened URL: $shortened_link"
-        echo "$shortened_link" | xclip -sel clip
+        copy "$shortened_link"
         ;;
     "n"|"no")
         :

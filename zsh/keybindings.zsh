@@ -112,10 +112,20 @@ zle -N zle-line-init
 echo -ne '\e[5 q' # Use beam shape cursor on startup.
 precmd() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
+# clipboard depending on X11 or wayland
+function clipboard-copy {
+    if [ "$XDG_SESSION_TYPE" = "wayland" ]
+    then
+        wl-copy "$1"
+    else
+        echo "$1" | xclip -sel clip
+    fi
+}
+
 # Yank to the system clipboard
 function vi-yank-custom {
     zle vi-yank
-   echo "$CUTBUFFER" | xclip -sel clip
+   clipboard-copy "$CUTBUFFER"
 }
 
 zle -N vi-yank-custom
@@ -247,7 +257,8 @@ zle -N widget::copy-selection
 function widget::copy-selection {
     if ((REGION_ACTIVE)); then
         zle copy-region-as-kill
-            printf "%s" $CUTBUFFER | xclip -sel clip
+            # printf "%s" $CUTBUFFER | xclip -sel clip
+            clipboard-copy "$CUTBUFFER"
     fi
 }
 
@@ -256,7 +267,8 @@ zle -N widget::cut-selection
 function widget::cut-selection() {
     if ((REGION_ACTIVE)) then
         zle kill-region
-        printf "%s" $CUTBUFFER | xclip -sel clip
+        # printf "%s" $CUTBUFFER | xclip -sel clip
+        clipboard-copy "$CUTBUFFER"
     fi
 }
 
