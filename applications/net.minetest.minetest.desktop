@@ -1,0 +1,26 @@
+[Desktop Entry]
+Categories=Game;Simulation;
+Comment[en_US]=Multiplayer infinite-world block sandbox
+Comment=Multiplayer infinite-world block sandbox
+Comment[de]=Mehrspieler-Sandkastenspiel mit unendlichen Blockwelten
+Comment[es]=Juego sandbox multijugador con mundos infinitos
+Comment[fr]=Jeu multijoueurs de type bac à sable avec des mondes infinis
+Comment[ja]=マルチプレイに対応した、無限の世界のブロック型サンドボックスゲームです
+Comment[ru]=Игра-песочница с безграничным миром, состоящим из блоков
+Comment[tr]=Tek-Çok oyuncuyla küplerden sonsuz dünyalar inşa et
+Exec=minetest
+GenericName[en_US]=Minetest
+GenericName=Minetest
+Icon=minetest
+Keywords=sandbox;world;mining;crafting;blocks;nodes;multiplayer;roleplaying;
+MimeType=
+Name[en_US]=Minetest
+Name=Minetest
+Path=
+PrefersNonDefaultGPU=true
+StartupNotify=false
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
