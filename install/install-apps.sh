@@ -278,6 +278,7 @@ apps=(
     libadwaita-without-adwaita-git
     picard
     kwin-effect-rounded-corners-git
+    corectrl
 )
 
 # for app in "${apps[@]}"; do
