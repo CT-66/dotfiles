@@ -1,5 +1,5 @@
 [Desktop Entry]
 Type=Application
 Name=xremap
-Exec=xremap /home/arch/.config/xremap/config.yml
+Exec=xremap --watch /home/arch/.config/xremap/config.yml
 Comment=xremap
