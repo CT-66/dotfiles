@@ -277,6 +277,7 @@ apps=(
     libadwaita-without-adwaita-git
     picard
     kwin-effect-rounded-corners-git
+    lightlyshaders-plasma6-git
     corectrl
     hyprland
     hyprpaper
