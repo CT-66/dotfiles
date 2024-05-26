@@ -229,7 +229,6 @@ apps=(
     qbittorrent
     sway
     swaybg
-    hyprland
     foot
     waybar
     xorg-xwayland
@@ -279,6 +278,8 @@ apps=(
     picard
     kwin-effect-rounded-corners-git
     corectrl
+    hyprland
+    hyprpaper
 )
 
 # for app in "${apps[@]}"; do
