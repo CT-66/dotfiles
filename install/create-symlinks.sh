@@ -40,7 +40,6 @@ dirs=(
     newsboat
     plank
     lvim
-    deadd
     xplr
     jgmenu
     feh

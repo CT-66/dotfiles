@@ -12,9 +12,8 @@ setxkbmap -option caps:escape && sleep 0.0001
 $HOME/Dotfiles/polybar/launch.sh &
 sxhkd &
 #  xrandr --output Virtual1 --mode 1920x1080
-# export $(dbus-launch) && dunst &
-# dunst &
-deadd-notification-center &
+export $(dbus-launch) && dunst &
+dunst &
 $HOME/Scripts/dotfiles
 numlockx &
 pkill greenclip; greenclip daemon &
