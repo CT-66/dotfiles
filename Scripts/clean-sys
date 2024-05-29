@@ -12,7 +12,7 @@ yay -Sc
 sudo pacman -Rns $(pacman -Qtdq)
 
 # clean pacman's cache
-paccache -r
+sudo paccache -r
 
 # empty the trash
 # trash-empty
