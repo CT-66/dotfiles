@@ -1,15 +1,31 @@
+# # alt+tab
+# swipe:
+#   3:
+#     begin:
+#       command: ydotool keydown Alt
+#     right:
+#       update:
+#         command: ydotool key Tab
+#         interval: 5
+#     left:
+#       update:
+#         command: ydotool key Shift+Tab
+#         interval: 5
+#     end:
+#       command: ydotool keyup Alt
+
 # alt+tab
 swipe:
   3:
-    begin:
-      command: ydotool keydown Alt
-    right:
+    # begin:
+    #   command: ydotool keydown Alt
+    up:
       update:
-        command: ydotool key Tab
-        interval: 5
-    left:
+        command: qdbus-qt5 org.kde.kglobalaccel /component/kwin invokeShortcut "Walk Through Windows"
+        interval: 3
+    down:
       update:
-        command: ydotool key Shift+Tab
-        interval: 5
-    end:
-      command: ydotool keyup Alt
+        command: qdbus-qt5 org.kde.kglobalaccel /component/kwin invokeShortcut "Walk Through Windows (Reverse)"
+        interval: 3
+    # end:
+    #   command: ydotool keyup Alt
