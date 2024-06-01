@@ -511,3 +511,19 @@ user_pref("toolkit.scrollbox.horizontalScrollDistance",                    5);//
 //user_pref("toolkit.scrollbox.horizontalScrollDistance",                    4);//NSS      [5]
 user_pref("toolkit.scrollbox.verticalScrollDistance",                      3);//NSS      [3]
 //user_pref("toolkit.scrollbox.verticalScrollDistance",                      5);//NSS      [3]
+
+
+// switch tabs by scrolling
+user_pref("toolkit.tabbox.switchByScrolling", true);
+
+
+// hardware acceleration
+user_pref("media.hardware-video-decoding.enabled", true);
+user_pref("media.ffmpeg.vaapi.enabled", true);
+user_pref("media.rdd-ffmpeg.enabled", true);
+user_pref("gfx.webrender.all", true);
+user_pref("media.ffvpx.enabled", false);
+user_pref("layers.acceleration.force-enabled", true);
+
+// dns
+user_pref("network.trr.uri", "https://firefox.dns.nextdns.io/");
