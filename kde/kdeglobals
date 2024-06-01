@@ -136,8 +136,8 @@ ForegroundPositive=163,190,140
 ForegroundVisited=143,188,187
 
 [DirSelect Dialog]
-DirSelectDialog Size=820,584
-History Items[$e]=file:$HOME/VirtualBox VMs,file:$HOME/tmp/.brave-extensions/Violentmonkey-beta-webext-v2.18.3,file:$HOME/Downloads/LocalSend,file:$HOME/Music,file:$HOME/Pictures
+DirSelectDialog Size=1536,800
+History Items[$e]=file:$HOME/tmp/.uBlock0.chromium-ungoogled-chromium,file:$HOME/VirtualBox VMs,file:$HOME/tmp/.brave-extensions/Violentmonkey-beta-webext-v2.18.3,file:$HOME/Downloads/LocalSend,file:$HOME/Music,file:$HOME/Pictures
 
 [General]
 AccentColor=0,0,0,0
