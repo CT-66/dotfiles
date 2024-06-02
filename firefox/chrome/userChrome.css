@@ -1,3 +1,9 @@
+
+/* Photon */
+@import url("Photon/userChrome.css");
+@import url("Photon/userContent.css");
+
+
 /* center text in address bar */
 #urlbar .urlbar-input-box {
     text-align: center;
@@ -158,46 +164,49 @@ html#main-window
 }
 
 /* //////////////////////////// */
-
-/* Shows tab audio icons next to the tab icon, and by default removes the tab secondary line */
-
-.tabbrowser-tab:not([pinned])
-    .tab-icon-stack:is([muted], [soundplaying], [activemedia-blocked]) {
-    grid-template-areas: "a s";
-}
-.tabbrowser-tab:not([pinned])
-    .tab-icon-overlay:is([muted], [soundplaying], [activemedia-blocked]) {
-    grid-area: s;
-}
-.tab-icon-overlay,
-.tab-icon-image,
-.tab-throbber {
-    opacity: 1 !important;
+.tab-icon-sound-label {
+    display: none !important;
 }
 
-.tab-icon-overlay:not([pinned]) {
-    padding: 0px !important;
-    margin-inline: -3px 1px !important;
-}
-
-/* secondary audio label ain't much use with this style, but feel free to remove the next line if you want to show it. */
-.tab-secondary-label {
-    display: none;
-}
-
-/* show the secondary label when video is in PiP */
-.tab-secondary-label[pictureinpicture] {
-    display: -moz-box;
-}
-
-/* These exist for compatibility with combined_favicon_and_tab_close_button.css */
-.tab-icon-overlay {
-    pointer-events: auto;
-}
-.tab-content > .tab-icon-stack,
-.tab-icon-stack:hover > .tab-icon-image {
-    visibility: visible;
-}
+/*/* Shows tab audio icons next to the tab icon, and by default removes the tab secondary line */*/
+/**/
+/*.tabbrowser-tab:not([pinned])*/
+/*    .tab-icon-stack:is([muted], [soundplaying], [activemedia-blocked]) {*/
+/*    grid-template-areas: "a s";*/
+/*}*/
+/*.tabbrowser-tab:not([pinned])*/
+/*    .tab-icon-overlay:is([muted], [soundplaying], [activemedia-blocked]) {*/
+/*    grid-area: s;*/
+/*}*/
+/*.tab-icon-overlay,*/
+/*.tab-icon-image,*/
+/*.tab-throbber {*/
+/*    opacity: 1 !important;*/
+/*}*/
+/**/
+/*.tab-icon-overlay:not([pinned]) {*/
+/*    padding: 0px !important;*/
+/*    margin-inline: -3px 1px !important;*/
+/*}*/
+/**/
+/*/* secondary audio label ain't much use with this style, but feel free to remove the next line if you want to show it. */*/
+/*.tab-secondary-label {*/
+/*    display: none;*/
+/*}*/
+/**/
+/*/* show the secondary label when video is in PiP */*/
+/*.tab-secondary-label[pictureinpicture] {*/
+/*    display: -moz-box;*/
+/*}*/
+/**/
+/*/* These exist for compatibility with combined_favicon_and_tab_close_button.css */*/
+/*.tab-icon-overlay {*/
+/*    pointer-events: auto;*/
+/*}*/
+/*.tab-content > .tab-icon-stack,*/
+/*.tab-icon-stack:hover > .tab-icon-image {*/
+/*    visibility: visible;*/
+/*}*/
 
 /* //////////////// */
 /* move findbar to top */
@@ -377,55 +386,55 @@ toolbar .toolbarbutton-1:not([disabled]):active > .toolbarbutton-icon{
 
 
 /* autohide bookmarks */
-#PersonalToolbar{
-  --uc-bm-height: 20px; /* Might need to adjust if the toolbar has other buttons */
-  --uc-bm-padding: 4px; /* Vertical padding to be applied to bookmarks */
-  --uc-autohide-toolbar-delay: 200ms; /* The toolbar is hidden after 0.6s */
-
-  /* 0deg = "show" ; 90deg = "hide" ;  Set the following to control when bookmarks are shown */
-  --uc-autohide-toolbar-focus-rotation: 90deg; /* urlbar is focused */
-  --uc-autohide-toolbar-hover-rotation: 0deg; /* cursor is over the toolbar area */
-}
-
-:root[uidensity="touch"] #PersonalToolbar{ --uc-bm-padding: 7px }
-
-#PersonalToolbar:not([customizing]){
-  position: relative;
-  margin-bottom: calc(-1px - var(--uc-bm-height) - 2 * var(--uc-bm-padding));
-  transform: rotateX(90deg);
-  transform-origin: top;
-  transition: transform 135ms linear var(--uc-autohide-toolbar-delay) !important;
-  z-index: 1;
-  /* The following properties should allow the themes with trasparent toolbars to work */
-  background-color: transparent !important;
-  background-repeat: no-repeat,no-repeat,var(--lwt-background-tiling);
-    /* y position will be wrong if menubar is enabled... */
-  --uc-bg-y: calc(-2 * (var(--tab-block-margin) + var(--toolbarbutton-inner-padding) + var(--toolbarbutton-outer-padding)) - var(--tab-min-height) - 24px - var(--bookmark-block-padding));
-  background-position: top left,top left,var(--lwt-background-alignment,top left);
-  background-position-y:top,top,var(--uc-bg-y),var(--uc-bg-y),var(--uc-bg-y);
-  background-image: var(--toolbar-bgimage,linear-gradient(transparent,transparent)), linear-gradient(var(--toolbar-bgcolor),var(--toolbar-bgcolor)),var(--lwt-header-image,var(--lwt-additional-images)) !important;
-}
-:root[uidensity="compact"] #PersonalToolbar{
-  --toolbarbutton-outer-padding: 1px !important;
-}
-#PlacesToolbarItems > .bookmark-item,
-#OtherBookmarks,
-#PersonalToolbar > #import-button{
-  padding-block: var(--uc-bm-padding) !important;
-}
-
-#nav-bar:focus-within + #PersonalToolbar{
-  transition-delay: 100ms !important;
-  transform: rotateX(var(--uc-autohide-toolbar-focus-rotation,0));
-}
-#navigator-toolbox:is(:hover,:focus-within){
-  border-bottom-color: transparent !important;
-}
-#navigator-toolbox:hover > #PersonalToolbar{
-  transition-delay: 100ms !important;
-  transform: rotateX(var(--uc-autohide-toolbar-hover-rotation,0));
-}
-
-#navigator-toolbox:hover > #nav-bar:focus-within + #PersonalToolbar {
-  transform: rotateX(0);
-}
+/*#PersonalToolbar{*/
+/*  --uc-bm-height: 20px; /* Might need to adjust if the toolbar has other buttons */*/
+/*  --uc-bm-padding: 4px; /* Vertical padding to be applied to bookmarks */*/
+/*  --uc-autohide-toolbar-delay: 200ms; /* The toolbar is hidden after 0.6s */*/
+/**/
+/*  /* 0deg = "show" ; 90deg = "hide" ;  Set the following to control when bookmarks are shown */*/
+/*  --uc-autohide-toolbar-focus-rotation: 90deg; /* urlbar is focused */*/
+/*  --uc-autohide-toolbar-hover-rotation: 0deg; /* cursor is over the toolbar area */*/
+/*}*/
+/**/
+/*:root[uidensity="touch"] #PersonalToolbar{ --uc-bm-padding: 7px }*/
+/**/
+/*#PersonalToolbar:not([customizing]){*/
+/*  position: relative;*/
+/*  margin-bottom: calc(-1px - var(--uc-bm-height) - 2 * var(--uc-bm-padding));*/
+/*  transform: rotateX(90deg);*/
+/*  transform-origin: top;*/
+/*  transition: transform 135ms linear var(--uc-autohide-toolbar-delay) !important;*/
+/*  z-index: 1;*/
+/*  /* The following properties should allow the themes with trasparent toolbars to work */*/
+/*  background-color: transparent !important;*/
+/*  background-repeat: no-repeat,no-repeat,var(--lwt-background-tiling);*/
+/*    /* y position will be wrong if menubar is enabled... */*/
+/*  --uc-bg-y: calc(-2 * (var(--tab-block-margin) + var(--toolbarbutton-inner-padding) + var(--toolbarbutton-outer-padding)) - var(--tab-min-height) - 24px - var(--bookmark-block-padding));*/
+/*  background-position: top left,top left,var(--lwt-background-alignment,top left);*/
+/*  background-position-y:top,top,var(--uc-bg-y),var(--uc-bg-y),var(--uc-bg-y);*/
+/*  background-image: var(--toolbar-bgimage,linear-gradient(transparent,transparent)), linear-gradient(var(--toolbar-bgcolor),var(--toolbar-bgcolor)),var(--lwt-header-image,var(--lwt-additional-images)) !important;*/
+/*}*/
+/*:root[uidensity="compact"] #PersonalToolbar{*/
+/*  --toolbarbutton-outer-padding: 1px !important;*/
+/*}*/
+/*#PlacesToolbarItems > .bookmark-item,*/
+/*#OtherBookmarks,*/
+/*#PersonalToolbar > #import-button{*/
+/*  padding-block: var(--uc-bm-padding) !important;*/
+/*}*/
+/**/
+/*#nav-bar:focus-within + #PersonalToolbar{*/
+/*  transition-delay: 100ms !important;*/
+/*  transform: rotateX(var(--uc-autohide-toolbar-focus-rotation,0));*/
+/*}*/
+/*#navigator-toolbox:is(:hover,:focus-within){*/
+/*  border-bottom-color: transparent !important;*/
+/*}*/
+/*#navigator-toolbox:hover > #PersonalToolbar{*/
+/*  transition-delay: 100ms !important;*/
+/*  transform: rotateX(var(--uc-autohide-toolbar-hover-rotation,0));*/
+/*}*/
+/**/
+/*#navigator-toolbox:hover > #nav-bar:focus-within + #PersonalToolbar {*/
+/*  transform: rotateX(0);*/
+/*}*/
