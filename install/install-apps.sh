@@ -280,6 +280,7 @@ apps=(
     corectrl
     hyprland
     hyprpaper
+    floorp-bin
 )
 
 # for app in "${apps[@]}"; do
