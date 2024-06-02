@@ -140,6 +140,8 @@ user_pref("browser.urlbar.trimURLs", false);
 user_pref("browser.ping-centre.telemetry", false);
 user_pref("camera.control.face_detection.enabled", false);
 user_pref("browser.urlbar.suggest.searches", false);
+user_pref("browser.urlbar.suggest.calculator", true);
+user_pref("browser.urlbar.unitConversion.enabled", true);
 user_pref(
     "browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts",
     false
@@ -429,6 +431,7 @@ user_pref("browser.preferences.moreFromMozilla", false);
 user_pref("cookiebanners.service.mode", 2);
 user_pref("cookiebanners.bannerClicking.enabled", true);
 user_pref("cookiebanners.cookieInjector.enabled", true);
+user_pref("cookiebanners.service.mode.privateBrowsing", 1);
 
 // dark certain parts of firefox's UI
 user_pref("ui.systemUsesDarkTheme", 1);
@@ -464,9 +467,13 @@ user_pref("general.smoothScroll.msdPhysics.slowdownMinDeltaRatio",     "2.0");//
 //user_pref("general.smoothScroll.msdPhysics.slowdownMinDeltaRatio",     "0.4");//NSS    [1.3]
 user_pref("general.smoothScroll.msdPhysics.slowdownSpringConstant",      250);//NSS   [2000]
 //user_pref("general.smoothScroll.msdPhysics.slowdownSpringConstant",      5000);//NSS   [2000]
-user_pref("general.smoothScroll.currentVelocityWeighting",             "1.0");//NSS ["0.25"]
+//user_pref("general.smoothScroll.currentVelocityWeighting",             "1.0");//NSS ["0.25"]
+user_pref("general.smoothScroll.currentVelocityWeighting",             "0.15");//NSS ["0.25"]
+//user_pref("general.smoothScroll.currentVelocityWeighting",             "1");//NSS ["0.25"]
 //user_pref("general.smoothScroll.stopDecelerationWeighting",            "1.0");//NSS  ["0.4"]
-user_pref("general.smoothScroll.stopDecelerationWeighting",            "0.82");//NSS  ["0.4"]
+//user_pref("general.smoothScroll.stopDecelerationWeighting",            "0.82");//NSS  ["0.4"]
+user_pref("general.smoothScroll.stopDecelerationWeighting",            "0.6");//NSS  ["0.4"]
+//user_pref("general.smoothScroll.stopDecelerationWeighting",            "1");//NSS  ["0.4"]
 
 /// adjust multiply factor for mousewheel - or set to false if scrolling is way too fast
 user_pref("mousewheel.system_scroll_override.horizontal.factor",         200);//NSS    [200]
@@ -476,7 +483,8 @@ user_pref("mousewheel.system_scroll_override.enabled",                  true);//
 
 /// adjust pixels at a time count for mousewheel - cant do more than a page at once if <100
 user_pref("mousewheel.default.delta_multiplier_x",                       100);//NSS    [100]
-user_pref("mousewheel.default.delta_multiplier_y",                       100);//NSS    [100]
+//user_pref("mousewheel.default.delta_multiplier_y",                       175);//NSS    [100]
+user_pref("mousewheel.default.delta_multiplier_y",                       275);//NSS    [100]
 user_pref("mousewheel.default.delta_multiplier_z",                       100);//NSS    [100]
 
 ///  this preset will reset couple extra variables for consistency
@@ -498,7 +506,7 @@ user_pref("general.smoothScroll.scrollbars.durationMaxMS",               150);//
 user_pref("general.smoothScroll.scrollbars.durationMinMS",               150);//NSS    [150]
 //user_pref("general.smoothScroll.mouseWheel.durationMaxMS",               200);//NSS    [200]
 user_pref("general.smoothScroll.mouseWheel.durationMaxMS",               250);//NSS    [200]
-user_pref("general.smoothScroll.mouseWheel.durationMinMS",                50);//NSS     [50]
+user_pref("general.smoothScroll.mouseWheel.durationMinMS",                80);//NSS     [50]
 user_pref("layers.async-pan-zoom.enabled",                              true);//NSS   [true]
 user_pref("layout.css.scroll-behavior.spring-constant",                "250");//NSS    [250]
 user_pref("mousewheel.transaction.timeout",                             1500);//NSS   [1500]
@@ -511,6 +519,10 @@ user_pref("toolkit.scrollbox.horizontalScrollDistance",                    5);//
 //user_pref("toolkit.scrollbox.horizontalScrollDistance",                    4);//NSS      [5]
 user_pref("toolkit.scrollbox.verticalScrollDistance",                      3);//NSS      [3]
 //user_pref("toolkit.scrollbox.verticalScrollDistance",                      5);//NSS      [3]
+
+// edge-like scrolling on trackpads
+user_pref("apz.overscroll.enabled", true);
+
 
 
 // switch tabs by scrolling
@@ -525,5 +537,30 @@ user_pref("gfx.webrender.all", true);
 user_pref("media.ffvpx.enabled", false);
 user_pref("layers.acceleration.force-enabled", true);
 
-// dns
-user_pref("network.trr.uri", "https://firefox.dns.nextdns.io/");
+// restore "View image info" on right-click
+user_pref("browser.menu.showViewImageInfo", true);
+
+/// speed tweaks (https://github.com/yokoffing/Betterfox/blob/main/Fastfox.js)
+user_pref("nglayout.initialpaint.delay", 5);
+user_pref("nglayout.initialpaint.delay_in_oopif", 5);
+
+user_pref("gfx.canvas.accelerated.cache-items", 4096); // default=2048; alt=8192
+user_pref("gfx.canvas.accelerated.cache-size", 512); // default=256; alt=1024
+user_pref("gfx.content.skia-font-cache-size", 20); // default=5; Chrome=20
+
+user_pref("browser.cache.jsbc_compression_level", 3);
+
+user_pref("media.memory_cache_max_size", 65536);
+user_pref("media.cache_readahead_limit", 7200);
+user_pref("media.cache_resume_threshold", 3600);
+user_pref("image.mem.decode_bytes_at_a_time", 32768);
+
+user_pref("browser.tabs.unloadOnLowMemory", true);
+user_pref("browser.low_commit_space_threshold_percent", 33);
+
+user_pref("network.http.max-connections", 1800);
+user_pref("network.http.max-persistent-connections-per-server", 10);
+user_pref("network.http.max-urgent-start-excessive-connections-per-host", 5);
+user_pref("network.http.pacing.requests.enabled", false);
+user_pref("network.dnsCacheExpiration", 3600);
+user_pref("network.ssl_tokens_cache_capacity", 10240);
