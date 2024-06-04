@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Color Picker (Plasmoid)
+GenericName=Color Picker
+Icon=color-picker
+Exec=plasmawindowed org.kde.plasma.colorpicker
+Terminal=false
