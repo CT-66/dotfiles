@@ -282,6 +282,7 @@ apps=(
     hyprpaper
     floorp-bin
     qalculate-qt
+    portmaster-stub-bin
 )
 
 # for app in "${apps[@]}"; do
