@@ -281,6 +281,7 @@ apps=(
     hyprland
     hyprpaper
     floorp-bin
+    qalculate-qt
 )
 
 # for app in "${apps[@]}"; do

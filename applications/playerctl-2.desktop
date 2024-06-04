@@ -1,7 +1,0 @@
-[Desktop Entry]
-Exec=playerctl --player=vlc next
-Name=playerctl --player=vlc next
-NoDisplay=true
-StartupNotify=false
-Type=Application
-X-KDE-GlobalAccel-CommandShortcut=true
