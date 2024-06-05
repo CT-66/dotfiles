@@ -264,8 +264,8 @@
     "vim.cursorStylePerMode.visual": "block-outline",
     "vim.cursorStylePerMode.visualblock": "block-outline",
     "vim.cursorStylePerMode.visualline": "block-outline",
-    "window.titleBarStyle": "custom",
     "window.menuBarVisibility": "visible",
+    "window.titleBarStyle": "custom",
 }
 /*
     "[javascript]": {
