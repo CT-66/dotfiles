@@ -283,6 +283,8 @@ apps=(
     floorp-bin
     qalculate-qt
     portmaster-stub-bin
+    clonezilla
+    partclone
 )
 
 # for app in "${apps[@]}"; do
