@@ -7,7 +7,10 @@ alias ZQ='exit'
 # alias please='sudo $(fc -ln -1)'
 alias pls='sudo $(fc -ln -1)'
 alias please='sudo $(fc -ln -1)'
-alias v=nvim
+# alias v=nvim
+alias codium="/usr/bin/codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland --new-window"
+alias v=codium
+alias vv="nvim"
 alias vim=nvim
 alias cmatrix="cmatrix -bs -C blue"
 # alias .date='date +"%d %b, %Y | %I:%M %p"'
