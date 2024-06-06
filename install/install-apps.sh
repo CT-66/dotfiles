@@ -285,6 +285,7 @@ apps=(
     portmaster-stub-bin
     clonezilla
     partclone
+    zram-generator
 )
 
 # for app in "${apps[@]}"; do
