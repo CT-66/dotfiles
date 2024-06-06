@@ -79,3 +79,10 @@ sudo sed -i '32s/.*/deny = 0/' /etc/security/faillock.conf
 
 # ==============
 espanso service register
+
+# ==============
+sudo cp ~/Dotfiles/systemd/zram-generator.conf /etc/systemd/zram-generator.conf
+sudo systemctl daemon-reload
+sudo systemctl start systemd-zram-setup@zram0.service
+
+sudo cp ~/Dotfiles/systemd/99-vm-zram-parameters.conf /etc/sysctl.d/99-vm-zram-parameters.conf
