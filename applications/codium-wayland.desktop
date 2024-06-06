@@ -2,7 +2,8 @@
 Name=VSCodium - Wayland
 Comment=Code Editing. Redefined.
 GenericName=Text Editor
-Exec=/usr/bin/codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland --unity-launch %U
+#Exec=/usr/bin/codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland --unity-launch %U
+Exec=/usr/bin/codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland  %U
 Icon=vscodium
 Type=Application
 StartupNotify=false
@@ -14,5 +15,5 @@ Keywords=vscode;
 
 [Desktop Action new-empty-window]
 Name=New Empty Window
-Exec=/usr/bin/codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland --new-window %F
+Exec=/usr/bin/codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland --new-window %U
 Icon=vscodium
