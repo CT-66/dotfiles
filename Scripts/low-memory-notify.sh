@@ -5,7 +5,8 @@ do
 
     free_with_shared=$(free -m|awk '/^Mem:/{print $7}')
     shared=$(free -m|awk '/^Mem:/{print $5}')
-    free=$(($free_with_shared - $shared))
+    swap_free=$(free -m|awk '/^Swap:/{print $4}')
+    free=$(($free_with_shared - $shared + $swap_free))
 
     if [ "$free" -lt 2000 ] && [ "$free" -gt 1000 ]
     then
