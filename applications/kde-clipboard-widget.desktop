@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Klipper (KDE Clipboard)
+GenericName=Clipboard Manager
+Icon=clipboard
+Exec=plasmawindowed org.kde.plasma.clipboard
+Terminal=false
