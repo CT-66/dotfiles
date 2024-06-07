@@ -270,6 +270,7 @@
         "editor.wordBasedSuggestions": "off"
     },
     "terminal.integrated.gpuAcceleration": "on",
+    "files.defaultLanguage": "markdown"
 }
 /*
     "[javascript]": {
