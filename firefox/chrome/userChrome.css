@@ -384,6 +384,12 @@ toolbar .toolbarbutton-1:not([disabled]):active > .toolbarbutton-icon{
   padding: calc(var(--toolbarbutton-inner-padding) + 3px) !important;
 }
 
+/* disable white flash when loading webpages */
+#browser vbox#appcontent tabbrowser, #content, #tabbrowser-tabpanels,
+browser[type=content-primary],browser[type=content] > html {
+    background: #2e3440 !important
+}
+
 
 /* autohide bookmarks */
 /*#PersonalToolbar{*/

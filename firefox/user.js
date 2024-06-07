@@ -546,6 +546,9 @@ user_pref("dom.event.clipboardevents.enabled", true);
 // user_pref("dom.allow_cut_copy", false);
 user_pref("dom.allow_cut_copy", true);
 
+// disable white flash when loading webpages
+user_pref("browser.display.background_color", "#2e3440");
+
 /// speed tweaks (https://github.com/yokoffing/Betterfox/blob/main/Fastfox.js)
 user_pref("nglayout.initialpaint.delay", 5);
 user_pref("nglayout.initialpaint.delay_in_oopif", 5);
