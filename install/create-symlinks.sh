@@ -136,8 +136,8 @@ if [ ! -d /etc/nohang ]; then
     sudo mkdir /etc/nohang
 fi
 
-sudo ln -s ~/Dotfiles/nohang/nohang.conf /etc/nohang/nohang.conf
-sudo ln -s ~/Dotfiles/nohang/nohang-desktop.conf /etc/nohang/nohang-desktop.conf
+sudo cp ~/Dotfiles/nohang/nohang.conf /etc/nohang/nohang.conf
+sudo cp ~/Dotfiles/nohang/nohang-desktop.conf /etc/nohang/nohang-desktop.conf
 
 
 echo "Done"
