@@ -89,7 +89,7 @@ ln -s ~/Dotfiles/greenclip/greenclip.toml ~/.config/greenclip.toml
 ln -s ~/Dotfiles/xdg/mimeapps.list ~/.config/mimeapps.list
 ln -s ~/Dotfiles/xdg/user-dirs.dirs ~/.config/user-dirs.dirs
 sudo ln -s /usr/bin/nvim /usr/bin/v
-sudo ln -s /usr/bin/nvim /usr/bin/vv
+sudo ln -s /usr/bin/nvim /usr/bin/vjv
 # sudo cp ~/Dotfiles/etc/fstab /etc/fstab
 ln -s ~/Dotfiles/paleofetch/paleofetch ~/.local/bin/paleofetch
 ln -s ~/Dotfiles/paleofetch2/paleofetch2 ~/.local/bin/paleofetch2
@@ -131,6 +131,13 @@ fi
 if [ ! -d ~/.cache/wget ]; then
     mkdir ~/.cache/wget
 fi
+
+if [ ! -d /etc/nohang ]; then
+    sudo mkdir /etc/nohang
+fi
+
+sudo ln -s ~/Dotfiles/nohang/nohang.conf /etc/nohang/nohang.conf
+sudo ln -s ~/Dotfiles/nohang/nohang-desktop.conf /etc/nohang/nohang-desktop.conf
 
 
 echo "Done"

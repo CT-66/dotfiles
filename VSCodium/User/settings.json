@@ -2,7 +2,7 @@
     "python.pythonPath": "python",
     "workbench.sideBar.location": "left",
     "editor.wordWrap": "on",
-    "python.defaultInterpreterPath": "/bin/python",
+    "python.defaultInterpreterPath": "/bin/python3",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "python.analysis.diagnosticPublishDelay": 999,

@@ -285,6 +285,7 @@ apps=(
     clonezilla
     partclone
     zram-generator
+    kruler
 )
 
 # for app in "${apps[@]}"; do
