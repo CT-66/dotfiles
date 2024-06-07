@@ -82,3 +82,6 @@ export QT_ENABLE_HIGHDPI_SCALING=1
 # firefox
 export MOZ_USE_XINPUT2=1
 export MOZ_ENABLE_WAYLAND=1
+
+# gtk
+export GTK_THEME=ZorinBlue-Dark

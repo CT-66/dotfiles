@@ -288,6 +288,9 @@ apps=(
     partclone
     zram-generator
     kruler
+    zorin-desktop-themes
+    zorin-icon-themes
+
 )
 
 # for app in "${apps[@]}"; do
