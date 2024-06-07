@@ -562,7 +562,9 @@ user_pref("media.cache_resume_threshold", 3600);
 user_pref("image.mem.decode_bytes_at_a_time", 32768);
 
 user_pref("browser.tabs.unloadOnLowMemory", true);
-user_pref("browser.low_commit_space_threshold_percent", 33);
+user_pref("browser.low_commit_space_threshold_percent", 10);
+// user_pref("browser.tabs.min_inactive_duration_before_unload", 300000); // 5 mins
+user_pref("browser.tabs.min_inactive_duration_before_unload", 7200000); // 2 hrs
 
 user_pref("network.http.max-connections", 1800);
 user_pref("network.http.max-persistent-connections-per-server", 10);
