@@ -25,6 +25,8 @@ apps=(
     ranger
     tmux
     vscodium-bin
+    vscodium-bin-marketplace
+    vscodium-bin-features
     cmatrix
     ninvaders
     git

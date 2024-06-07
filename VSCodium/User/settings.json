@@ -2,7 +2,7 @@
     "python.pythonPath": "python",
     "workbench.sideBar.location": "left",
     "editor.wordWrap": "on",
-    "python.defaultInterpreterPath": "/bin/python3",
+    "python.defaultInterpreterPath": "/usr/bin/python",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "python.analysis.diagnosticPublishDelay": 999,
@@ -210,7 +210,6 @@
         "file:///home/arch/Dotfiles/VSCodium/User/custom-css.css"
     ],
     "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
-    "terminal.integrated.tabs.enabled": false,
     "material-icon-theme.hidesExplorerArrows": true,
     "update.mode": "default",
     // "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName}",
@@ -235,7 +234,6 @@
     "security.workspace.trust.banner": "never",
     "security.workspace.trust.enabled": false,
     "terminal.integrated.ignoreProcessNames": [],
-    "terminal.integrated.tabs.enableAnimation": false,
     "editor.selectionHighlight": false,
     "breadcrumbs.enabled": false,
     "path-autocomplete.enableFolderTrailingSlash": true,
@@ -266,6 +264,12 @@
     "vim.cursorStylePerMode.visualline": "block-outline",
     "window.menuBarVisibility": "visible",
     "window.titleBarStyle": "custom",
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.formatOnType": true,
+        "editor.wordBasedSuggestions": "off"
+    },
+    "terminal.integrated.gpuAcceleration": "on",
 }
 /*
     "[javascript]": {
