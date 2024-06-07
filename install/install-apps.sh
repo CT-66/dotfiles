@@ -282,7 +282,8 @@ apps=(
     corectrl
     hyprland
     hyprpaper
-    qalculate-qt
+    # qalculate-qt
+    qalculate-gtk
     portmaster-stub-bin
     clonezilla
     partclone
