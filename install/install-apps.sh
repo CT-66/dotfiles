@@ -280,7 +280,6 @@ apps=(
     corectrl
     hyprland
     hyprpaper
-    floorp-bin
     qalculate-qt
     portmaster-stub-bin
     clonezilla
