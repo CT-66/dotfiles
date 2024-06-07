@@ -1,0 +1,21 @@
+[Desktop Entry]
+Categories=Utility;
+Comment[en_US]=
+Comment=
+Exec=env DESKTOPINTEGRATION=false GTK_THEME=ZorinBlue-Dark /usr/bin/localsend
+GenericName[en_US]=
+GenericName=
+Icon=localsend
+MimeType=
+Name[en_US]=LocalSend
+Name=LocalSend
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-AppImage-Arch=x86_64
+X-AppImage-Name=LocalSend
+X-AppImage-Version=latest
+X-KDE-SubstituteUID=false
+X-KDE-Username=
