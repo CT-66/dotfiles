@@ -270,7 +270,8 @@
         "editor.wordBasedSuggestions": "off"
     },
     "terminal.integrated.gpuAcceleration": "on",
-    "files.defaultLanguage": "markdown"
+    "files.defaultLanguage": "markdown",
+    "terminal.integrated.enableImages": true
 }
 /*
     "[javascript]": {
