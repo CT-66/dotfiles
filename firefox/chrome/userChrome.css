@@ -34,7 +34,7 @@
 
 /* context menu.css */
 /* make context menu look better */
-:root {
+/* :root {
     --arrowpanel-menuitem-margin: 0 8px;
     --arrowpanel-menuitem-padding-block: 0px;
     --arrowpanel-menuitem-padding-inline: 8px;
@@ -84,16 +84,17 @@ menupopup > menu[disabled][_moz-menuactive] {
     background-color: var(
         --menuitem-disabled-hover-background-color
     ) !important;
-}
+} */
 
-.menupopup-arrowscrollbox {
+/* .menupopup-arrowscrollbox {
     padding-block: 8px !important;
-}
+} */
 
-#urlbar-input-container menupopup {
+/* #urlbar-input-container menupopup {
     text-align: left;
-}
+} */
 
+/* hide back, forward and reload buttons in the context menu */
 #context-navigation,
 #context-sep-navigation {
     display: none !important;
