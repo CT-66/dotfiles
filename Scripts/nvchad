@@ -1,9 +1,3 @@
 #!/bin/bash
 
-export NVCHAD_CONFIG_DIR="${NVCHAD_CONFIG_DIR:-/home/arch/.config/nvchad}"
-export NVCHAD_RUNTIME_DIR="${NVCHAD_RUNTIME_DIR:-/home/arch/.local/share/nvchad}"
-
-exec nvim -u "$NVCHAD_RUNTIME_DIR/init.lua" "$@"
-
-
-# exec nvim -u "$LUNARVIM_RUNTIME_DIR/lvim/init.lua" "$@"
+NVIM_APPNAME=nvchad nvim

@@ -1,0 +1,19 @@
+[Desktop Entry]
+Categories=Utility;TextEditor;
+Comment[en_US]=No Nonsense Neovim Client in Rust
+Comment=No Nonsense Neovim Client in Rust
+Exec=env NVIM_APPNAME=nvchad neovide %F
+GenericName[en_US]=
+GenericName=
+Icon=neovide
+Keywords=Text;Editor;
+MimeType=text/x-tex;text/x-pascal;text/x-moc;text/x-makefile;text/x-java;text/x-csrc;text/x-csrc;text/x-chdr;text/x-c++src;text/x-c++hdr;text/tcl;text/plain;application/x-shellscript;
+Name[en_US]=Neovide
+Name=Neovide
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
