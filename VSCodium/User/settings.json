@@ -271,7 +271,9 @@
     },
     "terminal.integrated.gpuAcceleration": "on",
     "files.defaultLanguage": "markdown",
-    "terminal.integrated.enableImages": true
+    "terminal.integrated.enableImages": true,
+    "path-autocomplete.triggerOutsideStrings": true,
+    "editor.autoClosingQuotes": "always"
 }
 /*
     "[javascript]": {
