@@ -117,8 +117,6 @@ apps=(
     ncmpcpp
     mpc
     speedtest-cli
-    bitwarden-cli
-    bitwarden
     btop
     bottom
     xorg-xinit
@@ -291,7 +289,7 @@ apps=(
     kruler
     zorin-desktop-themes
     zorin-icon-themes
-
+    keepassxc
 )
 
 # for app in "${apps[@]}"; do

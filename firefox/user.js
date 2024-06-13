@@ -22,7 +22,8 @@ user_pref("browser.uidensity", 1);
 user_pref("extensions.pocket.enabled", false);
 user_pref("extensions.pocket.showHome", false);
 user_pref("geo.enabled", false);
-user_pref("network.http.sendRefererHeader", 0);
+// user_pref("network.http.sendRefererHeader", 0); // breaks many websites
+user_pref("network.http.sendRefererHeader", 2);
 user_pref("app.normandy.api_url", "");
 user_pref("app.normandy.enabled", false);
 user_pref("app.shield.optoutstudies.enabled", false);
@@ -575,6 +576,9 @@ user_pref("network.http.max-urgent-start-excessive-connections-per-host", 5);
 user_pref("network.http.pacing.requests.enabled", false);
 user_pref("network.dnsCacheExpiration", 3600);
 user_pref("network.ssl_tokens_cache_capacity", 10240);
+
+// allow unsigned add ons
+user_pref("xpinstall.signatures.required", false);
 
 ///// Photon related stuff /////
 user_pref("svg.context-properties.content.enabled", true);
