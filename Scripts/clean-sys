@@ -13,6 +13,4 @@ sudo pacman -Rns $(pacman -Qtdq)
 
 # clean pacman's cache
 sudo paccache -r
-
-# empty the trash
-# trash-empty
+sudo pacman -Scc
