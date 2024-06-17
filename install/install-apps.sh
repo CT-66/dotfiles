@@ -290,6 +290,7 @@ apps=(
     zorin-desktop-themes
     zorin-icon-themes
     keepassxc
+    mission-center
 )
 
 # for app in "${apps[@]}"; do

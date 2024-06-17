@@ -116,12 +116,6 @@ fi
 
 sudo ln -s ~/Dotfiles/pacman/pacman.conf /etc/pacman.conf
 
-if [ -f /etc/xdg/reflector/reflector.conf ]; then
-    mv /etc/xdg/reflector/reflector.conf /etc/xdg/reflector/reflector.conf.bak
-fi
-
-sudo cp ~/Dotfiles/pacman/reflector.conf /etc/xdg/reflector/reflector.conf
-
 
 if [ ! -d ~/.config/gnupg ]; then
     mkdir ~/.config/gnupg
@@ -134,6 +128,15 @@ fi
 if [ ! -d /etc/nohang ]; then
     sudo mkdir /etc/nohang
 fi
+
+
+
+# symlinking config files for systemd related stuff breaks them, so just manually copy them instead
+if [ -f /etc/xdg/reflector/reflector.conf ]; then
+    mv /etc/xdg/reflector/reflector.conf /etc/xdg/reflector/reflector.conf.bak
+fi
+
+sudo cp ~/Dotfiles/pacman/reflector.conf /etc/xdg/reflector/reflector.conf
 
 sudo cp ~/Dotfiles/nohang/nohang.conf /etc/nohang/nohang.conf
 sudo cp ~/Dotfiles/nohang/nohang-desktop.conf /etc/nohang/nohang-desktop.conf
