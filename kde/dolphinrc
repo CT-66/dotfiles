@@ -19,7 +19,6 @@ Virtual1 Width 1920x1025=1272
 [General]
 BrowseThroughArchives=true
 CommandBarLastUsedActions=
-EditableUrl=true
 RememberOpenedTabs=false
 ShowFullPath=true
 ShowFullPathInTitlebar=true

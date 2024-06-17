@@ -273,7 +273,8 @@
     "files.defaultLanguage": "markdown",
     "terminal.integrated.enableImages": true,
     "path-autocomplete.triggerOutsideStrings": true,
-    "editor.autoClosingQuotes": "always"
+    "editor.autoClosingQuotes": "always",
+    "workbench.layoutControl.enabled": false
 }
 /*
     "[javascript]": {
