@@ -1,4 +1,3 @@
-
 /* Photon */
 @import url("Photon/userChrome.css");
 @import url("Photon/userContent.css");
@@ -32,67 +31,6 @@
     list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfiAxMSOA3k2CXQAAAAbklEQVQoz5WRMQqDABAEF4UgKEIIPkKJii+3s7NLpY1N3qBR84axsPYOt1sYuNtdSZLEi5FG1yKk5U9tIQ86dioLiejZKC0k5sPK20JSBn4UFvJkYiG3kIwvM8npAt2Vc8J50onpFOVU7Y51PfcBtUFUSir+geUAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMDMtMTlUMTg6NTY6MTMrMDE6MDDECqmDAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTAzLTE5VDE4OjU2OjEzKzAxOjAwtVcRPwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAASUVORK5CYII=") !important;
 }
 
-/* context menu.css */
-/* make context menu look better */
-/* :root {
-    --arrowpanel-menuitem-margin: 0 8px;
-    --arrowpanel-menuitem-padding-block: 0px;
-    --arrowpanel-menuitem-padding-inline: 8px;
-    --arrowpanel-menuitem-border-radius: 4px;
-    --panel-separator-margin-vertical: 4px;
-}
-
-menupopup:not(.in-menulist) {
-    --panel-background: #3b4252 !important;
-    --panel-color: #eceff4 !important;
-    --button-hover-bgcolor: #4c566a;
-}
-
-menupopup {
-    --panel-item-hover-bgcolor: var(--button-hover-bgcolor);
-}
-menupopup > menuitem,
-menupopup > menu {
-    appearance: none !important;
-    margin: var(--arrowpanel-menuitem-margin) !important;
-    min-height: 24px !important;
-    padding: var(--arrowpanel-menuitem-padding-block)
-        var(--arrowpanel-menuitem-padding-inline) !important;
-    border-radius: var(--arrowpanel-menuitem-border-radius) !important;
-    background-color: transparent !important;
-}
-#context-navigation {
-    padding-inline: var(--arrowpanel-menuitem-padding-inline) !important;
-}
-
-menupopup:not(.in-menulist) {
-    --panel-padding: var(--arrowpanel-menuitem-padding-block) 0 !important;
-}
-menuseparator:not(.in-menulist) {
-    margin-block: var(--panel-separator-margin-vertical) !important;
-}
-
-#context-navigation > menuitem[_moz-menuactive] .menu-iconic-icon {
-    border-radius: var(--arrowpanel-menuitem-border-radius) !important;
-}
-menupopup > menuitem[_moz-menuactive],
-menupopup > menu[_moz-menuactive] {
-    background-color: var(--panel-item-hover-bgcolor) !important;
-}
-menupopup > menuitem[disabled][_moz-menuactive],
-menupopup > menu[disabled][_moz-menuactive] {
-    background-color: var(
-        --menuitem-disabled-hover-background-color
-    ) !important;
-} */
-
-/* .menupopup-arrowscrollbox {
-    padding-block: 8px !important;
-} */
-
-/* #urlbar-input-container menupopup {
-    text-align: left;
-} */
 
 /* hide back, forward and reload buttons in the context menu */
 #context-navigation,
@@ -100,21 +38,6 @@ menupopup > menu[disabled][_moz-menuactive] {
     display: none !important;
 }
 
-/*
-#context-navigation{ -moz-box-orient: vertical; flex-direction: column !important; }
-#context-navigation > menuitem > .menu-iconic-left{ display: none }
-
-#context-navigation > menuitem{
-  padding-block: 4px;
-  padding-inline-start: 8px;
-  -moz-box-pack: start !important;
-  width: auto !important;
-   border-radius: var(--arrowpanel-menuitem-border-radius) !important;
-}
-
-#context-navigation > menuitem[_moz-menuactive="true"]:not([disabled]){ background-color: var(--button-hover-bgcolor) !important; }
-#context-navigation > menuitem::before{ content: attr(aria-label) }
-*/
 
 /* list-tabs.css */
 /* show number of open tabs in current window */
@@ -168,46 +91,6 @@ html#main-window
 .tab-icon-sound-label {
     display: none !important;
 }
-
-/*/* Shows tab audio icons next to the tab icon, and by default removes the tab secondary line */*/
-/**/
-/*.tabbrowser-tab:not([pinned])*/
-/*    .tab-icon-stack:is([muted], [soundplaying], [activemedia-blocked]) {*/
-/*    grid-template-areas: "a s";*/
-/*}*/
-/*.tabbrowser-tab:not([pinned])*/
-/*    .tab-icon-overlay:is([muted], [soundplaying], [activemedia-blocked]) {*/
-/*    grid-area: s;*/
-/*}*/
-/*.tab-icon-overlay,*/
-/*.tab-icon-image,*/
-/*.tab-throbber {*/
-/*    opacity: 1 !important;*/
-/*}*/
-/**/
-/*.tab-icon-overlay:not([pinned]) {*/
-/*    padding: 0px !important;*/
-/*    margin-inline: -3px 1px !important;*/
-/*}*/
-/**/
-/*/* secondary audio label ain't much use with this style, but feel free to remove the next line if you want to show it. */*/
-/*.tab-secondary-label {*/
-/*    display: none;*/
-/*}*/
-/**/
-/*/* show the secondary label when video is in PiP */*/
-/*.tab-secondary-label[pictureinpicture] {*/
-/*    display: -moz-box;*/
-/*}*/
-/**/
-/*/* These exist for compatibility with combined_favicon_and_tab_close_button.css */*/
-/*.tab-icon-overlay {*/
-/*    pointer-events: auto;*/
-/*}*/
-/*.tab-content > .tab-icon-stack,*/
-/*.tab-icon-stack:hover > .tab-icon-image {*/
-/*    visibility: visible;*/
-/*}*/
 
 /* //////////////// */
 /* move findbar to top */
@@ -356,94 +239,11 @@ findbar {
     margin: 0px !important;
 }
 
-
-/* animations.css */
-/* tab click animation */
-/* .tab-stack{ transition: transform 20ms linear }
-.tabbrowser-tab:active .tab-stack{
-  transform: scale(0.9);
-} */
-/* button_effect_scale_onclick.css */
-/* .urlbar-icon,
-.toolbarbutton-icon,
-.menuitem-iconic .menu-iconic-icon{
-  transition: transform 83ms linear !important;
-}
-
-toolbar .toolbarbutton-1 > .toolbarbutton-icon{
-  transition: padding 83ms linear !important;
-}
-
-toolbarbutton#scrollbutton-up:active > .toolbarbutton-icon,
-toolbarbutton:not(.toolbarbutton-1):active > .toolbarbutton-icon,
-toolbar .toolbarbutton-1:not([disabled]):active > .toolbarbutton-badge-stack > .toolbarbutton-icon,
-.menuitem-iconic:active .menu-iconic-icon,
-.urlbar-page-action:active > .urlbar-icon{
-  transform: scale(0.6) !important;
-}
-toolbarbutton#scrollbutton-down:active > .toolbarbutton-icon{ transform: scale(-0.6) !important; }
-
-toolbar .toolbarbutton-1:not([disabled]):active > .toolbarbutton-icon{
-  padding: calc(var(--toolbarbutton-inner-padding) + 3px) !important;
-} */
-
 /* disable white flash when loading webpages */
 #browser vbox#appcontent tabbrowser, #content, #tabbrowser-tabpanels,
 browser[type=content-primary],browser[type=content] > html {
     background: #2e3440 !important
 }
 
-
 /* autohide bookmarks */
-/*#PersonalToolbar{*/
-/*  --uc-bm-height: 20px; /* Might need to adjust if the toolbar has other buttons */*/
-/*  --uc-bm-padding: 4px; /* Vertical padding to be applied to bookmarks */*/
-/*  --uc-autohide-toolbar-delay: 200ms; /* The toolbar is hidden after 0.6s */*/
-/**/
-/*  /* 0deg = "show" ; 90deg = "hide" ;  Set the following to control when bookmarks are shown */*/
-/*  --uc-autohide-toolbar-focus-rotation: 90deg; /* urlbar is focused */*/
-/*  --uc-autohide-toolbar-hover-rotation: 0deg; /* cursor is over the toolbar area */*/
-/*}*/
-/**/
-/*:root[uidensity="touch"] #PersonalToolbar{ --uc-bm-padding: 7px }*/
-/**/
-/*#PersonalToolbar:not([customizing]){*/
-/*  position: relative;*/
-/*  margin-bottom: calc(-1px - var(--uc-bm-height) - 2 * var(--uc-bm-padding));*/
-/*  transform: rotateX(90deg);*/
-/*  transform-origin: top;*/
-/*  transition: transform 135ms linear var(--uc-autohide-toolbar-delay) !important;*/
-/*  z-index: 1;*/
-/*  /* The following properties should allow the themes with trasparent toolbars to work */*/
-/*  background-color: transparent !important;*/
-/*  background-repeat: no-repeat,no-repeat,var(--lwt-background-tiling);*/
-/*    /* y position will be wrong if menubar is enabled... */*/
-/*  --uc-bg-y: calc(-2 * (var(--tab-block-margin) + var(--toolbarbutton-inner-padding) + var(--toolbarbutton-outer-padding)) - var(--tab-min-height) - 24px - var(--bookmark-block-padding));*/
-/*  background-position: top left,top left,var(--lwt-background-alignment,top left);*/
-/*  background-position-y:top,top,var(--uc-bg-y),var(--uc-bg-y),var(--uc-bg-y);*/
-/*  background-image: var(--toolbar-bgimage,linear-gradient(transparent,transparent)), linear-gradient(var(--toolbar-bgcolor),var(--toolbar-bgcolor)),var(--lwt-header-image,var(--lwt-additional-images)) !important;*/
-/*}*/
-/*:root[uidensity="compact"] #PersonalToolbar{*/
-/*  --toolbarbutton-outer-padding: 1px !important;*/
-/*}*/
-/*#PlacesToolbarItems > .bookmark-item,*/
-/*#OtherBookmarks,*/
-/*#PersonalToolbar > #import-button{*/
-/*  padding-block: var(--uc-bm-padding) !important;*/
-/*}*/
-/**/
-/*#nav-bar:focus-within + #PersonalToolbar{*/
-/*  transition-delay: 100ms !important;*/
-/*  transform: rotateX(var(--uc-autohide-toolbar-focus-rotation,0));*/
-/*}*/
-/*#navigator-toolbox:is(:hover,:focus-within){*/
-/*  border-bottom-color: transparent !important;*/
-/*}*/
-/*#navigator-toolbox:hover > #PersonalToolbar{*/
-/*  transition-delay: 100ms !important;*/
-/*  transform: rotateX(var(--uc-autohide-toolbar-hover-rotation,0));*/
-/*}*/
-/**/
-/*#navigator-toolbox:hover > #nav-bar:focus-within + #PersonalToolbar {*/
-/*  transform: rotateX(0);*/
-/*}*/
+/* @import url("autohide-bookmarks.css"); */
