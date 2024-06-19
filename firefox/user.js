@@ -380,6 +380,9 @@ user_pref("browser.urlbar.suggest.quicksuggest.sponsored", false);
 // Disable recent searches in urlbar
 user_pref("browser.urlbar.suggest.recentsearches", false);
 
+// Disable trending searches in urlbar
+user_pref("browser.urlbar.suggest.trending", false);
+
 // Disable WebGL
 user_pref("webgl.disabled", true);
 
