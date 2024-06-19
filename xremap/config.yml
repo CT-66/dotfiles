@@ -1,37 +1,32 @@
 modmap:
-  - name: Global
-    remap:
-      CapsLock: Esc
-      NumLock: Esc
+    - name: Global
+      remap:
+          CapsLock: Esc
+          NumLock: Esc
 
 keymap:
-  - name: Global
-    remap:
-      M-h: left
-      M-j: down
-      M-k: up
-      M-l: right
+    - name: Global
+      remap:
+          M-h: left
+          M-j: down
+          M-k: up
+          M-l: right
 
-      C-w: C-backspace
-      M-w: C-w
+          C-w: C-backspace
+          M-w: C-w
 
-      C-KP7: home
-      C-KP1: end
-      C-KP9: pageup
-      C-KP3: pagedown
+          C-KP7: home
+          C-KP1: end
+          C-KP9: pageup
+          C-KP3: pagedown
 
-      # only for firefox
-      # window matching didn't work, so it is just set globally
-      C-M-KP9: C-pageup
-      C-M-KP3: C-pagedown
-      C-M-left: C-pageup
-      C-M-right: C-pagedown
-
-
-  # - name: Firefox only
-  #   application:
-  #     # only: [/firefox/]
-  #     only: [firefoxdeveloperedition]
-  #   remap:
-  #     C-M-KP9: C-pageup
-  #     C-M-KP3: C-pagedown
+    - name: Firefox
+      remap:
+          C-M-KP9: C-pageup
+          C-M-KP3: C-pagedown
+          C-M-left: C-pageup
+          C-M-right: C-pagedown
+          M-left: C-pageup
+          M-right: C-pagedown
+      application:
+          only: firefoxdeveloperedition
