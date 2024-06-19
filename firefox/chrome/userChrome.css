@@ -1,6 +1,9 @@
-/* Photon */
+/* Photon (Lepton) */
 @import url("Photon/userChrome.css");
 @import url("Photon/userContent.css");
+
+/* autohide bookmarks (witout lepton) */
+/* @import url("autohide-bookmarks.css"); */
 
 
 /* center text in address bar */
@@ -244,6 +247,3 @@ findbar {
 browser[type=content-primary],browser[type=content] > html {
     background: #2e3440 !important
 }
-
-/* autohide bookmarks */
-/* @import url("autohide-bookmarks.css"); */
