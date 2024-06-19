@@ -305,6 +305,8 @@ findbar {
     border-right: 1px solid var(--chrome-content-separator-color);
 }
 
+/* ////// */
+
 /* Always show tab close button on hover and never otherwise */
 .tabbrowser-tab .tab-close-button {
     display: none;
@@ -357,12 +359,12 @@ findbar {
 
 /* animations.css */
 /* tab click animation */
-.tab-stack{ transition: transform 20ms linear }
+/* .tab-stack{ transition: transform 20ms linear }
 .tabbrowser-tab:active .tab-stack{
   transform: scale(0.9);
-}
-/* Effect */
-.urlbar-icon,
+} */
+/* button_effect_scale_onclick.css */
+/* .urlbar-icon,
 .toolbarbutton-icon,
 .menuitem-iconic .menu-iconic-icon{
   transition: transform 83ms linear !important;
@@ -383,7 +385,7 @@ toolbarbutton#scrollbutton-down:active > .toolbarbutton-icon{ transform: scale(-
 
 toolbar .toolbarbutton-1:not([disabled]):active > .toolbarbutton-icon{
   padding: calc(var(--toolbarbutton-inner-padding) + 3px) !important;
-}
+} */
 
 /* disable white flash when loading webpages */
 #browser vbox#appcontent tabbrowser, #content, #tabbrowser-tabpanels,

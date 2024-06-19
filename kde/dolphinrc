@@ -80,9 +80,6 @@ History=gwe,ter
 [PreviewSettings]
 Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail
 
-[Search]
-Location=Everywhere
-
 [ViewPropertiesDialog]
 Virtual1 Height 1920x1080 Virtual1=400
 Virtual1 Height 1920x975 Virtual1=656
