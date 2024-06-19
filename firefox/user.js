@@ -678,7 +678,7 @@ user_pref("userContent.page.proton_color", true);
 user_pref("userContent.page.dark_mode", true); // Need proton_color
 user_pref("userContent.page.proton", true); // Need proton_color
 
-user_pref("userChrome.autohide.bookmarkbar", true);
+// user_pref("userChrome.autohide.bookmarkbar", true);
 user_pref("userChrome.tab.sound_show_label", true);
 
 user_pref("userContent.page.proton_color", true);

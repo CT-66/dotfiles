@@ -3,7 +3,7 @@
 @import url("Photon/userContent.css");
 
 /* autohide bookmarks (witout lepton) */
-/* @import url("autohide-bookmarks.css"); */
+@import url("autohide-bookmarks.css");
 
 
 /* center text in address bar */
