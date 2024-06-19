@@ -13,6 +13,8 @@ ShowAddToPlaces=false
 PreviewSize=22
 
 [ExtractDialog]
+1536x864 screen: Height=540
+1536x864 screen: Width=1024
 Virtual1 Height 1920x1025=560
 Virtual1 Width 1920x1025=1272
 
