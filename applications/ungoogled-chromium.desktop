@@ -2,22 +2,21 @@
 Version=1.0
 Name=Ungoogled Chromium
 GenericName=Web Browser
+Comment=Access the Internet
+Exec=/usr/bin/chromium --ozone-platform=wayland --enable-features=TouchpadOverscrollHistoryNavigation %U
 StartupNotify=true
 StartupWMClass=chromium
-#TryExec=/home/arch/.local/share/ungoogled-chromium.AppImage
-Exec=/home/arch/.local/bin/ungoogled-chromium.AppImage --ozone-platform=wayland --enable-features=TouchpadOverscrollHistoryNavigation %U
 Terminal=false
-Icon=/home/arch/.local/share/applications/ungoogled-chromium-pic.png
+Icon=chromium
 Type=Application
 Categories=Network;WebBrowser;
-MimeType=application/pdf;application/rdf+xml;application/rss+xml;application/xhtml+xml;application/xhtml_xml;application/xml;image/gif;image/jpeg;image/png;image/webp;text/html;text/xml;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ipfs;x-scheme-handler/ipns;
+MimeType=application/pdf;application/rdf+xml;application/rss+xml;application/xhtml+xml;application/xhtml_xml;application/xml;image/gif;image/jpeg;image/png;image/webp;text/html;text/xml;x-scheme-handler/http;x-scheme-handler/https;
 Actions=new-window;new-private-window;
 
 [Desktop Action new-window]
 Name=New Window
-Exec=/home/arch/.local/bin/ungoogled-chromium.AppImage --ozone-platform=wayland --enable-features=TouchpadOverscrollHistoryNavigation
+Exec=/usr/bin/chromium --ozone-platform=wayland --enable-features=TouchpadOverscrollHistoryNavigation
 
 [Desktop Action new-private-window]
 Name=New Incognito Window
-Exec=/home/arch/.local/bin/ungoogled-chromium.AppImage --ozone-platform=wayland --enable-features=TouchpadOverscrollHistoryNavigation --incognito
-MimeType=x-scheme-handler/unknown;x-scheme-handler/about;text/html;text/xml;application/xhtml_xml;image/webp;x-scheme-handler/http;x-scheme-handler/https;
+Exec=/usr/bin/chromium --ozone-platform=wayland --enable-features=TouchpadOverscrollHistoryNavigation --incognito

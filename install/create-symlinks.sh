@@ -60,6 +60,7 @@ dirs=(
     swhkd
     xremap
     fusuma
+    wireplumber
 )
 
  if [ -d ~/.config ]; then

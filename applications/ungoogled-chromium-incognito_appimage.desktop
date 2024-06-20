@@ -1,12 +1,13 @@
 [Desktop Entry]
 Version=1.0
-Name=Ungoogled Chromium: Incognito Window
+Name=Ungoogled Chromium: Incognito Window - AppImage
 GenericName=Web Browser
 StartupNotify=true
 StartupWMClass=chromium
-Exec=/usr/bin/chromium --ozone-platform=wayland --enable-features=TouchpadOverscrollHistoryNavigation --incognito %U
+#TryExec=/home/arch/.local/share/ungoogled-chromium.AppImage
+Exec=/home/arch/.local/bin/ungoogled-chromium.AppImage --ozone-platform=wayland --enable-features=TouchpadOverscrollHistoryNavigation --incognito %U
 Terminal=false
-Icon=chromium
+Icon=/home/arch/.local/share/applications/ungoogled-chromium-pic.png
 Type=Application
 Categories=Network;WebBrowser;
 MimeType=application/pdf;application/rdf+xml;application/rss+xml;application/xhtml+xml;application/xhtml_xml;application/xml;image/gif;image/jpeg;image/png;image/webp;text/html;text/xml;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ipfs;x-scheme-handler/ipns;

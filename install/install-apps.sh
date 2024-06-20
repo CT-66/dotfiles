@@ -291,6 +291,7 @@ apps=(
     zorin-icon-themes
     keepassxc
     mission-center
+    ungoogled-chromium-bin
 )
 
 # for app in "${apps[@]}"; do
