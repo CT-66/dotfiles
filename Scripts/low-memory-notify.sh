@@ -3,12 +3,12 @@
 while :
 do
 
-    free_with_shared=$(free -m|awk '/^Mem:/{print $7}')
-    shared=$(free -m|awk '/^Mem:/{print $5}')
+    free_without_swap=$(free -m|awk '/^Mem:/{print $7}')
+    # shared=$(free -m|awk '/^Mem:/{print $5}')
     swap_free=$(free -m|awk '/^Swap:/{print $4}')
-    free=$(($free_with_shared - $shared + $swap_free))
+    free=$(($free_without_swap + $swap_free))
 
-    if [ "$free" -lt 2000 ] && [ "$free" -gt 1000 ]
+    if [ "$free" -lt 1500 ] && [ "$free" -gt 1000 ]
     then
         notify-send "Low Memory" "Memory is running out!" -u CRITICAL
     elif [ "$free" -lt 1000 ]
