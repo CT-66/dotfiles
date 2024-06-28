@@ -274,7 +274,8 @@
     "terminal.integrated.enableImages": true,
     "path-autocomplete.triggerOutsideStrings": true,
     "editor.autoClosingQuotes": "always",
-    "workbench.layoutControl.enabled": false
+    "workbench.layoutControl.enabled": false,
+    "workbench.editor.scrollToSwitchTabs": true
 }
 /*
     "[javascript]": {
