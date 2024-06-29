@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Kill Xremap
+Exec=pkill xremap
+Comment=Kills xremap in case of errors since it hijacks the keyboard and killing it with a keyboard is not possible
+Categories=System;Settings;
