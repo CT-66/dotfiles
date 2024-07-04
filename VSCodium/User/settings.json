@@ -275,7 +275,8 @@
     "path-autocomplete.triggerOutsideStrings": true,
     "editor.autoClosingQuotes": "always",
     "workbench.layoutControl.enabled": false,
-    "workbench.editor.scrollToSwitchTabs": true
+    "workbench.editor.scrollToSwitchTabs": true,
+    "editor.lightbulb.enabled": "off"
 }
 /*
     "[javascript]": {

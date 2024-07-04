@@ -91,6 +91,7 @@ ln -s ~/Dotfiles/xdg/mimeapps.list ~/.config/mimeapps.list
 ln -s ~/Dotfiles/xdg/user-dirs.dirs ~/.config/user-dirs.dirs
 sudo ln -s /usr/bin/nvim /usr/bin/v
 sudo ln -s /usr/bin/nvim /usr/bin/vv
+sudo ln -s /usr/bin/nvim /usr/bin/vi
 # sudo cp ~/Dotfiles/etc/fstab /etc/fstab
 ln -s ~/Dotfiles/paleofetch/paleofetch ~/.local/bin/paleofetch
 ln -s ~/Dotfiles/paleofetch2/paleofetch2 ~/.local/bin/paleofetch2

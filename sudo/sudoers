@@ -39,7 +39,7 @@
 # Defaults env_keep += "LANG LANGUAGE LINGUAS LC_* _XKB_CHARSET"
 ##
 ## Run X applications through sudo; HOME is used to find the
-## .Xauthority file.  Note that other programs use HOME to find   
+## .Xauthority file.  Note that other programs use HOME to find
 ## configuration files and this may lead to privilege escalation!
 # Defaults env_keep += "HOME"
 ##
@@ -101,10 +101,15 @@ Defaults env_reset
 Defaults pwfeedback
 
 ## Enable insults
-Defaults insults
+#Defaults insults
 
 ## Disable timeout
 Defaults passwd_timeout=0
 
 ## Send a bell character during password prompt
 Defaults passprompt="^G[sudo] password for %p: "
+
+
+## Required for enabling GPU in the host during graphical session login
+arch ALL=(ALL) ALL
+arch ALL=(ALL) NOPASSWD: /home/arch/Scripts/gpu-autostart-2.sh

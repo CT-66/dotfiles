@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=/home/arch/Scripts/gpu-autostart.sh
+Icon=application-x-shellscript
+Name=gpu-autostart.sh
+Type=Application
+X-KDE-AutostartScript=true
