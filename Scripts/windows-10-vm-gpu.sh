@@ -38,15 +38,18 @@ while [ "$running_status" != "shutoff" ]; do
 done
 if [ "$running_status" == "shutoff" ]; then
     printf "\n\e[1;34m%-6s\e[m\n\n" "VM shut down successfully."
-    :
+    printf "\n\e[1;34m%-6s\e[m\n\n" "Wait..."
+    sleep 10
 fi
 
 
 # reattach/enable/give back the gpu from the Vm back to the host
-printf "\n\e[1;34m%-6s\e[m\n\n" "Attaching the gpu..."
-sudo rmmod vfio_pci vfio_pci_core vfio_iommu_type1
-virsh nodedev-reattach pci_0000_03_00_0
-printf "\n\e[1;34m%-6s\e[m\n\n" "GPU reattached and given back to the host."
+# printf "\n\e[1;34m%-6s\e[m\n\n" "Attaching the gpu..."
+# sudo rmmod vfio_pci vfio_pci_core vfio_iommu_type1
+# virsh nodedev-reattach pci_0000_03_00_0
+# printf "\n\e[1;34m%-6s\e[m\n\n" "GPU reattached and given back to the host."
+printf "\n\e[1;34m%-6s\e[m\n\n" "Restart to properly use the GPU"
+
 
 
 # start xremap

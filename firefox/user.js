@@ -587,6 +587,9 @@ user_pref("network.ssl_tokens_cache_capacity", 10240);
 // allow unsigned add ons
 user_pref("xpinstall.signatures.required", false);
 
+// more bullshit
+user_pref("dom.private-attribution.submission.enabled", false);
+
 ///// Photon related stuff /////
 user_pref("svg.context-properties.content.enabled", true);
 user_pref("layout.css.has-selector.enabled", true);
