@@ -292,6 +292,7 @@ apps=(
     keepassxc
     mission-center
     ungoogled-chromium-bin
+    vorta
 )
 
 # for app in "${apps[@]}"; do
