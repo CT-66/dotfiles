@@ -130,7 +130,7 @@ apps=(
     timeshift
     qt5ct-kde
     # qt5ct
-    betterlockscreen
+    # betterlockscreen
     networkmanager
     network-manager-applet
     nm-connection-editor
