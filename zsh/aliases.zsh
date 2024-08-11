@@ -188,4 +188,4 @@ alias open=xdg-open
 
 alias radeontop="radeontop --color --transparency"
 
-alias d.="nohup dolphin . &"
+alias d.="nohup dolphin . >/dev/null 2>&1 &"

@@ -55,7 +55,7 @@ printf "\n\e[1;34m%-6s\e[m\n\n" "Restart to properly use the GPU"
 # start xremap
 printf "\n\e[1;34m%-6s\e[m\n\n" "Starting xremap..."
 sleep 5
-nohup xremap --watch /home/arch/.config/xremap/config.yml &
+nohup xremap --watch /home/arch/.config/xremap/config.yml >/dev/null 2>&1 &
 printf "\n\e[1;34m%-6s\e[m\n\n" "Wait..."
 sleep 5
 printf "\n\e[1;34m%-6s\e[m\n\n" "Done"
