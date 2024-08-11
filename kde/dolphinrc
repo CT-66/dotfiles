@@ -11,6 +11,7 @@ ShowAddToPlaces=false
 
 [DetailsMode]
 PreviewSize=22
+SidePadding=0
 
 [ExtractDialog]
 1536x864 screen: Height=540

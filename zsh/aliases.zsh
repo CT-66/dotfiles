@@ -187,3 +187,5 @@ alias tn='tmux new-session -s '
 alias open=xdg-open
 
 alias radeontop="radeontop --color --transparency"
+
+alias d.="nohup dolphin . &"

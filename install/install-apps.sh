@@ -220,6 +220,7 @@ apps=(
     konsole
     xdg-desktop-portal
     xdg-desktop-portal-kde
+    xdg-desktop-portal-gtk
     eww-git
     rustup
     rust-analyzer
