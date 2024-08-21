@@ -61,6 +61,7 @@ dirs=(
     xremap
     fusuma
     wireplumber
+    wezterm
 )
 
  if [ -d ~/.config ]; then

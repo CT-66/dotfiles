@@ -1,7 +1,0 @@
-[Desktop Entry]
-Exec=/home/arch/Scripts/polonium-toggle.sh
-Name=/home/arch/Scripts/polonium-toggle.sh
-NoDisplay=true
-StartupNotify=false
-Type=Application
-X-KDE-GlobalAccel-CommandShortcut=true
