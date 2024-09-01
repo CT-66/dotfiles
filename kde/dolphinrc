@@ -25,7 +25,6 @@ CommandBarLastUsedActions=
 RememberOpenedTabs=false
 ShowFullPath=true
 ShowFullPathInTitlebar=true
-ShowToolTips=true
 Version=202
 ViewPropsTimestamp=2021,12,12,14,50,30.417
 
@@ -80,6 +79,9 @@ History=gwe,ter
 
 [PreviewSettings]
 Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail
+
+[Search]
+Location=Everywhere
 
 [ViewPropertiesDialog]
 Virtual1 Height 1920x1080 Virtual1=400

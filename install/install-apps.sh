@@ -294,6 +294,7 @@ apps=(
     mission-center
     ungoogled-chromium-bin
     vorta
+    upscayl-bin
 )
 
 # for app in "${apps[@]}"; do

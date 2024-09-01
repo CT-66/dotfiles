@@ -83,3 +83,5 @@ export QT_ENABLE_HIGHDPI_SCALING=1
 export MOZ_USE_XINPUT2=1
 export MOZ_ENABLE_WAYLAND=1
 
+# harware acceleration
+export LIBVA_DRIVER_NAME=radeonsi
