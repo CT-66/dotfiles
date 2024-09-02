@@ -295,6 +295,7 @@ apps=(
     ungoogled-chromium-bin
     vorta
     upscayl-bin
+    mkvtoolnix-cli
 )
 
 # for app in "${apps[@]}"; do
