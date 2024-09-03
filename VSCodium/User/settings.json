@@ -276,7 +276,8 @@
     "editor.autoClosingQuotes": "always",
     "workbench.layoutControl.enabled": false,
     "workbench.editor.scrollToSwitchTabs": true,
-    "editor.lightbulb.enabled": "off"
+    "editor.lightbulb.enabled": "off",
+    "editor.scrollbar.verticalScrollbarSize": 7
 }
 /*
     "[javascript]": {
