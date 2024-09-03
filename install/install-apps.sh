@@ -296,6 +296,7 @@ apps=(
     vorta
     upscayl-bin
     mkvtoolnix-cli
+    sublime-text-4
 )
 
 # for app in "${apps[@]}"; do
