@@ -69,10 +69,6 @@
         "command": "workbench.action.terminal.focus",
         "when": "editorTextFocus"
     },
-    // {
-    //     "key": "ctrl+`",
-    //     "command": "workbench.action.terminal.toggleTerminal"
-    // },
     {
         "key": "ctrl+shift+`",
         "command": "workbench.action.terminal.newWithCwd",
@@ -90,16 +86,16 @@
         "command": "workbench.action.terminal.focus",
         "when": "editorTextFocus"
     },
-    // {
-    //     "key": "ctrl+\\",
-    //     "command": "workbench.action.terminal.toggleTerminal"
-    // },
     {
         "key": "ctrl+shift+\\",
         "command": "workbench.action.terminal.newWithCwd",
         "args": {
             "cwd": "${fileDirname}"
         }
+    },
+    {
+        "key": "ctrl+numpad_divide",
+        "command": "workbench.action.terminal.toggleTerminal"
     },
     {
         "key": "escape",

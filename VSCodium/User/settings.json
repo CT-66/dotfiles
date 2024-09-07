@@ -277,7 +277,8 @@
     "editor.lightbulb.enabled": "off",
     "editor.scrollbar.verticalScrollbarSize": 7,
     "workbench.layoutControl.enabled": false,
-    "window.titleBarStyle": "custom"
+    "window.titleBarStyle": "custom",
+    "editor.stickyScroll.enabled": false
 }
 /*
     "[javascript]": {
