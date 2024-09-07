@@ -617,4 +617,9 @@
         "command": "-workbench.action.tasks.build",
         "when": "taskCommandsRegistered"
     },
+    {
+        "key": "alt+/",
+        "command": "actions.find",
+        "when": "editorFocus || editorIsOpen"
+    },
 ]
