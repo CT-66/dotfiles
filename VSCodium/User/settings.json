@@ -263,7 +263,6 @@
     "vim.cursorStylePerMode.visualblock": "block-outline",
     "vim.cursorStylePerMode.visualline": "block-outline",
     "window.menuBarVisibility": "visible",
-    "window.titleBarStyle": "custom",
     "[python]": {
         "diffEditor.ignoreTrimWhitespace": false,
         "editor.formatOnType": true,
@@ -274,10 +273,11 @@
     "terminal.integrated.enableImages": true,
     "path-autocomplete.triggerOutsideStrings": true,
     "editor.autoClosingQuotes": "always",
-    "workbench.layoutControl.enabled": false,
     "workbench.editor.scrollToSwitchTabs": true,
     "editor.lightbulb.enabled": "off",
-    "editor.scrollbar.verticalScrollbarSize": 7
+    "editor.scrollbar.verticalScrollbarSize": 7,
+    "workbench.layoutControl.enabled": false,
+    "window.titleBarStyle": "custom"
 }
 /*
     "[javascript]": {

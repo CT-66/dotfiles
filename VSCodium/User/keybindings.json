@@ -102,11 +102,6 @@
         }
     },
     {
-        "key": "ctrl+b",
-        "command": "python.execInTerminal",
-        "when": "resourceExtname == .py"
-    },
-    {
         "key": "escape",
         "command": "workbench.action.closePanel",
         "when": "panelFocus"
@@ -126,7 +121,7 @@
         "when": "workbench.panel.markers.view.active"
     },
     {
-        "key": "ctrl+b",
+        "key": "ctrl+shift+b",
         "command": "markdown.showPreviewToSide",
         "when": "!notebookEditorFocused && editorLangId == 'markdown'"
     },
@@ -164,11 +159,6 @@
     */
     {
         "key": "ctrl+b",
-        "command": "java.debug.runJavaFile",
-        "when": "resourceExtname == .java"
-    },
-    {
-        "key": "ctrl+b",
         "command": "workbench.action.terminal.sendSequence",
         "args": {
             "text": "cd '${fileDirname}'\u000Dnode ${fileBasename}\u000D", /*cd '${fileDirname}'\u000Ddel ${fileBasenameNoExtension}.exe\u000Dcsc '${file}'\u000Dcls\u000D.\\${fileBasenameNoExtension}.exe\u000D*/
@@ -196,11 +186,6 @@
     {
         "key": "ctrl+f2",
         "command": "fileutils.renameFile",
-        "when": "editorFocus"
-    },
-    {
-        "key": "ctrl+shift+b",
-        "command": "breadcrumbs.toggle",
         "when": "editorFocus"
     },
     {
@@ -626,5 +611,10 @@
         "key": "ctrl+p",
         "command": "-extension.vim_ctrl+p",
         "when": "editorTextFocus && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "-workbench.action.tasks.build",
+        "when": "taskCommandsRegistered"
     },
 ]
