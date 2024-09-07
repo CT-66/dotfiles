@@ -60,8 +60,25 @@
     },
     */
     {
-        "key": "ctrl+\\",
-        "command": "workbench.action.terminal.new",
+        "key": "ctrl+`",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "workbench.action.terminal.focus",
+        "when": "editorTextFocus"
+    },
+    // {
+    //     "key": "ctrl+`",
+    //     "command": "workbench.action.terminal.toggleTerminal"
+    // },
+    {
+        "key": "ctrl+shift+`",
+        "command": "workbench.action.terminal.newWithCwd",
+        "args": {
+            "cwd": "${fileDirname}"
+        }
     },
     {
         "key": "ctrl+\\",
@@ -73,9 +90,16 @@
         "command": "workbench.action.terminal.focus",
         "when": "editorTextFocus"
     },
+    // {
+    //     "key": "ctrl+\\",
+    //     "command": "workbench.action.terminal.toggleTerminal"
+    // },
     {
-        "key": "ctrl+\\",
-        "command": "workbench.action.terminal.toggleTerminal"
+        "key": "ctrl+shift+\\",
+        "command": "workbench.action.terminal.newWithCwd",
+        "args": {
+            "cwd": "${fileDirname}"
+        }
     },
     {
         "key": "ctrl+b",
