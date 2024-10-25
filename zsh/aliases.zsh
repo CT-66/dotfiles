@@ -19,6 +19,7 @@ alias cmatrix="cmatrix -bs -C blue"
 alias rg="rg -in --color=always"
 alias grep=rg
 alias find='fd'
+alias diff='icdiff -Ns'
 alias .history='nvim ~/.cache/zsh/history'
 alias mkf='touch'
 alias sv='sudoedit'

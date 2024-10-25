@@ -156,7 +156,6 @@ apps=(
     dos2unix
     cava
     tmpmail-git
-    bar-protonmail
     prettier
     ffmpegthumbnailer
     gzip
@@ -252,7 +251,7 @@ apps=(
     reflector
     archlinux-keyring
     libreoffice-fresh
-    protonvpn
+    proton-vpn-gtk-app
     pdfarranger
     foliate
     arianna
@@ -297,6 +296,7 @@ apps=(
     upscayl-bin
     mkvtoolnix-cli
     sublime-text-4
+    icdiff
 )
 
 # for app in "${apps[@]}"; do

@@ -1,7 +1,7 @@
 [Desktop Entry]
 Categories=Qt;KDE;AudioVideo;Player;Video;TV;
 Comment=
-Exec=env DRI_PRIME=1 haruna %u
+Exec=haruna %u
 GenericName= mpv frontend
 Icon=haruna
 Type=Application

@@ -5,7 +5,7 @@ ordering=applications:systemsettings.desktop,applications:org.kde.dolphin.deskto
 ordering=applications:systemsettings.desktop,applications:org.kde.dolphin.desktop,applications:firefox.desktop
 
 [Favorites-org.kde.plasma.kickoff.favorites.instance-8-dd841a88-6058-4b9d-96f7-c4eaca68c0e8]
-ordering=applications:org.kde.konsole.desktop,applications:codium.desktop,applications:org.kde.kate.desktop,applications:firefox-developer-edition.desktop,applications:nvim.desktop,applications:org.kde.dolphin.desktop,applications:systemsettings.desktop,applications:org.kde.okular.desktop
+ordering=applications:org.kde.konsole.desktop,applications:codium.desktop,applications:sublime_text.desktop,applications:org.kde.kate.desktop,applications:firefox-developer-edition.desktop,applications:nvim.desktop,applications:org.kde.dolphin.desktop,applications:systemsettings.desktop,applications:org.kde.okular.desktop
 
 [Favorites-org.kde.plasma.kickoff.favorites.instance-8-global]
-ordering=applications:org.kde.konsole.desktop,applications:codium.desktop,applications:org.kde.kate.desktop,applications:firefox-developer-edition.desktop,applications:nvim.desktop,applications:org.kde.dolphin.desktop,applications:systemsettings.desktop,applications:org.kde.okular.desktop
+ordering=applications:org.kde.konsole.desktop,applications:codium.desktop,applications:sublime_text.desktop,applications:org.kde.kate.desktop,applications:firefox-developer-edition.desktop,applications:nvim.desktop,applications:org.kde.dolphin.desktop,applications:systemsettings.desktop,applications:org.kde.okular.desktop
