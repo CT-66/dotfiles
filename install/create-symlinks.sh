@@ -61,6 +61,7 @@ dirs=(
     xremap
     fusuma
     wireplumber
+    kitty
 )
 
  if [ -d ~/.config ]; then

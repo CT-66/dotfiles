@@ -278,7 +278,8 @@
     "editor.scrollbar.verticalScrollbarSize": 7,
     "workbench.layoutControl.enabled": false,
     "window.titleBarStyle": "custom",
-    "editor.stickyScroll.enabled": false
+    "editor.stickyScroll.enabled": false,
+    "git.openRepositoryInParentFolders": "never"
 }
 /*
     "[javascript]": {

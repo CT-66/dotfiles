@@ -55,6 +55,7 @@ apps=(
     brave-bin
     falkon
     alacritty
+    kitty
     vieb
     lolcat
     htop
@@ -297,6 +298,10 @@ apps=(
     mkvtoolnix-cli
     sublime-text-4
     icdiff
+    img2pdf
+    qtqr
+    viu
+    ffmpegthumbs
 )
 
 # for app in "${apps[@]}"; do
