@@ -693,3 +693,9 @@ user_pref("userChrome.tab.sound_show_label", true);
 
 user_pref("userContent.page.proton_color", true);
 user_pref("userContent.page.dark_mode", true);
+
+user_pref("userContent.page.proton_color.dark_blue_accent", true);
+
+//////
+
+user_pref("browser.tabs.groups.enabled", true);
