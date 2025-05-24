@@ -10,7 +10,9 @@ PreviewSize=22
 ShowAddToPlaces=false
 
 [DetailsMode]
+LeftPadding=0
 PreviewSize=22
+RightPadding=0
 SidePadding=0
 
 [ExtractDialog]
@@ -25,6 +27,7 @@ CommandBarLastUsedActions=
 RememberOpenedTabs=false
 ShowFullPath=true
 ShowFullPathInTitlebar=true
+ShowStatusBar=FullWidth
 ShowToolTips=true
 Version=202
 ViewPropsTimestamp=2021,12,12,14,50,30.417
