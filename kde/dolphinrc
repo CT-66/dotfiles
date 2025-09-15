@@ -24,6 +24,7 @@ Virtual1 Width 1920x1025=1272
 [General]
 BrowseThroughArchives=true
 CommandBarLastUsedActions=
+ModifiedStartupSettings=true
 RememberOpenedTabs=false
 ShowFullPath=true
 ShowFullPathInTitlebar=true
@@ -85,9 +86,6 @@ History=gwe,ter
 
 [PreviewSettings]
 Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail,ffmpegthumbs
-
-[Search]
-Location=Everywhere
 
 [ViewPropertiesDialog]
 Virtual1 Height 1920x1080 Virtual1=400

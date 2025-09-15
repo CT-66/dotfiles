@@ -302,6 +302,8 @@ apps=(
     qtqr
     viu
     ffmpegthumbs
+    merkuro
+    plasma6-applets-plasma-audio-visualizer
 )
 
 # for app in "${apps[@]}"; do

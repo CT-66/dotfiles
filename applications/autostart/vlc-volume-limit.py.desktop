@@ -1,0 +1,18 @@
+[Desktop Entry]
+Comment[en_US]=
+Comment=
+Exec=/home/arch/Scripts/vlc-volume-limit.py
+GenericName[en_US]=
+GenericName=
+Icon=text-x-python
+MimeType=
+Name[en_US]=vlc-volume-limit.py
+Name=vlc-volume-limit.py
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-AutostartScript=true
+X-KDE-SubstituteUID=false
+X-KDE-Username=
