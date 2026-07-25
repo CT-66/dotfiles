@@ -147,3 +147,5 @@ set confirm
 set foldcolumn=1
 set foldmethod=indent
 set matchpairs+=<:>
+
+noremap . <nop>

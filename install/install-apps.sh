@@ -303,7 +303,11 @@ apps=(
     viu
     ffmpegthumbs
     merkuro
-    plasma6-applets-plasma-audio-visualizer
+    # plasma6-applets-plasma-audio-visualizer
+    plasma6-applets-kurve
+    musescore
+    # redemption
+    gimagereader-qt
 )
 
 # for app in "${apps[@]}"; do

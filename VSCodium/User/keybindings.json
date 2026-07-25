@@ -618,4 +618,8 @@
         "command": "actions.find",
         "when": "editorFocus || editorIsOpen"
     },
+    {
+        "key": "ctrl+shift+k s",
+        "command": "workbench.action.files.saveWithoutFormatting"
+    }
 ]

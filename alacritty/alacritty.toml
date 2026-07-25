@@ -399,6 +399,8 @@ dynamic_padding = false
 gtk_theme_variant = "None"
 startup_mode = "Windowed"
 title = "Alacritty"
+blur = true
+opacity = 0.75
 
 [window.class]
 general = "Alacritty"

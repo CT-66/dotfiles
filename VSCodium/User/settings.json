@@ -279,7 +279,14 @@
     "workbench.layoutControl.enabled": false,
     "window.titleBarStyle": "custom",
     "editor.stickyScroll.enabled": false,
-    "git.openRepositoryInParentFolders": "never"
+    "git.openRepositoryInParentFolders": "never",
+    "git.blame.statusBarItem.enabled": false,
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
 /*
     "[javascript]": {

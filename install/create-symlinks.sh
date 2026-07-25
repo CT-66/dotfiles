@@ -62,6 +62,7 @@ dirs=(
     fusuma
     wireplumber
     kitty
+    Redemption
 )
 
  if [ -d ~/.config ]; then
