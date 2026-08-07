@@ -22,16 +22,16 @@ Plug 'tpope/vim-surround'
 Plug 'airblade/vim-matchquote'
 Plug 'karb94/neoscroll.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
-Plug 'romgrk/barbar.nvim'
+" Plug 'romgrk/barbar.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 " Plug 'AndrewRadev/tagalong.vim'
 Plug 'tpope/vim-eunuch'
 Plug 'dstein64/nvim-scrollview'
 Plug 'alvan/vim-closetag'
-Plug 'psf/black', { 'branch': 'stable' }
+" Plug 'psf/black', { 'branch': 'stable' }
 Plug 'akinsho/toggleterm.nvim'
-Plug 'tversteeg/registers.nvim', { 'branch': 'main' }
+" Plug 'tversteeg/registers.nvim', { 'branch': 'main' } " Deleted?
 "Plug 'prettier/vim-prettier'
 Plug 'mattn/emmet-vim'
 Plug 'rbgrouleff/bclose.vim'

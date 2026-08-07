@@ -66,6 +66,7 @@ require("toggleterm").setup {
 }
 
 -- indent-blankline.nvim
-require("indent_blankline").setup {
+-- require("indent_blankline").setup {
 
-}
+-- }
+require("ibl").setup()

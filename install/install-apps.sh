@@ -308,6 +308,7 @@ apps=(
     musescore
     # redemption
     gimagereader-qt
+    drawy
 )
 
 # for app in "${apps[@]}"; do
