@@ -192,3 +192,4 @@ alias radeontop="radeontop --color --transparency"
 alias d.="nohup dolphin . >/dev/null 2>&1 &"
 
 alias vimv="EDITOR=nvim vimv"
+alias cls=clear

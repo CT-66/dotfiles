@@ -154,7 +154,7 @@ au! BufEnter *.md setlocal foldmethod=expr
 
 " format python file on save
 " autocmd FileType python BufWritePre :Black
-autocmd BufWritePre *.py Black
+" autocmd BufWritePre *.py Black
 
 " format rust file on save
 let g:rustfmt_autosave = 1
