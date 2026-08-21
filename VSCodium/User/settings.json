@@ -210,7 +210,6 @@
         "file:///home/arch/Dotfiles/VSCodium/User/custom-css.css"
     ],
     "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
-    "material-icon-theme.hidesExplorerArrows": true,
     "update.mode": "default",
     // "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName}",
     "editor.scrollBeyondLastLine": true,
@@ -235,7 +234,6 @@
     "security.workspace.trust.enabled": false,
     "terminal.integrated.ignoreProcessNames": [],
     "editor.selectionHighlight": false,
-    "breadcrumbs.enabled": false,
     "path-autocomplete.enableFolderTrailingSlash": true,
     "path-autocomplete.disableUpOneFolder": true,
     "terminal.integrated.smoothScrolling": true,
@@ -253,7 +251,6 @@
     "explorer.decorations.colors": true,
     "explorer.enableDragAndDrop": true,
     "explorer.enableUndo": true,
-    "workbench.activityBar.location": "hidden",
     "workbench.editor.empty.hint": "hidden",
     "vim.camelCaseMotion.enable": true,
     "vim.cursorStylePerMode.insert": "line",
@@ -286,7 +283,12 @@
     },
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "C_Cpp.formatting": "clangFormat",
+    "workbench.activityBar.location": "hidden",
+    "workbench.editor.editorActionsLocation": "titleBar",
+    "breadcrumbs.enabled": false
 }
 /*
     "[javascript]": {

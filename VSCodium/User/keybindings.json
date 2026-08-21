@@ -153,14 +153,6 @@
         "command": "-editor.action.toggleTabFocusMode"
     },
     */
-    {
-        "key": "ctrl+b",
-        "command": "workbench.action.terminal.sendSequence",
-        "args": {
-            "text": "cd '${fileDirname}'\u000Dnode ${fileBasename}\u000D", /*cd '${fileDirname}'\u000Ddel ${fileBasenameNoExtension}.exe\u000Dcsc '${file}'\u000Dcls\u000D.\\${fileBasenameNoExtension}.exe\u000D*/
-        },
-        "when": "resourceExtname == .js"
-    },
     // {
     //     "key": "ctrl+j",
     //     "command": "workbench.action.focusActiveEditorGroup",
@@ -631,5 +623,23 @@
         "key": "ctrl+shift+c",
         "command": "-workbench.action.terminal.copySelection",
         "when": "terminalTextSelectedInFocused || terminalFocus && terminalHasBeenCreated && terminalTextSelected || terminalFocus && terminalProcessSupported && terminalTextSelected || terminalFocus && terminalTextSelected && terminalTextSelectedInFocused || terminalHasBeenCreated && terminalTextSelected && terminalTextSelectedInFocused || terminalProcessSupported && terminalTextSelected && terminalTextSelectedInFocused"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Run Python",
+        "when": "editorTextFocus && resourceExtname == .py"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Run C++",
+        "when": "editorTextFocus && resourceExtname == .cpp"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Run C",
+        "when": "editorTextFocus && resourceExtname == .c"
     }
 ]
