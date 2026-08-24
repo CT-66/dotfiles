@@ -628,18 +628,23 @@
         "key": "ctrl+shift+d",
         "command": "workbench.action.tasks.runTask",
         "args": "Run Python",
-        "when": "editorTextFocus && resourceExtname == .py"
+        // "when": "editorTextFocus && resourceExtname == .py"
+        "when": "resourceExtname == .py"
     },
     {
         "key": "ctrl+shift+d",
         "command": "workbench.action.tasks.runTask",
         "args": "Run C++",
-        "when": "editorTextFocus && resourceExtname == .cpp"
+        // "when": "editorTextFocus && resourceExtname == .cpp"
+        "when": "resourceExtname == .cpp"
     },
+    // },
     {
         "key": "ctrl+shift+d",
         "command": "workbench.action.tasks.runTask",
         "args": "Run C",
-        "when": "editorTextFocus && resourceExtname == .c"
-    }
+        "when": "resourceExtname == .c"
+        // "when": "editorTextFocus && resourceExtname == .c"
+    },
+    // }
 ]

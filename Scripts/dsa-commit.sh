@@ -35,9 +35,9 @@ while IFS= read -r -d '' entry; do
     filename="$(basename -- "$relative")"
 
     if [[ "$status" == "??" ]]; then
-        message="Created $parent : $filename"
+        message="Created $parent: $filename"
     else
-        message="Modified $parent : $filename"
+        message="Modified $parent: $filename"
     fi
 
     echo "→ $message"

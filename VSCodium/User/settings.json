@@ -263,7 +263,8 @@
     "[python]": {
         "diffEditor.ignoreTrimWhitespace": false,
         "editor.formatOnType": true,
-        "editor.wordBasedSuggestions": "off"
+        "editor.wordBasedSuggestions": "off",
+        "editor.defaultFormatter": "ms-python.black-formatter"
     },
     "terminal.integrated.gpuAcceleration": "on",
     "files.defaultLanguage": "markdown",
@@ -288,7 +289,8 @@
     "C_Cpp.formatting": "clangFormat",
     "workbench.activityBar.location": "hidden",
     "workbench.editor.editorActionsLocation": "titleBar",
-    "breadcrumbs.enabled": false
+    "breadcrumbs.enabled": false,
+    "editor.inlayHints.enabled": "off",
 }
 /*
     "[javascript]": {
